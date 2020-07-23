@@ -1,0 +1,2 @@
+cut: invalid range with no endpoint: -
+Try 'cut --help' for more information.

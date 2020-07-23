@@ -1,0 +1,55 @@
+What is the coding paradigm supported in C++? wrong, correct 2nd time
+Functional, Generic, Object-Oriented
+
+How do you declare a function named find that takes a recordId by
+reference? correct
+find(int &recordld){}
+note by reference => by pointer
+
+
+File inclusion is part of the? wrong, correct 2nd time
+preporocessor
+
+
+Which of the following is a destructure for the class Employee? correct
+free Employee()￼ Employee::Destroy()￼ Employee()￼	~Employee()
+~Employee()
+
+
+The type that is a set of overlapping object types is a _____. correct
+￼   array￼    union￼   class￼	      struct
+union allows too variables to occupy the same space in memory
+
+
+_____ is the result of the following: 35%4.
+7 8.5 8	    3
+ans: modulus operator % so extracts the remainder from expression, so
+3 is the correct answer. 
+4x8=32, with 3 remainder
+
+
+In order to get the compiler to use the overloaded version of a
+method, you can declare the base class version of the method as _____.
+ans: vitual, sort of a guess though
+
+
+Select the correct declaration for a template class.
+ans: template<typename T> class Queue{}, correct, sort of deduced the
+answer
+
+
+Which of the following is a part of the standard library?
+￼     File I/O￼	       Strings￼	 Date and Time￼	 all of these answers
+ans: all of these answers, correct again by deduction
+
+
+Which method do you use to find a string at the end of a string?
+￼     last()￼	find_last()￼	rfind()￼ r_find()
+ans: rfind(), wrong
+
+
+You got 9 out of 10 correct.
+You can come back and answer these questions as many times as you
+like.
+
+

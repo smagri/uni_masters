@@ -1,0 +1,47 @@
+Important points:
+
+
+Transcript:
+
+- The basic looping control in C++ is the while loop. The while loop
+  tests the condition at the top of the loop and there's also a
+  version that tests the condition at the bottom of the loop, and
+  we'll look at both of them here. Here in Xcode, I've opened a
+  working copy of working.cpp. And we'll start by defining an array
+  that we can use for our loop. This will be an array of integers and
+  an integer for indexing into the array. And now we'll build our
+  while loop. It's very simple. It uses a condition and in this case,
+  the condition will be while i is less than five, and we'll need some
+  statements here, so we'll printf the value of i and the value of the
+  element of the array that's indexed by i, like this.
+
+And then we'll need to increment i so our loop doesn't go on
+forever. It needs to eventually reach five, so the test works. The
+test in the parentheses here, this is our condition, and it tests for
+when i is less than five. And so, of course, i is starting at zero and
+so it's less than five. And then we'll print the first element of the
+array. And then we'll increment i, and so now i will be one, and it's
+still less than five. And onward until it reaches five, at which
+point, i is no longer less than five, and it will finish the loop.
+
+This actually works very well and it's very simple to do. We just
+build and run here, and you see there's our result. Element zero is
+one, element one is two, and onward to element four is five. This is a
+very, very simple construction. We'll see a lot more examples of this
+throughout the course. But this is just a basic overview so you can
+see how the while loop works. It has the keyword while, it has a
+condition, it has a block with code in it, and it finishes when the
+condition is no longer true.
+
+There's another form of this called do-while that has the test at the
+bottom. It's not anywhere near as common as the one with the test at
+the top, but there are times when it's more convenient to have the
+test at the bottom. In this case, our loop is so simple that it'll do
+exactly the same thing. So when I build and run, you'll see that it
+works the same. The syntax of it has the keyword do, and then the
+block, and then the keyword "while" with the condition, and the
+semicolon at the end because you have that condition at the end, so
+the compiler needs to know when it's done.
+
+So the while loop is a fundamental control in C++. Do-while is used
+less frequently but it's still very important to understand.Important points:

@@ -1,0 +1,42 @@
+2apr2018
+
+**THIS only applies to scanned documents, the ones that turn out all
+  black when you try to print them.**
+
+***However, if your document is more than a few pages long this method
+may be too time consuming too, your call.*******
+
+THIS IS THE EASIEST and QUICKEST  solution for PRINTING .pdf, that has
+been scanned(=> all back when printing  as it doesn't use a vectorised
+front), as AS TEXT file in ONE Column, see ../okular/README.okular
+
+Thus ignore the notes from 8feb2018.
+
+** All you have  to do is use  the select feature of okular  to draw a
+   rectangle around the text/graphics to copy:
+
+   * Copy to clipboard text and images to a .png file:
+
+   * You can select one column at a  time from the paper so you end up
+     with a  contiguous text file, in  one column.  That is,  with the
+     text in  the correct reading order  and in one column,  ideal for
+     printing.
+
+   * All you have to do then,  for better readability, is to delineate
+     the paragraphs, by putting a CR  at the end of the paragraph. But
+     I guess  this is not essential,  but I would do  it, doesn't take
+     too long.   Doing one  paragraph at  a time  just takes  too much
+     time.
+   * You can then do  a cntr c j on the whole  buffer or selected text
+     to make it right justifed.
+
+
+View images withing emacs:
+-------------------------
+
+To see the images within emacs put  it in image mode, that is execute,
+iimage-mode.  Execute put in image  mode again, iimage-mode, to revert
+only to text again.
+
+However, you must place the name  of the file say, figure1.jpg, within
+the emacs text file first where you want the image to be displayed.

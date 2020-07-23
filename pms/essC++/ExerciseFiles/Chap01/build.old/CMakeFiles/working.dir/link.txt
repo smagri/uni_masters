@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/working.dir/working.cpp.o  -o working -rdynamic 

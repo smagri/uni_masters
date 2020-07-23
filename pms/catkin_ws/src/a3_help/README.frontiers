@@ -1,0 +1,112 @@
+Frontier Based Exporation and Robot Contorl (project 2)
+-------------------------------------------------------
+
+ie more the robot to the first  frontier, get new ogMap and move robot
+to next frontier,  and the next...till all your  environment is mapped
+with free space vs obstacle.
+
+
+Summary of writen notes:
+-----------------------
+
+POSE:
+position of object and orientation of object relative to some
+coordinate system.
+
+Odometry:
+the use of data from motion sensors to estimate the change in position(delta)
+over time.
+
+See 24/11/2017 page 3:
+for summary of how local_map.cpp, map_to_image.cpp and sample.cpp are connected.
+
+The robot starts a the centre of the ogMap and remains as such as the
+ogMap moves with the robot.
+
+x = distance in metres along the x axis andrelative to the centre of the ogMap.
+y = distance in meters along the y axis relative to the centre of the ogMap.
+theta = the angle in radians about the z axis, known as yaw.
+
+Note that x,y,theta are in SI units.
+
+See paper notes 8/12/2017 page 1 of diagram depicting all these as an
+image.
+
+
+Coding:
+
+Firstly write  code to move  the robot to  a new x,y,theta  positon as
+travelling to frontiers  requires this.  Then integrate  this into the
+requestGoal callback function.
+
+Start mapping the environment by travelling to the first frontier, the
+next and the next...
+
+ 
+ogMap:
+
+FS = Free Space = 255 = white
+UK = Unkown Space = 125 = grey
+O = Occupied/Obsticale = 0 = Black
+FT = Frontier ie boarder of FS and UK, FT is a special case of FS.
+
+ogMap: is the local_map and is in pixel coordinates.
+map_to_image_node: converts local_map to opencv image, a3_help
+subscribes to this image.
+
+
+
+If the laser range finder gives a reading in:
+
+range >= rangeMin
+range <= rangeMax
+
+This means that we know that cells  to rangeMax are FS but beyond this
+it is UK.  We could have an 0 at rangeMax or UK.
+
+If we get a laser reading less  than rangeMax we know that there is an
+O at the end of that vector, ie x,y,theta = 0.
+
+
+obsticle
+
+c-space:
+
+The ogMap has to be enlarged by (robot diamiter)/2 = (robot radius) so
+that the  robot movement on the  ogMap is reduced to  points on lines.
+This is know as c-space.  And thus will not hit obsticals around it in
+diagonal, left, right  movememt on the ogMap.  See  diagram in written
+notes.  See paper notes 30/12/2017 for images and explination of this.
+
+To move the robot you need velocity  and turn rate.  ie turn the robot
+towards the  frontier and  move along  that line till  you get  to the
+frontier.
+
+ogMap is a 2d vector array/grid of numbers.
+
+This start off as a  200x200pixel grid containing numbers to indicated
+FS, UK, O, FT.
+
+
+
+Move robot  with the  pure persuite  algorithim, ie  this is  what the
+equations actually mean:
+
+* point the robot to the goal  location in world coordinates, ie theta
+  about z axis
+* move robot along in a straigth line to the goal in the x,y,plane.
+* it will  not move stedily  on the straingt  line, ie the  angle will
+  wobble as you go and you need to correct for it
+
+Other affects on algorithm:
+
+* the robot never  gets stuck as it is always  on the boarder of
+  FS and UK space???Alen said
+* which  are  FT  cells  on  the  map  constantly  fluctuates  so  you
+  constantly have to update your map/list of frontier nodes.
+
+
+Frontiers(FT's) members  fluctuates during  search and  mapping.  Thus
+you have to constantly update your  2d vector of intensitier and hence
+drawing a new map.
+

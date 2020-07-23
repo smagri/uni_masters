@@ -1,0 +1,63 @@
+StackOverflow:
+
+Covers both c and c++, and any other language really that allos you to
+mess with memory managment.
+
+Summary:
+
+Segmentation fault  is a  specific kind of  error caused  by accessing
+memory that “does not belong to you.”
+
+A segmentation fault occurs when a program attempts to access a memory
+location that  it is not  allowed to access,  or attempts to  access a
+memory location in a way that  is not allowed (for example, attempting
+to  write  to a  read-only  location,  or  to  overwrite part  of  the
+operating system).
+
+These  kinds of errors  are USUALLY CAUSED BY  pointers that are:
+
+* Used before being properly initialised
+* Used after the memory they point to has been realloced or deleted.
+* USED IN  AN INDEXED ARRAY  WHERE THE INDEX  IS OUTSIDE OF  THE ARRAY
+BOUNDS.   THIS IS  GENERALLY ONLY  WHEN YOU'RE  DOING POINTER  MATH ON
+TRADITIONAL ARRAYS OR C-STRINGS, NOT STL / BOOST BASED COLLECTIONS (IN
+C++.)
+
+// So in the case of class Random created for week1's tutorial, it is
+// the last point here and described more fully below.
+
+Out-of-bounds array references
+
+Make sure that you  have not violated the bounds of  any array you are
+using; i.e., you have not subscripted the array with a value less than
+the  index of  its lowest  element or  greater than  the index  of its
+highest element. Valgrind can come  in handy to detect such references
+- you can use valgrind with the --tool=exp-sgcheck flag.
+
+Core dumps:
+A segmentation fault (aka segfault)  is a common condition that causes
+programs to  crash; they are often  associated with a file  named core
+. Segfaults are caused by a program trying to read or write an illegal
+memory location
+
+A core  dump is  a file of  a computer's documented  memory of  when a
+program or computer crashed. The  file consists of the recorded status
+of the working  memory at an explicit time, usually  close to when the
+system crashed or when the program ended atypically.
+
+
+Summary ends.
+
+see for more details and more examples:
+c++ - What is a segmentation fault_ - Stack Overflow.pdf in docs directroy.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Wikipedia:
+A segmentation fault occurs when a program attempts to access a memory
+location that  it is not  allowed to access,  or attempts to  access a
+memory location in a way that  is not allowed (for example, attempting
+to  write  to a  read-only  location,  or  to  overwrite part  of  the
+operating system).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,63 @@
+Important Points:
+If you want to return a variable that is big from a function, make the
+variable is of type static(ie not saved on small stack).  Also, to
+return a a reference it must be a static variable, as automatic
+variables disappear at the end of a function.
+
+
+Transcript:
+
+- A function may return a value back to its caller with a return
+  statement. Here I have a working copy of func.cpp from chapter two
+  of the Exercise Files. In this example, the return type of the
+  function is set to void. This means that the function does not
+  return any values. So let's change that. We'll have it return an
+  int, and it'll take an int as a parameter, so we can do something
+  like return i * 2. And now we will call it with a value so there's
+  something to multiply by two, and we'll go ahead and we'll print the
+  result.
+
+And now when I build and run, you see the return value is 84, which is
+42 times 2. So this 42 gets copied onto the stack and passed to the
+function. And here in this return statement, i times 42 is calculated,
+and then that value, 84, is copied onto the stack and returned to the
+caller. So now we have a function that returns an int value. So just
+like passing values to a function, return values are copied to the
+stack and returned on the stack.
+
+So this means that you cannot return anything very large. If you need
+to return a large object, you need to do so with a reference. So let's
+go ahead and include our string library. This is the standard C++
+string library. We'll just take this out, we're not going to pass it a
+value this time. And we're going to return a constant string
+reference, and I'll need to declare a static string. And if you
+watched the lesson on automatic and static storage, you know that I'm
+doing this because we don't want to store large things in the
+automatic storage space, which is on the stack, and can overflow and
+create security problems.
+
+And so here I'm just going to return s. This is not very functional,
+but it will serve our purpose of demonstration. And now because this
+is returning a C++ string class, and not a C string, we're just going
+to de-reference it and use the C string method, so that we get a C
+string so that we can display our return value. And I'll build and
+run, we see the return value is- This is a static string. You notice
+that I declared the string as static. That's because local storage
+inside a function defaults to automatic, only lasts as long as the
+function is operating, and stores it on the stack.
+
+In order to return a reference, it has to be a reference to something
+in static storage space. And of course, the other reason that
+automatic storage space is stored on the stack, so I wouldn't want to
+store a large string there. And this is declared as constant because
+if I didn't do that, then I could actually change this string in the
+caller, and then the next time this function is called, the string
+would be different. And that's a side effect, and that is just a whole
+mess of problems. You return things from a function using the return
+statement.
+
+You declare the type of the return value in the function definition,
+and by default, things that you return are returned on the stack in
+automatic storage space. So if you want to return something larger,
+you want to use static storage space and a reference.
+

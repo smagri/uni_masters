@@ -1,0 +1,301 @@
+dbg: in laserCallbak() fn
+225.300000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in seperateThread() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+225.400000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+225.500000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+225.600000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+225.700000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+225.800000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+225.900000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+226.000000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+226.100000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+226.200000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+226.300000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in imageCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+226.400000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+226.500000000 Laser: [d,theta,x,y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+226.500000000 Odom: [x,y,yaw]=[2.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125,100]
+dbg: in imageCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+226.600000000 Laser: [d,theta,x,y]=[0.340013,-0.00877547,0.34,-0.00298374]
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+226.700000000 Laser: [d,theta,x,y]=[0.300012,-0.00877547,0.3,-0.00263271]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+226.800000000 Laser: [d,theta,x,y]=[0.300012,-0.00877547,0.3,-0.00263271]
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+226.900000000 Laser: [d,theta,x,y]=[0.300012,-0.00877547,0.3,-0.00263271]
+dbg: in imageCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+227.000000000 Laser: [d,theta,x,y]=[0.300012,-0.00877547,0.3,-0.00263271]
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+227.100000000 Laser: [d,theta,x,y]=[0.300012,-0.00877547,0.3,-0.00263271]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+227.200000000 Laser: [d,theta,x,y]=[0.300012,-0.00877547,0.3,-0.00263271]
+dbg: in laserCallbak() fn
+227.300000000 Laser: [d,theta,x,y]=[0.300012,-0.00877547,0.3,-0.00263271]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+227.400000000 Laser: [d,theta,x,y]=[0.300012,-0.00877547,0.3,-0.00263271]
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+227.500000000 Laser: [d,theta,x,y]=[0.300012,-0.00877547,0.3,-0.00263271]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in imageCallbak() fn
+227.500000000 Odom: [x,y,yaw]=[2.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126,100]
+dbg: in laserCallbak() fn
+227.600000000 Laser: [d,theta,x,y]=[0.240009,-0.00877547,0.24,-0.00210617]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+227.700000000 Laser: [d,theta,x,y]=[0.200008,-0.00877547,0.2,-0.00175514]
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+227.800000000 Laser: [d,theta,x,y]=[0.200008,-0.00877547,0.2,-0.00175514]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+227.900000000 Laser: [d,theta,x,y]=[0.200008,-0.00877547,0.2,-0.00175514]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+228.000000000 Laser: [d,theta,x,y]=[0.200008,-0.00877547,0.2,-0.00175514]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+228.100000000 Laser: [d,theta,x,y]=[0.200008,-0.00877547,0.2,-0.00175514]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+228.200000000 Laser: [d,theta,x,y]=[0.200008,-0.00877547,0.2,-0.00175514]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+228.300000000 Laser: [d,theta,x,y]=[0.200008,-0.00877547,0.2,-0.00175514]
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+228.400000000 Laser: [d,theta,x,y]=[0.200008,-0.00877547,0.2,-0.00175514]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+228.500000000 Laser: [d,theta,x,y]=[0.200008,-0.00877547,0.2,-0.00175514]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+228.500000000 Odom: [x,y,yaw]=[2.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127,100]
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+228.600000000 Laser: [d,theta,x,y]=[0.140005,-0.00877547,0.14,-0.0012286]
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+228.700000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+228.800000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+228.900000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+229.000000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+229.100000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+229.200000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+229.300000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+229.400000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+229.500000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+229.600000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+229.600000000 Odom: [x,y,yaw]=[2.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128,100]
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+229.700000000 Laser: [d,theta,x,y]=[0.0400015,-0.00877547,0.04,-0.000351028]
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+229.800000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+229.900000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+230.000000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+230.100000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+230.200000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+230.300000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+230.400000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+230.500000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+230.600000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+230.600000000 Odom: [x,y,yaw]=[2.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[29,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[129,100]
+dbg: in laserCallbak() fn
+230.700000000 Laser: [d,theta,x,y]=[0.140005,-0.00877547,0.14,-0.0012286]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+230.800000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+230.900000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+231.000000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in imageCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+231.100000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+231.200000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+231.300000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in imageCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+231.400000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+231.500000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallbak() fn
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+231.600000000 Laser: [d,theta,x,y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in imageCallbak() fn
+dbg: in imageCallbak() fn
+231.600000000 Odom: [x,y,yaw]=[3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[30,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[130,100]
+dbg: in laserCallbak() fn
+231.700000000 Laser: [d,theta,x,y]=[0.0400015,-0.00877547,0.04,-0.000351028]
+dbg: in odomCallbak() fn
+dbg: in laserCallbak() fn
+231.800000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+231.900000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+232.000000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+232.100000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+232.200000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn
+dbg: in laserCallbak() fn
+232.300000000 Laser: [d,theta,x,y]=[0,-1.5708,-0,-0]
+dbg: in odomCallbak() fn
+dbg: in imageCallbak() fn

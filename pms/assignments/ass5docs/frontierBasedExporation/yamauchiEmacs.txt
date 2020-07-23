@@ -1,0 +1,667 @@
+A Frontier-Based Approach for Autonomous Exploration
+Brian Yamauchi
+Navy Center for Applied Research in Artificial Intelligence
+Naval Research Laboratory
+Washington, DC 20375-5337
+yamauchi@ aic.nrl.navy.-iil
+
+
+Abstract
+
+We introduce a new approach f o r exploration based on the
+concept of frontiers, regions on the boundaly between
+open space and unexplored space. By moving to new frontiers, a mobile robot can extend its map into new territory
+until the entire environment has been explored. We
+describe a method f o r detecting frontiers in evidence grids
+and navigating to these frontiers. We also introduce a
+technique f o r minimizing specular rejections in evidence
+grids using laser-limited sonar: We have tested this
+approach with a real mobile robot, exploring real-world
+oSJice environments cluttered with a variety of obstacles.
+An advantage of our approach is its ability to explore both
+large open spaces and narrow cluttered spaces, with walls
+and obstacles in arbitrary orientations.
+
+
+1.0 Introduction
+
+While many robots can navigate using maps, few can
+build their own maps. Usually a human must map the territory in advance, providing either the exact locations of
+obstacles (for metric maps) or a graph representing the
+connectivity between open regions (for topological maps).
+As a result, most mobile robots become unable to navigate
+efficiently when placed in unknown environments.
+Exploration has the potential to free robots from this
+limitation. We define exploration to be the act of moving
+through an unknown environment while building a map
+that can be used for subsequent navigation. A good exploration strategy is one that generates a complete or nearly
+complete map in a reasonable amount of time.
+Considerable work has been done in simulated exploration, but these simulations often view the world as a set
+of floorplans. The blueprint view of a typical office building presents a structure that seems simple and straightforward-rectangular
+offices, square conference rooms,
+straight hallways, and right angles everywhere-but the
+
+reality is often quite different. A real mobile robot rnay
+have to navigate through rooms cluttered with furniture,
+where walls may be hidden behind desks and bookshelves.
+A few researchers have implemented exploration systems using real robots. These robots have performed well,
+but only within environments that satisfy certain restrictive
+assumptions. For example, some systems are limited to
+environments that can be explored using wall-following
+[6], while others require that all walls intersect at right
+angles and that these walls be unobstructed and visible to
+the robot [9]. Some indoor environments meet these
+requirements, but many do not.
+Our goal is to develop exploration strategies for the
+complex environments typically found in real office buildings. Our approach is based on the detection of frontiers,
+regions on the border between space known to be open and
+unexplored space. In this paper, we describe how to detect
+frontiers in occupancy grids and how to use frontiers to
+guide exploration. Then we present results in which a real
+mobile robot used frontier-based exploration to map environments containing offices filled with furniture, hallways
+lined with obstacles, narrow passages, and large open
+spaces.
+
+
+2.0 Frontier-Based Exploration
+
+The central question in exploration is: Given what you
+know about the world, where should you move to gain as
+much new information as possible? Initially, you know
+nothing except what you can see from where you’re standing. You want to build a map that describes as much of the
+world as possible, and you want to build this map as
+quickly as possible.
+The central idea behind frontier-based exploration is:
+To gain the most new information about the world, move to
+the boundary between open space and uncharted territory.
+Frontiers are regions on the boundary between open
+space and unexplored space. When a robot moves to a
+
+146
+0-8186-8138-1/97 $10.00 0 1997 IEEE
+frontier, it can see into unexplored space and add the new
+information to its map. As a result, the mapped territory
+expands, pushing back the boundary between the known
+and the unknown. By moving to successive frontiers, the
+robot can constantly increase its knowledge of the world.
+We call this strategy frontier-based exploration.
+If a robot with a perfect map could navigate to a particular point in space, that point is considered accessible.
+All accessible space is contiguous, since a path must exist
+from the robot’s initial position to every accessible point.
+Every such path will be at least partially in mapped territory, since the space around the robot’s initial location is
+mapped at the start. Every path that is partially in
+unknown territory will cross a frontier. When ihe robot
+navigates to that frontier, it will incorporate more of the
+space covered by the path into mapped territory. If thc
+robot does not incorporate the entire path at one time, then
+a new frontier will always exist further along the path, separating the known and unknown segments and providing a
+new destination for exploration.
+In this way, a robot using frontier-based exploration
+will eventually explore all of the accessible space in the
+world-assuming perfect sensors and perfect motor control. A Zcno-like Paradox where the new information contributed by each new frontier decreases geometrically is
+theoretically possible (though highly unlikely), but even in
+such a case, the map will become arbitrary accurate in a
+finite amount of time.
+The real question is how well frontier-based exploration will work using the noisy sensors and imperfect motor
+control of a real robot in the real world. This is the question that this research is intended to address.
+
+
+2.1 Laser-Limited Sonar
+
+We use evidence grids 171 as our spatial representation. Evidence grids are Cartesian grids containing cells,
+and each cell stores the probability that the corresponding
+region in space is occupied. Initially all of the cells are set
+to the prior probability of occupancy, which is a rough
+estimate of the overall probability that any given location
+will be occupied. Each time a sensor reading is obtained
+from the robot’s sonar, infrared, or laser rangefinders, the
+corresponding sensor model is uscd to update the grid.
+The main problem with sonar sensors is that instead
+of bouncing back toward the sensor, the sound pulse can
+hit a flat surface and bounce away from the sensor. Then
+either the sonar senses nothing, or it senses objects that,
+like reflections in a mirror, appear to be much farther away
+than the nearest surface.
+These reflections could cause difficulties for frontierbased exploration, not only due to inaccuracies in the map,
+but also because specular reflections oftcn appear as large
+
+
+open areas surrounded by unknown territory. As a result,
+the robot could waste a great deal of time trying to reach
+non-existent fronticrs.
+Fortunately, we have found a way to substantially
+reduce the effect of specular reflections on evidence grids.
+The standard evidence grid formulation assumes that each
+sensor reading is independent of every other sensor reading. In reality, this is not the case-and we take advantage
+of this with a technique we call laser-limited sonar. We
+use a laser rangefinder in combination with the sonar sensors, and if the laser returns a range reading less than the
+sonar reading, we update the evidence grid as if the sonar
+had returned the range indicated by the laser, in addition to
+marking the cells actually returned by the laser as occupied.
+Why not just use the laser? Because the laser operates
+in a two-dimensional plane, while the sonar projects a
+three-dimensional cone. !So, any object that is above or
+below the laser plane will be invisible to the laser, but still
+detectable by the sonar. Another alternative would be to
+use a three-dimensional laser rangefinder, but at present,
+such devices are too large, too expensive, and too powerhungry to be commonly available on mobile robots.
+Laser-limited sonar isn’t perfect-it is still possible to
+get specular reflections from obstacles undetected by the
+laser-but in practice, we have found that it drastically
+reduces the number of uncorrected specular reflections
+from walls and other large obstacles, which tend to be the
+major sources of errors in evidence grids built using sonar.
+
+
+2.2 Frontier Detection
+
+After an evidence grid has been constructed, each cell
+in the grid is classified by comparing its occupancy probability to the initial (prior) probability assigned to all cells.
+This algorithm is not particularly sensitive to the specific
+value of this prior probability. (A value of 0.5 was used in
+all of the experiments described in this paper.)
+Each cell is placed into one of three classes:
+
+* open: occupancy probability < prior probability
+* unknown: occupancy probability = prior probability
+0
+
+occupied: occupancy probability > prior probability
+
+A process analogous to edge detection and region
+extraction in computer vision is used to find the boundaries between open space and unknown space. Any open
+cell adjacent to an unknown cell is labeled a frontier edge
+cell. Adjacent edge cells are grouped into frontier regions.
+Any frontier region above a certain minimum size
+(roughly the size of the robot) is considered a frontier.
+
+147
+
+.....
+..~..
+.. .. .. .. .. .. . . . . . . . .
+. . . . . . ....
+.. .. .. .. .. .. . . . ..
+....
+....
+....
+....
+
+....
+....
+....
+....
+....
+. . . . . . ....
+....
+....
+... ... ... ... ......
+
+.. .. .. .. .. .. .. .. .... .
+.. .. .. .. .. .. .. .. .. ..
+............
+.........
+..............
+...........
+.............
+
+*. .. ..
+.. .. ..
+...
+I
+
+.
+
+.
+
+...
+...
+
+.........
+.........
+.........
+.........
+.........
+........
+.......
+......
+......
+......
+......
+......
+......
+
+....
+. . ......
+......
+
+. . . ......
+
+.....
+... .......
+...
+...
+........
+...
+.. .. .. ..
+...
+,. .. .. ..........
+.. .. .. .. ..........
+..........
+
+. .. ..
+.. .. .. .. .... . . . . ......
+. . . . . . .. .. .. .. .. .. .. .. .. ....
+...
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+........
+. . . . . . .. .. .. .. .. .. .. .. .. .. .. .. ..
+.......
+.
+.
+.
+.
+.
+.
+.
+........
+. . . . . . ... ... ... .. .. .. .. .. .. .. .........
+.......
+. . . . . ... .. .. .. .. .. .. .. .. .. ..
+. . . . . . ....
+.. ..........
+
+. . ..........
+.....
+..... ....
+..........
+......
+. . . . .. .. .. ..............
+......
+..........
+.....................
+.....................
+.....................
+.................
+.................
+.................
+.................
+..................
+.............
+....
+.............
+......
+.. .. ..
+.............
+.........
+...
+.........
+.........
+...
+............
+...
+...
+...........
+..........
+,. . . . . . . . . ...
+...
+.......
+...
+.......
+...
+.. .. .
+........
+........
+.........
+.......
+...
+.. .. ..
+. .......
+.......
+...
+........
+........
+,. .. ..
+.......
+.. .. ..
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+..................
+..................
+....
+..
+...................
+........
+,..........
+....
+..
+...................
+...................
+.. .. .. .. .. .. .. .. .. .. .. .. ......
+....
+1..
+
+..........
+
+....
+.. ...
+..
+$3
+... ...
+
+...
+.. ..
+.. .
+... ...
+.. ..
+. .
+
+<
+
+. ... ,.....
+
+....
+
+.
+
+.
+
+.. .. .. ..
+.. .. .. ..
+. . . . ..................................
+....
+...............
+.....
+......................................
+
+(a>
+
+ib)
+
+(c>
+
+Figure 1: Frontier detection: (a) evidence grid, (b) frontier edge segments, (c) frontier regions
+
+Figure l a shows an evidence grid built by a real robot
+in a hallway adjacent to two open doors. Figure l b shows
+the frontier edge segments detected in the grid. Figure IC
+shows the regions that are larger than the minimum frontier size. The centroid of each region is marked by
+crosshairs. Frontier 0 and frontier 1 correspond to open
+doorways, while frontier 2 is the unexplored hallway.
+
+
+2.3 Navigating to Frontiers
+
+Once frontiers have been detected within a particular
+evidence grid, the robot attempts to navigate to the nearest
+accessible, unvisited frontier. The path planner uses a
+depth-first search on the grid, starting at the robot's current
+cell and attempting to take the shortest obstacle-free path
+to the cell containing the goal location.
+While the robot moves toward its destination, reactive
+obstacle avoidance behaviors prevent collisions with any
+obstacles not present while the evidence grid was constructed. In a dynamic environment, this is necessary to
+avoid collisions with, for example, people who are walking about. These behaviors allow the robot to steer around
+these obstacles and, as long as the world has not changed
+too drastically, return to follow its path to the destination.
+
+When the robot reaches its destination, that location is
+added to the list of previously visited frontiers. The robot
+performs a 360 degree sensor sweep using laser-limited
+sonar and adds the new information to the evidence grid.
+Then the robot detects frontiers present in the updated grid
+and attempts to navigate to the nearest accessible, unvisited frontier.
+If the robot is unable to make progress toward its destination, then after a certain amount of time, the robot will
+determine that the destination in inaccessible, and its location will be added to the list of inaccessible frontiers. The
+robot will then conduct a sensor sweep, update the evidence grid, and attempt to navigate to the closest remaining accessible, unvisited frontier.
+
+
+3.0 Experiments
+
+Frontier-based exploration has been implemented on a
+Nomad 200 mobile robot equipped with a laser
+rangefinder, sixteen sonar sensors, and sixteen infrared
+sensors. Laser-limited sonar is used to build evidence
+grids, combining the data from the forward-facing sonar
+with the data returned from the (forward-facing) laser
+rangefinder. At extremely short ranges (less than 16
+
+inches), range data from the infrared sensor is used
+instead. All sixteen sonar and infrared sensors are used for
+obstacle avoidance. All computation for frontier-based
+exploration is performed by an offboard Sparcstation 20.
+The process running on the workstation communicates
+with the robot’s onboard 486 processor via a radio ethernet.
+We have conducted experiments using frontier-based
+exploration in two different real-world office environ-
+148
+
+ments. The first environment included a hallway and an
+adjacent office. This environment contained chairs, desks,
+tables, bookcases, filing cabinets, a sofa, a water cooler,
+and boxes of varying size and shape.
+Figure 2 shows the results from a trial in which the
+robot started in the hallway, used frontier-based exploration to detect and enter an open doorway, and then
+explored the adjacent office (23 feet x 20 feet) thoroughly.
+
+
+
+. . ..
+
+Figure 2: Frontier-based exploration of an office
+
+149
+
+. ..
+
+....... ... . ...... .
+
+...
+
+.... ..
+
+. ..
+
+. .
+
+Cells with low occupancy probability are represented
+by white space; cells with unknown occupancy probability
+are represented by small dots; and cells with high occupancy probability are represented by large dots. The
+robot’s position is represented by the black circle with a
+line marking the robot’s orientation. The robot’s path is
+indicated by the black line.
+In Figure 2a, the robot starts in the center of the hallway, builds an evidence grid using laser-limited sonar, and
+detects three frontiers. The robot navigates to the closest
+frontier, Frontier 1. In Figure 2b, the robot has arrived at
+its destination and added the observations from its new
+location to the evidence grid. The robot detects two frontiers and navigates to the closest, Frontier 0. This frontier
+corresponds to an open doorway leading to an unexplored
+office. (Frontiers are numbered based on the current grid,
+so Frontier 2 in Figure 2a is the same as Frontier 1 in
+Figure 2b.) In Figure 2c, the robot has moved through the
+doorway, detecting a new frontier in the center of the room
+at the boundary of its usable sonar range (ten feet).
+Figure 2d shows the robot after it has explored more
+of the office. The robot detects five frontiers in this grid,
+and it navigates to the closest, Frontier 2. In Figure 2e, the
+robot detect six frontiers, but the two closest frontiers are
+inaccessible. Frontier 1 is between a chair and a desk, and
+Frontier 2 is a narrow gap between two desks. In both
+cases, there is insufficient clearance to allow the robot to
+navigate to the frontier, so the robot navigates to the nearest accessible frontier, Frontier 0.
+In Figure 2f, the robot has completed its exploration
+of the office. The total time required was about half an
+hour. An improved version of this system can map the
+same office in about fifteen minutes.
+The two remaining frontiers are the result of specular
+reflections from sonar hitting obstacles that are difficult to
+detect using the laser (from certain angles). Frontier 0 corresponds to a black filing cabinet, and Frontier 1 corresponds to a gray bookshelf. The robot’s path planner
+determines that both of these frontiers are inaccessible, so
+it plans a path to Frontier 2 in the hallway. The robot then
+follows this path out of the office to further explore the
+building.
+Frontier-based exploration has also been tested in a
+large lab/office area. Figure 3 shows the evidence grid
+constructed during this exploration. The lab area, at the
+top of the image, contains large open spaces as well as
+large crates, small boxes, chairs, tables, and bookshelves.
+The office area, at the bottom of the image, is narrow and
+cluttered with chairs, desks, and workstations that require
+precise navigation to avoid collisions with obstacles.
+Although the total area is larger (45 feet x 25 feet), the
+robot was able to map the open spaces quickly, mapping
+the entire environment in about half an hour.
+
+Figure 3: Evidence grid from frontier-based
+exploration of a large labloffice area
+
+
+4.0 Related Work
+
+
+Considerable research has been done in robot mapbuilding, but most of this research has been conducted in
+simulation [4] or with robots that passively observe the
+world as they are moved by a human controller [2] [3].
+However, a few systems for autonomous exploration have
+been implemented on real robots.
+Mataric [6] has developed Toto, a robot that combines
+reactive exploration, using wall-following and obstacleavoidance, with a simple topological path planner. The
+reactive nature of Toto’s exploration limits its ability to
+map environments where wall-following is insufficient to
+explore the complex structure of the world.
+We previously developed a reactivehopological exploration system [lo] for ELDEN. This system had the
+advantage of being able to adapt its topological map to
+changes encountered in the environment. However, it also
+suffered the limitations of a purely reactivc exploration
+strategy, in terms of the size and complexity of the environments that it could explore efficiently.
+Connell [ I ] has developed a simple exploration system to demonstrate his SSS architecture. This system was
+limited to mapping hallways where doors and corridors
+intersect at 90 degree angles.
+Lee [5] has implemented Kuipers Spatial Semantic
+Hierarchy [4] on a real robot. However, this approach also
+
+150
+
+assumes that all walls are parallel or perpendicular to each
+other, and this system has only been tested in a simple
+environment consisting of a three corridors constructed
+from cardboard barriers.
+Thrun and Bucken [9] have developed an exploration
+system that builds a spatial representation that combines
+evidence grids with a topological map. This system has
+been able to explore the network of hallways within a
+large building. While this approach works well within the
+hallway domain, it assumes that all walls are either parallel or perpendicular to each other, and that they do not
+deviate more than 15 degrees from these orientations. An
+implicit assumption is that walls are observable and not
+obstructed by obstacles. These assumptions make this
+approach unsuitable for rooms cluttered with obstacles
+that may be in arbitrary orientations.
+A robot using frontier-based exploration has three
+advantages over the systems described above. First, it can
+explore environments containing both open and cluttered
+spaces. Second, it can explore environments where walls
+and obstacles are in arbitrary orientations. Third, it can
+explore efficiently by moving to the locations that are most
+likely to add new information to the map.
+
+
+5.0 Conclusions and Future Work
+
+In this paper, we have introduced a new approach to
+exploration based on the concept of frontiers, regions on
+the boundary between open space and unexplored space.
+By constantly moving to new frontiers, a mobile robot can
+extend its map into new territory until the entire environment has been explored. We have described and implemented a method for detecting frontiers in evidence grids
+and navigating autonomously to these frontiers. We have
+also introduced a technique for minimizing specular
+reflections in evidence grids using laser-limited sonar. We
+have tested this approach with a real mobile robot, by
+exploring two different real-world office environments
+cluttered with a variety of obstacles.
+We have recently integrated frontier-based exploration with the continuous localization techniques developed
+by Schultz, Adams, and Grefenstette [8]. The integrated
+system is designed to explore large environments while
+maintaining an accurate position estimate. Initial results
+have been very promising, and we are currently conducting experiments to test the performance of the integrated
+system.
+
+
+6.0 Acknowledgments
+
+This work is supported by the Office of Naval
+Research. Alan Schultz and John Grefenstette provided
+useful comments on this research.
+
+References
+Jonathan Connell and Sridhar Mahadevan, “Rapid
+task learning for real robots,” in Robot Learning,
+Jon Connell and Sridhar Mahadevan, Eds., Boston,
+MA: Kluwer Academic, pp. 105-139, 1993.
+Sean Engelson, Pussive Map Learning and Visual
+Place Recognition, Ph.D. Thesis, Department of
+Computer Science, Yale University, 1994.
+David Kortenkamp, Cognitive Maps for Mobile
+Robots: A Representation for Mapping and
+Navigation, Ph.D. ‘Thesis, Electrical Engineering
+and Computer Science Department, University of
+Michigan, 1993.
+Benjamin Kuipers and Yung-Tai Byun, “A robot
+exploration and mapping strategy based on a
+semantic hierarchy of spatial representations,”
+Journal of Robotics and Autonomous Systems, 8:4763, 1991.
+Wan Yik Lee, Spatial Semantic Hierarchy f o r a
+Physical Robot, Ph.D. Thesis, Department of
+Computer Sciences, The University of Texas at
+Austin, 1996.
+Maja Mataric, “Integration of representation into
+IEEE
+goal-driven
+behavior-based
+robots,”
+Transactions on Robotics and Automation,
+8(3):304-312, June 1992.
+Hans Moravec and Albert0 Elfes, “High resolution
+maps from wide angle sonar,” Proceedings of the
+IEEE International Conference on Robotics and
+Automation, St. Louis, MO, 1985, pp. 116-121.
+Alan Schultz, William Adams, and John
+Grefenstette, “Continuous localization using
+evidence grids,” NCARAI Technical Report AIC96-007, Naval Research Laboratory, Washington,
+DC, 1997.
+Sebastian Thrun arid Arno Bucken, “Integrating
+grid-based and topological maps for mobile robot
+navigation,” Proceedings of the Thirteenth National
+Conference on Art@cial Intelligence (AAAI-96),
+Portland, OR, August 1996, pp. 944-950.
+Brian Yamauchi and Randall Beer, “Spatial learning
+for navigation in dynamic environments,” IEEE
+Transactions on Systems, Man, and Cybernetics Part B: Cybernetics, Special Issue on Learning
+Autonomous Robots, 26(3):496-505, June 1996.
+
+
+
+15 1
+
+

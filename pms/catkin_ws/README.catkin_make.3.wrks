@@ -1,0 +1,42 @@
+gyan1: /lu1/smagri/uni/subj/proj30cp/catkin_ws% catkin_make
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+Scanning dependencies of target randomNumTalker
+Scanning dependencies of target randomNumListner
+[  0%] [  0%] [  4%] Built target std_msgs_generate_messages_py
+Built target std_msgs_generate_messages_cpp
+[  8%] Building CXX object randomNum_node/CMakeFiles/randomNumTalker.dir/src/randomNumTalker_node.cpp.o
+Built target node_example_gencfg
+[ 13%] [ 17%] [ 21%] Built target listener
+Built target talker
+Building CXX object randomNum_node/CMakeFiles/randomNumListner.dir/src/randomNumListner_node.cpp.o
+[ 21%] Built target std_msgs_generate_messages_lisp
+[ 21%] Built target _node_example_generate_messages_check_deps_NodeExampleData
+[ 21%] Built target _voice_node_generate_messages_check_deps_voice_node
+[ 26%] [ 39%] [ 39%] Built target node_example_generate_messages_lisp
+Built target node_example_generate_messages_cpp
+Built target node_example_generate_messages_py
+[ 47%] Built target voice_node_generate_messages_py
+[ 52%] [ 56%] Built target voice_node_generate_messages_cpp
+Built target voice_node_generate_messages_lisp
+[ 56%] Built target node_example_generate_messages
+[ 65%] [ 65%] Built target talker.node_example
+Built target voice_node_generate_messages
+[ 73%] [ 91%] [ 91%] Built target listener.node_example
+Built target simpleSub
+Built target simplePub
+Linking CXX executable /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/lib/randomNum_node/randomNumTalker
+Linking CXX executable /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/lib/randomNum_node/randomNumListner
+[ 95%] Built target randomNumListner
+[100%] Built target randomNumTalker
+gyan1: /lu1/smagri/uni/subj/proj30cp/catkin_ws% 

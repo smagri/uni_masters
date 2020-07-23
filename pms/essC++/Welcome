@@ -1,0 +1,27 @@
+Compiling Samples
+
+Download examples form Lynda.com.
+
+Compile working.cpp from Chap01, with CMake:
+command line
+qtCreator/eclipse
+
+
+
+Exercises:
+
+Review of C:
+*pointers
+*arrays
+*functions
+
+
+Use the following material to query your understanding:
+
+Pointers & Reference:
+
+double x = 41012;
+double *ptr;
+
+ptr = &x;
+

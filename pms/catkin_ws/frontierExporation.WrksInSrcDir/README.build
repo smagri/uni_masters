@@ -1,0 +1,52 @@
+smagri@gyan1:~/uni/subj/pms/assignments/ass5/a3_help/build$ cmake ../
+-- Using CATKIN_DEVEL_PREFIX:
+/lu1/smagri/uni/subj/pms/assignments/ass5/a3_help/build/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/indigo
+-- This workspace overlays: /opt/ros/indigo
+-- Found PythonInterp: /usr/bin/python (found version "2.7.6") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR:
+/lu1/smagri/uni/subj/pms/assignments/ass5/a3_help/build/test_results
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found gtest sources under '/usr/src/gtest': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.6.18
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   signals
+--  CMake C++ FLAGS -std=c++0x  -Wno-deprecated
+-Wdeprecated-declarations
+-- Found Eigen3: /usr/include/eigen3 (Required is at least version
+"2.91.0") 
+-- a3_help: 0 messages, 1 services
+CMake Warning at
+/opt/ros/indigo/share/catkin/cmake/catkin_package.cmake:409 (message):
+  catkin_package() include dir
+  '/lu1/smagri/uni/subj/pms/assignments/ass5/a3_help/build/devel/include'
+  should be placed in the devel space instead of the build space
+Call Stack (most recent call first):
+  /opt/ros/indigo/share/catkin/cmake/catkin_package.cmake:98
+  (_catkin_package)
+  CMakeLists.txt:94 (catkin_package)
+
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to:
+-- /lu1/smagri/uni/subj/pms/assignments/ass5/a3_help/build
+smagri@gyan1:~/uni/subj/pms/assignments/ass5/a3_help/build$ emacs -nw
+-- README.build

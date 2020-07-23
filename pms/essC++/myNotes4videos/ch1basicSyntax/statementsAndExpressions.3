@@ -1,0 +1,64 @@
+important points:
+Expression is anything that returns a value, part of a statement or
+the whole statement.
+
+
+Transcript:
+
+- In C++ a statement is a unit of code. Here in Xcode I've opened a
+  working copy of working.cpp. For example, on line 7 you see a
+  statement that calls the library function puts. A statement is
+  always terminated with a semi-colon. Now if I build and run this,
+  you see it displays the Hello World message there in our console. We
+  may think of a statement as being a line of code but if I take all
+  of these different elements of this statement and I put them on
+  separate lines, you'll notice that it still works just fine.
+
+I'll save this and run it. You see, it still does exactly the same
+thing. So technically speaking, a statement is a unit of code. It's
+not necessarily all on one line in C++. But a statement is always
+terminated with a semi-colon. And you see that semi-colon at the end
+there. If I take that semi-colon out and I build and run this, you see
+we get an error message that says it expected a semi-colon after the
+expression. It says expression, but in this case an expression is
+serving the same purpose as a statement.
+
+An expression is anything that returns value whether or not the value
+is used. An expression may be part of a statement or as in this case,
+it may be the entire statement. So let's see some more examples. For
+instance if I declare a variable here and called it an int x and I
+assign a value to it with this x = 42 and now instead of this whole
+puts statement I'm going to use a printf.
+
+I'll say x is %d\n and I'll put an x there as the argument. And so
+what this printf does is it displays the value of x and you notice
+that I have my variable x here as an argument to printf. This %d is a
+token for printf to know that that's where it puts the integer
+value. We'll get into more details about printf later in the course
+but for now, when I build this and run it you notice it says x is 42.
+
+So this expression here on line 8 x = 42 is an assignment
+expression. It's assigning the value 42 to the variable x. This x
+reference here is actually an expression all by itself. It's an
+expression that returns the value of x which is 42 at that point in
+the program execution. In fact, if I were to get rid of this line all
+together I can put that x = 42 as the argument of printf.
+
+It's still an expression that returns an integer which is exactly what
+printf is expecting and when I build and run you see we get exactly
+the same result. Now I can put all kinds of different expressions
+here. I can say 42 x 12 + 14 and when I save and run that, we get the
+value 518. And because of something called operator precedence, that
+again we'll learn more about later, I can put this 12 + 14 in
+parenthesis and now it will add the 12 and 14 to give us 26 and then
+multiply that 26 times 42 and we'll get an entirely different result,
+1092.
+
+So an expression is anything that returns a value. And expressions may
+be part of a statement as in the case of this printf, or it may be an
+entire statement as when we had the assignment on a line by
+itself. Again, we'll go into much more detail later in the course. But
+for now, understand what an expression is and generally what a
+statement is. So we'll go ahead and we'll delete our working copy
+here. We'll run clean, clear my console, and get prepared for the next
+lesson.

@@ -1,0 +1,35 @@
+Code in this directory is seeded from week4/tutorial work, as of 13Apr2017
+--------------------------------------------------------------------------
+
+
+Using  the STL for the Rectangle, Triangle, Circle Classes(from Shape
+Base Class).
+
+Instead of using an array, can we use a vector?
+
+I think this question requires to implemnent vector version and see
+the result???
+
+vector<Shape *ptr2shape> = {&r1, &r2, &r3, &c1, &c2, &c3};
+
+vector<int>::iterator itbegin = vi1.begin();
+vector<int>::iterator itend = vi1.end();
+
+for (it=itbegin; it<itend; it++){
+ // this prints out the contents of the it pointer, which is a pointer
+ // to a Shape.
+ cout << *it << ' ';
+}
+
+
+In shapefuncions.cpp:
+
+...num_shapes = vi1.size() ???
+vi1.at(i)->pointIsInShape(x,y)
+total_area += vi1.at(i)->area()
+
+note: vi1[5] == vi1.at(5)
+
+using range based for loop for -
+for (Shape &i; vi1){
+cout << i << ' ';

@@ -1,0 +1,89 @@
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+[  1%] [  2%] Built target listener
+Built target talker
+[  2%] Built target sensor_msgs_generate_messages_py
+[  3%] [  5%] Built target rosocvTalker
+Built target randomNumListner
+[  7%] [  9%] [ 10%] Built target rosocvListner
+Built target randomNumTalker
+Built target TBK
+[ 10%] Built target sensor_msgs_generate_messages_cpp
+[ 10%] Built target sensor_msgs_generate_messages_lisp
+Scanning dependencies of target map_to_image_node
+[ 14%] [ 15%] [ 15%] Built target sample
+Built target image_publisher
+Built target image_subscriber
+[ 16%] [ 17%] Built target std_msgs_generate_messages_cpp
+Built target random_walk
+[ 18%] Building CXX object a3_help/CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o
+[ 18%] [ 18%] Built target std_msgs_generate_messages_lisp
+[ 18%] Built target std_msgs_generate_messages_py
+Built target geometry_msgs_generate_messages_py
+[ 20%] [ 20%] Built target node_example_gencfg
+Built target _a3_help_generate_messages_check_deps_RequestGoal
+[ 20%] Built target _node_example_generate_messages_check_deps_NodeExampleData
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_PlaceProfile
+[ 20%] [ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_GetPlaceProfile
+Built target _lama_msgs_generate_messages_check_deps_GetLamaObject
+Built target _lama_msgs_generate_messages_check_deps_Crossing
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_InterfaceInfo
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_Frontier
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_LamaObject
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_DescriptorLink
+[ 20%] Built target geometry_msgs_generate_messages_cpp
+[ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_SetPlaceProfile
+[ 20%] Built target geometry_msgs_generate_messages_lisp
+Built target _lama_msgs_generate_messages_check_deps_SetLamaObject
+[ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_SetCrossing
+Built target _lama_msgs_generate_messages_check_deps_GetInterfaceInfo
+[ 22%] Built target a3_help_generate_messages_py
+[ 24%] [ 24%] [ 25%] Built target node_example_generate_messages_cpp
+Built target a3_help_generate_messages_lisp
+Built target a3_help_generate_messages_cpp
+[ 25%] Built target _lama_msgs_generate_messages_check_deps_GetCrossing
+[ 27%] Built target node_example_generate_messages_lisp
+[ 28%] [ 29%] Built target a3_help_generate_messages
+Built target node_example_generate_messages_py
+[ 31%] Built target talker.node_example
+[ 31%] Built target _local_map_generate_messages_check_deps_SaveMap
+[ 31%] Built target _voice_node_generate_messages_check_deps_voice_node
+[ 34%] Built target listener.node_example
+[ 64%] [ 67%] [ 82%] Built target lama_msgs_generate_messages_lisp
+Built target lama_msgs_generate_messages_py
+[ 82%] Built target lama_msgs_generate_messages_cpp
+Built target node_example_generate_messages
+[ 83%] Built target local_map_generate_messages_cpp
+[ 85%] Built target local_map_generate_messages_py
+[ 87%] Built target local_map_generate_messages_lisp
+[ 88%] [ 90%] Built target voice_node_generate_messages_cpp
+Built target voice_node_generate_messages_py
+[ 90%] [ 91%] Built target lama_msgs_generate_messages
+Built target voice_node_generate_messages_lisp
+[ 92%] Built target map_ray_caster
+[ 92%] Built target local_map_generate_messages
+[ 92%] Built target voice_node_generate_messages
+[ 97%] [ 97%] Built target simpleSub
+Built target simplePub
+[100%] Built target local_map
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp: In function ‘int main(int, char**)’:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:325:69: error: invalid use of ‘this’ in non-member function
+    (map_image_provider.imageCallback(&GazeboRetrieve::imageCallback(this));
+                                                                     ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:325:75: error: expected ‘)’ before ‘;’ token
+    (map_image_provider.imageCallback(&GazeboRetrieve::imageCallback(this));
+                                                                           ^
+make[2]: *** [a3_help/CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o] Error 1
+make[1]: *** [a3_help/CMakeFiles/map_to_image_node.dir/all] Error 2
+make: *** [all] Error 2
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+Invoking "make -j8 -l8" failed

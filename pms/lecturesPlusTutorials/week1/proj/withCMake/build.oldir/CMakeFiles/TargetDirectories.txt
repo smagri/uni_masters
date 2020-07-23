@@ -1,0 +1,9 @@
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/build/CMakeFiles/rebuild_cache.dir
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/build/CMakeFiles/edit_cache.dir
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/build/CMakeFiles/rectangle.dir
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/build/CMakeFiles/test.dir
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/build/CMakeFiles/ptrRef.dir
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/build/CMakeFiles/craysMacros.dir
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/build/CMakeFiles/switchCase.dir
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/build/CMakeFiles/cStrings.dir
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/build/CMakeFiles/loops.dir

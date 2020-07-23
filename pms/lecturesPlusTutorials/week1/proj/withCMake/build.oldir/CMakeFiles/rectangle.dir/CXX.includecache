@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/rectangle.cpp
+iostream
+-
+stdio.h
+-
+rectangle.h
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/rectangle.h
+
+/lu1/smagri/uni/subj/pms/lectures/week1/proj/withCMake/rectangle.h
+

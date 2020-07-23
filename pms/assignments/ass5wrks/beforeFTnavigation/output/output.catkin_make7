@@ -1,0 +1,95 @@
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+[  1%] Built target talker
+[  2%] Built target listener
+[  2%] [  4%] Built target randomNumListner
+Built target sensor_msgs_generate_messages_py
+[  5%] [  7%] [ 10%] [ 10%] Built target randomNumTalker
+Built target rosocvListner
+Built target rosocvTalker
+Built target TBK
+[ 10%] Built target sensor_msgs_generate_messages_cpp
+[ 10%] Built target sensor_msgs_generate_messages_lisp
+[ 11%] [ 14%] Scanning dependencies of target map_to_image_node
+Built target image_subscriber
+Built target random_walk
+[ 15%] Built target image_publisher
+[ 17%] [ 17%] Built target sample
+Built target std_msgs_generate_messages_cpp
+[ 18%] [ 18%] Built target std_msgs_generate_messages_py
+Built target node_example_gencfg
+[ 18%] Built target std_msgs_generate_messages_lisp
+[ 20%] [ 20%] [ 20%] Built target _a3_help_generate_messages_check_deps_RequestGoal
+Built target geometry_msgs_generate_messages_py
+Building CXX object a3_help/CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o
+[ 20%] Built target _node_example_generate_messages_check_deps_NodeExampleData
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_GetLamaObject
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_PlaceProfile
+[ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_GetPlaceProfile
+Built target _lama_msgs_generate_messages_check_deps_Crossing
+[ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_Frontier
+Built target _lama_msgs_generate_messages_check_deps_InterfaceInfo
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_LamaObject
+[ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_SetLamaObject
+Built target geometry_msgs_generate_messages_cpp
+[ 20%] [ 20%] [ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_DescriptorLink
+Built target _lama_msgs_generate_messages_check_deps_SetCrossing
+Built target _lama_msgs_generate_messages_check_deps_SetPlaceProfile
+Built target _lama_msgs_generate_messages_check_deps_GetCrossing
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_GetInterfaceInfo
+[ 20%] Built target geometry_msgs_generate_messages_lisp
+[ 23%] [ 23%] [ 24%] Built target a3_help_generate_messages_cpp
+Built target a3_help_generate_messages_py
+Built target a3_help_generate_messages_lisp
+[ 25%] Built target node_example_generate_messages_cpp
+[ 27%] Built target node_example_generate_messages_lisp
+[ 29%] Built target node_example_generate_messages_py
+[ 49%] [ 62%] Built target lama_msgs_generate_messages_py
+Built target lama_msgs_generate_messages_cpp
+[ 77%] [ 77%] Built target lama_msgs_generate_messages_lisp
+[ 77%] Built target a3_help_generate_messages
+Built target _local_map_generate_messages_check_deps_SaveMap
+[ 77%] Built target _voice_node_generate_messages_check_deps_voice_node
+[ 77%] Built target node_example_generate_messages
+[ 80%] Built target listener.node_example
+[ 80%] [ 82%] Built target lama_msgs_generate_messages
+Built target talker.node_example
+[ 83%] Built target local_map_generate_messages_cpp
+[ 84%] Built target map_ray_caster
+[ 87%] [ 88%] Built target local_map_generate_messages_py
+Built target local_map_generate_messages_lisp
+[ 89%] Built target voice_node_generate_messages_cpp
+[ 91%] Built target voice_node_generate_messages_py
+[ 92%] Built target voice_node_generate_messages_lisp
+[ 92%] Built target local_map_generate_messages
+[ 97%] [ 97%] Built target local_map
+Built target simplePub
+[100%] [100%] Built target simpleSub
+Built target voice_node_generate_messages
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp: In function ‘int main(int, char**)’:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:325:79: error: no matching function for call to ‘GazeboRetrieve::imageCallback(image_transport::Subscriber&)’
+    (map_image_provider.imageCallback(&GazeboRetrieve::imageCallback(image_sub_));
+                                                                               ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:325:79: note: candidate is:
+In file included from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:47:0:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/include/a3_help/GazeboRetrieve.h:44:8: note: void GazeboRetrieve::imageCallback(const ImageConstPtr&)
+   void imageCallback(const sensor_msgs::ImageConstPtr& msg);
+        ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/include/a3_help/GazeboRetrieve.h:44:8: note:   no known conversion for argument 1 from ‘image_transport::Subscriber’ to ‘const ImageConstPtr& {aka const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >&}’
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:325:81: error: expected ‘)’ before ‘;’ token
+    (map_image_provider.imageCallback(&GazeboRetrieve::imageCallback(image_sub_));
+                                                                                 ^
+make[2]: *** [a3_help/CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o] Error 1
+make[1]: *** [a3_help/CMakeFiles/map_to_image_node.dir/all] Error 2
+make: *** [all] Error 2
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+Invoking "make -j8 -l8" failed

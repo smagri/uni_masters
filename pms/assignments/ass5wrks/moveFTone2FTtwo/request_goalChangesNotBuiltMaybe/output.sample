@@ -1,0 +1,80 @@
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+[  4%] [  4%] [  4%] Built target randomNumListner
+Built target listener
+Built target TBK
+[  7%] [  8%] Built target randomNumTalker
+[  9%] Built target talker
+[ 10%] Built target rosocvListner
+Built target rosocvTalker
+[ 10%] Built target sensor_msgs_generate_messages_cpp
+[ 10%] [ 10%] Scanning dependencies of target sample
+Built target sensor_msgs_generate_messages_lisp
+Built target sensor_msgs_generate_messages_py
+[ 11%] Built target image_publisher
+[ 12%] Built target image_subscriber
+[ 14%] [ 15%] Built target map_to_image_node
+[ 15%] Built target _a3_help_generate_messages_check_deps_RequestGoal
+[ 16%] Building CXX object a3_help/CMakeFiles/sample.dir/src/sample.cpp.o
+Built target node_example_gencfg
+[ 17%] [ 17%] [ 17%] [ 18%] Built target std_msgs_generate_messages_py
+Built target std_msgs_generate_messages_lisp
+Built target std_msgs_generate_messages_cpp
+Built target random_walk
+[ 18%] Built target geometry_msgs_generate_messages_py
+[ 18%] Built target _node_example_generate_messages_check_deps_NodeExampleData
+[ 18%] [ 18%] Built target _lama_msgs_generate_messages_check_deps_DescriptorLink
+Built target _lama_msgs_generate_messages_check_deps_PlaceProfile
+[ 18%] Built target _lama_msgs_generate_messages_check_deps_GetPlaceProfile
+[ 18%] Built target _lama_msgs_generate_messages_check_deps_GetCrossing
+[ 18%] Built target _lama_msgs_generate_messages_check_deps_SetLamaObject
+[ 18%] Built target _lama_msgs_generate_messages_check_deps_GetLamaObject
+[ 18%] Built target _lama_msgs_generate_messages_check_deps_SetPlaceProfile
+[ 18%] [ 18%] Built target _lama_msgs_generate_messages_check_deps_LamaObject
+Built target _lama_msgs_generate_messages_check_deps_InterfaceInfo
+[ 18%] [ 18%] Built target _lama_msgs_generate_messages_check_deps_SetCrossing
+Built target _lama_msgs_generate_messages_check_deps_GetInterfaceInfo
+[ 18%] Built target geometry_msgs_generate_messages_cpp
+[ 18%] Built target _lama_msgs_generate_messages_check_deps_Frontier
+[ 18%] Built target geometry_msgs_generate_messages_lisp
+[ 20%] [ 21%] Built target a3_help_generate_messages_cpp
+Built target a3_help_generate_messages_lisp
+[ 21%] Built target _lama_msgs_generate_messages_check_deps_Crossing
+[ 23%] Built target a3_help_generate_messages_py
+[ 25%] Built target node_example_generate_messages_py
+[ 27%] Built target node_example_generate_messages_cpp
+[ 28%] Built target node_example_generate_messages_lisp
+[ 40%] [ 45%] [ 45%] [ 61%] Built target lama_msgs_generate_messages_py
+Built target _voice_node_generate_messages_check_deps_voice_node
+Built target _local_map_generate_messages_check_deps_SaveMap
+Built target lama_msgs_generate_messages_cpp
+[ 76%] Built target lama_msgs_generate_messages_lisp
+[ 76%] Built target a3_help_generate_messages
+[ 76%] Built target node_example_generate_messages
+[ 78%] [ 81%] [ 82%] Built target voice_node_generate_messages_cpp
+Built target voice_node_generate_messages_py
+Built target listener.node_example
+[ 84%] Built target talker.node_example
+[ 85%] Built target voice_node_generate_messages_lisp
+[ 87%] [ 87%] Built target map_ray_caster
+Built target lama_msgs_generate_messages
+[ 90%] [ 90%] Built target local_map_generate_messages_cpp
+Built target local_map_generate_messages_py
+[ 91%] Built target local_map_generate_messages_lisp
+[ 94%] Built target simplePub
+[ 96%] Built target simpleSub
+[ 96%] Built target voice_node_generate_messages
+[ 96%] Built target local_map_generate_messages
+[ 98%] Built target local_map
+Linking CXX executable /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/lib/a3_help/sample
+[100%] Built target sample
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####

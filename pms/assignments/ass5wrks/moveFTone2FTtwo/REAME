@@ -1,0 +1,19 @@
+20jul2018
+
+detectFrontiers.request_goal.fork/
+
+includes the detectFrontiers(), algorithim may still be incorrect:
+
+nedd to test for: !FS !0 and !FT foreach, cell above, cell below, cell
+left, cell right, before the following line.
+
+if ((image.at<uchar>(y, x)!=FS) && (image.at<uchar>(y, x)!=O)){
+
+
+
+includes request_goal code that needs to be fixed and debugged, I
+think it needs,
+
+touch RequestGoal.cpp when a change to RequestGoal.h is made, to inact
+changes of RequestGoal.h
+

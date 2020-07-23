@@ -1,0 +1,12 @@
+10jul2018
+
+
+sample.cpp as sample.cpp.moveFT1toFT2codeSkeleton  still builds ok and
+runs  ok,  compared  to  previous  sample.cpp  that  didn't  have  the
+commented code for moving from FT1 to FT1 in it.
+
+12jul2018
+
+Here the comments for moving the robot to the next FT node fork from
+the next sample.cpp.  Not sure which is correct.
+

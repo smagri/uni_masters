@@ -1,0 +1,65 @@
+Transcript:
+
+- When a header file is included by other header files there is a
+  possibility that it can be included more than once and this can
+  create errors. Here is a simple example. Here I have a working copy
+  of working.cpp with includeA.h and includeB.h from Chapter Three of
+  the exercise files. If I come along here in my working.cpp and I say
+  #include "includeA.h" and I'm just going to move this up here where
+  it belongs. And then I'll do another one, #include "header"
+  "includeB.h" and let's take a look at what's in these.
+
+It's just simple structure in each of them, one is called structA and
+one is called structB. This is a common use of headers. And now when I
+build and run, you see that it works just fine. On the other hand, if
+includeA were to also include includeB. Now, when I try to build and
+run, you see I get an error. It says "Build Failed," and if I click on
+this little thing up here, it says, "Semantic Issue Redfinition of
+structB," and that's because includeB is getting included twice.
+
+It's getting included once here and it's also getting included
+here. So, that's a problem. The common solution to this problem,
+because it actually happens a lot where a file can included more than
+once, especially by standard headers. The common solution to this
+problem is called an include guard. An include guard looks like
+this. If I come in here to includeB and I say #ifdef, put one
+underscore in front of it and I'll say _INCLUDEB_H and it's actually
+#ifndef _INCLUDEB_H then we have all this stuff and we say #endif.
+
+Up here we also go and define _INCLUDEB_H and I'll oftentimes put a
+little comment down here. So, this is called an include guard. The
+first times through everything from here to here is processed because
+_INCLUDEB_H is not defined. But the second time through _INCLUDEB_H is
+already defined and so all of this will be ignored. So, that should
+work, and I can come down here, and I can build and run and everything
+works fine even though includeA is including includeB and we have
+includeB included here.
+
+So, this is called an include guard, and you'll see this very commonly
+in a lot of header files. In fact, I'm just gonna go ahead here and
+put the same includeA like this and we'll see this all just still
+works fine. Now, there's also a non-standard solution that's worth
+mentioning. I don't actually see it in the wild very much. It's a
+easier solution. It's not standard but it is supported by most modern
+compilers. And this is a pragma directive...
+
+called include once and so here instead of all of this... #pragma once
+like that. And that actually also solves a problem. I can build and
+run and you see that it works and there's no error here. So, like I
+said, this is obviously much easier. It's not standard but it's
+supported by most compilers. Well, one disadvantage is that it may
+fooled by symbolic links. In most cases, the implementation seemed to
+be smart enough to mitigate that.
+
+And of course the other disadvantage is it may not be supported by all
+compilers. The pragma directive that you see here at the beginning
+#pragma, this is a special preview processor director for non-portable
+and compiler specific features. In general, pragma directives are not
+standardized. And so in fact, this is one that is not standardized in
+the C++ standard. So, this is a common problem with a common solution:
+the include guard like you see here.
+
+You'll see the include guard solution most often, although the #pragma
+once solution is more succinct and although it's not standardized, it
+is widely supported.
+

@@ -1,0 +1,60 @@
+Linus command pdftotext, converts .pdf file into text file:
+
+pdftotext yamauchi.pdf,
+
+produces yamaucchi.txt file which is hard to read as pragraphs interlieved
+
+
+pdftotext -layout yamauchi.txt >&! yamauchi.-layout.txt
+
+creates yamauchi.-layout.txt and maintains the pdf structure, thus easy to read
+
+
+Use yamauchi.-layout.txt as input to cut to produce only one column of
+text with paragraphs in the correct order.
+
+* method 1:
+
+cut -c1-70 yamauchi.-layout.txt >&! yamauchi.-layout.c1-70.txt
+
+However the end character, 70 here needs to be determined emperically,
+takes time
+
+Also, this grabs from character 71 to EOF
+
+cut -c71- yamauchi.-layout.txt > & ! yamauchi.-layout.c71-.txt
+
+-----------------------------------------------------------------------------------------
+This stuff doesn't seem to work anymore...=> IGNORE
+
+
+
+Linux command, pr(cant make this work anymore)
+
+pr [optn].. [file]...
+
+Paginate or columnate text files for printing.
+
+pr file.txt
+pr file.txt >&! file.pr.txt
+
+
+Linux command, cut:
+
+-c, --characters=LIST select only these characters
+
+cut -c1-80 file.txt <&! file.oneColumn.txt
+
+in our example=>cut -c1-80 yamauchi.txt > &! yamauchi.c1-80.txt
+
+
+(cant seem to make this work anymore)
+-f, --fields=LIST select only these fields;
+                  also, print any line that contains no
+                  delimiter character, unless -s.
+
+cut -f1-80 file.txt <&! file.oneColumn.txt
+
+
+
+

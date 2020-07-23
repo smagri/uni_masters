@@ -1,0 +1,65 @@
+Important Points:
+
+
+
+
+Transcript:
+
+- One common use for the preprocessor is to define
+  constants. Preprocessor constants are not actual constants, although
+  they're commonly called constants, and are used for that
+  purpose. Strictly speaking, they're macros. They're commonly used as
+  constants, but there are some important distinctions. So here I have
+  a working copy of working.cpp from chapter 3 of the Exercise
+  Files. Preprocessor constants are typically defined like this. So I
+  start with the pound sign, and that's the indication that this is a
+  preprocessor directive.
+
+And the pound sign must be on the very first position in the line. If
+I indent it, it won't work. Many preprocessors won't even allow it
+like this, it won't even work if it's indented. So it always needs to
+be on the very first position. And that's followed by the word define,
+and the symbol and what it expands to. Now the word define can often
+be indented. That'll work with most modern preprocessors. There are
+still a few obscure ones that won't allow that. But typically it's
+done like this, pound define, and then the symbol and what it expands
+to.
+
+So when the preprocessor encounters this symbol, for example, if I
+come down here and I make a printf, when the preprocessor encounters
+this symbol, it actually replaces it with the literal value before the
+compiler ever gets to it. And so when I build and run, I see the value
+is one. But this over here, this is not a variable. I can't get its
+address, it won't show up in the debugger, I can't use a pointer with
+it. It gets replaced with a literal number one before the compiler
+ever gets to it.
+
+Now traditionally preprocessor constants are defined using all capital
+letters. This is a very widely kept tradition. I strongly suggest that
+you use it, too. Because these symbols have their own distinct
+properties, it's useful to make them easy to distinguish from your
+other symbols in your code. You'll also notice that there's no
+semi-colon at the end of the preprocessor directive, and this is true
+of all preprocessor directives because that's not actually the C++, or
+even the C language. That is the preprocessor language.
+
+We can use it for any type of text actually. It doesn't even have to
+be HELLO_STRING, and give it a string, and if I come down here, and
+I'll just give it another printf, the same thing happens. This symbol
+here gets replaced by the preprocessor with all of this text that's
+after the symbol and the define directive. So these are very different
+from constants, and a C++ constant looks like this.
+
+And when I use that symbol instead, that actually does show up in the
+symbol table, it will be seen by the debugger, I can get its address,
+I can use a pointer with it, and you can see that it works exactly the
+same. So under many circumstances, this is a much more preferable way
+to use a constant, and it's actually more common in C++ to do it this
+way than it is with the preprocessor macros. Although you'll still see
+a lot of preprocessor macros in C++.
+
+So preprocessor macros are often used to define constants in C++. It's
+important to realize that they are not constants, rather they're
+simple text replacements. It's often better to use variables declared
+with the constant keyword.
+

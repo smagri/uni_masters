@@ -1,0 +1,16 @@
+WARNING: package [a3_help] had an invalid rosdoc config
+Warning: tag INCLUDE_PATH: include path `$INCLUDE_PATH' does not exist
+warning: source $INCLUDE_PATH is not a readable file or directory... skipping.
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/current/RequestGoal.cpp:9: warning: documented symbol `bool a3_help::RequestGoal::a3_help::RequestGoal' was not declared or defined.
+Documenting a catkin package
+Documenting a3_help located here: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help
+{'doxygen': {'builder': 'doxygen', 'output_dir': '.'}}
+{'builder': 'doxygen', 'output_dir': '.'}
+Generated the following tagfile string 
+doxygen-ating a3_help [doxygen /tmp/tmp_6wclB]
+[]
+[('RequestGoal', '/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/srv/RequestGoal.srv')]
+[]
+srv: a3_help/RequestGoal
+copying /opt/ros/indigo/lib/python2.7/dist-packages/rosdoc_lite/templates/msg-styles.css to doc/html/msg-styles.css
+Done documenting a3_help you can find your documentation here: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/doc

@@ -1,0 +1,18 @@
+6july2018
+
+Howto interperate globalMap.png:
+
+This is the "global" map of the dummy waypoints, with the fist pass of
+ogMap2globalMap().
+
+If you rotate the ogMap drawn  in, 4/7/2018 page one notes, 90 degrees
+you orient the global  map with the ogMap, based on  the robot pose at
+it's start position, namely (x,y)=(0,0) and (px,py)=(100,100).
+
+Then looking at this diagram it is clear to see that the waypoints are
+drawn  correctly.  Given  the  robot  pointing at  90  degrees in  its
+intinitial pose relative  to the 0 degrees along the  x-axis.  This is
+confirmed by looking  at rviz with the robot in  its initial pose.  It
+is also  confirmed by the  initial laserCallback() reading,  note that
+these are all approximate or rounded up values for simplicity:
+Laser:: ... [d, thetaDeg, x, y] = [1.6, 90, 0 , 0]

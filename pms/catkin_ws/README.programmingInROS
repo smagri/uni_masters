@@ -1,0 +1,133 @@
+PUBLISHER/SUBSCRIBER NODES:
+-----------------------------------------------------------------------------------------
+
+rostopic list
+
+* lists the current active topics
+
+/odom, is where the robot is relative to the start position
+
+Format is:
+/packageName/type, eg nav_msg/Odometry
+
+which directly relates to :
+ros::subscriber sub = nh.subscribe("odom" 10, OdmCallback)
+
+where:
+odom is topic
+10=size for incomming msgs
+OdmCallback, callback for subbscriber object sub.
+
+a3_help:
+* void odomCallback(const nav_msgs::OdometryConstPtr& msg)
+  * package name is: nav_msgs
+  * type/topic is: Odometry
+
+
+Good PUBLISHER/SUBSCRIBER summary:
+---------------------------------
+
+voce_node in simplePub.cpp, simple publisher node:
+
+namespace voice_node{
+
+voiceSimplePub::voiceSimplePub(ros::NodeHandle nh){
+
+node name: vpoceSmplePub
+default constructor voiceSimplePub
+
+...
+
+* voiceNamePubObj = nh.advertise<std_msgs::String>("voiceNameTopic",nodeBufSize);
+  * package name is: std_msgs
+  * type, or defines a: String
+  * topic name is: voiceNameTopic
+
+* timerObj = nh.createTimer(ros::Duration(1/rate), &voiceSimplePub::timerCallback, this);
+  * node name is: voiceSimplePub
+  * accociated with callback named: timerCallback
+}
+
+
+void voiceSimplePub::timerCallback(const ros::TimerEvent& event){
+
+ROS_INFO(...txt.data..);
+broadcasts to world, rosout and subscribers to the topic.
+
+...
+ voiceName = "hello" string
+ voiceNamePubObj.publish(voiceName);
+ 
+}
+
+
+
+voice_node in simpleSub, simple subscriber node.cpp:
+
+namespace voice_node{
+
+voiceSimpleSub::voiceSimpleSub(ros::NodeHandle nh){
+
+node name is: voiceSimpleSub
+fn is: voiceSimpleSub or constructor
+
+...
+
+voiceNameSubObj = nh.subscribe("voiceNameTopic", nodeBufSize,
+		 &voiceSimpleSub::voiceNameTopicCallback, this);
+		 
+topic: voiceNameTopic
+node: voiceSimpeSub
+registers callback fn as: voiceNameTopicCallback
+
+}
+
+
+define the callback fn:
+
+void voiceSimpleSub::
+  voiceNameTopicCallback(const std_msgs::String::ConstPtr& msg){
+
+node: voiceSimpleSub
+callback: voiceNameTopicCallback
+package name: std_msgs
+type or defines a: String
+
+ROS_INFO eg:
+topic name:std_msgs
+    ROS_INFO("voiceNameTcbk: with voice: [%s]", msg->data.c_str());
+
+# output the string/voice/voiceName comming through the voiceNameTopic
+#
+    voice = msg->data.c_str();
+        cout << "voiceNameTcbk: dbg: voice = " << voice << "\n";
+ }
+
+
+simplePub_node.cpp:
+
+main...{
+
+...
+
+voice_node::voiceSimplePub node(nh);
+* voice_node is the namespace.
+* voiceSimplePub is the node name.
+
+
+Note: ROS handles the sheduling of all the callback functions once the
+      node executes the following command:
+ros::spin();
+
+...
+}
+
+
+rostopic list ***************************************************************************
+
+rostopic show std_msgs/Float32.msg
+ * package name is: std_msgs
+ * type/topic is: Float32
+ * .h or header file: .msg
+
+***END **********************************************************************************

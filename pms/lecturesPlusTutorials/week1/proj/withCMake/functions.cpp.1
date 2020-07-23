@@ -1,0 +1,76 @@
+#include <cstdio>
+
+
+// declare fn's if used before they are defined
+double fnOne(double value);
+
+
+
+int main(){
+
+  double value = 10.0;
+  
+  fprintf(stderr, "value is=%f\n", value);
+  fprintf(stderr, "value^2=%f\n", (fnOne(value))); // bit dodgy??
+//  fprintf(stderr, "value^3=%f\n", (fnOne(value))); // bit dodgy??
+  
+
+}
+
+
+
+// Function that accepts a double value as a parameter and:
+double fnOne(double value){
+
+  // returns a square value
+    return (value * value);
+};
+
+
+// Function that accepts a double value as a parameter and:
+//
+// Use reference to sqrValue instead of c pointer ie double *sqrPtr;
+bool fnTwo(double value, double &sqrValue){
+
+  // Returns a bool value if double is > 0, and the square value
+  // instead of the initial passed value.
+
+  sqrValue = fnOne(value);
+
+  if (value > 0){
+    return true;
+  }
+  else{
+    return false;
+  }
+
+};
+
+
+// Function that accepts a double value as a parameter and:
+//
+// Use reference to sqrValue instead of c pointer ie double *sqrPtr;
+bool fnThree(double value,
+	     double &sqrValue, double &cubeValue,
+	     double &valuePlusOne){
+
+  // Returns a bool value if double is > 0, and the square value
+  // instead of the initial passed value.
+
+  sqrValue = fnOne(value);
+  cubeValue = (sqrValue * value);
+
+  valuePlusOne = value++;
+  
+
+  if (value > 0){
+    return true;
+  }
+  else{
+    return false;
+  }
+
+};
+
+
+

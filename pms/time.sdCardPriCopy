@@ -1,0 +1,9 @@
+smagri@gyan1:/sdCardPri/pms%time cp -a ~smagri/uni/subj/pms
+./15apr2017
+0.180u 3.028s 1:44.15 3.0%	0+0k 1808+1155144io 0pf+0w
+smagri@gyan1:/sdCardPri/pms%cd
+smagri@gyan1:/lu1/smagri%time umount /sd
+sdCard2ndry/ sdCardPri/
+smagri@gyan1:/lu1/smagri%time umount /sdCardPri
+0.008u 0.292s 4:14.62 0.1%    0+0k 1068+8io 0pf+0w
+smagri@gyan1:/lu1/smagri%

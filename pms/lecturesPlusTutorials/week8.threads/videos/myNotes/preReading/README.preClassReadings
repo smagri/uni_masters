@@ -1,0 +1,28 @@
+Material for Threading and Synchronisation pre-class readings
+
+Process vs Thread:
+
+Process = program + state of _all_ thread excutiong in the program.
+
+Different threads can compete for the same resources, ie data,
+structures ...etc
+
+Like:
+
+A newspaper = program + all threads
+Wife - reads sports section = threada
+Son - read business section = thread2
+You - reads general news section = thread3
+
+
+
+C++11 Threading Introduction:
+
+Concurrent processing:
+
+1) multiprocessing, only on thread per process, process1 to process2
+comms via ipc control(eg files, pipes, message queues)
+
+2) multithreading, each process contains two or more threads.
+threads communicate two each other using shared memeory.
+

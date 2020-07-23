@@ -1,0 +1,2967 @@
+dbg: in laserCallback() fn
+99.000000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in seperateThread() fn
+dbg: in laserCallback() fn
+99.100000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+99.200000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+99.300000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.129714020, 99.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.129878205, 99.300000000]: client call to service SUCCEDED[0m
+99.300000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.143777489, 99.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.143922452, 99.300000000]: client call to service SUCCEDED[0m
+99.300000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.157335447, 99.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.157473732, 99.300000000]: client call to service SUCCEDED[0m
+99.300000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.171102122, 99.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.171226389, 99.300000000]: client call to service SUCCEDED[0m
+99.300000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.184576944, 99.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.184733585, 99.300000000]: client call to service SUCCEDED[0m
+99.300000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.198314204, 99.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.198424314, 99.300000000]: client call to service SUCCEDED[0m
+99.300000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.212105767, 99.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.212244851, 99.300000000]: client call to service SUCCEDED[0m
+99.300000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in laserCallback() fn
+99.400000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.226035312, 99.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.226160610, 99.400000000]: client call to service SUCCEDED[0m
+99.400000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.239593656, 99.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.239707030, 99.400000000]: client call to service SUCCEDED[0m
+99.400000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.253054855, 99.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.253164953, 99.400000000]: client call to service SUCCEDED[0m
+99.400000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.266489029, 99.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.266599975, 99.400000000]: client call to service SUCCEDED[0m
+99.400000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.279956254, 99.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.280093906, 99.400000000]: client call to service SUCCEDED[0m
+99.400000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.293431016, 99.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.293577201, 99.400000000]: client call to service SUCCEDED[0m
+99.400000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.306894780, 99.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.307021020, 99.400000000]: client call to service SUCCEDED[0m
+99.400000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in laserCallback() fn
+99.500000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.320385165, 99.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.320514697, 99.500000000]: client call to service SUCCEDED[0m
+99.400000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.334266069, 99.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.334377435, 99.500000000]: client call to service SUCCEDED[0m
+99.500000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.348599384, 99.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.348727812, 99.500000000]: client call to service SUCCEDED[0m
+99.500000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.362090851, 99.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.362224363, 99.500000000]: client call to service SUCCEDED[0m
+99.500000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.375392420, 99.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.375518425, 99.500000000]: client call to service SUCCEDED[0m
+99.500000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.388734570, 99.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.388860236, 99.500000000]: client call to service SUCCEDED[0m
+99.500000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.402067182, 99.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.402242098, 99.500000000]: client call to service SUCCEDED[0m
+99.500000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.415411799, 99.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.415990534, 99.500000000]: client call to service SUCCEDED[0m
+99.500000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in laserCallback() fn
+99.600000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.430439900, 99.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.430561962, 99.600000000]: client call to service SUCCEDED[0m
+99.600000000 Odom: [x,y,yaw]=[0.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.443851047, 99.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.443968822, 99.600000000]: client call to service SUCCEDED[0m
+99.600000000 Odom: [x,y,yaw]=[0.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.457520581, 99.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.457623251, 99.600000000]: client call to service SUCCEDED[0m
+99.600000000 Odom: [x,y,yaw]=[0.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.470737050, 99.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.470827820, 99.600000000]: client call to service SUCCEDED[0m
+99.600000000 Odom: [x,y,yaw]=[0.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.484016464, 99.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.484162201, 99.600000000]: client call to service SUCCEDED[0m
+99.600000000 Odom: [x,y,yaw]=[0.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.497230959, 99.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.497331610, 99.600000000]: client call to service SUCCEDED[0m
+99.600000000 Odom: [x,y,yaw]=[0.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.511047040, 99.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.511152676, 99.600000000]: client call to service SUCCEDED[0m
+99.600000000 Odom: [x,y,yaw]=[0.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100.5,100]
+dbg: in laserCallback() fn
+99.700000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.525811538, 99.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.525924968, 99.700000000]: client call to service SUCCEDED[0m
+99.700000000 Odom: [x,y,yaw]=[0.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.539429209, 99.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.539611292, 99.700000000]: client call to service SUCCEDED[0m
+99.700000000 Odom: [x,y,yaw]=[0.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.552981002, 99.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.553084785, 99.700000000]: client call to service SUCCEDED[0m
+99.700000000 Odom: [x,y,yaw]=[0.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.566648537, 99.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.566758144, 99.700000000]: client call to service SUCCEDED[0m
+99.700000000 Odom: [x,y,yaw]=[0.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.580381418, 99.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.580507450, 99.700000000]: client call to service SUCCEDED[0m
+99.700000000 Odom: [x,y,yaw]=[0.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.593708374, 99.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.593820306, 99.700000000]: client call to service SUCCEDED[0m
+99.700000000 Odom: [x,y,yaw]=[0.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.607077484, 99.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.607204208, 99.700000000]: client call to service SUCCEDED[0m
+99.700000000 Odom: [x,y,yaw]=[0.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101,100]
+dbg: in laserCallback() fn
+99.800000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.620452190, 99.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.620585185, 99.800000000]: client call to service SUCCEDED[0m
+99.700000000 Odom: [x,y,yaw]=[0.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.634026067, 99.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.634176699, 99.800000000]: client call to service SUCCEDED[0m
+99.800000000 Odom: [x,y,yaw]=[0.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.647725896, 99.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.647859864, 99.800000000]: client call to service SUCCEDED[0m
+99.800000000 Odom: [x,y,yaw]=[0.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.661276411, 99.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.661382339, 99.800000000]: client call to service SUCCEDED[0m
+99.800000000 Odom: [x,y,yaw]=[0.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.674544772, 99.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.674667252, 99.800000000]: client call to service SUCCEDED[0m
+99.800000000 Odom: [x,y,yaw]=[0.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.688015635, 99.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.688131639, 99.800000000]: client call to service SUCCEDED[0m
+99.800000000 Odom: [x,y,yaw]=[0.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.702601174, 99.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.702724688, 99.800000000]: client call to service SUCCEDED[0m
+99.800000000 Odom: [x,y,yaw]=[0.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101.5,100]
+dbg: in laserCallback() fn
+99.900000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.716910580, 99.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.717005760, 99.900000000]: client call to service SUCCEDED[0m
+99.800000000 Odom: [x,y,yaw]=[0.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[1.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[101.5,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.731894717, 99.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.732000022, 99.900000000]: client call to service SUCCEDED[0m
+99.900000000 Odom: [x,y,yaw]=[0.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.745336316, 99.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.745459979, 99.900000000]: client call to service SUCCEDED[0m
+99.900000000 Odom: [x,y,yaw]=[0.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.758513105, 99.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.758633877, 99.900000000]: client call to service SUCCEDED[0m
+99.900000000 Odom: [x,y,yaw]=[0.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.771933823, 99.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.772029941, 99.900000000]: client call to service SUCCEDED[0m
+99.900000000 Odom: [x,y,yaw]=[0.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.784992497, 99.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.785080128, 99.900000000]: client call to service SUCCEDED[0m
+99.900000000 Odom: [x,y,yaw]=[0.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.797439663, 99.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.797532413, 99.900000000]: client call to service SUCCEDED[0m
+99.900000000 Odom: [x,y,yaw]=[0.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.810266097, 99.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.810357855, 99.900000000]: client call to service SUCCEDED[0m
+99.900000000 Odom: [x,y,yaw]=[0.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102,100]
+dbg: in laserCallback() fn
+100.000000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.823038803, 100.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.823141292, 100.000000000]: client call to service SUCCEDED[0m
+99.900000000 Odom: [x,y,yaw]=[0.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.835601283, 100.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.835686122, 100.000000000]: client call to service SUCCEDED[0m
+100.000000000 Odom: [x,y,yaw]=[0.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.848232393, 100.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.848426595, 100.000000000]: client call to service SUCCEDED[0m
+100.000000000 Odom: [x,y,yaw]=[0.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.860923041, 100.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.861033091, 100.000000000]: client call to service SUCCEDED[0m
+100.000000000 Odom: [x,y,yaw]=[0.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.874318016, 100.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.874436041, 100.000000000]: client call to service SUCCEDED[0m
+100.000000000 Odom: [x,y,yaw]=[0.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.886967329, 100.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.887052516, 100.000000000]: client call to service SUCCEDED[0m
+100.000000000 Odom: [x,y,yaw]=[0.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.900233011, 100.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.900326833, 100.000000000]: client call to service SUCCEDED[0m
+100.000000000 Odom: [x,y,yaw]=[0.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.912798027, 100.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.912901614, 100.000000000]: client call to service SUCCEDED[0m
+100.000000000 Odom: [x,y,yaw]=[0.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[2.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[102.5,100]
+dbg: in laserCallback() fn
+100.100000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.925392779, 100.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.925490023, 100.100000000]: client call to service SUCCEDED[0m
+100.100000000 Odom: [x,y,yaw]=[0.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.938010846, 100.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.938154894, 100.100000000]: client call to service SUCCEDED[0m
+100.100000000 Odom: [x,y,yaw]=[0.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.951184330, 100.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.951287886, 100.100000000]: client call to service SUCCEDED[0m
+100.100000000 Odom: [x,y,yaw]=[0.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.963654500, 100.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.963748996, 100.100000000]: client call to service SUCCEDED[0m
+100.100000000 Odom: [x,y,yaw]=[0.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.976269201, 100.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.976398576, 100.100000000]: client call to service SUCCEDED[0m
+100.100000000 Odom: [x,y,yaw]=[0.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029514.989271914, 100.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029514.989390637, 100.100000000]: client call to service SUCCEDED[0m
+100.100000000 Odom: [x,y,yaw]=[0.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.001896542, 100.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.002008763, 100.100000000]: client call to service SUCCEDED[0m
+100.100000000 Odom: [x,y,yaw]=[0.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.014587408, 100.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.014696101, 100.100000000]: client call to service SUCCEDED[0m
+100.100000000 Odom: [x,y,yaw]=[0.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103,100]
+dbg: in laserCallback() fn
+100.200000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.027474892, 100.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.027580423, 100.200000000]: client call to service SUCCEDED[0m
+100.200000000 Odom: [x,y,yaw]=[0.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.040359425, 100.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.040441342, 100.200000000]: client call to service SUCCEDED[0m
+100.200000000 Odom: [x,y,yaw]=[0.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.053199242, 100.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.053278249, 100.200000000]: client call to service SUCCEDED[0m
+100.200000000 Odom: [x,y,yaw]=[0.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.066850066, 100.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.066955235, 100.200000000]: client call to service SUCCEDED[0m
+100.200000000 Odom: [x,y,yaw]=[0.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.079863960, 100.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.079964914, 100.200000000]: client call to service SUCCEDED[0m
+100.200000000 Odom: [x,y,yaw]=[0.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.093419902, 100.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.093574010, 100.200000000]: client call to service SUCCEDED[0m
+100.200000000 Odom: [x,y,yaw]=[0.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.107173895, 100.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.107335756, 100.200000000]: client call to service SUCCEDED[0m
+100.200000000 Odom: [x,y,yaw]=[0.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103.5,100]
+dbg: in laserCallback() fn
+100.300000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.120651746, 100.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.120779405, 100.300000000]: client call to service SUCCEDED[0m
+100.200000000 Odom: [x,y,yaw]=[0.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[3.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[103.5,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.134567794, 100.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.134781251, 100.300000000]: client call to service SUCCEDED[0m
+100.300000000 Odom: [x,y,yaw]=[0.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.148065910, 100.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.148179727, 100.300000000]: client call to service SUCCEDED[0m
+100.300000000 Odom: [x,y,yaw]=[0.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.161473340, 100.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.161591285, 100.300000000]: client call to service SUCCEDED[0m
+100.300000000 Odom: [x,y,yaw]=[0.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.175034844, 100.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.175176445, 100.300000000]: client call to service SUCCEDED[0m
+100.300000000 Odom: [x,y,yaw]=[0.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.188708050, 100.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.188825850, 100.300000000]: client call to service SUCCEDED[0m
+100.300000000 Odom: [x,y,yaw]=[0.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.202214996, 100.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.202355129, 100.300000000]: client call to service SUCCEDED[0m
+100.300000000 Odom: [x,y,yaw]=[0.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.215670320, 100.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.215793613, 100.300000000]: client call to service SUCCEDED[0m
+100.300000000 Odom: [x,y,yaw]=[0.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104,100]
+dbg: in laserCallback() fn
+100.400000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.229260493, 100.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.229376648, 100.400000000]: client call to service SUCCEDED[0m
+100.400000000 Odom: [x,y,yaw]=[0.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.243478081, 100.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.243769581, 100.400000000]: client call to service SUCCEDED[0m
+100.400000000 Odom: [x,y,yaw]=[0.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.257518530, 100.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.257656306, 100.400000000]: client call to service SUCCEDED[0m
+100.400000000 Odom: [x,y,yaw]=[0.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.271268680, 100.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.271363612, 100.400000000]: client call to service SUCCEDED[0m
+100.400000000 Odom: [x,y,yaw]=[0.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.285869323, 100.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.285980025, 100.400000000]: client call to service SUCCEDED[0m
+100.400000000 Odom: [x,y,yaw]=[0.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.299626337, 100.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.299746183, 100.400000000]: client call to service SUCCEDED[0m
+100.400000000 Odom: [x,y,yaw]=[0.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.313400663, 100.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.313513275, 100.400000000]: client call to service SUCCEDED[0m
+100.400000000 Odom: [x,y,yaw]=[0.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[4.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[104.5,100]
+dbg: in laserCallback() fn
+100.500000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.326792559, 100.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.326909586, 100.500000000]: client call to service SUCCEDED[0m
+100.500000000 Odom: [x,y,yaw]=[0.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.340146446, 100.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.340277733, 100.500000000]: client call to service SUCCEDED[0m
+100.500000000 Odom: [x,y,yaw]=[0.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.353717589, 100.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.353827790, 100.500000000]: client call to service SUCCEDED[0m
+100.500000000 Odom: [x,y,yaw]=[0.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.367270283, 100.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.367375133, 100.500000000]: client call to service SUCCEDED[0m
+100.500000000 Odom: [x,y,yaw]=[0.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.380610201, 100.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.380793380, 100.500000000]: client call to service SUCCEDED[0m
+100.500000000 Odom: [x,y,yaw]=[0.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.394102896, 100.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.394289147, 100.500000000]: client call to service SUCCEDED[0m
+100.500000000 Odom: [x,y,yaw]=[0.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.407629312, 100.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.407739178, 100.500000000]: client call to service SUCCEDED[0m
+100.500000000 Odom: [x,y,yaw]=[0.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105,100]
+dbg: in laserCallback() fn
+100.600000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.420958954, 100.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.421065963, 100.600000000]: client call to service SUCCEDED[0m
+100.500000000 Odom: [x,y,yaw]=[0.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.434436781, 100.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.434567656, 100.600000000]: client call to service SUCCEDED[0m
+100.600000000 Odom: [x,y,yaw]=[0.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.447861930, 100.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.448078573, 100.600000000]: client call to service SUCCEDED[0m
+100.600000000 Odom: [x,y,yaw]=[0.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.461546049, 100.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.461649497, 100.600000000]: client call to service SUCCEDED[0m
+100.600000000 Odom: [x,y,yaw]=[0.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.474889471, 100.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.474997327, 100.600000000]: client call to service SUCCEDED[0m
+100.600000000 Odom: [x,y,yaw]=[0.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.488158796, 100.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.488255453, 100.600000000]: client call to service SUCCEDED[0m
+100.600000000 Odom: [x,y,yaw]=[0.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.501739808, 100.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.501853519, 100.600000000]: client call to service SUCCEDED[0m
+100.600000000 Odom: [x,y,yaw]=[0.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.515432345, 100.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.515551870, 100.600000000]: client call to service SUCCEDED[0m
+100.600000000 Odom: [x,y,yaw]=[0.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[5.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[105.5,100]
+dbg: in laserCallback() fn
+100.700000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.529098499, 100.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.529288193, 100.700000000]: client call to service SUCCEDED[0m
+100.700000000 Odom: [x,y,yaw]=[0.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.542452132, 100.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.542625890, 100.700000000]: client call to service SUCCEDED[0m
+100.700000000 Odom: [x,y,yaw]=[0.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.556074701, 100.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.556178195, 100.700000000]: client call to service SUCCEDED[0m
+100.700000000 Odom: [x,y,yaw]=[0.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.569515319, 100.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.569630606, 100.700000000]: client call to service SUCCEDED[0m
+100.700000000 Odom: [x,y,yaw]=[0.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.582836229, 100.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.582948082, 100.700000000]: client call to service SUCCEDED[0m
+100.700000000 Odom: [x,y,yaw]=[0.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.596136748, 100.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.596264740, 100.700000000]: client call to service SUCCEDED[0m
+100.700000000 Odom: [x,y,yaw]=[0.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.609621528, 100.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.609746233, 100.700000000]: client call to service SUCCEDED[0m
+100.700000000 Odom: [x,y,yaw]=[0.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106,100]
+dbg: in laserCallback() fn
+100.800000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.623184149, 100.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.623328805, 100.800000000]: client call to service SUCCEDED[0m
+100.700000000 Odom: [x,y,yaw]=[0.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.636734692, 100.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.636860081, 100.800000000]: client call to service SUCCEDED[0m
+100.800000000 Odom: [x,y,yaw]=[0.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.650113549, 100.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.650293899, 100.800000000]: client call to service SUCCEDED[0m
+100.800000000 Odom: [x,y,yaw]=[0.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.663532816, 100.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.663646030, 100.800000000]: client call to service SUCCEDED[0m
+100.800000000 Odom: [x,y,yaw]=[0.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.676833305, 100.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.676970990, 100.800000000]: client call to service SUCCEDED[0m
+100.800000000 Odom: [x,y,yaw]=[0.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.690369126, 100.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.690479256, 100.800000000]: client call to service SUCCEDED[0m
+100.800000000 Odom: [x,y,yaw]=[0.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.703588311, 100.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.703715589, 100.800000000]: client call to service SUCCEDED[0m
+100.800000000 Odom: [x,y,yaw]=[0.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106.5,100]
+dbg: in laserCallback() fn
+100.900000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.717588332, 100.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.717701992, 100.900000000]: client call to service SUCCEDED[0m
+100.800000000 Odom: [x,y,yaw]=[0.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[6.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[106.5,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.731401795, 100.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.731522252, 100.900000000]: client call to service SUCCEDED[0m
+100.900000000 Odom: [x,y,yaw]=[0.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.744791439, 100.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.744927685, 100.900000000]: client call to service SUCCEDED[0m
+100.900000000 Odom: [x,y,yaw]=[0.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.758110256, 100.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.758304195, 100.900000000]: client call to service SUCCEDED[0m
+100.900000000 Odom: [x,y,yaw]=[0.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.771805969, 100.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.771903931, 100.900000000]: client call to service SUCCEDED[0m
+100.900000000 Odom: [x,y,yaw]=[0.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.785005756, 100.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.785097146, 100.900000000]: client call to service SUCCEDED[0m
+100.900000000 Odom: [x,y,yaw]=[0.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.798218624, 100.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.798457595, 100.900000000]: client call to service SUCCEDED[0m
+100.900000000 Odom: [x,y,yaw]=[0.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.811799129, 100.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.811945549, 100.900000000]: client call to service SUCCEDED[0m
+100.900000000 Odom: [x,y,yaw]=[0.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107,100]
+dbg: in laserCallback() fn
+101.000000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.825294234, 101.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.825401088, 101.000000000]: client call to service SUCCEDED[0m
+101.000000000 Odom: [x,y,yaw]=[0.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.838801145, 101.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.838917321, 101.000000000]: client call to service SUCCEDED[0m
+101.000000000 Odom: [x,y,yaw]=[0.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.852250114, 101.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.852339058, 101.000000000]: client call to service SUCCEDED[0m
+101.000000000 Odom: [x,y,yaw]=[0.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.865563213, 101.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.865690143, 101.000000000]: client call to service SUCCEDED[0m
+101.000000000 Odom: [x,y,yaw]=[0.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.879056847, 101.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.879218252, 101.000000000]: client call to service SUCCEDED[0m
+101.000000000 Odom: [x,y,yaw]=[0.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.892921893, 101.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.893030932, 101.000000000]: client call to service SUCCEDED[0m
+101.000000000 Odom: [x,y,yaw]=[0.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.906736014, 101.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.906871474, 101.000000000]: client call to service SUCCEDED[0m
+101.000000000 Odom: [x,y,yaw]=[0.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107.5,100]
+dbg: in laserCallback() fn
+101.100000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.920125758, 101.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.920247599, 101.100000000]: client call to service SUCCEDED[0m
+101.000000000 Odom: [x,y,yaw]=[0.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[7.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[107.5,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.933939763, 101.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.934055814, 101.100000000]: client call to service SUCCEDED[0m
+101.100000000 Odom: [x,y,yaw]=[0.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.947385877, 101.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.947518385, 101.100000000]: client call to service SUCCEDED[0m
+101.100000000 Odom: [x,y,yaw]=[0.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.960851757, 101.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.960967642, 101.100000000]: client call to service SUCCEDED[0m
+101.100000000 Odom: [x,y,yaw]=[0.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.974026178, 101.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.974160241, 101.100000000]: client call to service SUCCEDED[0m
+101.100000000 Odom: [x,y,yaw]=[0.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029515.987293736, 101.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029515.987400729, 101.100000000]: client call to service SUCCEDED[0m
+101.100000000 Odom: [x,y,yaw]=[0.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.000919622, 101.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.001056150, 101.100000000]: client call to service SUCCEDED[0m
+101.100000000 Odom: [x,y,yaw]=[0.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.014232488, 101.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.014383908, 101.100000000]: client call to service SUCCEDED[0m
+101.100000000 Odom: [x,y,yaw]=[0.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108,100]
+dbg: in laserCallback() fn
+101.200000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.028276903, 101.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.028378136, 101.200000000]: client call to service SUCCEDED[0m
+101.200000000 Odom: [x,y,yaw]=[0.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.041574435, 101.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.041664940, 101.200000000]: client call to service SUCCEDED[0m
+101.200000000 Odom: [x,y,yaw]=[0.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.055598827, 101.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.055709163, 101.200000000]: client call to service SUCCEDED[0m
+101.200000000 Odom: [x,y,yaw]=[0.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.069186471, 101.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.069285874, 101.200000000]: client call to service SUCCEDED[0m
+101.200000000 Odom: [x,y,yaw]=[0.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.082807744, 101.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.082941761, 101.200000000]: client call to service SUCCEDED[0m
+101.200000000 Odom: [x,y,yaw]=[0.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.096886365, 101.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.097026087, 101.200000000]: client call to service SUCCEDED[0m
+101.200000000 Odom: [x,y,yaw]=[0.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.110513257, 101.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.110620122, 101.200000000]: client call to service SUCCEDED[0m
+101.200000000 Odom: [x,y,yaw]=[0.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[8.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[108.5,100]
+dbg: in laserCallback() fn
+101.300000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.124173155, 101.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.124390473, 101.300000000]: client call to service SUCCEDED[0m
+101.300000000 Odom: [x,y,yaw]=[0.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.137905804, 101.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.138050177, 101.300000000]: client call to service SUCCEDED[0m
+101.300000000 Odom: [x,y,yaw]=[0.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.151633515, 101.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.151747271, 101.300000000]: client call to service SUCCEDED[0m
+101.300000000 Odom: [x,y,yaw]=[0.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.164967006, 101.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.165115937, 101.300000000]: client call to service SUCCEDED[0m
+101.300000000 Odom: [x,y,yaw]=[0.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.178390610, 101.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.178548440, 101.300000000]: client call to service SUCCEDED[0m
+101.300000000 Odom: [x,y,yaw]=[0.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.191719702, 101.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.191846418, 101.300000000]: client call to service SUCCEDED[0m
+101.300000000 Odom: [x,y,yaw]=[0.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.205134294, 101.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.205247755, 101.300000000]: client call to service SUCCEDED[0m
+101.300000000 Odom: [x,y,yaw]=[0.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109,100]
+dbg: in laserCallback() fn
+101.400000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.218568853, 101.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.218675692, 101.400000000]: client call to service SUCCEDED[0m
+101.300000000 Odom: [x,y,yaw]=[0.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.231945573, 101.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.232070154, 101.400000000]: client call to service SUCCEDED[0m
+101.400000000 Odom: [x,y,yaw]=[0.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.245604961, 101.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.245701963, 101.400000000]: client call to service SUCCEDED[0m
+101.400000000 Odom: [x,y,yaw]=[0.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.259006951, 101.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.259113755, 101.400000000]: client call to service SUCCEDED[0m
+101.400000000 Odom: [x,y,yaw]=[0.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.272747042, 101.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.272901148, 101.400000000]: client call to service SUCCEDED[0m
+101.400000000 Odom: [x,y,yaw]=[0.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.286478682, 101.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.286619109, 101.400000000]: client call to service SUCCEDED[0m
+101.400000000 Odom: [x,y,yaw]=[0.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.300267451, 101.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.300388516, 101.400000000]: client call to service SUCCEDED[0m
+101.400000000 Odom: [x,y,yaw]=[0.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.313725665, 101.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.313856800, 101.400000000]: client call to service SUCCEDED[0m
+101.400000000 Odom: [x,y,yaw]=[0.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[9.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[109.5,100]
+dbg: in laserCallback() fn
+101.500000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.327146356, 101.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.327259568, 101.500000000]: client call to service SUCCEDED[0m
+101.500000000 Odom: [x,y,yaw]=[1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.340314709, 101.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.340436712, 101.500000000]: client call to service SUCCEDED[0m
+101.500000000 Odom: [x,y,yaw]=[1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.353671837, 101.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.353784169, 101.500000000]: client call to service SUCCEDED[0m
+101.500000000 Odom: [x,y,yaw]=[1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.367052558, 101.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.367212413, 101.500000000]: client call to service SUCCEDED[0m
+101.500000000 Odom: [x,y,yaw]=[1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.380325502, 101.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.380434094, 101.500000000]: client call to service SUCCEDED[0m
+101.500000000 Odom: [x,y,yaw]=[1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.393625657, 101.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.393767291, 101.500000000]: client call to service SUCCEDED[0m
+101.500000000 Odom: [x,y,yaw]=[1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.407305795, 101.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.407509314, 101.500000000]: client call to service SUCCEDED[0m
+101.500000000 Odom: [x,y,yaw]=[1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110,100]
+dbg: in laserCallback() fn
+101.600000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.421179453, 101.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.421320955, 101.600000000]: client call to service SUCCEDED[0m
+101.500000000 Odom: [x,y,yaw]=[1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.434711667, 101.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.434833738, 101.600000000]: client call to service SUCCEDED[0m
+101.600000000 Odom: [x,y,yaw]=[1.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.447961737, 101.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.448097043, 101.600000000]: client call to service SUCCEDED[0m
+101.600000000 Odom: [x,y,yaw]=[1.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.461258524, 101.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.461381751, 101.600000000]: client call to service SUCCEDED[0m
+101.600000000 Odom: [x,y,yaw]=[1.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.474783980, 101.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.474907484, 101.600000000]: client call to service SUCCEDED[0m
+101.600000000 Odom: [x,y,yaw]=[1.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.488204920, 101.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.488350357, 101.600000000]: client call to service SUCCEDED[0m
+101.600000000 Odom: [x,y,yaw]=[1.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.502271259, 101.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.502432106, 101.600000000]: client call to service SUCCEDED[0m
+101.600000000 Odom: [x,y,yaw]=[1.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110.5,100]
+dbg: in requestGoal() service callback fn
+dbg: in laserCallback() fn
+[0m[ INFO] [1519029516.516039839, 101.600000000]: sending back response: [1][0m
+101.700000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+[0m[ INFO] [1519029516.516239906, 101.700000000]: client call to service SUCCEDED[0m
+101.600000000 Odom: [x,y,yaw]=[1.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[10.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[110.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.529609473, 101.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.529782211, 101.700000000]: client call to service SUCCEDED[0m
+101.700000000 Odom: [x,y,yaw]=[1.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.543634425, 101.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.543803069, 101.700000000]: client call to service SUCCEDED[0m
+101.700000000 Odom: [x,y,yaw]=[1.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.557093038, 101.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.557211985, 101.700000000]: client call to service SUCCEDED[0m
+101.700000000 Odom: [x,y,yaw]=[1.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.570512653, 101.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.570620878, 101.700000000]: client call to service SUCCEDED[0m
+101.700000000 Odom: [x,y,yaw]=[1.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.583935583, 101.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.584050811, 101.700000000]: client call to service SUCCEDED[0m
+101.700000000 Odom: [x,y,yaw]=[1.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.597257685, 101.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.597402409, 101.700000000]: client call to service SUCCEDED[0m
+101.700000000 Odom: [x,y,yaw]=[1.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.610522080, 101.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.610630207, 101.700000000]: client call to service SUCCEDED[0m
+101.700000000 Odom: [x,y,yaw]=[1.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111,100]
+dbg: in laserCallback() fn
+101.800000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.623721840, 101.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.623813301, 101.800000000]: client call to service SUCCEDED[0m
+101.800000000 Odom: [x,y,yaw]=[1.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.637312515, 101.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.637451133, 101.800000000]: client call to service SUCCEDED[0m
+101.800000000 Odom: [x,y,yaw]=[1.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.650819686, 101.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.650955227, 101.800000000]: client call to service SUCCEDED[0m
+101.800000000 Odom: [x,y,yaw]=[1.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111.5,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.664347593, 101.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.664473994, 101.800000000]: client call to service SUCCEDED[0m
+101.800000000 Odom: [x,y,yaw]=[1.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.677820264, 101.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.677922067, 101.800000000]: client call to service SUCCEDED[0m
+101.800000000 Odom: [x,y,yaw]=[1.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.691440000, 101.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.691546848, 101.800000000]: client call to service SUCCEDED[0m
+101.800000000 Odom: [x,y,yaw]=[1.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.705387268, 101.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.705512510, 101.800000000]: client call to service SUCCEDED[0m
+101.800000000 Odom: [x,y,yaw]=[1.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111.5,100]
+dbg: in laserCallback() fn
+101.900000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.719153755, 101.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.719345209, 101.900000000]: client call to service SUCCEDED[0m
+101.800000000 Odom: [x,y,yaw]=[1.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[11.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[111.5,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.732507671, 101.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.732719304, 101.900000000]: client call to service SUCCEDED[0m
+101.900000000 Odom: [x,y,yaw]=[1.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.745773534, 101.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.745974330, 101.900000000]: client call to service SUCCEDED[0m
+101.900000000 Odom: [x,y,yaw]=[1.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.759182519, 101.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.759308106, 101.900000000]: client call to service SUCCEDED[0m
+101.900000000 Odom: [x,y,yaw]=[1.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.772742823, 101.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.772859580, 101.900000000]: client call to service SUCCEDED[0m
+101.900000000 Odom: [x,y,yaw]=[1.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.786249889, 101.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.786361550, 101.900000000]: client call to service SUCCEDED[0m
+101.900000000 Odom: [x,y,yaw]=[1.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.799664595, 101.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.799786170, 101.900000000]: client call to service SUCCEDED[0m
+101.900000000 Odom: [x,y,yaw]=[1.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.812954700, 101.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.813070071, 101.900000000]: client call to service SUCCEDED[0m
+101.900000000 Odom: [x,y,yaw]=[1.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112,100]
+dbg: in laserCallback() fn
+102.000000000 Laser: [d, theta, x, y]=[1.58,1.5708,3.07637e-07,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.826396406, 102.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.826513914, 102.000000000]: client call to service SUCCEDED[0m
+102.000000000 Odom: [x,y,yaw]=[1.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.839846280, 102.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.839957990, 102.000000000]: client call to service SUCCEDED[0m
+102.000000000 Odom: [x,y,yaw]=[1.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.853392797, 102.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.853514157, 102.000000000]: client call to service SUCCEDED[0m
+102.000000000 Odom: [x,y,yaw]=[1.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.868366329, 102.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.868623587, 102.000000000]: client call to service SUCCEDED[0m
+102.000000000 Odom: [x,y,yaw]=[1.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.882096195, 102.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.882229910, 102.000000000]: client call to service SUCCEDED[0m
+102.000000000 Odom: [x,y,yaw]=[1.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.895808983, 102.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.895921063, 102.000000000]: client call to service SUCCEDED[0m
+102.000000000 Odom: [x,y,yaw]=[1.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.909237167, 102.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.909353526, 102.000000000]: client call to service SUCCEDED[0m
+102.000000000 Odom: [x,y,yaw]=[1.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112.5,100]
+dbg: in laserCallback() fn
+102.100000000 Laser: [d, theta, x, y]=[1.53006,-0.00877547,1.53,-0.0134268]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.922690093, 102.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.922824053, 102.100000000]: client call to service SUCCEDED[0m
+102.000000000 Odom: [x,y,yaw]=[1.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[12.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[112.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.936545851, 102.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.936690669, 102.100000000]: client call to service SUCCEDED[0m
+102.100000000 Odom: [x,y,yaw]=[1.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.949929442, 102.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.950046489, 102.100000000]: client call to service SUCCEDED[0m
+102.100000000 Odom: [x,y,yaw]=[1.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.963296824, 102.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.963438542, 102.100000000]: client call to service SUCCEDED[0m
+102.100000000 Odom: [x,y,yaw]=[1.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.976558733, 102.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.976681922, 102.100000000]: client call to service SUCCEDED[0m
+102.100000000 Odom: [x,y,yaw]=[1.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029516.989985662, 102.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029516.990087015, 102.100000000]: client call to service SUCCEDED[0m
+102.100000000 Odom: [x,y,yaw]=[1.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.003541885, 102.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.003677472, 102.100000000]: client call to service SUCCEDED[0m
+102.100000000 Odom: [x,y,yaw]=[1.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113,100]
+dbg: in laserCallback() fn
+102.200000000 Laser: [d, theta, x, y]=[1.48006,-0.00877547,1.48,-0.012988]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.016900229, 102.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.017010537, 102.200000000]: client call to service SUCCEDED[0m
+102.100000000 Odom: [x,y,yaw]=[1.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.030338503, 102.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.030442749, 102.200000000]: client call to service SUCCEDED[0m
+102.200000000 Odom: [x,y,yaw]=[1.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.043589621, 102.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.043693065, 102.200000000]: client call to service SUCCEDED[0m
+102.200000000 Odom: [x,y,yaw]=[1.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.056736724, 102.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.056831676, 102.200000000]: client call to service SUCCEDED[0m
+102.200000000 Odom: [x,y,yaw]=[1.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113.5,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.070150556, 102.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.070258774, 102.200000000]: client call to service SUCCEDED[0m
+102.200000000 Odom: [x,y,yaw]=[1.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.083562471, 102.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.083655381, 102.200000000]: client call to service SUCCEDED[0m
+102.200000000 Odom: [x,y,yaw]=[1.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.097149912, 102.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.097253419, 102.200000000]: client call to service SUCCEDED[0m
+102.200000000 Odom: [x,y,yaw]=[1.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.110940276, 102.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.111096995, 102.200000000]: client call to service SUCCEDED[0m
+102.200000000 Odom: [x,y,yaw]=[1.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[13.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[113.5,100]
+dbg: in laserCallback() fn
+102.300000000 Laser: [d, theta, x, y]=[1.43006,-0.00877547,1.43,-0.0125492]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.124483072, 102.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.124631141, 102.300000000]: client call to service SUCCEDED[0m
+102.300000000 Odom: [x,y,yaw]=[1.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.138069921, 102.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.138235607, 102.300000000]: client call to service SUCCEDED[0m
+102.300000000 Odom: [x,y,yaw]=[1.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.151710454, 102.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.151888402, 102.300000000]: client call to service SUCCEDED[0m
+102.300000000 Odom: [x,y,yaw]=[1.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.165319188, 102.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.165525472, 102.300000000]: client call to service SUCCEDED[0m
+102.300000000 Odom: [x,y,yaw]=[1.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.178952865, 102.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.179071126, 102.300000000]: client call to service SUCCEDED[0m
+102.300000000 Odom: [x,y,yaw]=[1.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.192454338, 102.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.192583537, 102.300000000]: client call to service SUCCEDED[0m
+102.300000000 Odom: [x,y,yaw]=[1.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.205840016, 102.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.205958191, 102.300000000]: client call to service SUCCEDED[0m
+102.300000000 Odom: [x,y,yaw]=[1.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114,100]
+dbg: in laserCallback() fn
+102.400000000 Laser: [d, theta, x, y]=[1.38005,-0.00877547,1.38,-0.0121105]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.219339745, 102.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.219491336, 102.400000000]: client call to service SUCCEDED[0m
+102.300000000 Odom: [x,y,yaw]=[1.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.232833266, 102.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.232938254, 102.400000000]: client call to service SUCCEDED[0m
+102.400000000 Odom: [x,y,yaw]=[1.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.247014370, 102.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.247152349, 102.400000000]: client call to service SUCCEDED[0m
+102.400000000 Odom: [x,y,yaw]=[1.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.260426116, 102.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.260540737, 102.400000000]: client call to service SUCCEDED[0m
+102.400000000 Odom: [x,y,yaw]=[1.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.274016542, 102.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.274144952, 102.400000000]: client call to service SUCCEDED[0m
+102.400000000 Odom: [x,y,yaw]=[1.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.287536571, 102.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.287648564, 102.400000000]: client call to service SUCCEDED[0m
+102.400000000 Odom: [x,y,yaw]=[1.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.301370040, 102.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.301512488, 102.400000000]: client call to service SUCCEDED[0m
+102.400000000 Odom: [x,y,yaw]=[1.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.314624818, 102.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.314719790, 102.400000000]: client call to service SUCCEDED[0m
+102.400000000 Odom: [x,y,yaw]=[1.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[14.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[114.5,100]
+dbg: in laserCallback() fn
+102.500000000 Laser: [d, theta, x, y]=[1.33005,-0.00877547,1.33,-0.0116717]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.328124286, 102.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.328235303, 102.500000000]: client call to service SUCCEDED[0m
+102.500000000 Odom: [x,y,yaw]=[1.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.341830852, 102.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.341940506, 102.500000000]: client call to service SUCCEDED[0m
+102.500000000 Odom: [x,y,yaw]=[1.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.355772014, 102.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.355899059, 102.500000000]: client call to service SUCCEDED[0m
+102.500000000 Odom: [x,y,yaw]=[1.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.369444074, 102.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.369576923, 102.500000000]: client call to service SUCCEDED[0m
+102.500000000 Odom: [x,y,yaw]=[1.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.383283532, 102.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.383384551, 102.500000000]: client call to service SUCCEDED[0m
+102.500000000 Odom: [x,y,yaw]=[1.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.397346753, 102.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.397555213, 102.500000000]: client call to service SUCCEDED[0m
+102.500000000 Odom: [x,y,yaw]=[1.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.411467124, 102.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.411575852, 102.500000000]: client call to service SUCCEDED[0m
+102.500000000 Odom: [x,y,yaw]=[1.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115,100]
+dbg: in laserCallback() fn
+102.600000000 Laser: [d, theta, x, y]=[1.28005,-0.00877547,1.28,-0.0112329]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.424937736, 102.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.425065872, 102.600000000]: client call to service SUCCEDED[0m
+102.600000000 Odom: [x,y,yaw]=[1.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.438483691, 102.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.438600407, 102.600000000]: client call to service SUCCEDED[0m
+102.600000000 Odom: [x,y,yaw]=[1.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.451863218, 102.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.451977587, 102.600000000]: client call to service SUCCEDED[0m
+102.600000000 Odom: [x,y,yaw]=[1.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.465224243, 102.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.465336566, 102.600000000]: client call to service SUCCEDED[0m
+102.600000000 Odom: [x,y,yaw]=[1.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.478519783, 102.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.478635043, 102.600000000]: client call to service SUCCEDED[0m
+102.600000000 Odom: [x,y,yaw]=[1.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.492078310, 102.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.492221688, 102.600000000]: client call to service SUCCEDED[0m
+102.600000000 Odom: [x,y,yaw]=[1.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.505417509, 102.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.505574928, 102.600000000]: client call to service SUCCEDED[0m
+102.600000000 Odom: [x,y,yaw]=[1.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115.5,100]
+dbg: in laserCallback() fn
+102.700000000 Laser: [d, theta, x, y]=[1.23005,-0.00877547,1.23,-0.0107941]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.523857880, 102.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.523956711, 102.700000000]: client call to service SUCCEDED[0m
+102.600000000 Odom: [x,y,yaw]=[1.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[15.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[115.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.537580727, 102.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.537695645, 102.700000000]: client call to service SUCCEDED[0m
+102.700000000 Odom: [x,y,yaw]=[1.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.551197676, 102.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.551315731, 102.700000000]: client call to service SUCCEDED[0m
+102.700000000 Odom: [x,y,yaw]=[1.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.564563280, 102.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.564721915, 102.700000000]: client call to service SUCCEDED[0m
+102.700000000 Odom: [x,y,yaw]=[1.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.578048052, 102.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.578177723, 102.700000000]: client call to service SUCCEDED[0m
+102.700000000 Odom: [x,y,yaw]=[1.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.591912293, 102.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.592018873, 102.700000000]: client call to service SUCCEDED[0m
+102.700000000 Odom: [x,y,yaw]=[1.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.605441493, 102.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.605547974, 102.700000000]: client call to service SUCCEDED[0m
+102.700000000 Odom: [x,y,yaw]=[1.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116,100]
+dbg: in laserCallback() fn
+102.800000000 Laser: [d, theta, x, y]=[1.18005,-0.00877547,1.18,-0.0103553]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.619222223, 102.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.619323614, 102.800000000]: client call to service SUCCEDED[0m
+102.700000000 Odom: [x,y,yaw]=[1.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.632522082, 102.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.632627652, 102.800000000]: client call to service SUCCEDED[0m
+102.800000000 Odom: [x,y,yaw]=[1.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.645745782, 102.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.645874319, 102.800000000]: client call to service SUCCEDED[0m
+102.800000000 Odom: [x,y,yaw]=[1.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.659293744, 102.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.659420364, 102.800000000]: client call to service SUCCEDED[0m
+102.800000000 Odom: [x,y,yaw]=[1.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.672585299, 102.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.672744073, 102.800000000]: client call to service SUCCEDED[0m
+102.800000000 Odom: [x,y,yaw]=[1.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.686175214, 102.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.686300013, 102.800000000]: client call to service SUCCEDED[0m
+102.800000000 Odom: [x,y,yaw]=[1.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.699426705, 102.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.699595931, 102.800000000]: client call to service SUCCEDED[0m
+102.800000000 Odom: [x,y,yaw]=[1.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.712834968, 102.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.712949012, 102.800000000]: client call to service SUCCEDED[0m
+102.800000000 Odom: [x,y,yaw]=[1.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[16.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[116.5,100]
+dbg: in laserCallback() fn
+102.900000000 Laser: [d, theta, x, y]=[1.14004,-0.00877547,1.14,-0.0100043]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.726356953, 102.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.726480171, 102.900000000]: client call to service SUCCEDED[0m
+102.900000000 Odom: [x,y,yaw]=[1.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.739613248, 102.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.739738545, 102.900000000]: client call to service SUCCEDED[0m
+102.900000000 Odom: [x,y,yaw]=[1.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.753132532, 102.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.753255097, 102.900000000]: client call to service SUCCEDED[0m
+102.900000000 Odom: [x,y,yaw]=[1.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.767066506, 102.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.767178879, 102.900000000]: client call to service SUCCEDED[0m
+102.900000000 Odom: [x,y,yaw]=[1.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.780567864, 102.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.780678997, 102.900000000]: client call to service SUCCEDED[0m
+102.900000000 Odom: [x,y,yaw]=[1.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.793895723, 102.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.794006052, 102.900000000]: client call to service SUCCEDED[0m
+102.900000000 Odom: [x,y,yaw]=[1.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.807441679, 102.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.807560126, 102.900000000]: client call to service SUCCEDED[0m
+102.900000000 Odom: [x,y,yaw]=[1.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117,100]
+dbg: in laserCallback() fn
+103.000000000 Laser: [d, theta, x, y]=[1.08004,-0.00877547,1.08,-0.00947775]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.821121324, 103.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.821269275, 103.000000000]: client call to service SUCCEDED[0m
+102.900000000 Odom: [x,y,yaw]=[1.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.834692384, 103.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.834817993, 103.000000000]: client call to service SUCCEDED[0m
+103.000000000 Odom: [x,y,yaw]=[1.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.848294100, 103.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.848469023, 103.000000000]: client call to service SUCCEDED[0m
+103.000000000 Odom: [x,y,yaw]=[1.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.861999362, 103.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.862110920, 103.000000000]: client call to service SUCCEDED[0m
+103.000000000 Odom: [x,y,yaw]=[1.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.875407973, 103.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.875516710, 103.000000000]: client call to service SUCCEDED[0m
+103.000000000 Odom: [x,y,yaw]=[1.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.888762218, 103.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.888877894, 103.000000000]: client call to service SUCCEDED[0m
+103.000000000 Odom: [x,y,yaw]=[1.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.902215752, 103.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.902329731, 103.000000000]: client call to service SUCCEDED[0m
+103.000000000 Odom: [x,y,yaw]=[1.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117.5,100]
+dbg: in laserCallback() fn
+103.100000000 Laser: [d, theta, x, y]=[1.04004,-0.00877547,1.04,-0.00912673]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.916938321, 103.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.917044039, 103.100000000]: client call to service SUCCEDED[0m
+103.000000000 Odom: [x,y,yaw]=[1.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[17.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[117.5,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.930931936, 103.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.931043624, 103.100000000]: client call to service SUCCEDED[0m
+103.100000000 Odom: [x,y,yaw]=[1.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.944839430, 103.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.944946782, 103.100000000]: client call to service SUCCEDED[0m
+103.100000000 Odom: [x,y,yaw]=[1.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.958423253, 103.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.958543628, 103.100000000]: client call to service SUCCEDED[0m
+103.100000000 Odom: [x,y,yaw]=[1.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.971909369, 103.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.972054980, 103.100000000]: client call to service SUCCEDED[0m
+103.100000000 Odom: [x,y,yaw]=[1.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.985441685, 103.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.985568655, 103.100000000]: client call to service SUCCEDED[0m
+103.100000000 Odom: [x,y,yaw]=[1.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029517.998771066, 103.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029517.998930806, 103.100000000]: client call to service SUCCEDED[0m
+103.100000000 Odom: [x,y,yaw]=[1.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.012344083, 103.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.012490727, 103.100000000]: client call to service SUCCEDED[0m
+103.100000000 Odom: [x,y,yaw]=[1.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118,100]
+dbg: in laserCallback() fn
+103.200000000 Laser: [d, theta, x, y]=[0.980038,-0.00877547,0.98,-0.00860018]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.025587902, 103.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.025700246, 103.200000000]: client call to service SUCCEDED[0m
+103.200000000 Odom: [x,y,yaw]=[1.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.039042968, 103.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.039136670, 103.200000000]: client call to service SUCCEDED[0m
+103.200000000 Odom: [x,y,yaw]=[1.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.052523448, 103.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.052666015, 103.200000000]: client call to service SUCCEDED[0m
+103.200000000 Odom: [x,y,yaw]=[1.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.066354284, 103.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.066493133, 103.200000000]: client call to service SUCCEDED[0m
+103.200000000 Odom: [x,y,yaw]=[1.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.079741889, 103.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.079853323, 103.200000000]: client call to service SUCCEDED[0m
+103.200000000 Odom: [x,y,yaw]=[1.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.093386278, 103.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.093526128, 103.200000000]: client call to service SUCCEDED[0m
+103.200000000 Odom: [x,y,yaw]=[1.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.107603257, 103.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.107744419, 103.200000000]: client call to service SUCCEDED[0m
+103.200000000 Odom: [x,y,yaw]=[1.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118.5,100]
+dbg: in laserCallback() fn
+103.300000000 Laser: [d, theta, x, y]=[0.940036,-0.00877547,0.94,-0.00824916]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.121240944, 103.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.121370595, 103.300000000]: client call to service SUCCEDED[0m
+103.200000000 Odom: [x,y,yaw]=[1.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[18.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[118.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.135349012, 103.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.135476702, 103.300000000]: client call to service SUCCEDED[0m
+103.300000000 Odom: [x,y,yaw]=[1.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.149001379, 103.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.149143175, 103.300000000]: client call to service SUCCEDED[0m
+103.300000000 Odom: [x,y,yaw]=[1.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.162769334, 103.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.162914120, 103.300000000]: client call to service SUCCEDED[0m
+103.300000000 Odom: [x,y,yaw]=[1.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.176512400, 103.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.176642798, 103.300000000]: client call to service SUCCEDED[0m
+103.300000000 Odom: [x,y,yaw]=[1.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.189955373, 103.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.190083667, 103.300000000]: client call to service SUCCEDED[0m
+103.300000000 Odom: [x,y,yaw]=[1.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.203677796, 103.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.203794210, 103.300000000]: client call to service SUCCEDED[0m
+103.300000000 Odom: [x,y,yaw]=[1.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119,100]
+dbg: in laserCallback() fn
+103.400000000 Laser: [d, theta, x, y]=[0.880034,-0.00877547,0.88,-0.00772261]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.217297817, 103.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.217422313, 103.400000000]: client call to service SUCCEDED[0m
+103.300000000 Odom: [x,y,yaw]=[1.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.231248168, 103.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.231358207, 103.400000000]: client call to service SUCCEDED[0m
+103.400000000 Odom: [x,y,yaw]=[1.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.244824268, 103.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.244949476, 103.400000000]: client call to service SUCCEDED[0m
+103.400000000 Odom: [x,y,yaw]=[1.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.258524086, 103.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.258642101, 103.400000000]: client call to service SUCCEDED[0m
+103.400000000 Odom: [x,y,yaw]=[1.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.271772976, 103.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.271875190, 103.400000000]: client call to service SUCCEDED[0m
+103.400000000 Odom: [x,y,yaw]=[1.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.285578702, 103.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.285681044, 103.400000000]: client call to service SUCCEDED[0m
+103.400000000 Odom: [x,y,yaw]=[1.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.294804776, 103.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.294896970, 103.400000000]: client call to service SUCCEDED[0m
+103.400000000 Odom: [x,y,yaw]=[1.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.308215636, 103.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.308310114, 103.400000000]: client call to service SUCCEDED[0m
+103.400000000 Odom: [x,y,yaw]=[1.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119.5,100]
+dbg: in laserCallback() fn
+103.500000000 Laser: [d, theta, x, y]=[0.840032,-0.00877547,0.84,-0.00737159]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.321671539, 103.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.321790348, 103.500000000]: client call to service SUCCEDED[0m
+103.400000000 Odom: [x,y,yaw]=[1.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[19.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[119.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.336432697, 103.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.336561075, 103.500000000]: client call to service SUCCEDED[0m
+103.500000000 Odom: [x,y,yaw]=[2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.350073244, 103.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.350218952, 103.500000000]: client call to service SUCCEDED[0m
+103.500000000 Odom: [x,y,yaw]=[2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.363344614, 103.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.363540298, 103.500000000]: client call to service SUCCEDED[0m
+103.500000000 Odom: [x,y,yaw]=[2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.376663456, 103.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.376811316, 103.500000000]: client call to service SUCCEDED[0m
+103.500000000 Odom: [x,y,yaw]=[2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.389931217, 103.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.390033007, 103.500000000]: client call to service SUCCEDED[0m
+103.500000000 Odom: [x,y,yaw]=[2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.403863850, 103.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.403965990, 103.500000000]: client call to service SUCCEDED[0m
+103.500000000 Odom: [x,y,yaw]=[2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120,100]
+dbg: in laserCallback() fn
+103.600000000 Laser: [d, theta, x, y]=[0.78003,-0.00877547,0.78,-0.00684504]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.417368230, 103.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.417475597, 103.600000000]: client call to service SUCCEDED[0m
+103.500000000 Odom: [x,y,yaw]=[2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.430690847, 103.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.430806465, 103.600000000]: client call to service SUCCEDED[0m
+103.600000000 Odom: [x,y,yaw]=[2.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.444107999, 103.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.444240438, 103.600000000]: client call to service SUCCEDED[0m
+103.600000000 Odom: [x,y,yaw]=[2.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.457672056, 103.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.457783544, 103.600000000]: client call to service SUCCEDED[0m
+103.600000000 Odom: [x,y,yaw]=[2.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.471077466, 103.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.471207205, 103.600000000]: client call to service SUCCEDED[0m
+103.600000000 Odom: [x,y,yaw]=[2.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.484768647, 103.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.484917574, 103.600000000]: client call to service SUCCEDED[0m
+103.600000000 Odom: [x,y,yaw]=[2.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.498006983, 103.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.498184175, 103.600000000]: client call to service SUCCEDED[0m
+103.600000000 Odom: [x,y,yaw]=[2.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.511553647, 103.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.511663929, 103.600000000]: client call to service SUCCEDED[0m
+103.600000000 Odom: [x,y,yaw]=[2.05,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[20.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[120.5,100]
+dbg: in laserCallback() fn
+103.700000000 Laser: [d, theta, x, y]=[0.740029,-0.00877547,0.74,-0.00649402]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.525159033, 103.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.525262443, 103.700000000]: client call to service SUCCEDED[0m
+103.700000000 Odom: [x,y,yaw]=[2.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.538381020, 103.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.538501578, 103.700000000]: client call to service SUCCEDED[0m
+103.700000000 Odom: [x,y,yaw]=[2.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.551631161, 103.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.551737788, 103.700000000]: client call to service SUCCEDED[0m
+103.700000000 Odom: [x,y,yaw]=[2.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.564884614, 103.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.565007268, 103.700000000]: client call to service SUCCEDED[0m
+103.700000000 Odom: [x,y,yaw]=[2.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.578069438, 103.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.578188835, 103.700000000]: client call to service SUCCEDED[0m
+103.700000000 Odom: [x,y,yaw]=[2.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.588817007, 103.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.588934305, 103.700000000]: client call to service SUCCEDED[0m
+103.700000000 Odom: [x,y,yaw]=[2.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.602878463, 103.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.603038967, 103.700000000]: client call to service SUCCEDED[0m
+103.700000000 Odom: [x,y,yaw]=[2.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121,100]
+dbg: in laserCallback() fn
+103.800000000 Laser: [d, theta, x, y]=[0.680026,-0.00877547,0.68,-0.00596747]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.616694907, 103.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.616831888, 103.800000000]: client call to service SUCCEDED[0m
+103.700000000 Odom: [x,y,yaw]=[2.1,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.630362021, 103.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.630516279, 103.800000000]: client call to service SUCCEDED[0m
+103.800000000 Odom: [x,y,yaw]=[2.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.643823068, 103.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.643991544, 103.800000000]: client call to service SUCCEDED[0m
+103.800000000 Odom: [x,y,yaw]=[2.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.657211879, 103.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.657340596, 103.800000000]: client call to service SUCCEDED[0m
+103.800000000 Odom: [x,y,yaw]=[2.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.670617217, 103.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.670751425, 103.800000000]: client call to service SUCCEDED[0m
+103.800000000 Odom: [x,y,yaw]=[2.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.684095361, 103.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.684202463, 103.800000000]: client call to service SUCCEDED[0m
+103.800000000 Odom: [x,y,yaw]=[2.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.697310754, 103.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.697435306, 103.800000000]: client call to service SUCCEDED[0m
+103.800000000 Odom: [x,y,yaw]=[2.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.711338960, 103.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.711444703, 103.800000000]: client call to service SUCCEDED[0m
+103.800000000 Odom: [x,y,yaw]=[2.15,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[21.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[121.5,100]
+dbg: in laserCallback() fn
+103.900000000 Laser: [d, theta, x, y]=[0.640025,-0.00877547,0.64,-0.00561645]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.724740598, 103.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.724864573, 103.900000000]: client call to service SUCCEDED[0m
+103.900000000 Odom: [x,y,yaw]=[2.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.738067889, 103.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.738221779, 103.900000000]: client call to service SUCCEDED[0m
+103.900000000 Odom: [x,y,yaw]=[2.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.752021318, 103.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.752150888, 103.900000000]: client call to service SUCCEDED[0m
+103.900000000 Odom: [x,y,yaw]=[2.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.765390165, 103.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.765577227, 103.900000000]: client call to service SUCCEDED[0m
+103.900000000 Odom: [x,y,yaw]=[2.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.779096160, 103.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.779328080, 103.900000000]: client call to service SUCCEDED[0m
+103.900000000 Odom: [x,y,yaw]=[2.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.792826551, 103.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.792955073, 103.900000000]: client call to service SUCCEDED[0m
+103.900000000 Odom: [x,y,yaw]=[2.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.806665441, 103.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.806804950, 103.900000000]: client call to service SUCCEDED[0m
+103.900000000 Odom: [x,y,yaw]=[2.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122,100]
+dbg: in laserCallback() fn
+104.000000000 Laser: [d, theta, x, y]=[0.580022,-0.00877547,0.58,-0.0050899]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.820096918, 104.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.820315304, 104.000000000]: client call to service SUCCEDED[0m
+103.900000000 Odom: [x,y,yaw]=[2.2,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.833851181, 104.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.834010443, 104.000000000]: client call to service SUCCEDED[0m
+104.000000000 Odom: [x,y,yaw]=[2.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.847358995, 104.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.847476637, 104.000000000]: client call to service SUCCEDED[0m
+104.000000000 Odom: [x,y,yaw]=[2.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.860543100, 104.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.860669819, 104.000000000]: client call to service SUCCEDED[0m
+104.000000000 Odom: [x,y,yaw]=[2.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.878949391, 104.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.879061985, 104.000000000]: client call to service SUCCEDED[0m
+104.000000000 Odom: [x,y,yaw]=[2.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.892944016, 104.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.893064365, 104.000000000]: client call to service SUCCEDED[0m
+104.000000000 Odom: [x,y,yaw]=[2.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.906236450, 104.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.906386184, 104.000000000]: client call to service SUCCEDED[0m
+104.000000000 Odom: [x,y,yaw]=[2.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122.5,100]
+dbg: in laserCallback() fn
+104.100000000 Laser: [d, theta, x, y]=[0.540021,-0.00877547,0.54,-0.00473888]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.919633884, 104.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.919831262, 104.100000000]: client call to service SUCCEDED[0m
+104.000000000 Odom: [x,y,yaw]=[2.25,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[22.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[122.5,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.933427018, 104.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.933556519, 104.100000000]: client call to service SUCCEDED[0m
+104.100000000 Odom: [x,y,yaw]=[2.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.946897417, 104.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.947025457, 104.100000000]: client call to service SUCCEDED[0m
+104.100000000 Odom: [x,y,yaw]=[2.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.960519383, 104.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.960655364, 104.100000000]: client call to service SUCCEDED[0m
+104.100000000 Odom: [x,y,yaw]=[2.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.973939773, 104.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.974066695, 104.100000000]: client call to service SUCCEDED[0m
+104.100000000 Odom: [x,y,yaw]=[2.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029518.987730857, 104.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029518.987881817, 104.100000000]: client call to service SUCCEDED[0m
+104.100000000 Odom: [x,y,yaw]=[2.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.001289501, 104.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.001441943, 104.100000000]: client call to service SUCCEDED[0m
+104.100000000 Odom: [x,y,yaw]=[2.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.014711122, 104.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.014821507, 104.100000000]: client call to service SUCCEDED[0m
+104.100000000 Odom: [x,y,yaw]=[2.3,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123,100]
+dbg: in laserCallback() fn
+104.200000000 Laser: [d, theta, x, y]=[0.500019,-0.00877547,0.5,-0.00438785]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.028198524, 104.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.028303112, 104.200000000]: client call to service SUCCEDED[0m
+104.200000000 Odom: [x,y,yaw]=[2.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.041496705, 104.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.041612225, 104.200000000]: client call to service SUCCEDED[0m
+104.200000000 Odom: [x,y,yaw]=[2.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.054991650, 104.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.055109768, 104.200000000]: client call to service SUCCEDED[0m
+104.200000000 Odom: [x,y,yaw]=[2.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.068398061, 104.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.068585384, 104.200000000]: client call to service SUCCEDED[0m
+104.200000000 Odom: [x,y,yaw]=[2.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.081731155, 104.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.081863842, 104.200000000]: client call to service SUCCEDED[0m
+104.200000000 Odom: [x,y,yaw]=[2.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.095216479, 104.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.095321022, 104.200000000]: client call to service SUCCEDED[0m
+104.200000000 Odom: [x,y,yaw]=[2.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.108963195, 104.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.109110882, 104.200000000]: client call to service SUCCEDED[0m
+104.200000000 Odom: [x,y,yaw]=[2.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123.5,100]
+dbg: in laserCallback() fn
+104.300000000 Laser: [d, theta, x, y]=[0.500019,-0.00877547,0.5,-0.00438785]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.122709701, 104.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.122852501, 104.300000000]: client call to service SUCCEDED[0m
+104.200000000 Odom: [x,y,yaw]=[2.35,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[23.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[123.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.136360698, 104.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.136489386, 104.300000000]: client call to service SUCCEDED[0m
+104.300000000 Odom: [x,y,yaw]=[2.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.149985342, 104.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.150210485, 104.300000000]: client call to service SUCCEDED[0m
+104.300000000 Odom: [x,y,yaw]=[2.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.163694575, 104.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.163806810, 104.300000000]: client call to service SUCCEDED[0m
+104.300000000 Odom: [x,y,yaw]=[2.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.177593092, 104.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.177732502, 104.300000000]: client call to service SUCCEDED[0m
+104.300000000 Odom: [x,y,yaw]=[2.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.191313976, 104.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.191403027, 104.300000000]: client call to service SUCCEDED[0m
+104.300000000 Odom: [x,y,yaw]=[2.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.205586805, 104.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.205687915, 104.300000000]: client call to service SUCCEDED[0m
+104.300000000 Odom: [x,y,yaw]=[2.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124,100]
+dbg: in laserCallback() fn
+104.400000000 Laser: [d, theta, x, y]=[0.400015,-0.00877547,0.4,-0.00351028]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.219178945, 104.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.219293877, 104.400000000]: client call to service SUCCEDED[0m
+104.300000000 Odom: [x,y,yaw]=[2.4,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.232479362, 104.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.232616677, 104.400000000]: client call to service SUCCEDED[0m
+104.400000000 Odom: [x,y,yaw]=[2.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.245879771, 104.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.245991978, 104.400000000]: client call to service SUCCEDED[0m
+104.400000000 Odom: [x,y,yaw]=[2.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.259342283, 104.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.259447027, 104.400000000]: client call to service SUCCEDED[0m
+104.400000000 Odom: [x,y,yaw]=[2.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.272667505, 104.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.272757143, 104.400000000]: client call to service SUCCEDED[0m
+104.400000000 Odom: [x,y,yaw]=[2.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.286683111, 104.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.286805175, 104.400000000]: client call to service SUCCEDED[0m
+104.400000000 Odom: [x,y,yaw]=[2.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.301402939, 104.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.301540692, 104.400000000]: client call to service SUCCEDED[0m
+104.400000000 Odom: [x,y,yaw]=[2.45,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[24.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.315643674, 104.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.316737474, 104.400000000]: client call to service SUCCEDED[0m
+104.400000000 Odom: [x,y,yaw]=[2.45,dbg: in laserCallback() fn
+0,104.5000000000]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[ Laser: [d, theta, x, y]=[24.50.340013,,0-0.00877547,0.34,] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[124.5,-0.00298374]
+100]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.330177415, 104.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.330332025, 104.500000000]: client call to service SUCCEDED[0m
+104.500000000 Odom: [x,y,yaw]=[2.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.343726598, 104.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.343830835, 104.500000000]: client call to service SUCCEDED[0m
+104.500000000 Odom: [x,y,yaw]=[2.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.356874281, 104.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.356961458, 104.500000000]: client call to service SUCCEDED[0m
+104.500000000 Odom: [x,y,yaw]=[2.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.370392296, 104.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.370492340, 104.500000000]: client call to service SUCCEDED[0m
+104.500000000 Odom: [x,y,yaw]=[2.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.384000943, 104.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.384096272, 104.500000000]: client call to service SUCCEDED[0m
+104.500000000 Odom: [x,y,yaw]=[2.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.397101593, 104.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.397211760, 104.500000000]: client call to service SUCCEDED[0m
+104.500000000 Odom: [x,y,yaw]=[2.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.410945930, 104.500000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.411047061, 104.500000000]: client call to service SUCCEDED[0m
+104.500000000 Odom: [x,y,yaw]=[2.5,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125,100]
+dbg: in laserCallback() fn
+104.600000000 Laser: [d, theta, x, y]=[0.300012,-0.00877547,0.3,-0.00263271]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.424654558, 104.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.424775948, 104.600000000]: client call to service SUCCEDED[0m
+104.600000000 Odom: [x,y,yaw]=[2.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.438439820, 104.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.438622971, 104.600000000]: client call to service SUCCEDED[0m
+104.600000000 Odom: [x,y,yaw]=[2.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.452282753, 104.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.452398289, 104.600000000]: client call to service SUCCEDED[0m
+104.600000000 Odom: [x,y,yaw]=[2.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.465918879, 104.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.466040849, 104.600000000]: client call to service SUCCEDED[0m
+104.600000000 Odom: [x,y,yaw]=[2.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.479679454, 104.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.479789663, 104.600000000]: client call to service SUCCEDED[0m
+104.600000000 Odom: [x,y,yaw]=[2.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.493340869, 104.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.493444999, 104.600000000]: client call to service SUCCEDED[0m
+104.600000000 Odom: [x,y,yaw]=[2.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.506919918, 104.600000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.507012240, 104.600000000]: client call to service SUCCEDED[0m
+104.600000000 Odom: [x,y,yaw]=[2.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125.5,100]
+dbg: in laserCallback() fn
+104.700000000 Laser: [d, theta, x, y]=[0.240009,-0.00877547,0.24,-0.00210617]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.520731242, 104.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.520863679, 104.700000000]: client call to service SUCCEDED[0m
+104.600000000 Odom: [x,y,yaw]=[2.55,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[25.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[125.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.534617964, 104.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.538299167, 104.700000000]: client call to service SUCCEDED[0m
+104.700000000 Odom: [x,y,yaw]=[2.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.551826800, 104.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.551958931, 104.700000000]: client call to service SUCCEDED[0m
+104.700000000 Odom: [x,y,yaw]=[2.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.565549379, 104.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.565655929, 104.700000000]: client call to service SUCCEDED[0m
+104.700000000 Odom: [x,y,yaw]=[2.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.579037758, 104.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.579140183, 104.700000000]: client call to service SUCCEDED[0m
+104.700000000 Odom: [x,y,yaw]=[2.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.592365204, 104.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.592490341, 104.700000000]: client call to service SUCCEDED[0m
+104.700000000 Odom: [x,y,yaw]=[2.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.605877659, 104.700000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.605960712, 104.700000000]: client call to service SUCCEDED[0m
+104.700000000 Odom: [x,y,yaw]=[2.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126,100]
+dbg: in laserCallback() fn
+104.800000000 Laser: [d, theta, x, y]=[0.200008,-0.00877547,0.2,-0.00175514]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.619352285, 104.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.619488779, 104.800000000]: client call to service SUCCEDED[0m
+104.700000000 Odom: [x,y,yaw]=[2.6,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.633375898, 104.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.633485849, 104.800000000]: client call to service SUCCEDED[0m
+104.800000000 Odom: [x,y,yaw]=[2.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.646720174, 104.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.646871222, 104.800000000]: client call to service SUCCEDED[0m
+104.800000000 Odom: [x,y,yaw]=[2.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126.5,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.660273135, 104.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.660384654, 104.800000000]: client call to service SUCCEDED[0m
+104.800000000 Odom: [x,y,yaw]=[2.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.673547512, 104.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.673689710, 104.800000000]: client call to service SUCCEDED[0m
+104.800000000 Odom: [x,y,yaw]=[2.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.686958327, 104.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.687072027, 104.800000000]: client call to service SUCCEDED[0m
+104.800000000 Odom: [x,y,yaw]=[2.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.700439067, 104.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.700571463, 104.800000000]: client call to service SUCCEDED[0m
+104.800000000 Odom: [x,y,yaw]=[2.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.713858722, 104.800000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.713978627, 104.800000000]: client call to service SUCCEDED[0m
+104.800000000 Odom: [x,y,yaw]=[2.65,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[26.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[126.5,100]
+dbg: in laserCallback() fn
+104.900000000 Laser: [d, theta, x, y]=[0.140005,-0.00877547,0.14,-0.0012286]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.727378661, 104.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.727552967, 104.900000000]: client call to service SUCCEDED[0m
+104.900000000 Odom: [x,y,yaw]=[2.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.740718552, 104.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.740833474, 104.900000000]: client call to service SUCCEDED[0m
+104.900000000 Odom: [x,y,yaw]=[2.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.754224782, 104.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.754339694, 104.900000000]: client call to service SUCCEDED[0m
+104.900000000 Odom: [x,y,yaw]=[2.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.767652907, 104.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.767762436, 104.900000000]: client call to service SUCCEDED[0m
+104.900000000 Odom: [x,y,yaw]=[2.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.780911331, 104.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.781030794, 104.900000000]: client call to service SUCCEDED[0m
+104.900000000 Odom: [x,y,yaw]=[2.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.794648044, 104.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.794772162, 104.900000000]: client call to service SUCCEDED[0m
+104.900000000 Odom: [x,y,yaw]=[2.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.808177555, 104.900000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.808290786, 104.900000000]: client call to service SUCCEDED[0m
+104.900000000 Odom: [x,y,yaw]=[2.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127,100]
+dbg: in laserCallback() fn
+105.000000000 Laser: [d, theta, x, y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.821618361, 105.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.821703659, 105.000000000]: client call to service SUCCEDED[0m
+104.900000000 Odom: [x,y,yaw]=[2.7,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.835269449, 105.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.835383469, 105.000000000]: client call to service SUCCEDED[0m
+105.000000000 Odom: [x,y,yaw]=[2.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.848777999, 105.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.848896996, 105.000000000]: client call to service SUCCEDED[0m
+105.000000000 Odom: [x,y,yaw]=[2.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.862257978, 105.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.862368443, 105.000000000]: client call to service SUCCEDED[0m
+105.000000000 Odom: [x,y,yaw]=[2.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.875807998, 105.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.875899696, 105.000000000]: client call to service SUCCEDED[0m
+105.000000000 Odom: [x,y,yaw]=[2.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.889028672, 105.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.889114992, 105.000000000]: client call to service SUCCEDED[0m
+105.000000000 Odom: [x,y,yaw]=[2.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.902519505, 105.000000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.902616385, 105.000000000]: client call to service SUCCEDED[0m
+105.000000000 Odom: [x,y,yaw]=[2.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127.5,100]
+dbg: in laserCallback() fn
+105.100000000 Laser: [d, theta, x, y]=[0.0400015,-0.00877547,0.04,-0.000351028]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.916092982, 105.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.916210871, 105.100000000]: client call to service SUCCEDED[0m
+105.000000000 Odom: [x,y,yaw]=[2.75,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[27.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[127.5,100]
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.929520474, 105.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.929665216, 105.100000000]: client call to service SUCCEDED[0m
+105.100000000 Odom: [x,y,yaw]=[2.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.943119549, 105.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.943232400, 105.100000000]: client call to service SUCCEDED[0m
+105.100000000 Odom: [x,y,yaw]=[2.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.956463998, 105.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.956570393, 105.100000000]: client call to service SUCCEDED[0m
+105.100000000 Odom: [x,y,yaw]=[2.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.970059755, 105.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.970184738, 105.100000000]: client call to service SUCCEDED[0m
+105.100000000 Odom: [x,y,yaw]=[2.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.983998460, 105.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.984123029, 105.100000000]: client call to service SUCCEDED[0m
+105.100000000 Odom: [x,y,yaw]=[2.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029519.997771106, 105.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029519.997894614, 105.100000000]: client call to service SUCCEDED[0m
+105.100000000 Odom: [x,y,yaw]=[2.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.011158631, 105.100000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.011274247, 105.100000000]: client call to service SUCCEDED[0m
+105.100000000 Odom: [x,y,yaw]=[2.8,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128,100]
+dbg: in laserCallback() fn
+105.200000000 Laser: [d, theta, x, y]=[0,-1.5708,-0,-0]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.024669431, 105.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.024783111, 105.200000000]: client call to service SUCCEDED[0m
+105.200000000 Odom: [x,y,yaw]=[2.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.038609341, 105.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.038739207, 105.200000000]: client call to service SUCCEDED[0m
+105.200000000 Odom: [x,y,yaw]=[2.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.052460712, 105.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.052587882, 105.200000000]: client call to service SUCCEDED[0m
+105.200000000 Odom: [x,y,yaw]=[2.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.066162031, 105.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.066342498, 105.200000000]: client call to service SUCCEDED[0m
+105.200000000 Odom: [x,y,yaw]=[2.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.079817085, 105.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.079943270, 105.200000000]: client call to service SUCCEDED[0m
+105.200000000 Odom: [x,y,yaw]=[2.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.093159253, 105.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.093296777, 105.200000000]: client call to service SUCCEDED[0m
+105.200000000 Odom: [x,y,yaw]=[2.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.106918638, 105.200000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.107045526, 105.200000000]: client call to service SUCCEDED[0m
+105.200000000 Odom: [x,y,yaw]=[2.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128.5,100]
+dbg: in laserCallback() fn
+105.300000000 Laser: [d, theta, x, y]=[0.140005,-0.00877547,0.14,-0.0012286]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.120495505, 105.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.120624835, 105.300000000]: client call to service SUCCEDED[0m
+105.200000000 Odom: [x,y,yaw]=[2.85,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[28.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[128.5,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.133961223, 105.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.134058068, 105.300000000]: client call to service SUCCEDED[0m
+105.300000000 Odom: [x,y,yaw]=[2.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[29,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[129,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.147256062, 105.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.147430158, 105.300000000]: client call to service SUCCEDED[0m
+105.300000000 Odom: [x,y,yaw]=[2.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[29,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[129,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.160729847, 105.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.160834913, 105.300000000]: client call to service SUCCEDED[0m
+105.300000000 Odom: [x,y,yaw]=[2.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[29,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[129,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.173926016, 105.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.174020308, 105.300000000]: client call to service SUCCEDED[0m
+105.300000000 Odom: [x,y,yaw]=[2.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[29,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[129,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.187258672, 105.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.187382607, 105.300000000]: client call to service SUCCEDED[0m
+105.300000000 Odom: [x,y,yaw]=[2.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[29,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[129,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.200765053, 105.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.200883725, 105.300000000]: client call to service SUCCEDED[0m
+105.300000000 Odom: [x,y,yaw]=[2.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[29,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[129,100]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.214053658, 105.300000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.214168366, 105.300000000]: client call to service SUCCEDED[0m
+105.300000000 Odom: [x,y,yaw]=[2.9,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[29,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[129,100]
+dbg: in laserCallback() fn
+105.400000000 Laser: [d, theta, x, y]=[0.100004,-0.00877547,0.1,-0.00087757]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1519029520.227646000, 105.400000000]: sending back response: [1][0m
+[0m[ INFO] [1519029520.227776403, 105.400000000]: client call to service SUCCEDED[0m
+105.400000000 Odom: [x,y,yaw]=[2.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[29.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[129.5,100]
+105.400000000 Odom: [x,y,yaw]=[2.95,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[29.5,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[129.5,100]

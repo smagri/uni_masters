@@ -1,0 +1,32 @@
+-- Using CATKIN_DEVEL_PREFIX: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/frontierExploration/build/devel
+-- Using CMAKE_PREFIX_PATH: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel;/opt/ros/indigo
+-- This workspace overlays: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel;/opt/ros/indigo
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/frontierExploration/build/test_results
+-- Found gtest sources under '/usr/src/gtest': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.6.18
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   signals
+--  CMake C++ FLAGS -std=c++0x  -Wno-deprecated -Wdeprecated-declarations
+-- frontierExpolration: 0 messages, 1 services
+CMake Error at /opt/ros/indigo/share/catkin/cmake/catkin_package_xml.cmake:43 (message):
+  catkin_package_xml() package name 'a3_help' in
+  '/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/frontierExploration/package.xml'
+  does not match current PROJECT_NAME 'frontierExpolration'.  You must call
+  project() with the same package name before.
+Call Stack (most recent call first):
+  /opt/ros/indigo/share/catkin/cmake/catkin_package.cmake:95 (catkin_package_xml)
+  CMakeLists.txt:94 (catkin_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/frontierExploration/build/CMakeFiles/CMakeOutput.log".
+See also "/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/frontierExploration/build/CMakeFiles/CMakeError.log".

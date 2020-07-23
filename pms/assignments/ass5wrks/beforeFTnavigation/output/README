@@ -1,0 +1,11 @@
+13mar2018
+
+beforeFTnavigaiton/out/* , are ALL output files currently in:
+
+smagri@gyan1:~/uni/subj/proj30cp/catkin_ws$
+
+
+
+I should really be saving the current output.* files to the
+corresponding ass5wrks/* directory each time a new ass5wrks/*
+directory is made.

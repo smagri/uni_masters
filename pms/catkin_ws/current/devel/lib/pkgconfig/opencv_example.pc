@@ -1,0 +1,8 @@
+prefix=/lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+
+Name: opencv_example
+Description: Description of opencv_example
+Version: 0.0.0
+Cflags: 
+Libs: -L/lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/lib 
+Requires: 

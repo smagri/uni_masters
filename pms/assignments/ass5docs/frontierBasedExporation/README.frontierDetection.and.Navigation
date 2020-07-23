@@ -1,0 +1,94 @@
+Most usefull paper is: paper Y Yamauchi Frontiers.pdf
+
+
+Most relavent sections are:
+--------------------------
+
+Introduction, Fronier-Based exploration, Frontier Detection.
+
+Assumptions for my algorithm dermined from reading this and vairious
+--------------------------------------------------------------------
+other papers and web sources:
+----------------------------
+
+Simplest interpretation for detecting frontiers  is the use of a laser
+scan only pointed at adjacent sides to the occupancy grid(aka evidence
+grid).  I will  use this as completion  of this task may  bogg me done
+and the majority of the assignment  covers much more material that you
+show  you have  to understand.   See diagram  of adjacent  sides of  a
+square or cell 22/1/2018.
+
+A more soficated approach to  frontier detection is described in other
+papers and  seems the main  diffentionation factor presented  in these
+papers.   Also most  of these  methods  use various  robot sensors  to
+better  determine a  frontier cell(FT).   Genrally speaking  they seem
+analogous to computer  vision techniques, such as:  edge detection and
+region extraction; or blobbing(openCV).
+
+
+My simple algorithim, based on these assumptions:
+-----------------------------------------------
+
+move2nextFrontierNode{
+
+1) Robot is used to do a 360degree scan/seep at it's initial position.
+   Since the FT cells can only  be adjacent cells to the current robot
+   cell the  angles for scanning are,  0degrees, 90degrees, 180degrees
+   and 360degrees.  Of course the angle values need to be converted to
+   use radions, as required to set the robot angle.
+
+2) Use the laser, only one laser  beam used in this case, to determine
+   if what the robot is looking,  at these angles, is an: UK(unkonwn),
+   FT(frontier), FS(free space), or O(obsicale) cell
+
+3) Move  to the closest FT  node, using a BFS(Breath  First Search) to
+   find  the  shortest,  obstacle  free, path(could  you  use  the  a*
+   algorithim here?).
+
+4) Move  the   robot,  using   the  requestGoal()   method  in   the
+   GazeboRetrieve class, to each cell in the path to the FT node.
+
+5) Repeat 1) - 4) for each frontier cell.
+
+   Note that by  this method keeps the robot always  between FT and UK
+   regions at it  final FT cell position, that is  at each FT stopping
+   point.
+
+}
+
+Pseudo code for this fn:
+
+move2nextFrontierNode{
+
+    //  Foreach  laser angle  determine  the  pose  of the  FT  node/s
+    //  relative to the current robot pose.
+
+       int findNextFTnode(nextAngle){
+
+          return FTlocation(x,y);
+       }
+
+
+    // Foreach laser angle store the  location(x,y) of the FT node/s in
+    // a vector.
+
+    vector <ints> curPoseFTnodes;
+
+
+    // Find the closest FT node to the current robot location.
+
+    curClosestFTnode;
+
+    // Find the shortest, obstacle free path, to this FT node using DFS. 
+    map<int, int> x, y;
+    
+
+     // Move to the robot to this FT node location with multiple calls
+     // to the requestGoal() member fn of GazeboRetrieve class.
+
+} return;
+
+
+
+
+

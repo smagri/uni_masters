@@ -1,0 +1,27 @@
+20feb2018
+
+sensor_msgs::ImagePtr msg
+	=  cv_bridge::CvImage(std_msgs::Header(), enc::MONO8,cvPtr_->image).toImageMsg();
+
+image_pub_.publish(msg);
+
+in seperateThread()
+
+Publishes the current ogMap image, that  we have just updated with the
+current FT,  UK, FS,  O, determined from  the current  robot position.
+The updated ogMap image is also displayed in the "view" window.
+
+(it is inserted where test for  changing ogMap image values is located
+at this stage)
+
+So the view window contains the latest/updated ogMap image and we need
+to Send it to the map_to_image_node  so it reflex's the latest updated
+ogMap image.  I think this is done by
+
+// Subscribe to the topic that generates the updated ogMap image.
+image_sub_ 
+= it_.subscribe("image_image/full", 1 ,&map_to_image_node::&map_to_image_node, this);
+
+now rqt_view_image  should display  the updated  ogMap image  that the
+"view" displays, as it should.
+

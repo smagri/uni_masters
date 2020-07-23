@@ -1,0 +1,44 @@
+STL, Standard Template Library provides containers and supporting data
+types like vectors, lists, queues and itterators.
+
+vector: a fundamental random access container that can be used in many
+places a c array can be, but with much more functionality.
+
+list: a double linked list optimised for rapid inserts and deletes.
+
+set:  an ordered  sequence container,  where  elements are  kept in  a
+strict order based on their value.
+
+map: is an associative container, where unique keys are used to access
+associated values.
+
+stack,  queue,  deque  are  LIFO, FIFO,  double-ended  containers  for
+pushing and popping data from the stack.
+
+string: is a  specialised container of characters optimised  for use a
+strings.
+
+i/o streams: read and write data to and from files and i/o devices.
+
+more on using the i/o stream cout:
+
+It's worth noting that for this chapter  I used "cout" for most of the
+console output. I haven't been  using "cout" in other chapters because
+outside the  context of the STL,  "cout" is not efficient  and I don't
+tend to use it myself without the STL. "Cout" is designed to work with
+STL classes, and I do use it when I'm using the STL.
+
+cout is based on the i/o stream classes covered in this chapter.
+
+
+The  STL is  very large,  much  larger than  could be  covered in  this
+course.  For our  purposes, I  will cover  the classes  that are  most
+commonly  used for  general-purpose programming.  There are  many good
+references available that cover most or all of the library. I maintain
+a  current  list  of  books  and other  resources  on  my  website  at
+cpp.bw.org.
+
+Understanding the C++  Standard Template Library is  an essential part
+of becoming  a competent C++  programmer. The STL  is part of  the C++
+standard, and it provides a great  deal of basic functionality for C++
+programmers.

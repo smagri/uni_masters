@@ -1,0 +1,51 @@
+Transcript:
+
+- Preprocessor Macros can be very useful, but there's also a real
+  possibility of unintended results. One common cause of problems is
+  parameters being evaluated more than once. Here I have a working
+  copy of working.cpp from Chapter Three of the exercise files. Let's
+  take a look at an example of a macro that may not do what we
+  intended. I'm gonna start by defining a simple MAX macro, and it
+  looks like this. If you saw the last lesson, then you've seen this
+  before.
+
+This is a simple macro that will replace all of this with an
+expression that takes the greater of the two parameters. I'm also
+going to define a simple function here. I'm gonna call it
+increment. This is a very simple function that's just designed to
+illustrate a particular point. It declares a static variable and
+initializes it and then increments it. And so then each time this
+function is called, the variable will increment.
+
+First time, it'll return 47 and then it'll return 52 and like that,
+because the variable is static. And this is just to illustrate a
+particular point. Now we'll define a variable and we'll call it x, and
+we'll give it a value of 50. And I'll put in a couple of printfs and
+we'll call the macro. We'll just do exactly the same thing a couple of
+times here. Now, let's see if we can predict what happens because this
+is the problem with parameterized macros.
+
+The first time I come in here and call it, we have an x of 50 and
+increment will go through its first time and it will return 47. And
+so, we're calling MAX of x and 47, right? Well, no, because this time,
+it will be 52, right? Well, not exactly because 52 is greater than 50,
+and so this will actually get evaluated twice, and it'll return
+57. And then the next time through, we'll be comparing it with 62, and
+then it will return 72.
+
+And so I'm trying to predict this in my head. We'll see what actually
+happens. It's actually really hard to do because this expression that
+calls this function is getting evaluated more times than it
+appears. And so when I build and run, you see it gets called three
+times before we ever get a value. The first time is here and the
+second time is here, and the third time is also here because it's
+getting evaluated twice. And so it's returning value MAX of 50 and 47
+is 57, which makes no sense on the face of it.
+
+Likewise here we get 72. So, parameterized macros are a powerful tool,
+but like many powerful tools, you need to be conscious of how they
+work. If you do need to use them, proceed with care. You'll need to be
+very conscious of how your macros are evaluated. For many uses, C++
+templates will be a much better choice and we'll cover the templates
+later in this course.
+

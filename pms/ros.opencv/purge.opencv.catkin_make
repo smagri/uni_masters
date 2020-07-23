@@ -1,0 +1,41 @@
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 5 packages in topological order:
+-- ~~  - beginner_tutorials
+-- ~~  - randomNum_node
+-- ~~  - opencv_example
+-- ~~  - node_example
+-- ~~  - voice_node
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'beginner_tutorials'
+-- ==> add_subdirectory(beginner_tutorials)
+-- +++ processing catkin package: 'randomNum_node'
+-- ==> add_subdirectory(randomNum_node)
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+-- +++ processing catkin package: 'opencv_example'
+-- ==> add_subdirectory(opencv_example)
+CMake Error at /usr/local/share/OpenCV/OpenCVModules.cmake:189 (message):
+  The imported target "opencv_hal" references the file
+
+     "/usr/local/lib/libopencv_hal.a"
+
+  but this file does not exist.  Possible reasons include:
+
+  * The file was deleted, renamed, or moved to another location.
+
+  * An install or uninstall procedure did not complete successfully.
+
+  * The installation package was faulty and contained
+
+     "/usr/local/share/OpenCV/OpenCVModules.cmake"
+
+  but not all the files it references.
+
+Call Stack (most recent call first):
+  /usr/local/share/OpenCV/OpenCVConfig.cmake:86 (include)
+  opencv_example/CMakeLists.txt:15 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build/CMakeFiles/CMakeOutput.log".
+See also "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build/CMakeFiles/CMakeError.log".
+Invoking "cmake" failed

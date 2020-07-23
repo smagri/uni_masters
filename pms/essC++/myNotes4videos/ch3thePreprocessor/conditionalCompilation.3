@@ -1,0 +1,32 @@
+Important Notes:
+
+
+
+Transcript:
+
+- The pre-processor provides a number of directives for Conditional
+  Compilation. There's #if #ifdef, which stands for if
+  defined. #ifndef which stands for if not defined. #else, #elif which
+  stands for elseif and #endif. And there's also a defined
+  keyword. You can say #if defined (MACRO) which is the same as #ifdef
+  and with the exclamation point it's the same as #ifndef. Here I have
+  a working copy of conditional.cpp and conditional.h from chapter
+  three of the exercise files.
+
+So you notice the conditional.c includes conditional.h and
+conditional.h looks like this. It has an #ifdef and an #else,
+#endif. It also has the include guard, we'll cover that later. And it
+has #define NUMBER 47, #ifdef FOO, and #else it has #define NUMBER
+2. And so if we come over here to conditonal.cpp and now if I build
+and run you see it says the number is two. But if I come up here
+before my #include and I #define FOO.
+
+Now when I build and run you see it says the number is 47. And that's
+because of the Conditional Compilation. If FOO is defined we get 47
+for our number and if FOO is not defined we get two for our number. In
+fact, I can do this with the #if defined instead. Like that. And I get
+the same result. I build and run I have 47 and if I comment this line
+out then I get the number is two. Such as this simple example, the cp
+processor Conditional Compilation directives are commonly used for
+separate versions of code, for de-bug, or for supporting different
+target environments.

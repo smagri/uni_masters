@@ -1,0 +1,117 @@
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+[  3%] [  3%] Scanning dependencies of target rosopencvListner
+Built target randomNumListner
+Built target listener
+[  6%] [  4%] [  8%] Built target talker
+Built target randomNumTalker
+[ 10%] [ 11%] Building CXX object rosopencv_node/CMakeFiles/rosopencvListner.dir/src/rosopencvListner.cpp.o
+Built target rosopencvTalker
+Built target TBK
+[ 11%] Built target sensor_msgs_generate_messages_lisp
+[ 11%] Built target sensor_msgs_generate_messages_cpp
+[ 11%] Built target _a3_help_generate_messages_check_deps_RequestGoal
+[ 12%] [ 12%] Built target sensor_msgs_generate_messages_py
+Built target map_to_image_node
+[ 13%] [ 15%] Built target image_subscriber
+Built target sample
+[ 16%] [ 17%] Built target image_publisher
+[ 19%] Built target node_example_gencfg
+Built target random_walk
+[ 19%] [ 19%] Built target std_msgs_generate_messages_lisp
+Built target std_msgs_generate_messages_py
+[ 19%] Built target std_msgs_generate_messages_cpp
+[ 19%] Built target geometry_msgs_generate_messages_py
+[ 19%] Built target _node_example_generate_messages_check_deps_NodeExampleData
+[ 19%] Built target _lama_msgs_generate_messages_check_deps_GetLamaObject
+[ 19%] Built target _lama_msgs_generate_messages_check_deps_PlaceProfile
+[ 19%] [ 19%] Built target _lama_msgs_generate_messages_check_deps_GetPlaceProfile
+Built target _lama_msgs_generate_messages_check_deps_DescriptorLink
+[ 19%] Built target _lama_msgs_generate_messages_check_deps_Crossing
+[ 19%] Built target _lama_msgs_generate_messages_check_deps_SetPlaceProfile
+[ 19%] Built target _lama_msgs_generate_messages_check_deps_SetLamaObject
+[ 19%] Built target _lama_msgs_generate_messages_check_deps_GetInterfaceInfo
+[ 19%] [ 19%] Built target _lama_msgs_generate_messages_check_deps_GetCrossing
+Built target _lama_msgs_generate_messages_check_deps_InterfaceInfo
+[ 19%] Built target _lama_msgs_generate_messages_check_deps_SetCrossing
+[ 19%] Built target geometry_msgs_generate_messages_cpp
+[ 19%] [ 19%] Built target _lama_msgs_generate_messages_check_deps_Frontier
+[ 19%] Built target geometry_msgs_generate_messages_lisp
+Built target _lama_msgs_generate_messages_check_deps_LamaObject
+[ 20%] Built target a3_help_generate_messages_lisp
+[ 22%] Built target a3_help_generate_messages_cpp
+[ 23%] Built target node_example_generate_messages_lisp
+[ 25%] [ 27%] Built target a3_help_generate_messages_py
+[ 29%] Built target node_example_generate_messages_cpp
+Built target node_example_generate_messages_py
+[ 29%] [ 46%] [ 61%] Built target _local_map_generate_messages_check_deps_SaveMap
+Built target lama_msgs_generate_messages_py
+Built target lama_msgs_generate_messages_cpp
+[ 61%] Built target _voice_node_generate_messages_check_deps_voice_node
+[ 67%] [ 76%] Built target a3_help_generate_messages
+Built target lama_msgs_generate_messages_lisp
+[ 79%] Built target listener.node_example
+[ 79%] Built target node_example_generate_messages
+[ 80%] Built target local_map_generate_messages_cpp
+[ 82%] [ 83%] [ 86%] Built target local_map_generate_messages_py
+Built target map_ray_caster
+Built target talker.node_example
+[ 87%] Built target voice_node_generate_messages_cpp
+[ 88%] [ 90%] Built target local_map_generate_messages_lisp
+Built target voice_node_generate_messages_py
+[ 91%] Built target voice_node_generate_messages_lisp
+[ 91%] Built target lama_msgs_generate_messages
+[ 91%] Built target local_map_generate_messages
+Scanning dependencies of target voice_node_generate_messages
+[ 94%] [ 96%] Built target simpleSub
+Built target simplePub
+[ 96%] Built target voice_node_generate_messages
+Scanning dependencies of target local_map
+[ 97%] [ 98%] Building CXX object local_map/CMakeFiles/local_map.dir/src/local_map_node.cpp.o
+Building CXX object local_map/CMakeFiles/local_map.dir/src/map_builder.cpp.o
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/rosopencv_node/src/rosopencvListner.cpp: In constructor ‘rosopencv_node::rosopencvListner::rosopencvListner(ros::NodeHandle)’:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/rosopencv_node/src/rosopencvListner.cpp:30:64: error: no matching function for call to ‘image_transport::ImageTransport::subscribe(const char [13], int, <unresolved overloaded function type>)’
+     imageSubObj = it.subscribe("camera/image", 1, imageCallback);
+                                                                ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/rosopencv_node/src/rosopencvListner.cpp:30:64: note: candidates are:
+In file included from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/rosopencv_node/src/rosopencvListner.cpp:2:0:
+/opt/ros/indigo/include/image_transport/image_transport.h:74:14: note: image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >&)>&, const VoidPtr&, const image_transport::TransportHints&)
+   Subscriber subscribe(const std::string& base_topic, uint32_t queue_size,
+              ^
+/opt/ros/indigo/include/image_transport/image_transport.h:74:14: note:   no known conversion for argument 3 from ‘<unresolved overloaded function type>’ to ‘const boost::function<void(const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >&)>&’
+/opt/ros/indigo/include/image_transport/image_transport.h:82:14: note: image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints&)
+   Subscriber subscribe(const std::string& base_topic, uint32_t queue_size,
+              ^
+/opt/ros/indigo/include/image_transport/image_transport.h:82:14: note:   no known conversion for argument 3 from ‘<unresolved overloaded function type>’ to ‘void (*)(const ImageConstPtr&) {aka void (*)(const boost::shared_ptr<const sensor_msgs::Image_<std::allocator<void> > >&)}’
+/opt/ros/indigo/include/image_transport/image_transport.h:95:14: note: template<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints&)
+   Subscriber subscribe(const std::string& base_topic, uint32_t queue_size,
+              ^
+/opt/ros/indigo/include/image_transport/image_transport.h:95:14: note:   template argument deduction/substitution failed:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/rosopencv_node/src/rosopencvListner.cpp:30:64: note:   candidate expects 5 arguments, 3 provided
+     imageSubObj = it.subscribe("camera/image", 1, imageCallback);
+                                                                ^
+In file included from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/rosopencv_node/src/rosopencvListner.cpp:2:0:
+/opt/ros/indigo/include/image_transport/image_transport.h:106:14: note: template<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), const boost::shared_ptr<X>&, const image_transport::TransportHints&)
+   Subscriber subscribe(const std::string& base_topic, uint32_t queue_size,
+              ^
+/opt/ros/indigo/include/image_transport/image_transport.h:106:14: note:   template argument deduction/substitution failed:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/rosopencv_node/src/rosopencvListner.cpp:30:64: note:   candidate expects 5 arguments, 3 provided
+     imageSubObj = it.subscribe("camera/image", 1, imageCallback);
+                                                                ^
+make[2]: *** [rosopencv_node/CMakeFiles/rosopencvListner.dir/src/rosopencvListner.cpp.o] Error 1
+make[1]: *** [rosopencv_node/CMakeFiles/rosopencvListner.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+Linking CXX executable /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/lib/local_map/local_map
+[ 98%] Built target local_map
+make: *** [all] Error 2
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+Invoking "make -j8 -l8" failed

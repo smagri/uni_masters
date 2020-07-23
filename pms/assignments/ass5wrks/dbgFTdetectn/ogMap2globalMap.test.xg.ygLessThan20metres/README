@@ -1,0 +1,8 @@
+9jul2018
+
+If you grep output.sample for the xg or yg you will see that none of
+the values exceed the 20mx20m size of the ogMap.  FT cells are found
+within the ogMap so this is the correct result.
+
+Note when ( + (globalImageSize/2) is added to xg or yg this adds an
+offset of [500,500] so the values should all be withing [520, 480]

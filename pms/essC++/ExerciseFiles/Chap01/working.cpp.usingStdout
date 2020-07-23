@@ -1,0 +1,18 @@
+// working.cpp by Bill Weinman <http://bw.org/>
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main( int argc, char ** argv ){
+
+  // cout uses << to overload shifting bits, it now sends bits to the
+  // console, So redefining operator << which is normally a bit
+  // shifter.  Thus one can make the argument that stdout/stderr/stdin
+  // is a more authentic system.
+  //
+  // Also, cout increases the size of the binaries quite significantly
+  // so you can reject using it on this basis too.
+    cout << "Hello World! " << 2*7 << " another str" << endl;  
+
+  return 0;
+}

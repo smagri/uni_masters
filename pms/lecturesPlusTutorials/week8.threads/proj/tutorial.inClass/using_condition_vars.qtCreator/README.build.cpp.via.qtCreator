@@ -1,0 +1,18 @@
+Select CMakeLists.txt:
+---------------------
+File->OpenFile->~/uni/sub/....week8/proj/tutorial.inClass/using_condition_vars.qtCreator/CMakeLists.txt
+
+Build Location set to build dir created earlier:
+------------------------------------------------
+smagri@gyan1:/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week8/proj/tutorial.inClass/using_condition_vars.qtCreator/build
+
+Take defaults:
+-------------
+Choose->Next->Run Cmake
+
+Finish
+
+
+
+
+

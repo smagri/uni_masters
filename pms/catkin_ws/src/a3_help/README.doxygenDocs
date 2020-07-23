@@ -1,0 +1,54 @@
+10jan2018
+
+NOTE: these .yamil files are like makefiles, thus very depended on
+syntax like spaces and colens.
+
+To generate a tag file during a documentation run, simply pass the -g
+option to rosdoc lite with a path to the desired location of the
+tagfile. For example:
+
+STEP1:
+-----
+
+rosdoc_lite -o doc -g doc/tags/my_package.tag /path/to/my/package
+
+
+ie eg rosdoc_lite -o doc -g doc/tags/a3_help.tag src/a3_help
+
+creates:
+
+ll ~/catkin_ws/doc/tags/a3_help.tag
+
+---------------------------------------------------------------------------------------
+
+STEP2:
+-----
+
+rosdoc_lite -o doc -t src/a3_help/a3_help_tags.yaml src/a3_help
+
+to use this tag file
+
+
+Then  remember  to   relaod  the  index.html  file  to   see  the  new
+documentation.
+
+---------------------------------------------------------------------------------------
+
+To crate 'Main Page' for this class Include index.html in:
+
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help
+
+Use ass3 as a template.
+
+Then execute:
+
+cd ~/catkin_ws
+rosdoc_lite src/a3_sample
+
+
+---------------------------------------------------------------------------------------
+
+IMPORTANT:
+
+Execute STEP1 and STEP2 if doxygen/ros_lite gets confused.
+

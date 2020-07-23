@@ -1,0 +1,46 @@
+
+Regards,
+Jian Zhan
+Sent from my iPhone
+
+> On 11 May 2017, at 10:35 am, Simone Magri <smagri@exemail.com.au> wrote:
+> 
+> Hi Jian,
+> 
+> Any luck with finding a photo of the trimLength() function from
+> monday's tute?
+> 
+> cheers, Simone
+> 
+> 
+>> On Tue, 2017-05-09 at 02:51 +0000, Jian Zhan wrote:
+>> Hi Simone,
+>> 
+>> Oh sorry I just checked and found I didn't take a photo of that part.
+>> I will ask other guys see if they have a photo with that part in it.
+>> 
+>> Regards,
+>> Jian Zhan
+>> 
+>> Sent from my iPhone
+>> 
+>>> 
+>>> On 9 May 2017, at 12:12 pm, Simone Magri <smagri@exemail.com.au>
+>>> wrote:
+>>> 
+>>>> 
+>>>> On Mon, 2017-05-08 at 08:09 +0000, Jian Zhan wrote:
+>>>> 
+>>> Thanks Jian those photos are great.
+>>> 
+>>> Only one missing is the trim_length_thread(), could you send that
+>>> if
+>>> you have it, thanks very much.
+>>> 
+> -- 
+> Regards,
+> Simone Magri
+> 
+> email: smagri@exemail.com.au
+> mobile: 0401 858 908
+> 

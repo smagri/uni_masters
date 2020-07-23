@@ -1,0 +1,9 @@
+19feb2018
+
+for dirs starting with:
+
+debug.draw.on.image*
+
+it is usefull to add the sleep that is contained in
+
+sample.cpp.orig

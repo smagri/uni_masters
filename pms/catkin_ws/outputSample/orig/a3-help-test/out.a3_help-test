@@ -1,0 +1,21 @@
+[==========] Running 3 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from ImageSize
+[ RUN      ] ImageSize.ShouldPass
+[       OK ] ImageSize.ShouldPass (0 ms)
+[----------] 1 test from ImageSize (0 ms total)
+
+[----------] 2 tests from sampleTest
+[ RUN      ] sampleTest.pixel2metres
+dbg: before.i2g:pypx=0
+dbg: after.i2g: yx=10
+[       OK ] sampleTest.pixel2metres (0 ms)
+[ RUN      ] sampleTest.metres2pixels
+dbg: before.g2i: yx=6.9532e-310
+dbg: after.g2i: pypx=100
+[       OK ] sampleTest.metres2pixels (0 ms)
+[----------] 2 tests from sampleTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test cases ran. (1 ms total)
+[  PASSED  ] 3 tests.

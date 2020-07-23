@@ -1,0 +1,54 @@
+Important Points:
+Initialise as soon as possible after you define is a good rule of
+thumb, when it is defined when it is possible.
+const int i = 7;, const is a qualifier.
+
+
+
+Transcript:
+
+- Variables are strongly typed in C++. That means that the token
+  representing a variable represents both its value and its type. Here
+  in XCode, I've opened a working copy of working.cpp. Let's start by
+  defining a variable. This statement defines an integer variable,
+  currently has no assigned value. It's value is said to be
+  undefined. An undefined value is a very dangerous thing, so be sure
+  to always assign a value to a variable before you use it.
+
+Once a variable is defined, you may assign a value to it and then use
+it. This is called initializing the variable. I come down here and I
+can say, I = 7. That assigns a value to the variable. This is a
+variable of type int, I N T, which stands for integer. So I've
+assigned the integer seven to my integer variable. Now I can print its
+value. I can use printf for this.
+
+In printf, that %d is for printing integers. I no longer need this
+line. Now when I run it, you see we have "The value is 7." Now we've
+defined a variable on line seven. We've assigned a value to it on line
+eight. We've used its value on line nine. Now, under many
+circumstances, you may both define and initialize a variable at once,
+like this. Now I don't need this line anymore.
+
+I'll build and run, and you can see that the value is still
+seven. It's usually a good idea to initialize a variable as soon as
+possible, because undefined values are dangerous. I'll usually
+initialize it when it's defined. C++ also uses qualifiers, sometimes
+called modifiers, that change the behavior of variables in various
+ways. A qualifier becomes part of the type. For example, if I put the
+const qualifier before this integer type, this tells the compiler that
+the value of this variable cannot change once it's defined.
+
+This is called a read-only variable. I build and run, and you see that
+it still works exactly the same. But if I try to change the value once
+it's been defined, you'll notice that I get an error here, this little
+red mark, and if I tap on that it says, "Read-only variable is not
+assignable." Because of that const qualifier, if I take that const
+qualifier off, now it's okay. And when I build and run, you see that
+the value is 47. The const qualifier, it prevents the value from being
+changed.
+
+It's actually a very common and very useful thing to use. In C++, a
+variable must be defined before it can be used. The fundamental types
+and qualifiers are covered in more detail in the data types
+chapter. Let's delete our working copy and run clean to reset our
+workspace for the next lesson.

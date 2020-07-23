@@ -1,0 +1,36 @@
+// working.cpp by Bill Weinman <http://bw.org/>
+#include <cstdio>
+using namespace std;
+
+int main( int argc, char ** argv ){
+
+  // using the range-based for loop
+
+  int a[] = {1, 2, 3, 4, 5};
+  char s[] = "string"; // contains a terminating null
+
+  
+  // i is a varible to contain the elements of container a
+  // a is the container
+  //
+  // notice array not even terminated
+  //
+  // size of the array is a compile time feature, so no string
+  // terminator needed
+  fprintf(stderr, "for range-based loop applied to array of integers");
+  for (int i : a){
+    fprintf(stderr, "element is %d\n", i);
+  }
+
+
+  // applied to a string
+  fprintf(stderr,
+	  "\nfor range-based loop applied to array or string of characters");
+  for (char c : s){
+    fprintf(stderr, "element is %d\n", c);
+  }
+  
+  
+
+  return 0;
+}

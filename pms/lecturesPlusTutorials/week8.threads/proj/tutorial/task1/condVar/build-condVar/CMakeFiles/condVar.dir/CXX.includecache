@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week8/proj/tutorial/task1/condVar/main.cpp
+iostream
+-
+thread
+-
+atomic
+-
+mutex
+-
+chrono
+-
+condition_variable
+-
+

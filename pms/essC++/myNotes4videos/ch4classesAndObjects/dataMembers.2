@@ -1,0 +1,94 @@
+Important Points:
+struct or object keyword to create objects.
+You can have struct's a class member data.
+c++ classes are based on c structures, except class member default to
+private and struc members default to public.
+Good practice to use struct when the struct will only have data members, use class when
+you need function members.
+
+
+
+
+Transcript:
+
+- C++ objects are based on C structures. In fact, you can create
+  objects using either the struct or object keyword. Here, I have a
+  working copy of working.cpp from Chapter 4 of the exercise
+  files. Let's start by creating a structure using the struct keyword
+  and we'll take a look at how that works. We'll give it a few data
+  members. These will all be integers. And then we'll create an object
+  using it. We'll go ahead and print out those values.
+
+When I build and run this, you'll see that it prints out those
+values. So, let's take a look at how this works. First, we define the
+structure using the struct keyword and we give it three members. These
+are data members because they're data. They're integers. Then we
+define an object using the structure name as a type and give the
+object the name A. So this is a variable of a structure if you're
+thinking in terms of C. Or if you're thinking in terms of C++, it's an
+object based on this structure and the name of the variable is A.
+
+It's got three values for the three data members, 1, 2, and 3. And so
+when I print this out, you'll see "ia is 1, ib is 2, ic is 3" and the
+data members are accessed using the elements selection
+operator. That's this little period here. And so this works on the
+object and that's how you access the data members in the object. Now,
+if we had a pointer to the object rather than accessing the object
+directly, so I could do something like this.
+
+I can say A pointer, so this is a pointer to an A class object, and
+call it pa. We need to give it the address of A rather than A
+itself. Now we have a pointer to A. And if I wanna access these
+members based on the pointer, I can do it like this. I can say pa and
+use the pointer selection operator like that. Let me just copy and
+paste this into these other places.
+
+And when I build and run, you'll see we have exactly the same
+result. If you're using a pointer, you use the pointer selection
+operator which is this -> it makes an arrow out of those two
+characters. That's how you select the members through a pointer. So,
+struct and class are identical with one significant
+difference. Members of a struct default to public and members of a
+class default to private. So this is exactly the same as if I had used
+the public keyword like this.
+
+And of course, we have exactly the same result. If I were to used the
+private keyword, you would see that this wouldn't work and we would
+not be able to access those members because ia is a private
+member. And there's no matching constructor because again, these
+members are private. But the struct defaults to public. And so without
+either of those keywords there, it works perfectly because they're
+public. Now, if we use the class keyword instead of the struct
+keyword, you see we have these errors already because now those
+members are private.
+
+And so, if we use the public keyword, now it'll work exactly the same
+as it did with struct. The only difference between class and struct is
+that members of a class default to private and members of a struct
+default to public. Typically, data members in a class are kept private
+and that's why it defaults to private and they're accessed by public
+function methods called accessors. We'll look at a quick example of
+that. Let me go ahead and delete this working copy and run clean.
+
+We'll take our accessors.cpp file and copy it into our project. We'll
+cover this in more detail later in this chapter but you can look at an
+example of what a class normally looks like with its accessor
+methods. Here we have int ia, string sb, and int ic. So you can see,
+you can use any type here for your data members. It doesn't have to be
+an integer, it can be any type. It can even be a structure. Then we
+have the public keyword to define the things that are public. These
+are members that are public and these are all function members.
+
+And so we have setters and getters. We have methods for setting the
+data members and we have methods for getting the data members. When I
+build and run this, you see that we have those values through the
+getters. You see I'm using the getters here, geta, getb_cstr, getc in
+order to get those values. Again, we'll cover the member functions in
+more detail in the next movie. So, C++ classes are based upon C
+structures. In fact, C++ structures and classes are identical except
+that struct members default to public while class members default to
+private.
+
+It's good practice to use struct when the structure will only have
+data members and to use class when they're all function members.
+

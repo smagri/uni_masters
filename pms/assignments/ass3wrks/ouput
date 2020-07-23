@@ -1,0 +1,100 @@
+
+Radar class constructor:
+model_=RAD-001
+baud_=115200
+port_=/dev/ttyACM1
+numSamples_=1
+samplingRate_=10 Hz
+fov_=20.000000
+rangeMin_=0.200000
+rangeMax_=10.000000
+
+Sonar class constructor:
+model_=SONX-001
+baud_=115200
+port_=/dev/ttyACM2
+numSamples_=1
+samplingRate_=3 Hz
+fov_=90.000000
+rangeMin_=0.200000
+rangeMax_=6.000000
+
+Get Specific Fixed Hardware Parameters:
+
+Radar:
+Field Of View=20.000000 deg
+Minimum Range=0.200000 m
+Maximum Range=10.000000 m
+
+Sonar:
+Field Of View=90.000000 deg
+Minimum Range=0.200000 m
+Maximum Range=6.000000 m
+
+dbg: main: rangers :
+dbg: main: &r1=0x7ffe424c5a50
+dbg: main: &s1=0x7ffe424c5ae0
+dbg: setRangers: rangers_ :
+
+dbg: setRangers: &r1=0x7ffe424c5a50
+dbg: setRangers: &s1=0x7ffe424c5ae0
+rangers :
+
+dbg: setRangers: &r1=0x7ffe424c5a50
+dbg: setRangers: &s1=0x7ffe424c5ae0
+dbg: setRangers: rangers_.size()=2
+dbg: main: rangers.size()=2
+dbg: fillBuffer: fillBuffer(0) called, in lock0.
+dbg: fillBuffer: rangerNum=0
+dbg: fillBuffer: readRangeData() called:
+dbg: readRanger: sensorRangeMin=0.200000
+dbg: readRanger: sensorRangeMax=10.000000
+dbg: readRanger: t=1495514065.727732 seconds since 01-Jan-1970 epoch.
+dbg: readRanger: curRandomNum Unclipped=2.749881
+dbg: readRanger: curRandomNum clipped=2.749881
+dgb: readRanger: rawData_.at(0)=2.74988
+dbg: readRangeData: rawRangeData(0)=2.74988
+dbg: readRanger: sensorRangeMin=0.200000
+dbg: readRanger: sensorRangeMax=6.000000
+dbg: readRanger: t=1495514065.727924 seconds since 01-Jan-1970 epoch.
+dbg: readRanger: curRandomNum Unclipped=2.534556
+dbg: readRanger: curRandomNum clipped=2.534556
+dgb: readRanger: rawData_.at(0)=2.53456
+dbg: readRangeData: rawRangeData(0)=2.53456
+dbg: readRangeData: rawRangeDataVV_[m][n]:
+dbg: readRangeData: rawRangeDataVV_[0][0]=2.74988
+dbg: readRangeData: rawRangeDataVV_[1][0]=2.53456
+dbg: readRangeData: before return.
+dbg: fillBuffer: getRawRangeData() called:
+dataBuff.at(rangerNum)=2.749881
+dbg: fillBuffer: before unlock of lock0.
+dbg: fillBuffer: out of lock0.
+dbg: processBuffer: processBuffer() called, in lock0.
+dbg: processBuffer: before unlock of lock0.
+dbg: processBuffer: out of lock0 before sleep() called.
+dbg: fillBuffer: fillBuffer(0) called, in lock0.
+dbg: fillBuffer: rangerNum=0
+dbg: fillBuffer: readRangeData() called:
+dbg: readRanger: sensorRangeMin=0.200000
+dbg: readRanger: sensorRangeMax=10.000000
+dbg: readRanger: t=1495514067.728239 seconds since 01-Jan-1970 epoch.
+dbg: readRanger: curRandomNum Unclipped=2.436913
+dbg: readRanger: curRandomNum clipped=2.436913
+dgb: readRanger: rawData_.at(0)=2.43691
+dbg: readRangeData: rawRangeData(0)=2.43691
+dbg: readRanger: sensorRangeMin=0.200000
+dbg: readRanger: sensorRangeMax=6.000000
+dbg: readRanger: t=1495514067.728385 seconds since 01-Jan-1970 epoch.
+dbg: readRanger: curRandomNum Unclipped=2.398174
+dbg: readRanger: curRandomNum clipped=2.398174
+dgb: readRanger: rawData_.at(0)=2.39817
+dbg: readRangeData: rawRangeData(0)=2.39817
+dbg: readRangeData: rawRangeDataVV_[m][n]:
+dbg: readRangeData: rawRangeDataVV_[0][0]=2.74988
+dbg: readRangeData: rawRangeDataVV_[1][0]=2.53456
+dbg: readRangeData: before return.
+dbg: fillBuffer: getRawRangeData() called:
+dataBuff.at(rangerNum)=2.749881
+dataBuff.at(rangerNum)=2.749881
+dbg: fillBuffer: before unlock of lock0.
+dbg: fillBuffer: out of lock0.

@@ -1,0 +1,86 @@
+13mar2018
+
+Summary  of  Yamachi paper  wrt  Frontier(FT)  Detection and  Frontier
+Navigation.
+
+
+I  will be  implementing simplified  methods  of FT  detection and  FT
+navigation  described in  Yamachi.   I will  implement the  simplified
+versions due  to hints  gleaned from class  discussions, and  given we
+have very  limited time to do  the assignment.  Also, the  bulk of the
+assignment  or focus  of the  assignment is  in other  areas like  the
+dealing with threads, not solely these methods.
+
+
+The Frontier Detection:
+
+A  process  analogous  to  edge detection  and  region  extraction  in
+computer vision is  used to find the boundaries  between open space(FS
+or  Free Space)  and  unkown  space(UK or  Uknown).   The specific  FT
+detection algorithim  seems to  be the differentiating  factor between
+frontier detection methods.  Others include blobbing...etc.
+
+FT detection  consists or pointing  the robot to adjacent  cells, thus
+non-adjacent cells  are not considered.   Any adjacent cell  path that
+results in FS->UK  at end of path  is changed to FT->UK, that  is a FT
+cell  has   been  detected.    I'm  assuming   this  is   the  correct
+interpretation  as all  the cells  on the  occupancy grid(of  evidence
+grid) are  greater than the size  of the robot.  Also,  discussions in
+class seem to indicate this method also.???
+
+Given  only  adjacent  cells  are  considerd, at  any  FT,  the  robot
+orientation is  at firstly at  0 degrees, followed by,  90degrees, 180
+degrees  and   270  degrees  respectively.   Its   readings  in  those
+directions are used to build the map at that point.
+
+Refer to image@22/2/2018 for definition of adjacent squares on a grid,
+which for us is the occupancy/evidence grid.  But in summary, adjacent
+cells share a common side.
+
+
+Navigation to Frontiers:
+
+
+while (FT's are left in occupancy grid){
+
+  Once FT/FT's have been detected, that is, once the FT->UK cells have
+  been mapped  at a particular  robot location, the robot  attempts to
+  navigate to the  nearest accessible(thus FS cells lead  the FT cell,
+  eg FS FS FS FS FT) and unvisited frontier.
+
+  A depth-first  searh on  the grid, starting  at the  robot's current
+  cell, is conducted  to determine the shortest  obstacle-free path to
+  the cell contating the goal  location, that is the nearest unvisited
+  frontier.  This robot's path is then executed.  However, could an a*
+  algorithim be used to determine the shortest path also???
+
+  Obstical  avoidance mechanisims  within the  robot will  be used  to
+  navigate the path without running  into obsticles that aren't mapped
+  yet.
+
+  When the  robot reaches  its destination FT  cell, that  location is
+  added to the list of previously visited frontiers.
+
+  The robot does a 360 degree sweep  with its laser at the FT cell and
+  adds the new information to  the occupancy/evidence grid.  The robot
+  orientations within  the 360  degree sweep  are 0,  90, 180  and 360
+  degrees respectively, as described earlier(in the Frontier Detection
+  section).
+
+}
+
+
+Note:
+
+If the  robot is  unable to  make progress  toward its  destination FT
+cell, after a certain amount of time the robot will determine that the
+destination is inaccessible.  Thus, that location is added to the list
+of inacessible  frontiers.  At  the current cell  the robot  will then
+conduct  a sensor  sweep, update  the  evidence grid,  and attempt  to
+navigate to the closest remaining accessible and unvisited frontier.
+
+Inaccesible frontiers  are determined by  the robot's path  planner, a
+depth-first-search(DFS)  algorithim in  our  case, the  time taken  to
+execute this function/method is the timeout required before a frontier
+is added to the list of inaccessible frontiers???
+

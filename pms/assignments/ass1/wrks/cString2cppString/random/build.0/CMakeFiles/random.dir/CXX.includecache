@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week1/proj/withCMake/tutorial/random/main.cpp
+iostream
+-
+cstdio
+-
+random.h
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week1/proj/withCMake/tutorial/random/random.h
+
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week1/proj/withCMake/tutorial/random/random.cpp
+cstdio
+-
+stdlib.h
+-
+ctime
+-
+random.h
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week1/proj/withCMake/tutorial/random/random.h
+
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week1/proj/withCMake/tutorial/random/random.h
+

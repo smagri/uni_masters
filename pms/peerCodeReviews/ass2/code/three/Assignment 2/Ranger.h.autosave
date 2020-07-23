@@ -1,0 +1,32 @@
+#ifndef RANGER_H
+#define RANGER_H
+
+#include "RangerFusionInterface.h"
+
+#include <vector>
+#include <iostream>
+
+using std::vector;
+
+class Laser;
+class Radar;
+class Sonar;
+
+class Ranger
+{
+public:
+    Ranger();
+    virtual int getFieldofView();
+    virtual void setFieldOfView();
+    virtual float getMaxDist();
+    virtual float getMinDist();
+    virtual void setAngularRes();
+    virtual int getAngularRes();
+    virtual double getDist();
+
+    virtual void start();
+    
+    
+};
+
+#endif // RANGER_H

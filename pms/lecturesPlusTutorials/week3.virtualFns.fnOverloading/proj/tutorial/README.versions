@@ -1,0 +1,13 @@
+30/3/2017
+
+Current build/ is equivalent to triangle.shapePtr/.
+triangle.shapePtr/ works and  triangle.final.wrks/ works also.  They
+are the same but triangle.shapePtr adds the use of pointer to access the
+objects.  triangle.shapePtr/ is the true final code for the week3
+tutorial exercises.  The files here are the same as in:
+pms/lecturesPlusTutorials/week3/proj/tutorial
+parent directory.
+
+
+wrks/ contains the various major milestones of creating the final
+triangle executable code.

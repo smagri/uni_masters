@@ -1,0 +1,52 @@
+Important points:
+Classes, like custom data types, definition of a class is the class
+itself.  Use a class to create an object of that type or instance of
+the class.
+Variables are data member or property.
+Functions are called member functions or methods.
+Constucters, one or more exist, which is executed depends on the
+signature used when the object is crated or instansiated.
+Destructor, called when the object is removed/deleated/distroyed there is only
+one destructor.
+
+
+
+
+
+Transcript:
+
+- In C++, classes are like custom data types. They're designed to be
+  used like the fundamental types provided by the C++ language. Let's
+  start by defining the terminology that we'll be using in this
+  chapter. First let's look at the words class and object. The
+  definition of a class, using the class keyword, is the class
+  itself. You can then use the class to create an object. The object
+  is also called an instance of a class.
+
+Sometimes you'll hear the verb form "instantiate" to describe the
+process of creating an object. Members are the contents of an
+object. There are two types of members. Data members are the members
+that represent encapsulated data. Data members are sometimes called
+properties. Function members are members that represent functions
+associated with the class. Function members are sometimes called
+methods. Constructors and destructors are special function members
+that are called when an object is created or destroyed respectively.
+
+A constructor is called when the object is created. There may be
+several constructors defined, but only one is called depending on how
+the object is created. The destructor is called when the object is
+destroyed. There may only be one destructor to find. C++ classes allow
+you to create fully-realized types that work exactly how you want them
+to. Using C++ classes you may create constructors for a variety of
+different types and numbers of parameters.
+
+Allocate and deallocate memory appropriately, so that your objects run
+smoothly. Overload operators so that your objects can use those
+operators intelligently. Overload the function call operators so that
+your objects can operate like a function. Create conversion operators
+so that your objects behave as you expect them to in different
+contexts. The C++ class model allows you to define rich and complex
+data types and use them just as you would a fundamental built-in data
+type. In this chapter, we will cover how to define and use these
+features in your own C++ classes.
+

@@ -1,0 +1,36 @@
+laser.h
+getAngularResolution() missing.
+
+radar.h
+no need getSampleSize()
+
+sonar.h
+getSampleSize() not necessary
+
+laser.cpp, radar.cpp, sonar.cpp should inherit default variables from
+ranger class constructor.
+
+
+ranger.h
+protected:
+Ranger(model, rangeMax, rangeMin) not there
+
+virtual method incorrect fn and need to be made pure virtual for an
+abstract class.
+
+
+ranger.cpp:
+sanity/valid check for baud, port ...etc not there, report sane values not
+there
+
+DOCUMENTATION: is very minimal except for appropriate variable naming
+
+LOOK: set to 80 character width as makes code hard to read
+
+
+rangerfusion.cpp
+hard coded value for fusion algorithim
+
+
+main.cpp
+serial ports all at ACM0 by default???

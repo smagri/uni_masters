@@ -1,0 +1,71 @@
+Important points:
+source, must compile(preprocessor compiler optimizer linker) to get executable: 
+Same preprocessor for C and C++ usually.
+
+#define ONE 1 => string ONE is repalced by character string 1
+
+#define MAX(a, b) (a>b ? a : b) is a macro in c but in c++ templates
+are used instead mostly.  Remember MAX(a,b) is substited for
+(a>b) ? a : b) in the source, which means if
+(a>b retrun a, if not return b).
+
+Conditional processing:
+
+Only include this header file(.h) once, as multiple source files will
+include it for clarity, aka the include gard.
+
+#ifndef CON_H_
+#define CON_H_
+
+#define NUMBER 2
+#define CONSTANT 73
+
+#endif // CON_H_
+
+
+To define implentation specific behaviours for the compilers:
+#pragma long_calls
+#pragma aligh 32
+
+Transcript:
+
+- The C processor provides a number of essential capabilities for the
+  C++ language. Let's take a look at how this works. In order for your
+  source code to become an executable program, it needs to first be
+  compiled. This process is really a combination of several
+  processes. Preprocessor, Compiler, Optimizer, and Linker, each of
+  these steps is separate and distinct, even though they're often
+  invoked with one command. In this chapter, we're concerned with the
+  preprocessor.
+
+The C++ preprocessor is borrowed from C. In fact, most compilers use
+the same preprocessor for both languages. The preprocessor's job is to
+process the source code before, and to prepare the source code for the
+compiler. There are several parts to the preprocessor's work. One of
+the more common uses for the preprocessor is file inclusion. When you
+use the include directive, your source will be treated as if the
+entire contents of the file you name here, were included in place of
+the include directive.
+
+You can, and often will have multiple include directives in your
+source file. Once all of the include directives have been processed,
+the combined result is treated as one file called a translation
+unit. A preprocessor macro works like a really smart alias. For
+example, after this declaration, any use of the word "ONE", in all
+caps, will be replaced by the digit "1". No math is performed, this is
+really just a string substitution in the source file.
+
+In this second example, we have a macro with parameters. Those
+parameters may be used in the replacement. This usage is common in C,
+but less so in C++, where templates are often used
+instead. Conditional processing allows you to compile parts of your
+code only if certain conditions are true. In this common example, the
+contents of a header file are prevented from processing more than
+once. This technique is often called an "include guard." Pragmas may
+be used to define implementation-specific behaviors for the compiler.
+
+Most common uses of pragmas relate to supporting specific compilers
+and computing architectures. The preprocessor is an essential part of
+the compiler tool chain, and understanding how it works and what it
+can be used for is an essential part of understanding C++.
+

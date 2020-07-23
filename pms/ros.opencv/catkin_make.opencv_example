@@ -1,0 +1,93 @@
+smagri@gyan1:~/uni/subj/proj30cp/catkin_ws$ catkin_make
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+WARNING: Package name "randomNum_node" does not follow the naming
+conventions. It should start with a lower case letter and only contain
+lower case letters, digits and underscores.
+####
+#### Running command: "make cmake_check_build_system" in
+"/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in
+"/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+[  0%] Built target std_msgs_generate_messages_cpp
+[ 12%] [ 12%] [ 20%] [ 20%] Built target randomNumListner
+Built target talker
+Built target image_publisher
+Built target node_example_gencfg
+[ 29%] [ 33%] Built target randomNumTalker
+Built target listener
+[ 33%] Built target std_msgs_generate_messages_lisp
+[ 33%] Built target std_msgs_generate_messages_py
+[ 33%] [ 33%] Built target
+_node_example_generate_messages_check_deps_NodeExampleData
+Built target _voice_node_generate_messages_check_deps_voice_node
+[ 37%] Built target voice_node_generate_messages_lisp
+[ 41%] [ 45%] Built target voice_node_generate_messages_cpp
+[ 54%] [ 58%] Built target voice_node_generate_messages_py
+Built target node_example_generate_messages_cpp
+Built target node_example_generate_messages_lisp
+[ 66%] Built target node_example_generate_messages_py
+[ 66%] [ 66%] Built target voice_node_generate_messages
+Built target node_example_generate_messages
+[ 83%] [ 83%] Built target simplePub
+Built target simpleSub
+[ 91%] Built target listener.node_example
+[100%] Built target talker.node_example
+smagri@gyan1:~/uni/subj/proj30cp/catkin_ws$ catkin_make
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+WARNING: Package name "randomNum_node" does not follow the naming
+conventions. It should start with a lower case letter and only contain
+lower case letters, digits and underscores.
+####
+#### Running command: "make cmake_check_build_system" in
+"/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in
+"/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+Scanning dependencies of target image_publisher
+[  4%] [  4%] Built target node_example_gencfg
+Built target std_msgs_generate_messages_cpp
+[  8%] [ 12%] Built target listener
+Built target talker
+[ 29%] [ 29%] Built target randomNumTalker
+Built target randomNumListner
+[ 29%] Built target std_msgs_generate_messages_lisp
+[ 29%] Built target std_msgs_generate_messages_py
+[ 29%] Built target
+_node_example_generate_messages_check_deps_NodeExampleData
+[ 33%] [ 37%] [ 41%] Built target node_example_generate_messages_cpp
+Built target node_example_generate_messages_lisp
+Building CXX object
+opencv_example/CMakeFiles/image_publisher.dir/src/image_publisher.cpp.o
+[ 41%] Built target
+_voice_node_generate_messages_check_deps_voice_node
+[ 50%] Built target node_example_generate_messages_py
+[ 54%] Built target voice_node_generate_messages_lisp
+[ 62%] [ 70%] [ 70%] Built target node_example_generate_messages
+Built target talker.node_example
+Built target listener.node_example
+[ 75%] [ 83%] Built target voice_node_generate_messages_cpp
+Built target voice_node_generate_messages_py
+[ 83%] Built target voice_node_generate_messages
+[100%] [100%] Built target simplePub
+Built target simpleSub
+Linking CXX executable
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/lib/opencv_example/image_publisher
+/usr/bin/ld: warning: libopencv_imgproc.so.2.4, needed by 
+/opt/ros/indigo/lib/libcv_bridge.so, may conflict with
+libopencv_imgproc.so.3.0
+[100%] Built target image_publisher
+smagri@gyan1:~/uni/subj/proj30cp/catkin_ws$ 
+

@@ -1,0 +1,333 @@
+CREATE ROS Package/CATKIN Package: [ or go to SUMMARY... @END]
+--------------------------------------------------------------------------------
+
+
+The ..catkin_ws/src/rosocv_node is a good template package for
+building packages.  Here various packages are given as an example for
+historical reasons.
+
+cd ~/catkin_ws/src
+
+catkin_create_pkg  --rosdistro indigo rosocv_node std_msgs rospy roscpp
+
+NOTE, ie:
+
+catkin_create_pkg --rosdistro ROSDistributionName NODENAME DEPENDENCIES..
+
+
+********************************************************************************
+
+where: NODENAME is lowercaseletters, digits and undersores,  NO capital letters.
+-----
+
+THUS THIS IS BAD:
+----------------
+catkin_create_pkg  --rosdistro indigo randomNum_node std_msgs rospy roscpp
+
+IT PRODUCES:
+-----------
+WARNING: Package name "randomNum_node" does not follow the naming
+conventions. It should start with a lower case letter and only contain
+lower case letters, digits and underscores.
+Created file randomNum_node/CMakeLists.txt
+Created file randomNum_node/package.xml
+Created folder randomNum_node/include/randomNum_node
+Created folder randomNum_node/src
+Successfully created files in
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/randomNum_node. Please
+adjust the values in package.xml.
+
+
+********************************************************************************
+
+
+PROPER commad OUTPUT:
+
+catkin_create_pkg  --rosdistro indigo rosocv_node std_msgs rospy roscpp
+
+Created file rosocv_node/CMakeLists.txt
+Created file rosocv_node/package.xml
+Created folder rosocv_node/include/rosocv_node
+Created folder rosocv_node/src
+Successfully created files in
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/rosocv_node. Please
+adjust the values in package.xml.
+
+
+
+As the output says, you now need to modify/customise, CMakeLists.txt
+ and package.xml, that were just created by the previous commad.
+-------------------------------------------------------------------------------
+
+
+cd ..catkin_ws/src/rosocv_node:
+
+
+emacs -nw CMakeLists
+
+
+
+# For C++11 features you need to let the compiler know via CMake
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -pthread")
+
+# SETUP all the Package Names:
+#
+## Find catkin macros and libraries
+## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS
+## xyz)
+## is used, also find other catkin packages
+find_package(catkin REQUIRED COMPONENTS
+  cv_bridge
+  image_transport
+  roscpp
+  rospy
+  sensor_msgs
+  std_msgs
+)
+
+###########
+## Build ##
+###########
+## Specify additional locations of header files
+## Your package locations should be listed before other locations
+# include_directories(include)
+#include_directories(
+#  include_directories(include)
+#  ${catkin_INCLUDE_DIRS}
+#)
+
+include_directories(include)
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
+include_directories(${OpenCV_INCLUDE_DIRS})
+  
+......
+
+############
+## Testing ##
+#############
+
+## Add gtest based cpp test target and link libraries
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_rosopencv_node.cpp)
+# if(TARGET ${PROJECT_NAME}-test)
+#   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
+# endif()
+
+## Add folders to be run by python nosetests
+# catkin_add_nosetests(test)
+
+
+# Specify the build and runtime dependencies respectively *******************************
+# **************************************************************************************
+#
+# talker node build
+#
+#add_executable(simplePub src/simplePub.cpp)
+# don't use main.cpp instead for simplePub_node.cpp
+add_executable(rosocvTalker src/rosocvTalker.cpp)
+#target_link_libraries(rosopencvTalker ${OpenCV_LIBS}
+#${catkin_LIBRARIES})
+target_link_libraries(rosocvTalker ${catkin_LIBRARIES}
+#${OpenCV_LIBRARIES})
+add_dependencies(rosocvTalker rosocv_node_generate_messages_cpp)
+
+
+# listener node build
+#
+#add_executable(simpleSub src/simpleSub.cpp)
+add_executable(rosocvListner src/rosocvListner.cpp)
+#target_link_libraries(rosopencvListner ${OpenCV_LIBS}
+#${catkin_LIBRARIES})
+target_link_libraries(rosocvListner ${catkin_LIBRARIES}
+#${OpenCV_LIBRARIES})
+add_dependencies(rosocvTalker rosopencv_node_generate_messages_cpp)
+
+
+*******************************************************************************
+
+
+
+emacs -nw package.xml
+
+  <description>The rosocv_node package</description>
+  ..
+  <maintainer email="smagri@exemain.com.au">Simone Magri</maintainer>
+  ...
+  <license>BSD</license>
+  ...
+   <build_depend>roscpp</build_depend>
+   <build_depend>roscpy</build_depend>
+   <build_depend>std_msgs</build_depend>
+   <run_depend>roscpp</run_depend>
+   <run_depend>roscpy</run_depend>
+   <run_depend>std_msgs</run_depend>
+  ...
+
+
+*******************************************************************************
+
+
+BUILDING your PACKAGE:---------------------------------------------------------
+
+cd ~/catkin_ws
+
+catkin_make
+OR
+catkin_make NODENAME
+
+NOTE: fine grained node building with say, catkin_make rosocv_node
+      does not work???
+
+********************************************************************************
+
+FEATURES of catkin_workspace:
+
+* ~/catkin_ws/build where cmake/make/build and confgure packages go
+
+* ~/catkin_ws/devel where executables and libraries go
+* ~/catkin_ws/devel/lib/packageName contains package/node binaries/executables
+
+* ~/catkin_ws/install
+* ~/catkin_ws/src
+
+
+* you can invoke your binaries directly from  ~/catkin_ws/devel/lib/packageName
+  OR use rosrun
+
+
+
+NOTE: ***** To BUILD EMPTY BINARIES ie test the build process: ****************
+
+* xxx_node.cpp's need an empty main() stub; while xxx.cpp's can be
+ left empty/blank.
+* also, need to create these files in NODENAME/src (eg rosocv_node/src).
+
+
+
+NOTE: ***** To REMOVE the build and devel directries  *************************
+
+This may  need to  be done  occasionally if ros  gets confused  in the
+build  process,  eg doesn't  recognise  a  src  file change  thus  not
+rebuilding packages.
+
+cd ~/catkin_ws
+
+rm -rf build devel
+
+And which rebuilds all packages from source files: catkin_make
+
+
+
+
+
+*******************************************************************************
+SUMMARY, build package: *******************************************************
+*******************************************************************************
+
+The  ..catkin_ws/src/rosocv_node  is  a   good  template  package  for
+building packages.  For commands only follow CMD: preceeding command.
+
+CMD: cd ~/catkin_ws/src
+
+CMD: catkin_create_pkg  --rosdistro indigo rosocv_node std_msgs rospy roscpp
+
+CMD: cd rosocv_node
+
+CUSTOMISE the CMakeLists and package.xml files, ie:
+
+
+* CmakeLists *****************************************************************:
+
+  cmake_minimum_required(VERSION 2.8.3)
+  project(rosocv_node)
+  ...
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g -pthread")
+  ..
+  find_package(catkin REQUIRED COMPONENTS
+    cv_bridge
+    image_transport
+    roscpp
+    rospy
+    sensor_msgs
+    std_msgs
+)
+
+...
+
+catkin_package(
+}
+
+include_directories(include)
+include_directories(
+  ${catkin_INCLUDE_DIRS}
+)
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+...
+
+add_executable(rosocvTalker src/rosocvTalker.cpp)
+target_link_libraries(rosocvTalker ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+add_dependencies(rosocvTalker rosocv_node_generate_messages_cpp)
+
+
+add_executable(rosocvListner src/rosocvListner.cpp)
+target_link_libraries(rosocvListner ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
+add_dependencies(rosocvTalker rosocv_node_generate_messages_cpp)
+
+
+
+
+* package.xml ****************************************************************:
+  ...
+  <description>The rosocv_node package</description>...
+  <maintainer email="smagri@exemail.com.au">Simone Magri</maintainer>...
+  <license>BSD</license...
+  
+ <buildtool_depend>catkin</buildtool_depend>
+ <build_depend>roscpp</build_depend>
+ <build_depend>roscpy</build_depend>
+ <build_depend>std_msgs</build_depend>
+ <run_depend>roscpp</run_depend>
+ <run_depend>roscpy</run_depend>
+ <run_depend>std_msgs</run_depend>
+...
+
+
+
+BUILD your own PACKAGE: --------------------------------------------------------
+
+CMD: cd ~/catkin_ws/
+
+CMD: catkin_make rosocv_node
+
+
+
+THEN EDIT your source files ~/catkin_ws/src/rosocv_node/src/*.cpp ----------
+and EXECUTE ~/catkin_ws/catkin_make -------------------------------------------
+TILL your code works!!! -------------------------------------------------------
+
+
+*** END ************************************************************************
+
+
+
+NOTE: ***** To build empty binaries ie TEST the BUILD PROCESS: ****************
+
+* xxx_node.cpp's need an empty main() stub; while xxx.cpp's can be
+ left empty/blank.
+* also, need to create these files in NODENAME/src (eg rosocv_node/src).
+  ie ~/catkin_sw/src/NODENAME/src
+
+
+NOTE: ***** To REMOVE the build and devel directries  *************************
+
+This may  need to  be done  occasionally if ros  gets confused  in the
+build  process,  eg doesn't  recognise  a  src  file change  thus  not
+rebuilding packages.
+
+cd ~/catkin_ws
+
+rm -rf build devel
+
+And which rebuilds all packages from source files: catkin_make

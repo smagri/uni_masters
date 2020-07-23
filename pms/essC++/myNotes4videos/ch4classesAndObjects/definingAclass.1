@@ -1,0 +1,94 @@
+Important Points: Default access to member data and member functions
+is private, that is if not specified access is of private:.  Thus can
+only access private member data or functions using member functions or
+methods of the class.
+
+
+
+
+
+
+Transcript:
+
+Classes in C++ are very powerful and flexible. This is the fundamental
+unit of object oriented programming. Here I have a working copy of
+"class.cpp" from Chapter 04 of the Exercise Files. This is an example
+of a very simple class. It holds a simple value, and it provides an
+interface to set and get that value. You'll notice on line "6," I have
+the keyword "class," followed by the name of the class, followed by
+the definition itself inside those curly braces and a semi-colon there
+after the closing curly brace on line "11." Members inside a "class"
+default to private, and so, this is exactly the same as if I had type
+the "private:" keyword here.
+
+And so this data member, this integer is private. That means that I
+cannot access it from outside of an object, I can only access it from
+methods that are a part of the "class" itself. And then in the
+"public:" section, I have some methods, or some member functions. And
+these are used for setting the value and getting the value. Now, it's
+also possible to have member functions in the "private:" section. I
+can put something here, and I can say...
+
+And now I have a member function, which is only accessible from inside
+of the "class." And so one of these other member functions could call
+it, but I couldn't call it from outside, from the part of the code
+that uses the object. Likewise, if I want to, I could take the data
+member and make it public. And by making it public, this is now
+directly accessible from outside, so instead of saying
+"object1.getvalue());" I can simply say "object1.i);" and get the
+result.
+
+But when I take that data member and I move it into the "private:"
+section, even without this "private:" label, because the class
+defaults to private. Now that "i" is no longer valid. "i" is a private
+member of 'Class1.' And so I need to use the getter instead. The data
+members do not need to be before the code. I can take that and I can
+move it down here, and it will still work the same. And sometimes
+you'll see it done that way. In this case, you need both these
+"public:" and "private:" labels.
+
+We'll move that back, and I'm gonna go ahead and take this "private:"
+label out, cause this is the way I normal do it. You'll see it done
+all these different ways. Normally it's considered best practice to
+separate the interface and the implementation. And what that means, is
+that outside of the "class" definition, you would have the "class"
+methods, and you would simply have declarations for them inside. And
+so I would have a declaration here, which would look like that. And
+then I would have the implementation out here, and that looks like
+this.
+
+And then I could to the same thing for "getvalue." And so now I simply
+have declarations for the methods inside of the "class" definition,
+and I have the actual methods outside of the "class" definition. And
+notice because they have this "class" label here, before the name of
+the method, that makes them part of the class. Now normally these
+three parts would be in three separate files. We would have the
+"class" definition, here everything from line "6" to line "11." We
+would have that inside of one file, usually a header file, and then we
+would have these class methods in a separate implementation file.
+
+And then the code that actually uses the class, that would be in
+another file altogether. So normally there would be at least three
+files here. And this first part of the "class" definition is often
+called the 'interface.' So you have interface, implementation, and
+usage. And those would be in three separate different files. Once your
+code gets to be more than a few lines, it's actually a lot more
+convenient to work with these separate files, and I'll show you some
+examples of this later in the chapter. For teaching purposes, and as
+you're learning the basic syntax of C++ classes, it's more convenient
+to have it all in one file like this.
+
+But just know that it's normally in three separate files. So let's
+just go ahead and build and run this, and you can see it work. "Value
+is 47." Here, down in the usage, I've defined an integer, and I've
+defined an object, and then I call the "setvalue" setter, the
+"setvalue" method here, to set the value inside the object to "i," and
+that sets this "i" inside the object. And then I use the getter,
+"getvalue" to read the value from the object and print the "value is
+47." Just a little terminology here, the definition of the "class,"
+this is called the "class." When the class is actually used in code
+and an instance of the class is created, that's called an "object."
+And so, an instance of a class is called an "object." The definition
+is called the "class."
+
+

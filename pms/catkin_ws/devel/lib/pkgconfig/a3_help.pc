@@ -1,0 +1,8 @@
+prefix=/lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+
+Name: a3_help
+Description: Description of a3_help
+Version: 0.0.0
+Cflags: -I/lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/include
+Libs: -L/lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/lib 
+Requires: 

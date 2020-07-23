@@ -1,0 +1,31 @@
+//
+// Triangle class implementation.
+//
+// 
+// Class functions or methods(aka member functions) are defined here.
+//
+
+// What is the pitfall of this class???
+
+
+//#include <iostream>
+#include <cstdio>
+
+#include "triangle.h"
+
+
+
+// Triangle::Triangle():width_(0), height_(0){
+//
+// }
+
+Triangle::Triangle(){
+
+}
+
+
+Triangle::~Triangle(){
+
+  // destructor
+  
+}

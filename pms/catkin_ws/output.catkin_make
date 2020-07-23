@@ -1,0 +1,91 @@
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+[  1%] Built target listener
+[  1%] [  2%] Built target sensor_msgs_generate_messages_py
+[  3%] [  5%] Built target TBK
+Built target randomNumListner
+Built target rosocvTalker
+[  7%] Built target rosocvListner
+[  8%] [ 10%] Built target talker
+Built target randomNumTalker
+[ 10%] Built target sensor_msgs_generate_messages_cpp
+[ 10%] Built target sensor_msgs_generate_messages_lisp
+[ 11%] [ 12%] [ 12%] Built target std_msgs_generate_messages_cpp
+Built target image_publisher
+Building CXX object a3_help/CMakeFiles/sample.dir/src/sample.cpp.o
+[ 14%] Built target map_to_image_node
+[ 16%] Built target random_walk
+[ 17%] Built target image_subscriber
+[ 17%] [ 18%] [ 18%] Built target std_msgs_generate_messages_py
+Built target node_example_gencfg
+Built target _a3_help_generate_messages_check_deps_RequestGoal
+[ 18%] Built target std_msgs_generate_messages_lisp
+[ 18%] [ 18%] Built target geometry_msgs_generate_messages_py
+Built target _node_example_generate_messages_check_deps_NodeExampleData
+[ 18%] [ 18%] [ 18%] Built target _lama_msgs_generate_messages_check_deps_PlaceProfile
+Built target _lama_msgs_generate_messages_check_deps_GetLamaObject
+Built target _lama_msgs_generate_messages_check_deps_Crossing
+[ 18%] [ 18%] Built target _lama_msgs_generate_messages_check_deps_InterfaceInfo
+Built target _lama_msgs_generate_messages_check_deps_Frontier
+[ 18%] Built target _lama_msgs_generate_messages_check_deps_GetPlaceProfile
+[ 18%] Built target _lama_msgs_generate_messages_check_deps_LamaObject
+[ 18%] [ 18%] Built target _lama_msgs_generate_messages_check_deps_DescriptorLink
+Built target _lama_msgs_generate_messages_check_deps_SetLamaObject
+[ 18%] Built target _lama_msgs_generate_messages_check_deps_SetPlaceProfile
+[ 18%] [ 18%] Built target geometry_msgs_generate_messages_cpp
+Built target _lama_msgs_generate_messages_check_deps_GetInterfaceInfo
+[ 18%] [ 18%] Built target _lama_msgs_generate_messages_check_deps_SetCrossing
+Built target _lama_msgs_generate_messages_check_deps_GetCrossing
+[ 21%] [ 21%] Built target a3_help_generate_messages_py
+Built target geometry_msgs_generate_messages_lisp
+[ 22%] Built target a3_help_generate_messages_cpp
+[ 24%] [ 24%] Built target node_example_generate_messages_cpp
+Built target a3_help_generate_messages_lisp
+[ 25%] [ 28%] Built target node_example_generate_messages_lisp
+Built target node_example_generate_messages_py
+[ 45%] Built target lama_msgs_generate_messages_py
+[ 45%] [ 47%] [ 61%] Built target _local_map_generate_messages_check_deps_SaveMap
+Built target lama_msgs_generate_messages_lisp
+Built target _voice_node_generate_messages_check_deps_voice_node
+[ 76%] Built target lama_msgs_generate_messages_cpp
+[ 76%] Built target a3_help_generate_messages
+[ 76%] Built target node_example_generate_messages
+[ 78%] Built target listener.node_example
+[ 81%] Built target local_map_generate_messages_py
+[ 82%] Built target local_map_generate_messages_cpp
+[ 84%] [ 85%] Built target talker.node_example
+Built target local_map_generate_messages_lisp
+[ 87%] Built target voice_node_generate_messages_cpp
+[ 89%] [ 90%] Built target voice_node_generate_messages_py
+Built target voice_node_generate_messages_lisp
+[ 90%] Built target lama_msgs_generate_messages
+[ 90%] Built target local_map_generate_messages
+[ 90%] Built target voice_node_generate_messages
+[ 91%] [ 94%] [ 96%] Built target map_ray_caster
+Built target simpleSub
+Built target simplePub
+[ 98%] Built target local_map
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp: In member function ‘void GazeboRetrieve::detectCellTypes(double, double, double, double)’:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:669:7: error: expected ‘;’ before ‘for’
+       for (int i=0; i<pxyRangeMax; i++){
+       ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:669:21: error: ‘i’ was not declared in this scope
+       for (int i=0; i<pxyRangeMax; i++){
+                     ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:669:39: error: expected ‘;’ before ‘)’ token
+       for (int i=0; i<pxyRangeMax; i++){
+                                       ^
+make[2]: *** [a3_help/CMakeFiles/sample.dir/src/sample.cpp.o] Error 1
+make[1]: *** [a3_help/CMakeFiles/sample.dir/all] Error 2
+make: *** [all] Error 2
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+Invoking "make -j8 -l8" failed

@@ -1,0 +1,7 @@
+project2: robot navigation to frontier:
+
+Just to be  clear, and for keeping  in mind while coding,  We start by
+navigating the robot from the centre of the ogMap to a frontier on the
+ogmap, that is the robot doesn't start at a frontier.﻿﻿﻿﻿﻿﻿﻿﻿?
+
+And if we do this the robot doesn't get stuck anywhere?

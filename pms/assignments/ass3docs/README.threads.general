@@ -1,0 +1,27 @@
+1june2018
+
+Data can be shared between different threads:
+
+For example in ../catkin_ws/src/a3_help/src/a3_help/sample.cpp the laser,
+odom and image buffers are shared between theads.
+
+Thus you must use a mutex lock to have access to a buffer that is used
+in another thread.  So that only one thread can access the buffer at a
+time.  Access of the of the buffers  at the same time will create data
+inconsistenciee.  For instance  a laser buffer variable  is written to
+while seperateThread use of laser buffer  tries to write to it also at
+the same time.
+
+Each thread is a process wrt  the operatiing system(OS).  Thus it will
+get a  timeslice according to the  scheduler algorithim of an  OS.  As
+long as you have the shared thead data locked between threads the rest
+of the thread  executes as a normal  process.  So all the  data set or
+code  in  the   rest  of  the  thread  executes  as   if  it  was  one
+program/process.
+
+So you  don't need to  worry how long is  the timeslice given  to your
+process,  when  the scheduler  comes  back  to execute  your  program/
+process  in another  timeslice it  is as  if there  is no  gap in  the
+execution of  the process/program, so the  data and code of  the other
+other timeslice is maintained.
+

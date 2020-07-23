@@ -1,0 +1,94 @@
+startedt@26jun2018
+
+
+What the question is asking:
+---------------------------
+
+Use Frontier Exploration to build a  map of the environment to be used
+for later navigation.
+
+A LRF(Laser Range Finder) on the robot moves in the robot environment,
+the   global  space.    An  ogMap,   openCV  image   of  LaserScan.msg
+'s(occupancyGrid), is  used to  determine the FT  nodes on  the ogMap.
+The ogMap is the only thing the robot  can see at one time as it moves
+through the  environment.  So  to determine  all the  FT nodes  in the
+robot environment, global space, we need  to combine all the FT's from
+all the ogMap  movements.  Thus probing our  environment with readings
+from the LRF builds the environment, or global space, map.
+
+Note, the aim is not to detect  FS, O, or UK cells in the environment,
+just the FT cells.
+
+So once  the robot  on the ogMap  detects FS with  it's laser  along a
+vector in it's line of sight, the  FS's need to be tested to determine
+if they are  FT cells.  FS cells that boarder  an adjacent(yamichi) UK
+cell are recored as FT cells for later navigation.
+
+All the  currently known FT cells  need to be printed  to the "global"
+map, an openCV GUI window, after each unvisitedFT is processed.
+
+Moving from FT to next closest FT node options:
+----------------------------------------------
+1. Im assumming the robot moves from FT to FT cell avoiding obsticals by
+   getting readings from its sensors.???
+
+2. Or does the robot have to do a BFS to get from FT to FT node???
+
+3. Yamachi at  http://robotfrontier.com/frontier/navigation.html says the
+   robot moves from one FT to the next FT via a path planner, depth-first
+   search.
+
+
+Project one vs project two:
+
+Over  all  flow control  including  project  two described  above  and
+project  one.  Project  two  provides  the map  of  frontier nodes  to
+project one.  Project  two request's a goal it wants  the path to from
+project one.  Project  one returns a BFS path, to  the requested goal,
+to project two.
+
+So for people doing project two  Alen will provide a path that project
+two people will employ a pure persuit algorithim to travel the path to
+the goal.
+
+
+Program functionality:
+
+laserCallback()
+imageCallback()
+poseCallback()
+
+Are  functions called  by ROS,  dependent on  other robot  software or
+hardware events.
+
+During laserCallback() the robot scans the  node, that is the FT node,
+at 0, 90, 180, 270 degrees???  But the angle_increment is set to about
+1 degree so this may be incorrect.  My stance is based on what i heard
+in class, ie robot only moves  along adjacent cells and yamachi paper.
+However, the detectCellTypes() and  detectFrontiers() functions can be
+written assuming angle  increment of 90degrees to get some  feel for a
+correct algorithim.
+
+local_map_node.cpp takes  a LaserScan message  as input and  outputs a
+local map known  as the OccupancyGrid.  This OccupancyGrid  is sent to
+map_to_image_node.cpp that converts it to  an openCV image, called the
+ogMap.  The loal map orientation is the  same as the one of the global
+frame.   THe position  of  the map  is  the  same as  the  one of  the
+LaserScan,   that  is   the  laser   is  on   the  robot   body.   The
+imageCallback() function  is called by  ROS each  time there is  a new
+OccupancyGrid is created by the robot laser.
+
+poseCallback()  is  called  when  the  robot  sensors  send  odometry
+messages to sample.cpp.
+
+These callback functions are seperate thread due to ther'e requirement
+to be operate in a semi-realtime basis.
+
+seperateThread(): Uses, or shares, buffers filled in the above
+callback functions.  Thus the buffer access need to be protected by a
+mutex lock.
+
+Also note,  that within  a thread, it  is like a  process or  a single
+program so you can assume execution of code from start to finish, each
+line after successive  line, though depending on  the schedular giving
+you time slice.

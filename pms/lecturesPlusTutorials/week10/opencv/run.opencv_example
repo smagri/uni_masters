@@ -1,0 +1,12 @@
+smagri@gyan1:~/uni/subj/proj30cp/catkin_ws/devel/lib/opencv_example$
+./image_publisher _image:=lena.jpg 
+[ WARN] [1496823882.856389018]:  RUN AS: rosrun opencv_example
+image_publisher _image:=~/lena.jpg
+
+
+smagri@gyan1:~/uni/subj/proj30cp/catkin_ws/devel/lib/opencv_example$./image_subscriber
+
+
+Can use rosrun for this also.
+
+

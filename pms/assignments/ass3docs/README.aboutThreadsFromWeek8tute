@@ -1,0 +1,101 @@
+11sep2017
+
+task1_mutex:
+
+Two threads exist  in one program, main.cpp.  Were  access to variable
+var occurs within  a mutex lock, the  same mutex lock is  used by both
+threads.
+
+This ensures  that access  to variable  var is  atomic, thus  only one
+thread is changing/using it's value at a time.
+
+Looking at  the output of  running this program  one can see  that any
+particular thread can  occur at any time, and that  one thread can run
+successively any indeterminate number of times.
+
+
+task1_convar:
+
+Again the same two threads occur as in task1_mutex main.cpp.
+
+However,  this  time   a  condition  variable  cv  is   used  to  make
+changing/using variable var access atomic.
+
+Here only  one thread blocks  after accessing variable var,  call this
+thread1.  When thread1 blocks it can not run successively, so all that
+is possible  is for thread2 to  execute, again locking access  to var.
+thread2 can occur successively any undeterminate number of times as it
+has no  blocking within it.   Due to  thread1 blocking after  a single
+execution it will  run once, then thread2 will run  one or more times,
+then thread1 will run once...and the pattern recures and contiues.
+
+
+task1_conVarProducerConsumer:
+
+Here  the  same two  threads  occur  in  main.cpp.  However,  now  two
+condition variables are used to make access to var atomic.
+
+In doing  so each thread locks  access to var and  then blocks, waking
+the other thread before it blocks/goes to sleep.
+
+Due to this blocking in each  thread we do not get succesive execution
+of either thread(as  for task1_convar).  What happens  is that thread1
+executes, wakes thread2,  and then blocks.  So then thead2  is able to
+execute then wakes  thread1, and thread2 blocks  itself.  This results
+in   executin  of   thread1,  thread2,   thread1,  thread2,   thread1,
+thread2..., that is in lock step.
+
+
+task1_atomic:
+
+main.cpp here uses the atomic type, which is only applicable to simple
+types in c++ like int, fload, bool...
+
+This ensures that the access to  variable var is atomic.  But like the
+mutex example either  thread can occur any number  os successive times
+and in any order.   Also a problem here the cout  access is not atomic
+so you get output to cout all jumbled out.
+
+
+task1_noAtomicOrMutex:
+
+Here we  get non-atomic aceess to  variable var as well  as non-atomic
+access to cout.
+
+
+task3:
+
+main.cpp uses one  mutex lock for atomic access to  dataBuff struct by
+three  threads.  Here  we  see  behaviour from  the  threads like  the
+task1_mutex  example.  So  in task3  we have  three threads  accessing
+dataBuff atomically, with any of the threads running in an undetermned
+order and  also any one  thread running successively  an indeterminate
+number of times.
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+Multi-threading on multi-core CPU's(this has been verified with r2).
+
+Execute command top, then t 1 within  top.  One can see that there are
+8 CPU entires. cat /proc/cpuinfo shows there are only four cores.  This
+would mean there are two threads running on each core.  So effectively
+you have 8 cpus running a thread each.
+
+Normally  the scheduler  decides(according to  some algorithim)  which
+process  gets a  timeslice(gets to  execute) at  any particular  time.
+
+Two threads  on a  system behave  like two processes  on a  system wrt
+timeslices.  Command  top will also  show you  that each thread  has a
+different pid, appropriately.  This would  show why with the execution
+of  assignment three  part of  thread1 executes  then part  of thread2
+executes, each thread executing within for one timeslice. So the whole
+of t1  and the whole  of t2 is executed  over a number  of timeslices,
+where  who gets  a timeslice  and when  is up  to the  scheduler.  See
+output.noSleeps for this.
+
+This timeslice sharing  between the two threads  occurs with different
+amounts  of  code  of  each thread  executing  within  any  particular
+timeslice.
+

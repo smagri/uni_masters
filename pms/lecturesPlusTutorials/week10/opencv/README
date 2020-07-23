@@ -1,0 +1,41 @@
+15nov2017
+
+histogram & displayImage
+------------------------
+
+Are    template    programs    that    are    incororated    in    the
+ROS Nodes/Topics example:
+
+~/uni/sub/proj30cp/randomNum_node/
+
+and later parts of it in:
+
+~/uni/sub/proj30cp/rosopencv_node & ~/uni/subj/proj30cp/rosocv_node.
+
+Where rosopencv_node  has the more  modern node creation  methods, and
+rosocv_node has the old  style.  Old style seems to be  used by Alen in
+class examples.  Both are examples of  a combined ROS and OpenCV node.
+
+
+
+histogram: 
+
+With an  image as input produces  a histogram of number  of pixels the
+image has  at the  intensities 0 to  255, where intensity  black=0 and
+intensity white=255.
+
+run as:
+
+cd /lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week10/opencv/histogram
+
+buid/histogram images/parkesLunar.jpg
+
+
+
+displayImage:
+
+displayImage.cpp  is  incorporated  into  histogram.cpp and  does  the
+loading  of the  image,  from  the command  line,  converting it  into
+greyscale and displays the image in a window.
+
+

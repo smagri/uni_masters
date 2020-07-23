@@ -1,0 +1,36 @@
+Setting Up Environment:
+
+NOTE 13nov2017:
+ubuntu14.04 is the dual boot option of the current gyan1 setup,
+current gyan1 runs ubuntu16.04 by default.
+
+.cshrc aliased comands:
+
+chroot.smagri
+chroot.root
+
+
+Goto correct working directory:
+
+cprojj -> ~/uni/subj/project30cp/catkin_ws
+
+
+Starting ROS environment:
+
+bash
+ros.... programs like roslaunch sould now be there.
+
+eg:
+rotopic list
+
+or:
+roslaunch turtlebot_gazebo turtlebot_world.launch
+roslaunch turtlebot_teleop keyboard_teleop.launch
+
+
+NOTE 24may2018, some helpful tipss:
+
+1) lsb_release -a
+
+tells you the os verion you are using, and cut and past into all tabs
+to make sure your in the correct verion of the os.

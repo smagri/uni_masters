@@ -1,0 +1,113 @@
+// simple-inheritance.cpp by Bill Weinman <http://bw.org/>
+#include <cstdio>
+#include <string>
+using namespace std;
+
+// class inheritance in C++ is simply a matter of creating a base
+// class and then declaring the inheritance in your derived class
+// definitions.
+
+// Class inheritance represents the ability  to reuse code by deriving
+// a class from a base class. The derived class will typically inherit
+// and build upon some or all of  the data and function members of the
+// base class.
+
+// Base class is a class that has members that are used in one or more
+// derived classes.
+//
+// Base class sometimes called the superclass or parent class.
+
+// Derived class is sometimes called a subclass or child class.
+
+// Member Access  Specifiers: determine what other objects  are able
+// to access class members.
+//
+// public: available to base class, derived class and other(unrelated) objects
+// protected: available to base class, derived class
+// private: available to base class only
+
+// In addition to adding members to  a class, a derived class may also
+// overload members of it's base class.
+
+// C++  provides complete  support  for  class inheritance,  including
+// overloading methods, polymorphism, and multiple inheritance.
+
+// Base class
+class Animal {
+  // Animal name, type and sound it makes.
+  string _name;
+  string _type;
+  string _sound;
+  // private(private by default if in this section) constructor,
+  // prevents construction of base class objects, ie no objects of
+  // type base class can be created.  Animal is our base class here.
+  Animal(){};
+protected:
+    // protected constructor for use by derived classes
+    Animal ( const string & n, const string & t, const string & s )
+    : _name(n), _type(t), _sound(s) {}
+public:
+    void speak() const;
+    const string & name() const { return _name; }
+    const string & type() const { return _type; }
+    const string & sound() const { return _sound; }
+};
+
+void Animal::speak() const {
+    printf("%s the %s says %s\n", _name.c_str(), _type.c_str(), _sound.c_str());
+}
+
+// Dog  class-derived from  Animal, that  is Dog  class inherits  from
+// Animal  class.  Derive/inherits  from  base class  Animal, this  is
+// almost always public.
+//
+class Dog : public Animal {
+  int walked;
+public:
+  // Constructor for the Dog class, base class initialises its
+  // members.  ie why Animal() is called.
+  //
+  // Animal(), Animal class constructor is protected: Thus can only
+  // only be used here as Dog class is derived from Class Animal
+  //
+  // Dog constructor calls base class constructor and sets a private
+  // member variable
+  Dog( string n ) : Animal(n, "dog", "woof"), walked(0) {};
+  int walk() { return ++walked; }
+};
+
+
+// Cat class - derived from Animal
+class Cat : public Animal {
+    int petted;
+public:
+    Cat( string n ) : Animal(n, "cat", "meow"), petted(0) {};
+    int pet() { return ++petted; }
+};
+
+// Pig class - derived from Animal
+class Pig : public Animal {
+    int fed;
+public:
+    Pig( string n) : Animal(n, "pig", "oink"), fed(0) {};
+    int feed() { return ++fed; }
+};
+
+int main( int argc, char ** argv ) {
+
+  // All these object types inherit from the base class called Animal.
+  Dog d("Rover");
+  Cat c("Fluffy");
+  Pig p("Arnold");
+
+  // speak method/member fn is in the Animal base class.
+  d.speak();
+  c.speak();
+  p.speak();
+
+  // Derived classes, Dog Cat Pig, have member fn's of their own(and
+  // not a part of the base class), these are called here.
+  printf("the dog has been walked %d times\n", d.walk());
+  printf("the cat has been petted %d times\n", c.pet());
+  printf("the pig has been fed %d times\n", p.feed());
+}

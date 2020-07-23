@@ -1,0 +1,220 @@
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+[  3%] [  3%] [  5%] Built target randomNumTalker
+[  8%] [  8%] Built target listener
+Built target randomNumListner
+Built target rosocvListner
+Built target talker
+[  9%] [ 10%] Built target TBK
+Built target rosocvTalker
+[ 10%] Built target sensor_msgs_generate_messages_cpp
+[ 10%] Built target sensor_msgs_generate_messages_lisp
+[ 10%] Built target sensor_msgs_generate_messages_py
+Scanning dependencies of target sample
+[ 13%] [ 13%] [ 13%] Built target map_to_image_node
+Built target image_subscriber
+Built target _a3_help_generate_messages_check_deps_RequestGoal
+[ 14%] Built target image_publisher
+[ 15%] [ 15%] Built target std_msgs_generate_messages_cpp
+[ 17%] Building CXX object a3_help/CMakeFiles/sample.dir/src/sample.cpp.o
+Built target random_walk
+[ 19%] Built target node_example_gencfg
+[ 19%] [ 19%] [ 19%] Built target std_msgs_generate_messages_py
+Built target std_msgs_generate_messages_lisp
+Built target geometry_msgs_generate_messages_py
+[ 19%] Built target _node_example_generate_messages_check_deps_NodeExampleData
+[ 19%] Built target _lama_msgs_generate_messages_check_deps_GetInterfaceInfo
+[ 19%] [ 19%] Built target _lama_msgs_generate_messages_check_deps_SetPlaceProfile
+Built target _lama_msgs_generate_messages_check_deps_SetLamaObject
+[ 19%] [ 19%] [ 19%] Built target _lama_msgs_generate_messages_check_deps_InterfaceInfo
+Built target _lama_msgs_generate_messages_check_deps_Crossing
+Built target _lama_msgs_generate_messages_check_deps_SetCrossing
+[ 19%] Built target _lama_msgs_generate_messages_check_deps_LamaObject
+[ 19%] [ 19%] [ 19%] [ 19%] Built target _lama_msgs_generate_messages_check_deps_DescriptorLink
+Built target _lama_msgs_generate_messages_check_deps_Frontier
+[ 19%] Built target _lama_msgs_generate_messages_check_deps_GetCrossing
+Built target _lama_msgs_generate_messages_check_deps_GetLamaObject
+Built target _lama_msgs_generate_messages_check_deps_GetPlaceProfile
+[ 19%] Built target _lama_msgs_generate_messages_check_deps_PlaceProfile
+[ 19%] Built target geometry_msgs_generate_messages_cpp
+[ 19%] [ 20%] Built target geometry_msgs_generate_messages_lisp
+Built target a3_help_generate_messages_lisp
+[ 21%] [ 23%] Built target a3_help_generate_messages_py
+Built target node_example_generate_messages_cpp
+[ 25%] Built target a3_help_generate_messages_cpp
+[ 27%] Built target node_example_generate_messages_py
+[ 28%] Built target node_example_generate_messages_lisp
+[ 44%] [ 59%] [ 77%] Built target lama_msgs_generate_messages_lisp
+Built target lama_msgs_generate_messages_cpp
+Built target lama_msgs_generate_messages_py
+[ 77%] Built target a3_help_generate_messages
+[ 77%] [ 77%] Built target _local_map_generate_messages_check_deps_SaveMap
+Built target _voice_node_generate_messages_check_deps_voice_node
+[ 77%] Built target node_example_generate_messages
+[ 79%] [ 79%] Built target listener.node_example
+Built target lama_msgs_generate_messages
+[ 82%] Built target talker.node_example
+[ 83%] [ 84%] Built target local_map_generate_messages_cpp
+Built target map_ray_caster
+[ 85%] Built target local_map_generate_messages_lisp
+[ 88%] Built target local_map_generate_messages_py
+[ 90%] Built target voice_node_generate_messages_py
+[ 91%] [ 92%] Built target voice_node_generate_messages_lisp
+Built target voice_node_generate_messages_cpp
+[ 94%] [ 95%] Built target local_map
+Built target local_map_generate_messages
+[ 95%] Built target voice_node_generate_messages
+[ 97%] Built target simpleSub
+[100%] Built target simplePub
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:222:20: error: ‘a3_help’ has not been declared
+   bool requestGoal(a3_help::RequestGoal::Request  &req,
+                    ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:222:51: error: expected ‘,’ or ‘...’ before ‘&’ token
+   bool requestGoal(a3_help::RequestGoal::Request  &req,
+                                                   ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp: In constructor ‘GazeboRetrieve::GazeboRetrieve(ros::NodeHandle)’:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:112:43: error: no matching function for call to ‘ros::NodeHandle::advertiseService(const char [13], bool (GazeboRetrieve::*)(int), GazeboRetrieve* const)’
+         &GazeboRetrieve::requestGoal, this);
+                                           ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:112:43: note: candidates are:
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:6:
+/opt/ros/indigo/include/ros/node_handle.h:866:17: note: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(MReq&, MRes&), T*)
+   ServiceServer advertiseService(const std::string& service, bool(T::*srv_func)(MReq &, MRes &), T *obj)
+                 ^
+/opt/ros/indigo/include/ros/node_handle.h:866:17: note:   template argument deduction/substitution failed:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:112:43: note:   mismatched types ‘MReq&’ and ‘int’
+         &GazeboRetrieve::requestGoal, this);
+                                           ^
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:6:
+/opt/ros/indigo/include/ros/node_handle.h:911:17: note: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(ros::ServiceEvent<MReq, MRes>&), T*)
+   ServiceServer advertiseService(const std::string& service, bool(T::*srv_func)(ServiceEvent<MReq, MRes>&), T *obj)
+                 ^
+/opt/ros/indigo/include/ros/node_handle.h:911:17: note:   template argument deduction/substitution failed:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:112:43: note:   mismatched types ‘ros::ServiceEvent<MReq, MRes>&’ and ‘int’
+         &GazeboRetrieve::requestGoal, this);
+                                           ^
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:6:
+/opt/ros/indigo/include/ros/node_handle.h:957:17: note: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(MReq&, MRes&), const boost::shared_ptr<X>&)
+   ServiceServer advertiseService(const std::string& service, bool(T::*srv_func)(MReq &, MRes &), const boost::shared_ptr<T>& obj)
+                 ^
+/opt/ros/indigo/include/ros/node_handle.h:957:17: note:   template argument deduction/substitution failed:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:112:43: note:   mismatched types ‘MReq&’ and ‘int’
+         &GazeboRetrieve::requestGoal, this);
+                                           ^
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:6:
+/opt/ros/indigo/include/ros/node_handle.h:1004:17: note: template<class T, class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (T::*)(ros::ServiceEvent<MReq, MRes>&), const boost::shared_ptr<X>&)
+   ServiceServer advertiseService(const std::string& service, bool(T::*srv_func)(ServiceEvent<MReq, MRes>&), const boost::shared_ptr<T>& obj)
+                 ^
+/opt/ros/indigo/include/ros/node_handle.h:1004:17: note:   template argument deduction/substitution failed:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:112:43: note:   mismatched types ‘ros::ServiceEvent<MReq, MRes>&’ and ‘int’
+         &GazeboRetrieve::requestGoal, this);
+                                           ^
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:6:
+/opt/ros/indigo/include/ros/node_handle.h:1048:17: note: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (*)(MReq&, MRes&))
+   ServiceServer advertiseService(const std::string& service, bool(*srv_func)(MReq&, MRes&))
+                 ^
+/opt/ros/indigo/include/ros/node_handle.h:1048:17: note:   template argument deduction/substitution failed:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:112:43: note:   mismatched types ‘bool (*)(MReq&, MRes&)’ and ‘bool (GazeboRetrieve::*)(int)’
+         &GazeboRetrieve::requestGoal, this);
+                                           ^
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:6:
+/opt/ros/indigo/include/ros/node_handle.h:1091:17: note: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, bool (*)(ros::ServiceEvent<MReq, MRes>&))
+   ServiceServer advertiseService(const std::string& service, bool(*srv_func)(ServiceEvent<MReq, MRes>&))
+                 ^
+/opt/ros/indigo/include/ros/node_handle.h:1091:17: note:   template argument deduction/substitution failed:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:112:43: note:   mismatched types ‘bool (*)(ros::ServiceEvent<MReq, MRes>&)’ and ‘bool (GazeboRetrieve::*)(int)’
+         &GazeboRetrieve::requestGoal, this);
+                                           ^
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:6:
+/opt/ros/indigo/include/ros/node_handle.h:1132:17: note: template<class MReq, class MRes> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, const boost::function<bool(MReq&, MRes&)>&, const VoidConstPtr&)
+   ServiceServer advertiseService(const std::string& service, const boost::function<bool(MReq&, MRes&)>& callback, 
+                 ^
+/opt/ros/indigo/include/ros/node_handle.h:1132:17: note:   template argument deduction/substitution failed:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:112:43: note:   ‘bool (GazeboRetrieve::*)(int)’ is not derived from ‘const boost::function<bool(MReq&, MRes&)>’
+         &GazeboRetrieve::requestGoal, this);
+                                           ^
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:6:
+/opt/ros/indigo/include/ros/node_handle.h:1177:17: note: template<class S> ros::ServiceServer ros::NodeHandle::advertiseService(const string&, const boost::function<bool(S&)>&, const VoidConstPtr&)
+   ServiceServer advertiseService(const std::string& service, const boost::function<bool(S&)>& callback, 
+                 ^
+/opt/ros/indigo/include/ros/node_handle.h:1177:17: note:   template argument deduction/substitution failed:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:112:43: note:   ‘bool (GazeboRetrieve::*)(int)’ is not derived from ‘const boost::function<bool(S&)>’
+         &GazeboRetrieve::requestGoal, this);
+                                           ^
+In file included from /opt/ros/indigo/include/ros/ros.h:45:0,
+                 from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:6:
+/opt/ros/indigo/include/ros/node_handle.h:1209:17: note: ros::ServiceServer ros::NodeHandle::advertiseService(ros::AdvertiseServiceOptions&)
+   ServiceServer advertiseService(AdvertiseServiceOptions& ops);
+                 ^
+/opt/ros/indigo/include/ros/node_handle.h:1209:17: note:   candidate expects 1 argument, 3 provided
+In file included from /opt/ros/indigo/include/ros/ros.h:40:0,
+                 from /lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:6:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp: In member function ‘bool GazeboRetrieve::requestGoal(int)’:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:277:7: error: ‘req’ was not declared in this scope
+       req.x, req.y, req.angle, req.scanTime);
+       ^
+/opt/ros/indigo/include/ros/console.h:342:165: note: in definition of macro ‘ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER’
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+                                                                                                                                                                     ^
+/opt/ros/indigo/include/ros/console.h:375:7: note: in expansion of macro ‘ROSCONSOLE_PRINT_AT_LOCATION’
+       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+       ^
+/opt/ros/indigo/include/ros/console.h:557:35: note: in expansion of macro ‘ROS_LOG_COND’
+ #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+                                   ^
+/opt/ros/indigo/include/rosconsole/macros_generated.h:110:23: note: in expansion of macro ‘ROS_LOG’
+ #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:276:5: note: in expansion of macro ‘ROS_INFO’
+     ROS_INFO("request: x=%f, y=%f, angle=%f, timeBtwScans", 
+     ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:337:31: error: ‘req’ was not declared in this scope
+     robot_base_cmd.linear.x = req.x + deltaX;
+                               ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:369:5: error: ‘res’ was not declared in this scope
+     res.ack = true;
+     ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp: In member function ‘void GazeboRetrieve::seperateThread()’:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:674:4: error: ‘Request’ was not declared in this scope
+    Request req;
+    ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:674:12: error: expected ‘;’ before ‘req’
+    Request req;
+            ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:675:4: error: ‘Response’ was not declared in this scope
+    Response res;
+    ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:675:13: error: expected ‘;’ before ‘res’
+    Response res;
+             ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:676:4: error: ‘req’ was not declared in this scope
+    req.x = pixelX; 
+    ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:682:4: error: ‘res’ was not declared in this scope
+    res.ack = service_.call(req, res);
+    ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/sample.cpp:682:23: error: ‘class ros::ServiceServer’ has no member named ‘call’
+    res.ack = service_.call(req, res);
+                       ^
+make[2]: *** [a3_help/CMakeFiles/sample.dir/src/sample.cpp.o] Error 1
+make[1]: *** [a3_help/CMakeFiles/sample.dir/all] Error 2
+make: *** [all] Error 2
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+Invoking "make -j8 -l8" failed

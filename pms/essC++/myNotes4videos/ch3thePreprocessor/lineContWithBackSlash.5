@@ -1,0 +1,54 @@
+Transcript:
+
+- Line continuation is a convenient fuction of the preprocessor. This
+  is something you may not need very often, but when you do need it,
+  it's good to know it's there. Here I have a working copy of
+  working.cpp from Chapter Three of the exercise files. When the
+  preprocessor sees a backslash character immediately followed by a
+  new line, it will silently remove both the backslash and the new
+  line. For example, If I take this Hello, World here, and just right
+  in the middle of the word Hello I put in a backslash and a new line,
+  and when I save this, and build and run, you'll notice that the
+  result is Hello, World without the backslash and without the new
+  line.
+
+So this is useful in cases where a new line is not otherwise allowed,
+especially in macro definitions. Let's take an example of this. I'm
+going to define a macro here that will swap two values. It'll swap two
+integer values. It's a simple macro, and it's probably not something
+you'll use in real life. And I'm just going to define this on multiple
+lines like this.
+
+This uses a bitwise xor operator to swap two values. It's a little
+Boolean mathematical trick. Now, obviously, this won't work the way
+that it is. You see all the errors in the IDE. It won't work because a
+macro has to be all on one line. I can define all of this on one line,
+and that would work fine. But if I really want it to be readable, I
+want to have this stuff on separate lines. So I can come out here, and
+I can put in backslash characters at the end of each of these lines,
+and there cannot be anything after the backslash character.
+
+There can't be any space here, that won't work. It needs to be the
+very last thing on the line. Actually, what this does is the
+preprocessor will take out that backslash and the new line, and it'll
+end up putting all of this on one line. And so this just makes it a
+little bit more readable. And then I can come down here in my code,
+and we'll use this and try it out. First define a couple of integers,
+and then we'll put in a printf.
+
+And now I'll call our SWAP macro, and I call it just like it were a
+function, like that. And then I can take this printf, and copy and
+paste it down there, and now when we build and run, you see x is five,
+y is 10, x is 10, y is five. It's a clever little trick, but I'm using
+it here just to illustrate the line continuation in the
+preprocessor. So this allows us to create a macro that's on a few
+different lines. You'll see this used a lot in header files. Again, a
+lot of these techniques in C++ are going to work better with
+templates, but it's good to know how this works, because you'll see it
+now and then.
+
+So the preprocessor provides a useful line continuation feature using
+the backslash, new line combination. This is really convenient for
+making complex macros more readable. Keep in mind, all the normal
+caveats for preprocessor macros still apply.
+

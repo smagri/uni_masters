@@ -1,0 +1,159 @@
+smagri@gyan1:/lu1/smagri/uni/subj/pms/assignments/ass3wrks%diff -ru
+preDataFusion/ ../ass3/
+Binary files
+preDataFusion/build/CMakeFiles/dataFusion.dir/dataFusion.cpp.o and
+../ass3/build/CMakeFiles/dataFusion.dir/dataFusion.cpp.o differ
+Binary files preDataFusion/build/dataFusion and
+../ass3/build/dataFusion differ
+diff -ru preDataFusion/dataFusion.cpp ../ass3/dataFusion.cpp
+--- preDataFusion/dataFusion.cpp      2017-10-18 18:09:15.454223669
++1100
++++ ../ass3/dataFusion.cpp	2017-11-01 19:15:33.689975564 +1100
+@@ -17,7 +17,13 @@
+   // Default contructor,  expected to be called  after constructors
+   of
+      // classes that derive from the DataFusion class are executed.
+
+-
++  // Set default fusion method if user doesn't specify.
++  //
++  // method1: fusionMethod_ = "min";
++  // OR
++  // method2:
++  setFusionMethod("min");
++
+ }
+
+
+@@ -222,7 +228,7 @@
+
+   while(true){
+        // Aquire the mutex locks and process the buffers/FIFO's/Que's
+        of
+	-    // all the sensor.
+	+    // all the sensors.
+
+
+     for (i=0; i<rangers_.size(); i++){
+     @@ -293,6 +299,9 @@
+      	         dataBuff[rangerNum].buffQue_.front());
+
+ 		   // Extrapolate next sample.
+		   +    //
+		   +	  // Should this be:
+		   +	    //	    x = x2 + ((1.0 / samplingRate) /
+		   2)
+			  samplingRate =
+		   rangers_.at(rangerNum)->getHdwFixedSamplingRate();
+			  x = x2 + (1.0 / samplingRate);
+
+diff -ru preDataFusion/dataFusion.cpp~ ../ass3/dataFusion.cpp~
+--- preDataFusion/dataFusion.cpp~      2017-10-01 17:12:24.507916817
++1100
++++ ../ass3/dataFusion.cpp~	2017-10-25 18:52:39.233755092 +1100
+@@ -17,7 +17,13 @@
+   // Default contructor,  expected to be called  after constructors
+   of
+      // classes that derive from the DataFusion class are executed.
+
+-
++  // Set default fusion method if user doesn't specify.
++  //
++  // method1: fusionMethod_ = "min";
++  // OR
++  // method2:
++  setFusionMethod("min");
++
+ }
+
+
+@@ -106,6 +112,7 @@
+ }
+
+
++//
+ // Threaded processing of sensor/ranger data.
+  //
+
+@@ -199,7 +206,8 @@
+
+ void DataFusion::processBuffers(){
+
+-  /// Process data in FIFOs(buffers/ques) using mutex locks for
+   syncronisation.
+   +  /// Process  data in  FIFOs(buffers/ques) using  condition
+   variables
+   +  /// for syncronisation.
+
+
+   int rangerNum; // current sensor being processed
+   @@ -213,10 +221,14 @@
+      double x1, y1; // Point from previous extrapolation.
+         double x2, y2; // Current sample point to use for current
+   extrapolation.
+
++  double sensorRangeMin;
++  double sensorRangeMax;
++
++
+
+   while(true){
+        // Aquire the mutex locks and process the buffers/FIFO's/Que's
+        of
+	-    // all the sensor.
+	+    // all the sensors.
+
+
+     for (i=0; i<rangers_.size(); i++){
+     @@ -292,6 +304,33 @@
+
+       linearExtrapolation(x1, y1, x2, y2, x, y, rangerNum);
+
++        // If necessory,  set linearly  extrapolated value  (x,y) to
++	   // within the sensors range.
++	     sensorRangeMin  =
+rangers_.at(rangerNum)->getHdwFixedRangeMin();
++	  sensorRangeMax  =
+rangers_.at(rangerNum)->getHdwFixedRangeMax();
++	  if (y <= sensorRangeMin){
++	      y = sensorRangeMin;
++	        }
++		  if (y >= sensorRangeMax){
++		      y = sensorRangeMax;
++		        }
++			  fprintf(stderr, "dbg: processBuffers: "
++			  		    "linearExtrapolation(%d):
+(x, y) = (%f, %f))\n",
++        rangerNum, x, y);
++
++	  /// Perhaps linear extrapolation of polynominal range values
++	    /// of sensor 1, the Sonar, doesn't fit the data well.
+With
++	  /// range values  deviating further  and further from  the x
++	    /// axis as time goes  on.  Perhaps, the Lagrange
+Polynomial
++	  /// extrapolation is more appropriate here.
++	    ///
++	      /// Linear   extraploation  of   a  polynomial   functon
+is
++	  /// appropriate if the samples are not far appart.  Thus the
++	    /// conclusion drawn from our datasets is samples at 10Hz
+is
++	  /// fast enough to represent  a polynomial function and that
++	    /// a 3Hz sampling rate is too slow.
++
++
+	  dataBuff[rangerNum].xPrev = x;
+	   			      dataBuff[rangerNum].yPrev = y;
+
+@@ -382,3 +421,9 @@
+   return;
+
+ }
+ +
+ +
+ +
+ +void DataFusion::getFusedRangeData(void){
+ +
+ +}
+ 

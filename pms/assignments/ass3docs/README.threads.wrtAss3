@@ -1,0 +1,180 @@
+8sep2017
+
+fillBuffer0  and fillBuffer1  are  two different  threads.  Each  when
+considered  independantly/per   lock  can  occur  in   any  order  and
+successibly  an undetrminate  number  of times.   However, both  these
+threads deal  with two independet  locks.  Thus they  access different
+data segments with different locks.
+
+So, due  to independant nature  of threads they  can be called  in any
+order and succesively an indeterminate  number of times.  Also, due to
+the fact  that both threads use  independent locks, one thread  may be
+using one lock and  the other using the second lock  at the same time.
+This would result in a line of  lock0 executing, then a line of lock1,
+then  l0,  l1,  l0,  l1,  executing  with  some  repetitions  of  each
+particular lock can occur.
+
+
+lock0 & lock1:
+
+* share cout;  so why is readRanger()  messing up cout output,  ie not
+  atomic use of cout?  lock0 and lock1 use of cout is atomic.
+
+*
+
+
+r2Qs:
+
+* do i need a seperate lock around the use of readRanger, due to cout
+  use?
+
+
+19sep2017
+
+sleeping/blocking in readRanger() or any  other sleep within the mutex
+lock  in fillBuffer()  thread prevents  other functions/threads,  that
+require  that lock,  from  executing.  In  this case  processBuffers()
+thread doesn't get  to execute often, or hardly ever.   This of course
+results  in  memory for  the  FIFOs/ques  growing exponentially,  with
+processBuffer() never catching  up.  For all sorts of  reasons that is
+obviously  problematic.   For  instance,  leaving  dataFusion  running
+stepped all over evolution(was not  responsive) an eventually hung the
+machine.
+
+When next the cpu timeslice is  given to the fillBuffer() thread, that
+is, when the  schedular wakes the sleep in fillBuffer(),  only a short
+number of  lines of  code in  this thread execute  before the  lock is
+taken   again.    So   within  this   given   timeslice   fillBuffer()
+sleeps/blocks again,  with lock0  or lock1 held.   This results  in no
+time for processBuffers()  thread grab the lock and  thus execute.  It
+so happens  in practice  that fillBuffer(0) and  fillBuffer(1) threads
+execute in this senario but processBuffers() thread rarely executes.
+
+Thus, DO NOT sleep while holding a mutex lock.
+
+So typical exicution of dataFusion when the sampling sleeps are in the
+correct places, see output.sleepOutsideMutexLock.
+
+cat output | fgrep -i "processBuffers" | wc -l
+8048049
+
+cat output | fgrep -i "fifo(0) size is" | wc -l
+1005957
+
+output | fgrep -i "fifo(1) size is" | wc -l
+1005957
+
+cat output.sleepOutsideMutexLock | fgrep -i "fifo(0) size is 1" | wc -l
+151
+
+cat output.sleepOutsideMutexLock | fgrep -i "fifo(0) size is 2" | wc -l
+0
+
+For last command number 1,2,3..10 was tried with same result, 0.
+
+
+Inspecting   this  output   file   shows  that   most   of  the   time
+processBuffers() threads run and  thus wait for fillBuffer(0/1) theads
+to populate the FIFO/que.  The FIFO/que  size is 0 till a sample comes
+in.  So given that the sampling is  3hz or 10hz here and the cpu speed
+of the machine is  in the ghz range this is to  be expected.  That is,
+processBuffers() mostly just returns till the FIFO starts to fill.
+
+However, processBuffers() runs at such a rate the the cpu% use goes to
+100% ish.  This  is not ideal, so perhaps condition  variable needs to
+be implented.
+
+This system relys  on sampling rate(Hz currently) which  is lower than
+the cpu  speed(ghz currently).  But is  the samples come in  so faster
+than the cpu speed we drop/loose  samples.  So then buffer needs to be
+big  enough, if  memory  size  lets you.  Note  thatn an  ISR(interrup
+service routine) would more likely ensure no loss of samples.
+
+
+Replaceing mutex locks with condition  variables, a revision, cause it
+looks like  i'll need to  use them to  not let dataFusion  threads hog
+100% ish of the cpu time:
+
+In processBuffers(), the consumer of samples process, replace:
+
+dataBuff[rangerNum].buffMutex_.lock(); with
+std::unique_lock<std::mutex> lck(utex);
+...
+dataBuff[rangerNum].buffMutex_.unlock(); with
+produce.notify_one();
+consume.wait(lck);
+
+
+In fillBuffers(), the produce of samples into the FIFO/que, replace:
+dataBuff[rangerNum].buffMutex_.lock(); with
+std::unique_lock<std::mutex> lck(utex)l
+    
+...
+consume.notify_one();
+produce.wait(lck);
+
+
+
+Once the linear extrapolation code was added:
+
+The dynamics of thread calling changed again, see output.linearExtraploationCodeAdded.
+Here is a summary:
+
+cat output.linearExtraploationCodeAdded | fgrep -i "processBuffer(1)" | wc -l
+0
+
+cat output.linearExtraploationCodeAdded | fgrep -i "processBuffer(0)" | wc -l
+1
+
+cat output.linearExtraploationCodeAdded | fgrep -i "fifo(0) size is" | wc -l
+1
+
+cat output.linearExtraploationCodeAdded | fgrep -i "fifo(1) size is" | wc -l
+0
+
+cat output.linearExtraploationCodeAdded | fgrep -i "fillBuffer(1)" | wc -l
+1297
+
+output.linearExtraploationCodeAdded | fgrep -i "fillBuffer(0)" | wc -l
+1
+
+Clearly   from    this   the    fillBuffer(1)   thread    is   running
+disproportionately to the  other threads.  In fact  starving the other
+threads  from executing  more than  once.   So there  was a  behaviour
+change in  code execution just by  changing the amount of  code in the
+processBuffers() thread.  So one can see by now that it is not good to
+rely on the OS,  sleeps in your code, or just the volume  of code in a
+thread, for  a fair number of  executions of the three  threads.  This
+also is  not an  ideal situation  as again  we will  get fillBuffer(1)
+thread growing exponentially, with  it's associated memory use issues,
+the only thing  that will fix it and guarantee  that the other threads
+get to run is a condition variable.
+
+So in summary,  condition variables will stop  dataFusion threads from
+hogging all the cpu  time at 100% ish, where one  thread executes in a
+tight loop.   Also it  will stop any  particular thread  from starving
+other threads of  timeslices/execution time.  This is the  only way to
+have your code  of the three threads execute an  a fair and reletively
+determanistic fashion.
+
+
+Once  the   condition  variables   of  producer_/consumer_   for  each
+dataBuff[rangerNum] element, that is, foreach fillBuffer/processBuffer
+pair of  threads, were introduced there  was no longer cpu  hogging of
+the  dataFusion process  and no  starving  from execution  any of  the
+threads.  Consequently, the following was  a typical output of running
+the dataFusion binary:
+
+where output = output.conditionVariables
+
+cat output | fgrep -i "fillBuffer(0)" | wc -l
+462
+
+cat output | fgrep -i "fillBuffer(1)" | wc -l
+462
+
+cat output | fgrep -i "processBuffer(0)" | wc -l
+462
+
+cat output | fgrep -i "processBuffer(1)" | wc -l
+461

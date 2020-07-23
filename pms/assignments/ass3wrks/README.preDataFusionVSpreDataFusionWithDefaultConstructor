@@ -1,0 +1,516 @@
+Binary files preDataFusion/build/CMakeFiles/dataFusion.dir/dataFusion.cpp.o and ../ass3/build/CMakeFiles/dataFusion.dir/dataFusion.cpp.o differ
+Binary files preDataFusion/build/dataFusion and ../ass3/build/dataFusion differ
+diff -ru preDataFusion/build/doc/html/annotated.html ../ass3/build/doc/html/annotated.html
+--- preDataFusion/build/doc/html/annotated.html	2017-10-18 10:11:12.591163799 +1100
++++ ../ass3/build/doc/html/annotated.html	2017-11-02 13:04:56.470569073 +1100
+@@ -99,7 +99,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/bug.html ../ass3/build/doc/html/bug.html
+--- preDataFusion/build/doc/html/bug.html	2017-10-18 10:11:12.563163796 +1100
++++ ../ass3/build/doc/html/bug.html	2017-11-02 13:04:56.442569008 +1100
+@@ -92,7 +92,7 @@
+ </div></div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/classDataFusion.html ../ass3/build/doc/html/classDataFusion.html
+--- preDataFusion/build/doc/html/classDataFusion.html	2017-10-18 10:11:12.571163797 +1100
++++ ../ass3/build/doc/html/classDataFusion.html	2017-11-02 13:04:56.446569017 +1100
+@@ -117,6 +117,9 @@
+ <tr class="separator:a9db7824544983918e85b4fade3b888f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ <tr class="memitem:abc51ecf2b48ce4c1818d189966479749"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataFusion.html#abc51ecf2b48ce4c1818d189966479749">startThreads</a> ()</td></tr>
+ <tr class="separator:abc51ecf2b48ce4c1818d189966479749"><td class="memSeparator" colspan="2">&#160;</td></tr>
++<tr class="memitem:a7392b56bb9ba7aff20f152a46c16b2a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7392b56bb9ba7aff20f152a46c16b2a4"></a>
++void&#160;</td><td class="memItemRight" valign="bottom"><b>getFusedRangeData</b> (void)</td></tr>
++<tr class="separator:a7392b56bb9ba7aff20f152a46c16b2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+ </table><table class="memberdecls">
+ <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+ Protected Attributes</h2></td></tr>
+@@ -360,7 +363,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/classDataFusion-members.html ../ass3/build/doc/html/classDataFusion-members.html
+--- preDataFusion/build/doc/html/classDataFusion-members.html	2017-10-18 10:11:12.571163797 +1100
++++ ../ass3/build/doc/html/classDataFusion-members.html	2017-11-02 13:04:56.446569017 +1100
+@@ -94,18 +94,19 @@
+   <tr bgcolor="#f0f0f0"><td class="entry"><b>DataFusion</b>() (defined in <a class="el" href="classDataFusion.html">DataFusion</a>)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
+   <tr class="even"><td class="entry"><a class="el" href="classDataFusion.html#a5d289ed4bc8f6fef2c196035e129d4f0">fillBuffer</a>(int rangerNum)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
+   <tr><td class="entry"><a class="el" href="classDataFusion.html#a6dd91f874d1618eec86b6b484f78c53e">fusionMethod_</a></td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getFusionMethod</b>(void) (defined in <a class="el" href="classDataFusion.html">DataFusion</a>)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
+-  <tr><td class="entry"><a class="el" href="classDataFusion.html#a9db7824544983918e85b4fade3b888f9">linearExtrapolation</a>(double x1, double y1, double x2, double y2, double &amp;x, double &amp;y, int rangerNum)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
+-  <tr class="even"><td class="entry"><a class="el" href="classDataFusion.html#a58595235bffc5c1b52603da329a2a0b3">processBuffers</a>(void)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
+-  <tr><td class="entry"><a class="el" href="classDataFusion.html#afd39feaf6825d7a53e08480f25f19a23">rangers_</a></td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+-  <tr class="even"><td class="entry"><a class="el" href="classDataFusion.html#a10f68b6e05c9618a3f87fae051f06499">readRangeData</a>()</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
+-  <tr><td class="entry"><a class="el" href="classDataFusion.html#a2c151e8632cc9aedcab42951cf5d41be">setFusionMethod</a>(string fusionMethod)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
+-  <tr class="even"><td class="entry"><a class="el" href="classDataFusion.html#a8439e5bdc4de1b533e37a164235e9963">setRangers</a>(vector&lt; Ranger * &gt; rangers)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
+-  <tr><td class="entry"><a class="el" href="classDataFusion.html#abc51ecf2b48ce4c1818d189966479749">startThreads</a>()</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
++  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getFusedRangeData</b>(void) (defined in <a class="el" href="classDataFusion.html">DataFusion</a>)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
++  <tr bgcolor="#f0f0f0"><td class="entry"><b>getFusionMethod</b>(void) (defined in <a class="el" href="classDataFusion.html">DataFusion</a>)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
++  <tr class="even"><td class="entry"><a class="el" href="classDataFusion.html#a9db7824544983918e85b4fade3b888f9">linearExtrapolation</a>(double x1, double y1, double x2, double y2, double &amp;x, double &amp;y, int rangerNum)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
++  <tr><td class="entry"><a class="el" href="classDataFusion.html#a58595235bffc5c1b52603da329a2a0b3">processBuffers</a>(void)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
++  <tr class="even"><td class="entry"><a class="el" href="classDataFusion.html#afd39feaf6825d7a53e08480f25f19a23">rangers_</a></td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
++  <tr><td class="entry"><a class="el" href="classDataFusion.html#a10f68b6e05c9618a3f87fae051f06499">readRangeData</a>()</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
++  <tr class="even"><td class="entry"><a class="el" href="classDataFusion.html#a2c151e8632cc9aedcab42951cf5d41be">setFusionMethod</a>(string fusionMethod)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
++  <tr><td class="entry"><a class="el" href="classDataFusion.html#a8439e5bdc4de1b533e37a164235e9963">setRangers</a>(vector&lt; Ranger * &gt; rangers)</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
++  <tr class="even"><td class="entry"><a class="el" href="classDataFusion.html#abc51ecf2b48ce4c1818d189966479749">startThreads</a>()</td><td class="entry"><a class="el" href="classDataFusion.html">DataFusion</a></td><td class="entry"></td></tr>
+ </table></div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/classes.html ../ass3/build/doc/html/classes.html
+--- preDataFusion/build/doc/html/classes.html	2017-10-18 10:11:12.595163799 +1100
++++ ../ass3/build/doc/html/classes.html	2017-11-02 13:04:56.474569082 +1100
+@@ -102,7 +102,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/classRadar.html ../ass3/build/doc/html/classRadar.html
+--- preDataFusion/build/doc/html/classRadar.html	2017-10-18 10:11:12.575163797 +1100
++++ ../ass3/build/doc/html/classRadar.html	2017-11-02 13:04:56.454569036 +1100
+@@ -285,7 +285,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/classRadar-members.html ../ass3/build/doc/html/classRadar-members.html
+--- preDataFusion/build/doc/html/classRadar-members.html	2017-10-18 10:11:12.575163797 +1100
++++ ../ass3/build/doc/html/classRadar-members.html	2017-11-02 13:04:56.454569036 +1100
+@@ -121,7 +121,7 @@
+ </table></div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/classRanger.html ../ass3/build/doc/html/classRanger.html
+--- preDataFusion/build/doc/html/classRanger.html	2017-10-18 10:11:12.583163798 +1100
++++ ../ass3/build/doc/html/classRanger.html	2017-11-02 13:04:56.462569055 +1100
+@@ -309,7 +309,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/classRanger-members.html ../ass3/build/doc/html/classRanger-members.html
+--- preDataFusion/build/doc/html/classRanger-members.html	2017-10-18 10:11:12.583163798 +1100
++++ ../ass3/build/doc/html/classRanger-members.html	2017-11-02 13:04:56.462569055 +1100
+@@ -120,7 +120,7 @@
+ </table></div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/classSonar.html ../ass3/build/doc/html/classSonar.html
+--- preDataFusion/build/doc/html/classSonar.html	2017-10-18 10:11:12.587163798 +1100
++++ ../ass3/build/doc/html/classSonar.html	2017-11-02 13:04:56.466569063 +1100
+@@ -285,7 +285,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/classSonar-members.html ../ass3/build/doc/html/classSonar-members.html
+--- preDataFusion/build/doc/html/classSonar-members.html	2017-10-18 10:11:12.587163798 +1100
++++ ../ass3/build/doc/html/classSonar-members.html	2017-11-02 13:04:56.466569063 +1100
+@@ -121,7 +121,7 @@
+ </table></div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/dataFusion_8h_source.html ../ass3/build/doc/html/dataFusion_8h_source.html
+--- preDataFusion/build/doc/html/dataFusion_8h_source.html	2017-10-18 10:11:12.559163796 +1100
++++ ../ass3/build/doc/html/dataFusion_8h_source.html	2017-11-02 13:04:56.434568990 +1100
+@@ -84,11 +84,11 @@
+ <div class="title">/lu1/smagri/uni/subj/pms/assignments/ass3/dataFusion.h</div>  </div>
+ </div><!--header-->
+ <div class="contents">
+-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DATAFUSION_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DATAFUSION_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//#include &lt;vector&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//#include &lt;string&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;condition_variable&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;ranger.h&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//#include &quot;dataFusion.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structDataBuffer.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structDataBuffer.html">DataBuffer</a>{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  </div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a091edd414b90cfc1268202fd9e263033">   22</a></span>&#160;  queue&lt;double&gt; <a class="code" href="structDataBuffer.html#a091edd414b90cfc1268202fd9e263033">buffQue_</a>; </div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a6204237cd0c3a6ceca084910fd6d9ba9">   23</a></span>&#160;  queue&lt;double&gt; <a class="code" href="structDataBuffer.html#a6204237cd0c3a6ceca084910fd6d9ba9">buffQueTimestamp_</a>; </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="comment">// Previous extrapolation&#39;s  (x, y) becomes  (x1, y1) in  the next</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="comment">// extrapolation.</span></div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a74f108e3c8b3e867fcc274a1cd88b4bb">   27</a></span>&#160;  <span class="keywordtype">double</span> xPrev = 0; </div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a319aca73589e821e691370d67ef5680a">   28</a></span>&#160;  <span class="keywordtype">double</span> yPrev = 0; </div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="comment">// Flag to  indicate the start of  the que, and hence  there is only</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="comment">// one sample in the que we need to have two samples to extrapolate data.</span></div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a86c74e894f981de12660a412265de4d2">   33</a></span>&#160;  <span class="keywordtype">int</span> prevDatasetPointExists = 0; </div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a46d49771de5573d99a3ccc5726937852">   35</a></span>&#160;  mutex <a class="code" href="structDataBuffer.html#a46d49771de5573d99a3ccc5726937852">buffMutex_</a>; </div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structDataBuffer.html#af4a33914934dfd01666dc0da8f4f75d7">   37</a></span>&#160;  std::condition_variable <a class="code" href="structDataBuffer.html#af4a33914934dfd01666dc0da8f4f75d7">producer_</a>; </div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a69a69893abb70bdb499e71e197199a4a">   38</a></span>&#160;  std::condition_variable <a class="code" href="structDataBuffer.html#a69a69893abb70bdb499e71e197199a4a">consumer_</a>; </div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// Virtual functions in DataFusionInterface.h need to be implemented</span></div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">// in DataFusion class here.  As  DataFusion class is derived from</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// the DataFusionInterface class.  And with virtual functions = 0 in</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// DataFusionInterface.h it means that DataFusionInterface.h is an</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// abstract  class,  and  thus  the  virtual  functions  need  not  be</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// implemented in DataFusionInterface.cpp.</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classDataFusion.html">   78</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDataFusion.html">DataFusion</a>{</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  </div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="classDataFusion.html">DataFusion</a>();  <span class="comment">// Here because derived classes require it.</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  </div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> setRangers(vector&lt;Ranger*&gt; rangers);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">//vector&lt;double&gt; getFusedRangeData();</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="comment">//vector&lt;vector&lt;double&gt; &gt; getRawRangeData();</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">int</span> readRangeData();</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// Other setter fns.</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> setFusionMethod(<span class="keywordtype">string</span> fusionMethod);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">string</span> getFusionMethod(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">//</span></div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span> fillBuffer(<span class="keywordtype">int</span> rangerNum);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">void</span> processBuffers(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="comment">//void setClearRawDataVector(void);  </span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> linearExtrapolation(<span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1,</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;               <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2,</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;               <span class="keywordtype">double</span> &amp;x, <span class="keywordtype">double</span> &amp;y,</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;               <span class="keywordtype">int</span> rangerNum);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> startThreads();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// wrks: std::thread fillBuffer0Thread(&amp;DataFusion::fillBuffer, this);</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  </div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; <span class="keyword">protected</span>:</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="comment">//</span></div><div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classDataFusion.html#a6dd91f874d1618eec86b6b484f78c53e">  112</a></span>&#160;  <span class="keywordtype">string</span> <a class="code" href="classDataFusion.html#a6dd91f874d1618eec86b6b484f78c53e">fusionMethod_</a>;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="comment">//</span></div><div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classDataFusion.html#afd39feaf6825d7a53e08480f25f19a23">  116</a></span>&#160;  vector&lt;Ranger *&gt; <a class="code" href="classDataFusion.html#afd39feaf6825d7a53e08480f25f19a23">rangers_</a>;  <span class="comment">// STL vector container.</span></div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">// STL vector of a vector of doubles.</span></div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="comment">//vector&lt;vector&lt;double&gt; &gt; rawRangeDataVV_;</span></div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="comment">//int numSensors = 2;</span></div><div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classDataFusion.html#a74bdc34ddacd7ddf0ff0a877ab49827f">  125</a></span>&#160;  <a class="code" href="structDataBuffer.html">DataBuffer</a> dataBuff[2]; </div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  </div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    </div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classDataFusion_html_a6dd91f874d1618eec86b6b484f78c53e"><div class="ttname"><a href="classDataFusion.html#a6dd91f874d1618eec86b6b484f78c53e">DataFusion::fusionMethod_</a></div><div class="ttdeci">string fusionMethod_</div><div class="ttdef"><b>Definition:</b> dataFusion.h:112</div></div>
++<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DATAFUSION_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DATAFUSION_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//#include &lt;vector&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//#include &lt;string&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;condition_variable&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;ranger.h&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//#include &quot;dataFusion.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structDataBuffer.html">   20</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structDataBuffer.html">DataBuffer</a>{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  </div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a091edd414b90cfc1268202fd9e263033">   22</a></span>&#160;  queue&lt;double&gt; <a class="code" href="structDataBuffer.html#a091edd414b90cfc1268202fd9e263033">buffQue_</a>; </div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a6204237cd0c3a6ceca084910fd6d9ba9">   23</a></span>&#160;  queue&lt;double&gt; <a class="code" href="structDataBuffer.html#a6204237cd0c3a6ceca084910fd6d9ba9">buffQueTimestamp_</a>; </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="comment">// Previous extrapolation&#39;s  (x, y) becomes  (x1, y1) in  the next</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="comment">// extrapolation.</span></div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a74f108e3c8b3e867fcc274a1cd88b4bb">   27</a></span>&#160;  <span class="keywordtype">double</span> xPrev = 0; </div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a319aca73589e821e691370d67ef5680a">   28</a></span>&#160;  <span class="keywordtype">double</span> yPrev = 0; </div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="comment">// Flag to  indicate the start of  the que, and hence  there is only</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="comment">// one sample in the que we need to have two samples to extrapolate data.</span></div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a86c74e894f981de12660a412265de4d2">   33</a></span>&#160;  <span class="keywordtype">int</span> prevDatasetPointExists = 0; </div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a46d49771de5573d99a3ccc5726937852">   35</a></span>&#160;  mutex <a class="code" href="structDataBuffer.html#a46d49771de5573d99a3ccc5726937852">buffMutex_</a>; </div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structDataBuffer.html#af4a33914934dfd01666dc0da8f4f75d7">   37</a></span>&#160;  std::condition_variable <a class="code" href="structDataBuffer.html#af4a33914934dfd01666dc0da8f4f75d7">producer_</a>; </div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structDataBuffer.html#a69a69893abb70bdb499e71e197199a4a">   38</a></span>&#160;  std::condition_variable <a class="code" href="structDataBuffer.html#a69a69893abb70bdb499e71e197199a4a">consumer_</a>; </div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  </div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// Virtual functions in DataFusionInterface.h need to be implemented</span></div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">// in DataFusion class here.  As  DataFusion class is derived from</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// the DataFusionInterface class.  And with virtual functions = 0 in</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// DataFusionInterface.h it means that DataFusionInterface.h is an</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">// abstract  class,  and  thus  the  virtual  functions  need  not  be</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// implemented in DataFusionInterface.cpp.</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//</span></div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classDataFusion.html">   78</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDataFusion.html">DataFusion</a>{</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  </div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; <span class="keyword">public</span>:</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="classDataFusion.html">DataFusion</a>();  <span class="comment">// Here because derived classes require it.</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  </div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">void</span> setRangers(vector&lt;Ranger*&gt; rangers);</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">//vector&lt;double&gt; getFusedRangeData();</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="comment">//vector&lt;vector&lt;double&gt; &gt; getRawRangeData();</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">int</span> readRangeData();</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// Other setter fns.</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> setFusionMethod(<span class="keywordtype">string</span> fusionMethod);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">string</span> getFusionMethod(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">//</span></div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span> fillBuffer(<span class="keywordtype">int</span> rangerNum);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">void</span> processBuffers(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="comment">//void setClearRawDataVector(void);  </span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> linearExtrapolation(<span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> y1,</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;               <span class="keywordtype">double</span> x2, <span class="keywordtype">double</span> y2,</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;               <span class="keywordtype">double</span> &amp;x, <span class="keywordtype">double</span> &amp;y,</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;               <span class="keywordtype">int</span> rangerNum);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">void</span> startThreads();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// wrks: std::thread fillBuffer0Thread(&amp;DataFusion::fillBuffer, this);</span></div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordtype">void</span> getFusedRangeData(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  </div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  </div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; <span class="keyword">protected</span>:</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="comment">//</span></div><div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classDataFusion.html#a6dd91f874d1618eec86b6b484f78c53e">  115</a></span>&#160;  <span class="keywordtype">string</span> <a class="code" href="classDataFusion.html#a6dd91f874d1618eec86b6b484f78c53e">fusionMethod_</a>;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">//</span></div><div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classDataFusion.html#afd39feaf6825d7a53e08480f25f19a23">  119</a></span>&#160;  vector&lt;Ranger *&gt; <a class="code" href="classDataFusion.html#afd39feaf6825d7a53e08480f25f19a23">rangers_</a>;  <span class="comment">// STL vector container.</span></div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">// STL vector of a vector of doubles.</span></div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="comment">//vector&lt;vector&lt;double&gt; &gt; rawRangeDataVV_;</span></div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="comment">//int numSensors = 2;</span></div><div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classDataFusion.html#a74bdc34ddacd7ddf0ff0a877ab49827f">  128</a></span>&#160;  <a class="code" href="structDataBuffer.html">DataBuffer</a> dataBuff[2]; </div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  </div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    </div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classDataFusion_html_a6dd91f874d1618eec86b6b484f78c53e"><div class="ttname"><a href="classDataFusion.html#a6dd91f874d1618eec86b6b484f78c53e">DataFusion::fusionMethod_</a></div><div class="ttdeci">string fusionMethod_</div><div class="ttdef"><b>Definition:</b> dataFusion.h:115</div></div>
+ <div class="ttc" id="structDataBuffer_html"><div class="ttname"><a href="structDataBuffer.html">DataBuffer</a></div><div class="ttdef"><b>Definition:</b> dataFusion.h:20</div></div>
+ <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+ <div class="ttc" id="structDataBuffer_html_a6204237cd0c3a6ceca084910fd6d9ba9"><div class="ttname"><a href="structDataBuffer.html#a6204237cd0c3a6ceca084910fd6d9ba9">DataBuffer::buffQueTimestamp_</a></div><div class="ttdeci">queue&lt; double &gt; buffQueTimestamp_</div><div class="ttdoc">data buffer timestamp queue/FIFO </div><div class="ttdef"><b>Definition:</b> dataFusion.h:23</div></div>
+-<div class="ttc" id="classDataFusion_html_afd39feaf6825d7a53e08480f25f19a23"><div class="ttname"><a href="classDataFusion.html#afd39feaf6825d7a53e08480f25f19a23">DataFusion::rangers_</a></div><div class="ttdeci">vector&lt; Ranger * &gt; rangers_</div><div class="ttdoc">The set of sensor/ranger object pointers to do fusion on. </div><div class="ttdef"><b>Definition:</b> dataFusion.h:116</div></div>
++<div class="ttc" id="classDataFusion_html_afd39feaf6825d7a53e08480f25f19a23"><div class="ttname"><a href="classDataFusion.html#afd39feaf6825d7a53e08480f25f19a23">DataFusion::rangers_</a></div><div class="ttdeci">vector&lt; Ranger * &gt; rangers_</div><div class="ttdoc">The set of sensor/ranger object pointers to do fusion on. </div><div class="ttdef"><b>Definition:</b> dataFusion.h:119</div></div>
+ <div class="ttc" id="structDataBuffer_html_a46d49771de5573d99a3ccc5726937852"><div class="ttname"><a href="structDataBuffer.html#a46d49771de5573d99a3ccc5726937852">DataBuffer::buffMutex_</a></div><div class="ttdeci">mutex buffMutex_</div><div class="ttdoc">mutex lock for synconised access to data buffer </div><div class="ttdef"><b>Definition:</b> dataFusion.h:35</div></div>
+ <div class="ttc" id="classDataFusion_html"><div class="ttname"><a href="classDataFusion.html">DataFusion</a></div><div class="ttdoc">Class DataFusion. </div><div class="ttdef"><b>Definition:</b> dataFusion.h:78</div></div>
+ <div class="ttc" id="structDataBuffer_html_a091edd414b90cfc1268202fd9e263033"><div class="ttname"><a href="structDataBuffer.html#a091edd414b90cfc1268202fd9e263033">DataBuffer::buffQue_</a></div><div class="ttdeci">queue&lt; double &gt; buffQue_</div><div class="ttdoc">data buffer is a queue/FIFO </div><div class="ttdef"><b>Definition:</b> dataFusion.h:22</div></div>
+@@ -97,7 +97,7 @@
+ </div><!-- fragment --></div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/dir_017ad5e908c41501f6a06b5119b37293.html ../ass3/build/doc/html/dir_017ad5e908c41501f6a06b5119b37293.html
+--- preDataFusion/build/doc/html/dir_017ad5e908c41501f6a06b5119b37293.html	2017-10-18 10:11:12.591163799 +1100
++++ ../ass3/build/doc/html/dir_017ad5e908c41501f6a06b5119b37293.html	2017-11-02 13:04:56.470569073 +1100
+@@ -95,7 +95,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/dir_34e32b2767b9a66498b8d81e5df7818f.html ../ass3/build/doc/html/dir_34e32b2767b9a66498b8d81e5df7818f.html
+--- preDataFusion/build/doc/html/dir_34e32b2767b9a66498b8d81e5df7818f.html	2017-10-18 10:11:12.591163799 +1100
++++ ../ass3/build/doc/html/dir_34e32b2767b9a66498b8d81e5df7818f.html	2017-11-02 13:04:56.470569073 +1100
+@@ -95,7 +95,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/dir_cd3db5597f2261188045d3f032b6e500.html ../ass3/build/doc/html/dir_cd3db5597f2261188045d3f032b6e500.html
+--- preDataFusion/build/doc/html/dir_cd3db5597f2261188045d3f032b6e500.html	2017-10-18 10:11:12.591163799 +1100
++++ ../ass3/build/doc/html/dir_cd3db5597f2261188045d3f032b6e500.html	2017-11-02 13:04:56.470569073 +1100
+@@ -95,7 +95,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/files.html ../ass3/build/doc/html/files.html
+--- preDataFusion/build/doc/html/files.html	2017-10-18 10:11:12.611163800 +1100
++++ ../ass3/build/doc/html/files.html	2017-11-02 13:04:56.486569110 +1100
+@@ -95,7 +95,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/functions_func.html ../ass3/build/doc/html/functions_func.html
+--- preDataFusion/build/doc/html/functions_func.html	2017-10-18 10:11:12.603163800 +1100
++++ ../ass3/build/doc/html/functions_func.html	2017-11-02 13:04:56.482569101 +1100
+@@ -139,7 +139,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/functions.html ../ass3/build/doc/html/functions.html
+--- preDataFusion/build/doc/html/functions.html	2017-10-18 10:11:12.603163800 +1100
++++ ../ass3/build/doc/html/functions.html	2017-11-02 13:04:56.482569101 +1100
+@@ -272,7 +272,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/functions_vars.html ../ass3/build/doc/html/functions_vars.html
+--- preDataFusion/build/doc/html/functions_vars.html	2017-10-18 10:11:12.611163800 +1100
++++ ../ass3/build/doc/html/functions_vars.html	2017-11-02 13:04:56.486569110 +1100
+@@ -161,7 +161,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/hierarchy.html ../ass3/build/doc/html/hierarchy.html
+--- preDataFusion/build/doc/html/hierarchy.html	2017-10-18 10:11:12.595163799 +1100
++++ ../ass3/build/doc/html/hierarchy.html	2017-11-02 13:04:56.474569082 +1100
+@@ -99,7 +99,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/index.html ../ass3/build/doc/html/index.html
+--- preDataFusion/build/doc/html/index.html	2017-10-18 10:11:12.591163799 +1100
++++ ../ass3/build/doc/html/index.html	2017-11-02 13:04:56.470569073 +1100
+@@ -103,7 +103,7 @@
+ <pre class="fragment">ass3/build/dataFusion</pre> </div></div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/pages.html ../ass3/build/doc/html/pages.html
+--- preDataFusion/build/doc/html/pages.html	2017-10-18 10:11:12.591163799 +1100
++++ ../ass3/build/doc/html/pages.html	2017-11-02 13:04:56.470569073 +1100
+@@ -87,7 +87,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/radar_8h_source.html ../ass3/build/doc/html/radar_8h_source.html
+--- preDataFusion/build/doc/html/radar_8h_source.html	2017-10-18 10:11:12.563163796 +1100
++++ ../ass3/build/doc/html/radar_8h_source.html	2017-11-02 13:04:56.434568990 +1100
+@@ -91,7 +91,7 @@
+ </div><!-- fragment --></div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/ranger_8h_source.html ../ass3/build/doc/html/ranger_8h_source.html
+--- preDataFusion/build/doc/html/ranger_8h_source.html	2017-10-18 10:11:12.563163796 +1100
++++ ../ass3/build/doc/html/ranger_8h_source.html	2017-11-02 13:04:56.438568998 +1100
+@@ -100,7 +100,7 @@
+ </div><!-- fragment --></div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/sonar_8h_source.html ../ass3/build/doc/html/sonar_8h_source.html
+--- preDataFusion/build/doc/html/sonar_8h_source.html	2017-10-18 10:11:12.563163796 +1100
++++ ../ass3/build/doc/html/sonar_8h_source.html	2017-11-02 13:04:56.438568998 +1100
+@@ -91,7 +91,7 @@
+ </div><!-- fragment --></div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/structDataBuffer.html ../ass3/build/doc/html/structDataBuffer.html
+--- preDataFusion/build/doc/html/structDataBuffer.html	2017-10-18 10:11:12.567163796 +1100
++++ ../ass3/build/doc/html/structDataBuffer.html	2017-11-02 13:04:56.442569008 +1100
+@@ -136,7 +136,7 @@
+ </div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/html/structDataBuffer-members.html ../ass3/build/doc/html/structDataBuffer-members.html
+--- preDataFusion/build/doc/html/structDataBuffer-members.html	2017-10-18 10:11:12.567163796 +1100
++++ ../ass3/build/doc/html/structDataBuffer-members.html	2017-11-02 13:04:56.442569008 +1100
+@@ -101,7 +101,7 @@
+ </table></div><!-- contents -->
+ <!-- start footer part -->
+ <hr class="footer"/><address class="footer"><small>
+-Generated on Wed Oct 18 2017 10:11:12 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
++Generated on Thu Nov 2 2017 13:04:56 for 41012 by &#160;<a href="http://www.doxygen.org/index.html">
+ <img class="footer" src="doxygen.png" alt="doxygen"/>
+ </a> 1.8.11
+ </small></address>
+diff -ru preDataFusion/build/doc/latex/classDataFusion.tex ../ass3/build/doc/latex/classDataFusion.tex
+--- preDataFusion/build/doc/latex/classDataFusion.tex	2017-10-18 10:11:12.571163797 +1100
++++ ../ass3/build/doc/latex/classDataFusion.tex	2017-11-02 13:04:56.446569017 +1100
+@@ -28,6 +28,9 @@
+ void \hyperlink{classDataFusion_a9db7824544983918e85b4fade3b888f9}{linear\+Extrapolation} (double x1, double y1, double x2, double y2, double \&x, double \&y, int ranger\+Num)
+ \item 
+ void \hyperlink{classDataFusion_abc51ecf2b48ce4c1818d189966479749}{start\+Threads} ()
++\item 
++void {\bfseries get\+Fused\+Range\+Data} (void)\hypertarget{classDataFusion_a7392b56bb9ba7aff20f152a46c16b2a4}{}\label{classDataFusion_a7392b56bb9ba7aff20f152a46c16b2a4}
++
+ \end{DoxyCompactItemize}
+ \subsection*{Protected Attributes}
+ \begin{DoxyCompactItemize}
+diff -ru preDataFusion/dataFusion.cpp ../ass3/dataFusion.cpp
+--- preDataFusion/dataFusion.cpp	2017-10-18 18:09:15.454223669 +1100
++++ ../ass3/dataFusion.cpp	2017-11-01 19:15:33.689975564 +1100
+@@ -17,7 +17,13 @@
+   // Default contructor,  expected to be called  after constructors of
+   // classes that derive from the DataFusion class are executed.
+ 
+-  
++  // Set default fusion method if user doesn't specify.
++  //
++  // method1: fusionMethod_ = "min";
++  // OR
++  // method2:
++  setFusionMethod("min");
++    
+ }
+ 
+ 
+@@ -222,7 +228,7 @@
+   
+   while(true){
+     // Aquire the mutex locks and process the buffers/FIFO's/Que's of
+-    // all the sensor.
++    // all the sensors.
+ 
+ 
+     for (i=0; i<rangers_.size(); i++){
+@@ -293,6 +299,9 @@
+ 		  dataBuff[rangerNum].buffQue_.front());
+ 
+ 	  // Extrapolate next sample.
++	  //
++	  // Should this be:
++	  //	x = x2 + ((1.0 / samplingRate) / 2)
+ 	  samplingRate = rangers_.at(rangerNum)->getHdwFixedSamplingRate();
+ 	  x = x2 + (1.0 / samplingRate);
+ 	  
+diff -ru preDataFusion/dataFusion.cpp~ ../ass3/dataFusion.cpp~
+--- preDataFusion/dataFusion.cpp~	2017-10-01 17:12:24.507916817 +1100
++++ ../ass3/dataFusion.cpp~	2017-10-25 18:52:39.233755092 +1100
+@@ -17,7 +17,13 @@
+   // Default contructor,  expected to be called  after constructors of
+   // classes that derive from the DataFusion class are executed.
+ 
+-  
++  // Set default fusion method if user doesn't specify.
++  //
++  // method1: fusionMethod_ = "min";
++  // OR
++  // method2:
++  setFusionMethod("min");
++    
+ }
+ 
+ 
+@@ -106,6 +112,7 @@
+ }
+ 
+ 
++//
+ // Threaded processing of sensor/ranger data.
+ //
+ 
+@@ -199,7 +206,8 @@
+ 
+ void DataFusion::processBuffers(){
+ 
+-  /// Process data in FIFOs(buffers/ques) using mutex locks for syncronisation.
++  /// Process  data in  FIFOs(buffers/ques) using  condition variables
++  /// for syncronisation.
+ 
+   
+   int rangerNum; // current sensor being processed
+@@ -213,10 +221,14 @@
+   double x1, y1; // Point from previous extrapolation.
+   double x2, y2; // Current sample point to use for current extrapolation.
+ 
++  double sensorRangeMin;
++  double sensorRangeMax;
++ 
++  
+   
+   while(true){
+     // Aquire the mutex locks and process the buffers/FIFO's/Que's of
+-    // all the sensor.
++    // all the sensors.
+ 
+ 
+     for (i=0; i<rangers_.size(); i++){
+@@ -292,6 +304,33 @@
+ 	  
+ 	  linearExtrapolation(x1, y1, x2, y2, x, y, rangerNum);
+ 
++	  // If necessory,  set linearly  extrapolated value  (x,y) to
++	  // within the sensors range.
++	  sensorRangeMin  = rangers_.at(rangerNum)->getHdwFixedRangeMin();
++	  sensorRangeMax  = rangers_.at(rangerNum)->getHdwFixedRangeMax();
++	  if (y <= sensorRangeMin){
++	    y = sensorRangeMin;
++	  }
++	  if (y >= sensorRangeMax){
++	    y = sensorRangeMax;
++	  }
++	  fprintf(stderr, "dbg: processBuffers: "
++		  "linearExtrapolation(%d): (x, y) = (%f, %f))\n",
++		  rangerNum, x, y);
++
++	  /// Perhaps linear extrapolation of polynominal range values
++	  /// of sensor 1, the Sonar, doesn't fit the data well.  With
++	  /// range values  deviating further  and further from  the x
++	  /// axis as time goes  on.  Perhaps, the Lagrange Polynomial
++	  /// extrapolation is more appropriate here.
++	  ///
++	  /// Linear   extraploation  of   a  polynomial   functon  is
++	  /// appropriate if the samples are not far appart.  Thus the
++	  /// conclusion drawn from our datasets is samples at 10Hz is
++	  /// fast enough to represent  a polynomial function and that
++	  /// a 3Hz sampling rate is too slow.
++	  
++
+ 	  dataBuff[rangerNum].xPrev = x;
+ 	  dataBuff[rangerNum].yPrev = y;
+ 	
+@@ -382,3 +421,9 @@
+   return;
+   
+ }
++
++
++
++void DataFusion::getFusedRangeData(void){
++
++}

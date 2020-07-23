@@ -1,0 +1,94 @@
+Important points:
+Remember that if you have only one statement within and if/else you
+don't need to put the statement in curly braces(ie } ).  But its a
+good policy to always put them in, can avoid certain hard to see
+errors.
+Ternary conditional is described the best I've seen it here.  Look at
+the working code too.
+
+
+Transcript:
+
+- A conditional statement allows you to run one block of code or
+  another based on a condition. C++ has two basic forms of conditional
+  statements, if else and the ternary conditional operator. Here in
+  Xcode, I've opened a working copy of working.cpp, and we'll start by
+  declaring a couple of variables. Make x equal to 42 and y equal to
+  seven. Then, we'll add a conditional statement. We'll say if x > y
+  and we'll put our puts here.
+
+puts "condition is true", and we won't need this one. Now when I run
+this, it says condition is true because x is greater than y. Now if I
+change the condition to x < y, you'll see that we get no output when
+we run this. Save it and run it. It says "build succeeded." Our
+console went away because there was no output. So when I put this back
+and run it, we get condition is true. Now, if we want something to run
+if the condition is false, we can put in else, and we can puts
+"condition is false".
+
+Now if I change this condition to less than, and save and run, you'll
+see we have condition is false. Now the curly brackets set up a block
+of code, which means that you could put more than one statement in
+here if you wanted to. You could have this in here twice, or you could
+have another statement. Here you see we have condition is false
+twice. On the other hand, if there's only going to be one statement as
+a result of the conditional, the curly braces are actually optional.
+
+I'll take these out. We see that it still works. Now, the disadvantage
+of doing it this way, and I want to emphasize this because this is
+actually a really bad idea. The curly braces don't take a lot of
+typing, and they save you from a problem. So, if I had let's say only
+one condition here, and I put in another statement, say puts "yes its
+true", you'll notice even my IDE is trying to out dev that because the
+if statement is really only controlling the first statement after it,
+because there's no curly braces.
+
+So you see it still says "yes its true" even though its not. If I
+change this to greater than, you'll see we get both of these because
+the second puts here is actually not under the control of the if at
+all, because we don't have curly braces. If we had curly braces here
+in the first place, and we went ahead and added another statement, we
+might not have made that mistake. So now it's only true if we have it
+greater than, and if we change it to less than again we'll get no
+output at all.
+
+So, the braces are actually very important. Now, if I change it back
+to the other way we'll only get our false statement. So if there's
+only one statement in the block the curly braces are not required but
+they will save you from creating a bug. There have been famous bugs
+because of this mistake. You really want to put the braces in there
+all the time. You don't want to skip that. There's one more form here,
+you can say else if. We can say x > y for that.
+
+We can say x < y for this. Then we can have another else at the
+end. "They must be equal". Then now when I run this, I get x is
+greater than y. If I change this to 73, now y is greater than x. If I
+change this to 42, then we get "they must be equal". So if you need
+more than one condition, you can use else if. You can have as many of
+these as you want.
+
+Then you still can have an else at the end. Now there's one other type
+of conditional statement that I'd like to show you. In fact this is
+actually a conditional expression. So, when I run this it'll say the
+greater is 42. If I change this one to 73, it'll say the greater is
+73. So this is a conditional expression, and it's sometimes called the
+ternary conditional expression. Actually, it's often called that. It
+is technically a ternary expression because it has three parts.
+
+The first part is the condition. The second part is the expression
+returned if the condition is true. The third part is the expression
+returned if the condition is false. There's a question mark that
+separates the first expression from the second, and there's a colon
+that separates the second expression from the third. So you can look
+at this as the condition is the question and the x and the y are the
+alternate answers depending on the result of the question. It looks a
+little bit cryptic if you've never seen this before.
+
+It's actually been borrowed by a lot of other languages, so there's a
+chance you have seen it in other languages. This is the conditional
+expression and it's actually very powerful. You'll also see it
+sometimes in header files or in pre-processor directives and we'll get
+to that later in this course. There's some caveats that go with that
+that we'll cover at that time. So, conditionals in C++ are simple and
+effective. There's one more type of conditional, a multi-way switch,
+that I'll cover in the next lesson.

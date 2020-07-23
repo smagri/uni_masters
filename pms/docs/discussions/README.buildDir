@@ -1,0 +1,16 @@
+Alen Alempijevic, INSTRUCTOR MANAGER
+Posted Date: 21 March 2017 7:11 PMStatus:Published
+
+Delete your build directory .. you only need to carry your source code
+across to  different PC, this  is why we  advocate for "out  of source
+builds", you can simply delete the build directory and all your source
+files are intact.
+
+Create a  new build directory and  then use QTCreator to  compile your
+code again.
+
+Or on command line
+mkdir build
+cd build
+cmake ..
+make

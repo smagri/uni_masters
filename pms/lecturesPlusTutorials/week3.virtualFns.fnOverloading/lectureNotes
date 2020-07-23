@@ -1,0 +1,61 @@
+Polymorphism:
+
+Occurs when classes inherit other classes.
+
+Fn executed depends on the type of object that invokes it.
+
+Qs:
+
+What does a single value mean, hint, could we assume a square?
+
+What might be  the pitfall of this class, and  is this bad programming
+practice?
+
+
+
+Inheritance:
+
+c++ classes that inherit from the base classes.
+
+This involves a base class and a derived class.
+
+Derived class inherits  the member of the base class,  on top of which
+it can add its own members.
+
+Qs:
+
+Why is this so?
+
+
+Inheritance, Base Class, class Shape.
+
+class Rectangle: public Shape{}
+
+Triangle?
+Can you allow specifying side + height; ie three sides?
+
+Circle?
+
+
+Inheritance, What is inherited for the base class?
+
+A _publicly_ derived  class inherits every member(fn  and data?)of the
+base class except:
+
+* its constructors and its destructor
+* its assignment operator memberd(operator=)
+* its friends
+* *** its private members
+
+
+'Pure Virtual' member functions?
+
+A member  fn declaration that  turns a  normal class into  an abstract
+class.
+Is only implemented in a derived class.
+
+class Shape{
+...
+virtual void draw() const = 0; // = 0 means it is 'pure virtual'.
+
+

@@ -1,0 +1,74 @@
+What are the pinch points here, how to ensure the program does not
+cause a segmentation fault?
+
+You must work within the array bounds or size.  For instace trying to
+access elememt 11 in an array of size 10 will segfault.
+
+
+What is a segmentation fault?
+
+A segmentation fault,  aka a segfalut, occurs when a  program tries to
+access a part of memory it is  not allowed to access.  Case above is a
+good example.
+
+It can also occur if a program trys to access a prt of memory in a way
+that it is  not allowed to, say  like writing to read  only memory (ie
+const int).
+
+
+Why do we have N in constructor and a function?
+
+The constructor initialises N when an object is instantiated, that is,
+when an instance of  the object is created.  So we  may want to change
+N's value at other times during  our main.cpp program, hence we need a
+member function to do this.
+
+
+Does the  main of the  class ultimately define  the max lenght  of the
+array?
+
+Currently yes.   However, there are  other options for  allocating the
+memory for the array, see below.
+
+
+Is there any way to make this allocation dynamic?
+
+Yes  one can  use malloc()  to  allocate the  array dynamically,  then
+free() ing it and reallocating with malloc() again...etc.
+
+ptr =  malloc(size_t n)  allocates n bytes,  then free(ptr)  frees the
+memory, or  relinquishes it back to  the heap.  ptr is  the pointer to
+the beginning of the block.
+
+Could  also use  calloc()/free().
+
+HOWEVER, IN  C++ the new operator  allocates memory on the  heap also,
+coupled with the delete operator to free memory from the heap.
+
+How this is done:
+
+pointer = new type
+pointer = new type [number_of_elements] // arrray of type 'type'
+
+eg
+int * foo;
+foo = new int [5]; // array of type ints
+
+and for freeing this memory:
+
+delete pointer;
+delete[] pointer;
+
+The first statement releases the  memory of a single element allocated
+using new, and the second one releases the memory allocated for arrays
+of elements using new and a size in brackets ([]).
+
+eg(correlates with int/foo example above)
+delete foo;
+delete [] foo;
+
+
+How to get size of array into the program?
+
+argv[] or read in from the command line with gets()/scanf().
+

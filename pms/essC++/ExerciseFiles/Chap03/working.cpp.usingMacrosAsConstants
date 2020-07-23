@@ -1,0 +1,44 @@
+// working.cpp by Bill Weinman <http://bw.org/>
+
+// enclude all contents of file cstdio.h into this file to pass to the compiler
+//
+// instructs preprocessor to search in implentation specific ares on
+// the file system for cstdio.h
+//
+// note:
+// #include <...> is used for system headers and
+// #include "..." is used for local project headers, or those written by me.
+//
+#include <cstdio>
+
+#include "preproc.h"
+
+using namespace std;
+
+// preprocessor(before the compiler) directive #define, can not have
+// the # indented, define may be.
+//
+// #define SYMBOL replacementText, SYMBOL is not a variable
+#define ONE 1
+#define HELLO_STRING "Hello World"
+
+
+int main (int argc, char ** argv){
+
+  const int one = 1;
+  
+  // #define symbols are different to constants you can get it's
+  // address
+  //
+  // is seen by debugger, seen in symbol table, symbolic constant is not
+  // can get its address and with a symbolic constant you can not
+  //
+  // mostly use const... version in c++
+  fprintf(stderr, "preprocessor macro: %d\n", ONE);
+  
+  fprintf(stderr, "integer constant: %d\n", _iOne);
+
+  fprintf(stderr, "string constant: %s\n", _sOne);
+
+  return 0;
+}

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="Chap01" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="hello-cout">
+         <Option output="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/hello-cout" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 hello-cout" />
+            <CompileFile command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="hello-cout/fast">
+         <Option output="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/hello-cout" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 hello-cout/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="hello">
+         <Option output="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/hello" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 hello" />
+            <CompileFile command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="hello/fast">
+         <Option output="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/hello" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 hello/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/hello-cout.cpp">
+         <Option target="hello-cout"/>
+      </Unit>
+      <Unit filename="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/hello.cpp">
+         <Option target="hello"/>
+      </Unit>
+      <Unit filename="/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

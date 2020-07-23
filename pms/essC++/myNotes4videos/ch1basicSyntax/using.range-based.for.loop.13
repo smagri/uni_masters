@@ -1,0 +1,62 @@
+Important Points:
+
+
+
+
+Transcript:
+
+- The latest version of C++ contains a new type of for loop called the
+  range-based for loop. This is one of the more visible new features
+  in C++. Introduced in C++ 11, it was quickly implemented in all the
+  major compilers. This gives C++ a simple way of iterating over the
+  elements of a container, an operation that used to take quite a bit
+  more code. So, here in Xcode, I've opened a working copy of
+  working.cpp. And I'm going to start by defining a simple integer
+  array. And then, we'll create a for loop to iterate over this array.
+
+And this looks like this. You'll notice that my IDE here, Xcode
+doesn't actually know about the range-based for loop. It's giving me
+the option of creating a normal for loop and so, instead of doing it
+this way, I'm just going to type it in here. The first argument in the
+for loop control inside of the parentheses is a variable and this
+variable will be used to contain the elements of the container. And
+then it uses a ":", not a semicolon like in the other for loop.
+
+And then, the container and it's as simple as that. And then for the
+statements, we'll just put a printf to print out the elements of the
+array. So, you can see that this is a lot more simple than the other
+form of the for loop. I don't have to have the iterator. I don't have
+to increment anything. This just takes each element of the array or
+the container, because it also works with STL containers, and it puts
+it in the variable. And so, when I build and run, I get the results
+like that.
+
+Because it's a compile time feature, it knows the size of the
+array. So, I don't have to terminate the array. I don't really have to
+do very much of anything at all. Just give it a variable and the
+element itself. This also works with strings. So, if we, instead here,
+we say char s like this, then we can use a char c here and change this
+to s and the character type in the printf.
+
+And now it'll print the elements of the array. Now, you remember, a
+string is an array of characters with a terminating 0. So, our last
+element will be blank. And so, when I build and run, you see it has
+the elements as all the characters, but it also has that empty one at
+the end. So, if I want to, I can test and I can say if c == 0, then
+break. And now we won't get that last blank at the end.
+
+This also works nicely with STL containers and so, I'm gonna come up
+here and I'm going to include the string library from the STL and
+we'll change this to a string, an STL string, rather than a
+fundamental c string. And because STL strings are not terminated with
+a 0, I don't need that any more. And this just works exactly the
+same. So, you can see this is a lot more simple than the other type of
+for loop.
+
+But, it only works for containers. So, the range-based for loop is a
+very powerful and useful addition to C++. It provides a simple and
+effective solution for iterating over the elements of a container. It
+works just as well with native arrays, STL vector strings, initializer
+lists and anything that supports sequential iterators. As new code is
+written in C++ and old code is updated, the range-based for loop is
+becoming very common.

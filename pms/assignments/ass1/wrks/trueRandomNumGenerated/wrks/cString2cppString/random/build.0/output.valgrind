@@ -1,0 +1,58 @@
+==19359== exp-sgcheck, a stack and global array overrun detector
+==19359== NOTE: This is an Experimental-Class Valgrind Tool
+==19359== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.
+==19359== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==19359== Command: random.wrks
+==19359== 
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+--19359-- warning: evaluate_Dwarf3_Expr: unhandled DW_OP_ 0x93
+main.cpp, in main() of class Random:
+
+(seed=1490347221, numRands2gen=10)
+randNumRay() called:
+returns from genRandNum(), i=10
+random num 0=8
+random num 1=10
+random num 2=1
+random num 3=2
+random num 4=1
+random num 5=2
+random num 6=6
+random num 7=10
+random num 8=10
+random num 9=4
+
+randNumRay() called:
+(seed=10, numRands2gen=7)
+returns from genRandNum(), i=7
+random num 0=6
+random num 1=9
+random num 2=9
+random num 3=6
+random num 4=9
+random num 5=8
+random num 6=6
+
+randNumRay() called:
+(seed=100, numRands2gen=35)
+returns from genRandNum(), i=22
+random num 0=1
+random num 1=2
+random num 2=10
+random num 3=5
+==19359== 
+==19359== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)

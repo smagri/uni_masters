@@ -1,0 +1,714 @@
+dbg: in sThread() fn
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4450.200000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4450.200000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+dbg: 4450.300000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4450.300000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+dbg: 4450.400000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4450.400000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4450.500000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4450.500000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4450.600000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4450.600000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4450.700000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4450.700000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4450.800000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4450.800000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4450.900000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4450.900000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4451.000000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4451.000000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4451.100000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4451.100000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4451.200000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4451.200000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4451.300000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4451.300000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4451.400000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4451.400000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: (!image.empty()
+dbg: in laserCallback() fn
+dbg: 4451.500000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4451.500000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: detectCT: range_min < cp < range_max
+Odom in the global frame ie environment to map, rad:
+4451.400000000 Odom: [x,y,yaw]=[0,0,0]
+Odom in the global frame ie environment to map, degree:
+4451.400000000 Odom: [x,y,yawDeg]=[0,0,0]
+ Odom: in pixels from centre of ogMap, pos[px,py]=[0,0] 
+ Odom: in pixels _on_ ogMap, pos[px,py]=[100,100]
+dbg: sThread: before imshow view
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4451.600000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4451.600000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4451.700000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4451.700000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4451.800000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4451.800000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4451.900000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4451.900000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4452.000000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4452.000000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4452.100000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4452.100000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4452.200000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4452.200000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4452.300000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4452.300000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4452.400000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4452.400000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4452.500000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4452.500000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: (!image.empty()
+dbg: in laserCallback() fn
+dbg: 4452.600000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4452.600000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: detectCT: range_min < cp < range_max
+Odom in the global frame ie environment to map, rad:
+4452.500000000 Odom: [x,y,yaw]=[0,0,0]
+Odom in the global frame ie environment to map, degree:
+4452.500000000 Odom: [x,y,yawDeg]=[0,0,0]
+ Odom: in pixels from centre of ogMap, pos[px,py]=[0,0] 
+ Odom: in pixels _on_ ogMap, pos[px,py]=[100,100]
+dbg: sThread: before imshow view
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+dbg: 4452.700000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4452.700000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4452.800000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4452.800000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4452.900000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4452.900000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4453.000000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4453.000000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4453.100000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4453.100000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4453.200000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4453.200000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4453.300000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4453.300000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4453.400000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4453.400000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4453.500000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4453.500000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4453.600000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4453.600000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4453.700000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4453.700000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: (!image.empty()
+dbg: detectCT: range_min < cp < range_max
+Odom in the global frame ie environment to map, rad:
+4453.700000000 Odom: [x,y,yaw]=[0,0,0]
+Odom in the global frame ie environment to map, degree:
+4453.700000000 Odom: [x,y,yawDeg]=[0,0,0]
+ Odom: in pixels from centre of ogMap, pos[px,py]=[0,0] 
+ Odom: in pixels _on_ ogMap, pos[px,py]=[100,100]
+dbg: sThread: before imshow view
+dbg: in laserCallback() fn
+dbg: 4453.800000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4453.800000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4453.900000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4453.900000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4454.000000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4454.000000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4454.100000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4454.100000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4454.200000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4454.200000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4454.300000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4454.300000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4454.400000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4454.400000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4454.500000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4454.500000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4454.600000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4454.600000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4454.700000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4454.700000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4454.800000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4454.800000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: (!image.empty()
+dbg: detectCT: range_min < cp < range_max
+Odom in the global frame ie environment to map, rad:
+4454.800000000 Odom: [x,y,yaw]=[0,0,0]
+Odom in the global frame ie environment to map, degree:
+4454.800000000 Odom: [x,y,yawDeg]=[0,0,0]
+ Odom: in pixels from centre of ogMap, pos[px,py]=[0,0] 
+ Odom: in pixels _on_ ogMap, pos[px,py]=[100,100]
+dbg: sThread: before imshow view
+dbg: in laserCallback() fn
+dbg: 4454.900000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4454.900000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: in laserCallback() fn
+dbg: 4455.000000000 Laser: [d, theta, x, y]=[1.58097, 1.53569, 6.95315e-310, 6.95315e-310]
+dbg: 4455.000000000 Laser: [d,thetaDeg,x,y]=[1.58097, 87, 6.95315e-310, 6.95315e-310]
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)
+dbg: sThread: while(ros::ok)

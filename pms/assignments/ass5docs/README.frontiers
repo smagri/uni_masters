@@ -1,0 +1,492 @@
+24jan2018
+
+HOWTO IF DURING SEMESETER:
+
+Just  read  oldest  and  newest  papers  and  implement  the  simplest
+algorithm.  If these  dont't contain a simple  algorithim follow hints
+in sample.cpp or  find a simpler algorithim in papers.   Or maybe just
+implement the simplest newest paper alogrithm.
+
+Also, don't wast time with  pdftotext -layout > -cut1=70....just write
+the summary out, lost 1.5 - 2 days to this.
+
+I had to investigate these papers as I was struggleing with how do you
+determine a FT node when only one or more cells around it are UK.
+
+Thus goggle:
+'FT based exploration'
+'FT based exploration algorithim'
+'detectong FTs' ALEM A.
+Only  read abstract,  intro, detecting  frontiers, conclusions,  futre
+work at the start, skim rest or ignore.
+
+OR
+
+QUICKEST METHOD most likely to be used, as zero time to do this(3weeks):
+--------------------------------------
+read the paper that appears to have the simplest algorithim for
+frontier detection.
+
+---------------------------------------------------------------------
+
+http://robotfrontier.com/frontier/index.html
+
+The central question in exploration:
+
+Given what you know about the world, where should you move to gain as
+---------------------------------------------------------------------
+much new information as possible?
+---------------------------------
+
+Use frontier-based exploration to:
+---------------------------------
+
+To  gain the  most  new information,  that is,  move  to the  boundary
+between open space and uncharted territory.
+
+We  define exploration  to be  the act  of moving  through an  unknown
+environment,  building  a   map  that  can  be   used  for  subsequent
+navigation.   A good  exploration  strategy is  one  that generates  a
+complete or nearly complete map in a reasonable amount of time.
+
+From any frontier, the robot can see into unexplored space and add the
+new observations to its map, ie FS, FT and UK.
+
+
+
+Detecting frontiers:
+-------------------
+Using occupancy probabliliter are thresholded,  and each cell is place
+into one of there classes:
+
+open: having an occupancy probability < prior probability
+unknown: having an occupancy probability = prior probability
+occupied: having an occupancy probability > prior probability
+
+* IS  ANALOGUS TO  EDGE  DETECTON AND  REGION  EXTRACTION IN  COMPUTER
+  VISINION.  WHERE ANY OPEN CELL ADJACENT TO AN UNKOWN CELL IS LABELED
+  AFRONTIER EDGE CELL.
+
+* ADJACET EDGE CELLS ARE GROUPED  ONTO FRONTIER REGIONS USING AN IMAGE
+  SEGMENTATION TECHNIQUE KNOWN AS BLOB COLORING.
+
+??? this method  uses edge detection and  region extraction techniques
+from computer vision ie blobing here, parhaps difficult to implement.
+
+
+From each new FT the robot _may_  see new frontiers lying at the edge of
+its  perception.   By exploring  each  frontier,  or determining  that
+frontier  to be  inaccessible,  the robot  can build  a  map of  every
+reachable location in the environment.
+
+Once the  frontiers have been  detected within a  particular evidence
+grid(ie ogMap)  the robot  moves to  the nearest,  unvisited, frontier
+node.
+
+FT to FT robot moving:
+---------------------
+In moving  to the next frontier  a depth-first search is  used to plan
+the path on the grid.  Starting at the robot's current cell and taking
+the  shortest  obstacle free  path  to  the  cell contaning  the  goal
+location.
+------------------------------------
+
+
+Frontier-Based Exploration:
+--------------------------
+
+Once FT have been detected with and evidence grid(ogMap) the robot
+navigates the the nearest accessible, unvisited FT.
+
+The palth planner  uses a depth-first search on the  grid, startng the
+robot's current cell.
+
+When the robot reaches its destination,  that location is added to the
+list of previously visited frontiers.  The robot performs a 360 degree
+sensor sweep using  LRF and adds the new information  to the evidience
+grid, that  is the  FS, O,  UK, FT  detected at  that point.   It then
+attempts to navigate toe the nearest accessible, unvisited FT.
+
+Also, it attempts to take the  shortest obsticle free path to the cell
+containin the goal location(ie next FT cell).
+
+If the robot  is unable to make progress toward  its destination, then
+after a  certain abount  of time,  the robot  will determine  that the
+destination is inaccessible, and this location is added to the list of
+inaccessible frontiers.
+
+Then  the robot  does  a  360 degree  sensor  sweep  and updates  tohe
+evidence grid, and then attempts  to navigate to the closest remaining
+accessible unvisited frontier.
+
+???  So i'm  assuming that LRF/laserCallback() detects  free cells and
+moves along those starting at the closest FS, untill a FT is detected.
+To move from one cell to the  next the we call requestGoal() along the
+way.   In doing  so it  avoids moving  into objects.   It updates  the
+image/ogMap foreach laserCallback() called.  ie  UK, O, FS, O, once it
+gets to the that FT by performing  a 360 degree sensor sweep.  ???  or
+maps environment on it's way to FT also.
+
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+
+
+Expanding Wavefront Frontier Detection: An Approach for Efficiently Detecting
+Frontier Cells
+Phillip Quin, ALEN ALEMPIJEVIC, Gavin Paul, Dikai Liu
+Center for Autonomous Systems
+University of Technology Sydney, Australia
+phillip.d.quin@student.uts.edu.au
+
+
+Frontiers are  defined as free-space  cells in an occupancy  grid that
+have at least one unknown cell as a neighbour [Yamauchi 1997..2005]
+
+Though some work defines them as  unknown cells that have at least one
+free-space neighbour[Keidar and Kaminka 2012; 2014].
+
+This  paper  assumes  the  first definition.   The  naive  method  for
+detecting frontiers  is to evaluate  each cell in  the map in  turn by
+checking  its  neighbours.  Another  approach  is  Wavefront  Frontier
+Detection (WFD) [Keidar and Kaminka, 2012; 2014]
+
+WFD  consits of:  running a  Breadth First  Search (BFS)  on the  map,
+beginning  at  the robot’s  location,  and  rippling outwards  through
+free-space until unknown space is  encountered.  This approach has the
+advantage of only  evaluating a subset of the entire  map at any time,
+though this subset becomes the entire map as exploration progresses.
+
+Fast  Frontier  Detection  (FFD)  [Keidar  and  Kaminka,  2012;  2014]
+involves  only   evaluating  the   cells  in  each   individual  scan,
+particularly the edges of the scan range, along which any new frontier
+must necessarily lie.
+
+A bounding box  is built around the scanned area,  and cells that were
+frontiers in this  bounding box before the scan are  checked to see if
+they are no  longer frontiers at the current time  step. This approach
+is faster  than WFD, but  requires that frontier detection  take place
+after every scan.
+
+Incremental WFD  (WFD-INC), and  the variant  Incremental-Parallel WFD
+(WFD-IP) [Keidar and  Kaminka, 2014] combine the  bounding box concept
+from FFD to WFD, resulting in faster running time.
+
+This paper presents two algorithms for detecting frontiers:
+
+EWFD(novel) single or multiple scans.  Which is suitable for scenarios
+where  single or  multiple scans  might occur  before the  exploration
+strateguy  requres  update  frontier  information.
+
+NaiveAA(novel): is  presented to  be used as  a more  useful benchmark
+than the simple naive frontier detection algorithm.
+
+Both  algorithms   are  analysed   and  their   performances  compared
+theoretically and in simulations with  prior state of the art frontier
+detection methods.  The rest of this paper is structured as follows: t
+??? we should use this method given the hint we have in sample.cpp and
+and to do this each time laserCallback() is called, corresponding to a
+particular timeStamp.  This causes requires frontier detection to take
+place after  every scan.   This method is  faster than  WFD.  However,
+this  method is  more calcutaion/labour  intesive.  FFD  is also  less
+likely  to correctly  detect frontiers  at  the maximum  range of  the
+sensor.
+
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+
+
+Evaluating the Efficiency of Frontier-based Exploration Strategies
+Dirk Holz1
+, Nicola Basilico2
+, Francesco Amigoni2
+and Sven Behnke1
+1 University of Bonn, Department of Computer Science VI, Bonn, Germany
+2 Politecnico di Milano, Dipartimento di Elettronica e Informazione,
+Milano, Italy
+
+Key points, frontier detection:
+
+This  paper focuses  on  the efficiency  of frontierbased  exploration
+strategies [8],  presents a strategy incorporating  a map segmentation
+algorithm for  exploring the  environment room-wise, and  compares the
+resulting  strategies   with  a   state-of-the-art  decision-theoretic
+exploration strategy from [9]
+
+Frontier-based  exploration strategies  usually operate  on grid  maps
+[10]. In contrast  to continuous geometric feature maps  such as point
+or  line maps,  these  maps distinguish  between  free and  previously
+unexplored regions.
+
+FT to FT robot moving:
+---------------------
+The  idea of  frontier-based exploration  strategies is  to guide  the
+robot to  the frontiers.   Here, the problem  of determining  the next
+best  view   reduces  to   determining  the  frontier   being  closest
+(w.r.t. path length) to the robot.
+----------------------------------
+
+Frontier-Based Exploration:
+--------------------------
+
+model with an efficient on-line SLAM algorithm [12]
+----------------------------------------------
+
+Closest frontier strategies, in particular, evaluate the length of the
+paths from  the robot’s current  location to all  determined frontiers
+and guide the robot to the one being closest.
+???till it gets to goal location.
+
+USING 2D LASER RANGE SCANS, AND CONTINUOUSLY UPDATING THE ROBOT’S
+-----------------------------------------------------------------
+ENVIRONMENT
+-----------
+
+The strategy of exploring closest frontiers, as introduced by Yamauchi
+et  al. in  [8],  can be  briefly  summarized as  shown  in Figure  3.
+???this is quite complicated algorithm.
+
+
+THE ROBOT SHOULD NOT TRAVERSE REGIONS THAT ARE OCCUPIED OR CELLS WHERE
+NO INFORMATION IS AVAILABLE.
+
+???We determine the  set of actually reachable cells  and evaluate the
+cost involved in traveling there by  performing a path search from the
+robot’s current location without specifying  a goal pose.  Use SLAM/A*
+algorithm to  find the shortest path  to all the froniers  detected at
+the current  robot pose. This  requires a method  to find all  the map
+frontiers first  then to  a* on  this to  find the  closest path  to a
+frontier, the move from FT to the  next FT till all have been visited.
+I guess Breath Field search can be used insted of a* here.
+
+
+??? thus  in laserCallback() determine  the closest FT from  LRF range
+values and navigate  to it avoiding obsticles.  If no  FT's found just
+navigcate  to the  closest FS  cell and  scan each  cell for  FT.  The
+closest  FT to  the robot,  assuming multiple  FT cells  are found  is
+determined by using SLAM technique, that  is in this case using the a*
+algorithm.
+??? however this requires building a map of the environment first
+
+
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+
+
+Robot Exploration with Fast Frontier Detection:
+Theory and Experiments
+Matan Keidar
+MAVERICK Group, Department of Computer
+Science, Bar-Ilan University
+matankdr@gmail.com
+Gal A. Kaminka
+MAVERICK Group, Department of Computer
+Science, Bar-Ilan University
+galk@cs.biu.ac.il
+
+
+[Frontier-based   exploration  is   the   most   common  approach   to
+exploration,  a fundamental  problem in  robotics.  In  frontier-based
+exploration,  robots  explore  by  repeatedly  computing  (and  moving
+towards) frontiers, the segments which separate the known regions from
+those unknown.]  [However, most  frontier detection algorithms process
+the entire map data. This can  be a time consuming process which slows
+down the  exploration.  In this  paper, we present two  novel frontier
+detection algorithms:]
+
+[WFD,  a graph search based algorithm  and FFD,
+
+* WHICH IS BASED ON PROCESSING ONLY THE NEW LASER READINGS DATA. [IN
+  CONTRAST TO STATE-OF-THE-ART METHODS,
+
+* BOTH  ALGORITHMS  _DO   NOT_  PROCESS  THE  ENTIRE   MAP  DATA.   We
+  implemented both algorithms  and showed THAT BOTH ARE  FASTER THAN A
+  STATE-OF-THE-ART FRONTIER DETECTOR IMPLEMENTATION (BY SEVERAL ORDERS
+  OF MAGNITUDE).
+
+* MOST  FRONTIER DETECTION  METHODS ARE  BASED ON  EDGE DETECTION  and
+  REGION  EXTRACTION  techniques  FROM  COMPUTER  VISION.   To  detect
+  frontiers, they PROCESS THE ENTIRE  MAP DATA WITH EVERY EXECUTION TO
+  THE ALGORITHM.  ??? as per robotfrontier.com, yes.
+
+Therefore,   many  exploration   implementations  call   the  frontier
+detection algorithm  only when the  robot arrives at  its destination.
+This can cause inefficiencies in the exploration.
+
+In this  paper, we  thus focus on  significantly speeding  up frontier
+detection. We  introduce two  algorithms for fast  frontier detection:
+The first,  WFD (Wavefront Frontier  Detector) is an  iterative method
+that performs a graph-search over already-visited map points
+
+
+3.  WAVEFRONT  FRONTIER  DETECTOR  We present  a  graph  search  based
+approach for  frontier detection.   The algorithm, WFD  (Algorithm 1),
+processes the  points on map  which have  already been scanned  by the
+robot sensors  and therefore, does  not always process the  entire map
+data in each run, but only the known regions.
+
+3.3 Speeding-Up WFD  Even Further WFD’s execution time  can be boosted
+even more by  reducing the grid size. Of course,  there is a trade-off
+between  shorter  execution  time  and   the  quality  of  the  output
+frontiers.  Even though,  standard exploration  tasks can  utilize the
+output frontiers  received in  this manner. The  grid is  divided into
+blocks in  size of the robot’s  width and height. Smaller  blocks will
+not  make  sure that  robot  will  be  able  to pass  through  terrain
+obstacles  (i.e.  corridors).   Each  block  in  the   real  world  is
+represented  by a  single  cell  in the  reduced  grid.   In order  to
+determine the value of the  cell, we examined different strategies. We
+considered both the speed of creating  the new grid and the quality of
+the output. We  found out that sampling the center  of the block edges
+and the block center yields the best results.
+
+???WFD pseudo code looks complicated.
+
+
+4.  FAST FRONTIER DETECTOR ???our sample.cpp is based on this
+
+UNLIKE OTHER FRONTIER DETECTION  METHODS (INCLUDING WFD), OUR PROPOSED
+ALGORITHM (ALGORITHM  2) ONLY PROCESSES  NEW LASER READINGS  WHICH ARE
+RECEIVED IN  REAL TIME. IT  THEREFORE AVOIDS SEARCHING BOTH  KNOWN AND
+UNKNOWN  REGIONS.  IN  DOING THIS,  we make  use of  the fact  that by
+definition, frontiers  represent the boundaries between  the known and
+unknown regions  of the environment  (see Figure 3).   Hence, scanning
+all unknown regions is  definitely unnecessary and not time-efficient.
+The FFD algorithm contains four steps (Algorithm 2), and can be called
+with every new scan.
+
+???FFD pseudo code looks complicated, but not as complicated as WFD
+algorithm above.
+
+
+7. CONCLUSIONS AND FUTURE WORK
+
+Frontier-based exploration  is the most  common approach to  solve the
+exploration  problem.  State-of-the-art   frontier  detection  methods
+process the entire map data, which  hangs the exploration system for a
+few seconds with every call to the detection algorithm.  We introduced
+two novel faster frontier detectors, WFD and FFD
+
+We introduced two  novel faster frontier detectors, WFD  and FFD.  The
+first,  a graph  based search,  processes  the map  points which  have
+already  been scanned  by the  robot sensors  and therefore,  does not
+process unknown  regions in each run  (though it grows slower  as more
+area is known). The second, a laser-based approach for frontier
+                -----------------------------------------------
+detection, only  processes new  laser readings  which are  received in
+----------------------------------------------------------------------
+real time  eliminating also  much of the  known area  search. However,
+------------------------------------------------------------
+maintaining  previous frontiers  knowledge requires  tight integration
+with  the mapping  component, which  may not  be straightforward.   We
+describe  efficient implementation  for both  algorithms, and  compare
+them   empirically.  FFD   is  shown   to  outperform   WFD  and   the
+state-of-the-art by 1–2 (2–3, resp.)  orders of magnitude.  In future,
+we plan  to integrate FFD with  EKF-based SLAM mappers, which  we hope
+will lead  to further  improvements. We  also (a)  Cartesium Building,
+Bremen (b) Freiburg,  Building 079 (c) Outdoor  dataset, University of
+Freiburg (d)  3rd Floor  of MIT CSAIL  (e) Edmonton  Convention Centre
+Figure 8: FFD  run-time for individual SLAM particles.   plan to begin
+investigation  of  novel  exploration  policies,  based  on  real-time
+frontier-detection.
+
+
+
+??? FFD is faster than WFD as it does not process whole of map each
+time a new robot pose occurs, we do this in sample.cpp.
+
+________________________________________________________________________________
+
+
+A Frontier-Based Approach for Autonomous Exploration [Yamauchi...]
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+
+Algorithm, my first attempt:
+
+Key:
+
+FS = Free Space
+FT = Frontier, on the boarder of open space and unexplored space
+UK = Unkown space
+
+
+1a)  once FT's  are detected  within a  particular evidence  grid, the
+robot attempts  to navigate to  the nearest accessible,  unvisited FT.
+move to the nearest FS upto position of the object(but don't move into
+object location) unless a FT is detected.
+
+1b) if a  FT node is detected  move to its location.   The FT location
+indicates:
+
+* we have found a FS-UK bondary.
+
+  Every FS cell adjacent to a UK cell is labeled a frontier edge cell.
+  Adjacent edge cells are grouped into frontier regions using an image
+  segmentation technique known as  blob coloring.  Any frontier region
+  above a certain minimumsize is  considered a froniter.  This process
+  is  angolas to  edge  detection and  region  extraction in  computer
+  vision)
+
+* that the laser  ranger finder measures its maxRange  value, could be
+  O or UK cells following a line to FS to this cell.
+
+* the space between the robot and < maxRange is FS.
+
+* pick the shortest  root each time and  if FT cell not  detected in a
+  particular scan  just move through  closet FS cells to  a particular
+  object till the LRF finds one.
+
+
+Repeat steps 1a and 1b above.
+
+
+
+Attempt two algorithim???:
+
+
+Detecting frontiers using laser range finder(LRF) only, that is no LRF
+sonar...etc.  Each time a sensor  reading is obtained from the robot's
+LRF the sensor model is used to update the grid.
+
+* ogMap need to be updated with every call to to laserCallback().
+
+* the ogMap is a 2d vector of (x, y) positions.
+
+* from the  robots current postition(at  centre of ogMap,  always) the
+  FS, UK and FT  nodes are detected and an update  the ogMap 2d vector
+  is  required.  Where  the FT  nodes are  determined using  the image
+  segmentation technique known as blob coloring on the FT regions.
+
+
+
+

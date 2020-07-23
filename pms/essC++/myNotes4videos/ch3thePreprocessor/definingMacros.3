@@ -1,0 +1,64 @@
+Transcript:
+
+- The preprocessor provides a powerful and flexible macro system. Here
+  I have a working copy of "working.cpp" from Chapter 03 of the
+  Exercise Files. We've seen macros that look like this... And I can
+  take that value over here and I can say, "printf("value is %d\n",
+  MACRO);" And when I build a run, you see it says the value is "1."
+  So this is a constant, like MACRO, and often times it's just called
+  a 'constant.' Macros are actually quite a bit more powerful than
+  this.
+
+You can give them parameters, So I can say, "(a, b)" like that in the
+macro definition, and then in the expansion I can say, "( a * b )"
+And, clear a couple of variable here, "ia = 5; ib = 7;" and then I can
+come over here, and I can say, "MACRO(ia, ib);" and when I build and
+run you see we get the product of 5 and 7, which is 35. So what's
+happening here is that this macro expansion is taking the parameters
+and actually expanding those parameters.
+
+In other words, this result will be replaced with the text 'ia' in
+parenthesis. "(ia * ib);" Like that. And when we build and run you see
+we get exactly the same result. So this macro... Is exactly the same
+as if we typed that text in our source code. And, of course, the macro
+expansion happens before the compiler ever sees this in the
+preprocessor. So when it sees this "a" this text here gets replaced
+with whatever the value is of "a," and this text here gets replaced
+with whatever the value is of "b." One other important caveat here,
+you cannot put any space between the name of the macro, and the
+opening parenthesis.
+
+If I put in a space here and try to build and run, you'll notice that
+we get an error because that's no longer parameters. Now we have a
+macro that simply expands to all of this text. That's why we see this
+particular error. "Use of undeclared identifier 'a,' " and you'll see
+we have one there also for "b." So without the space there, you always
+need to have that opening parenthesis right next to the text. This is
+actually a common source of bugs. And there we have it, it does what
+it's intended to do.
+
+Now, any valid code is allowed on the right-hand side because
+remember, this is just text expansion. So I can say, "( a > b ? a : b
+)," and I'll get the max. I'll actually rename this macro to "MAX."
+And come over here and rename it to "MAX." And now when I build and
+run we get "7," because 7 is greater than 5. And if I change this here
+we get "47," because 47 is greater than 7. Now, think about what
+happens when various expressions are used as parameters.
+
+This is the problem with macros. It's important to look at this
+carefully. Remember, this is expanded to text, so if we have
+expressions in "a" and "b," even though in a function call those
+expressions would be resolved before they're actually passed to the
+function. That's not the case in the case of a macro. This is text
+expansion, and it happens before the compiler ever sees it. So the
+potential for side effects is actually very, very real. I'll show you
+some examples of this in the next lesson, but for now, understand that
+the use of function like macros is very common, especially in C.
+
+And in fact, the preprocessor was designed to do this. For many uses
+though, C++ templates are a superior solution. For some uses
+parameterized macros work great, but generally speaking, templates are
+recommended over parameterized macros. Templates will be covered later
+in the course, and in the next lesson I'll give you some examples of
+the kinds of problems you may run into with parameterized macros.
+

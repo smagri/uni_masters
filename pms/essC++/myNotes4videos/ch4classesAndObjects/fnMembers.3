@@ -1,0 +1,107 @@
+Important Points:
+
+
+
+Transcript:
+
+- C++ classes can have member functions that act as methods for the
+  class. Here, I have a working copy of working.cpp from chapter four
+  of the exercise files. Let's start by creating a simple class with
+  one data member. There we have our one data member and by default
+  data members in a class are of private scope that means that they
+  can be accessed from functions that are part of the class but they
+  cannot be directly accessed from outside of the class. For this
+  purpose we create public member functions and we use this public
+  member functions to access the data in the class.
+
+This public member functions are often called accessors or sometimes
+setters and getters. We'll start with a setter which would look like
+this and then we'll write a getter which looks like this. Now, I'll
+just come down here and I'll create an instance of our class which is
+called an object and I'll use the setter to give it a value. Then
+we'll use a getter to read the value, like this. Now I'll go ahead and
+build and run and you can see it says the value is 42.
+
+Now we have a simple class with setter and a getter and one data
+member. Now it's considered best practice to separate the interface
+from the implementation. This is done by declaring function members in
+the class definition and defining the function members later. These
+function member definitions actually have the code and its considered
+best practice to take the code out of here and to do the actual
+function definition so this now become function declarations.
+
+To do the definitions outside of the class, usually in a separate
+file. There's usually three files involved, one has the class
+definition and that's usually in a header file. One has the function
+definitions that's usually in a code file or .cpp file, and then
+wherever you use the code that's in a separate file as well. Here for
+example with my main. For our purposes, we're putting it all in one
+file because that makes it easier to teach and learn. In practice
+you'll often see it in three files, I'll show you some examples of
+that later in the course.
+
+For now, let's go ahead and define our functions and this is done like
+this. I say void and then I name the function setvalue but I actually
+have to put A:: before it, the class name with two colons so the
+compiler knows that this is actually part of this class. I need the
+full signature here and I put the code in and I say ia equals a. I'll
+do the same for the get value which will look like this.
+
+Now we have our setters and getters separate from the class definition
+and when I build and run you see we get exactly the same result. Now
+there is one more important detail that we need to realize, this
+actually won't work with a object that's declared as const. If I say
+const A and I'll name this one b and assign a to it and then I'll
+leave the setvalue there for a but if I use b for a get value, you'll
+notice that I get an error that says, "Member function getvalue not
+viable, "function is not marked const." The argument has a type const
+A but the function is not marked const.
+
+What that means is that this getter is not what's called const
+safe. Even though it doesn't actually change anything in the class,
+you need to declare it as being const safe by putting const there and
+again const here in the function signature. This actually goes after
+the parenthesis in the function signature and that says that this
+particular method is const safe. Now that I've defined them as const
+safe I can use it with a const variable.
+
+So b is now an object of type const A, meaning that it cannot be
+modified. Any method that's called on a const object must be const
+safe. A const safe method cannot modify any of its data members and so
+for example, if inside of here I try to change the value of ia, you'll
+notice that when I try to build and run this I get an error that says,
+"Read-only variable "is not assignable." That's because this method is
+defined as const safe.
+
+Likewise, if I come down here and I try to run set value on b which is
+declared as const safe, you notice I also get an error because the
+setter is not const safe and it can't be because it actually changes a
+value. On the other hand, the getter can be used either with the const
+or the non const version of get value, so it's an unused variable b
+and that's fine because we're not actually using it.
+
+You see that this works fine, we can use getvalue either with a const
+or a non const object. Now here's the really interesting thing, I can
+have two versions of getvalue. One of them const safe and one of them
+not const safe. What happens here is really kinda interesting and it
+can be useful in some circumstances. Here's our non const version at
+our const version and just so we know which one's being called I'm
+going to put in a little puts, so I'll call this the mutable getter
+because mutable is the opposite of const which is sometimes called
+immutable.
+
+This is the const version and main, I'm going to have two of these
+const getter. One of them I'll call them a which is the mutable
+version of the object and one of them I'll call them b which is the
+immutable const version. You'll notice that these two different
+getters are called. The mutable getter is called for the first one and
+the const getter is called for the second one. You can actually have
+two versions of the same method that are only distinguished in their
+signature by whether or not they're const safe.
+
+This can be really useful at times. Member functions are what make
+object-oriented programming possible. As we go through the rest of the
+chapter you'll see that most of the other features of C++ objects are
+based on the ability to create member functions.
+
+

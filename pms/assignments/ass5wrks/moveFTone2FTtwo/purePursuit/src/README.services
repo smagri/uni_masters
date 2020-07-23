@@ -1,0 +1,8 @@
+17july2018
+
+I think when I change RequestGoal.h I need to change:
+
+../src/a3_help/srv/ReqestGoal.srv to reflect the changes.
+
+But in addition, I need to 'touch RequestGoal.cpp' so the service is
+actualy built.

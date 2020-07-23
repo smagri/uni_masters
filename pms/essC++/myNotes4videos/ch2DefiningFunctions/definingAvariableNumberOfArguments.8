@@ -1,0 +1,72 @@
+Important Points:
+
+
+
+Transcript:
+
+ For those times when you need a function that may take a varying
+ number of arguments, C++ provides variadic functions. Here I have a
+ working copy of variadic.cpp from Chapter Two of the exercise files,
+ and you notice here on Line 4, the cstdarg header provides the macros
+ needed to support the variadic arguments. This file shows two
+ examples of variadic functions, and let's take a look at the first
+ one. The first one here is called average. It returns a double. It
+ takes an integer which is the count of the number of values that are
+ being averaged, and then it takes a variable number of arguments.
+
+Those arguments are doubles which will be averaged. You notice that I
+have a comment that explains all of this because it's not obvious from
+the function signature that ... means that this function takes a
+variable number of arguments. So there's a macro called va_list which
+declares the list of arguments that appear after that first argument,
+and then there's a va_start macro which points at the va_list variable
+and the count variable.
+
+So the count variable here, it declares where the start of the
+variable argument list begins. So what you put here is the last
+argument that's not one of the variable list. So the last one that's
+explicitly declared, in this case it's the count one, it's also the
+first one, that's what you put there with va_start. Then in this loop,
+I have this va_arg macro which grabs the next variable from the list,
+and it also declares its type here.
+
+Then va_end, you have to call that when you're done, or it can create
+problems later on. Here's another example. This is the message
+example, and this works just like printf does. In fact, this is how
+printf works. It works a little bit differently. We're not grabbing
+each of the individual values from the list, rather we're passing the
+whole list to a function called vfprintf which is in the standard
+library.
+
+You notice it's declared in the same way with the three dots to
+indicate the variable argument list, and we have va_list again, the
+macro from the standard arg library. And we have va_start that tells
+us where that list begins right after the fmt, the format
+argument. But now this part is different. We're actually passing this
+ap which is a pointer to the variable argument list, and our format
+we're passing it to this standard library function vfprintf which will
+print the message to stdout.
+
+Of course, we also call va_end, also a macro in that standard argument
+library. This allows us to do this. We use message just as if we were
+using printf, and when I build and run this you'll see our result
+here. We're able to pass a format string just like for printf, and the
+result of our average function returns a double so this %lf will print
+out at double. Then we're calling average. You notice the first
+argument is not part of the variable argument list.
+
+It's the number of arguments that we're putting in the variable
+argument list so we have five doubles; one, two, three, four,
+five. Plus we have this count at the beginning. Then it will take all
+of these numbers, and it will return total divided by count which is
+the average and display it down here. One note here, this vfprintf
+function, if you're using Microsoft Visual C++, you may get a warning
+that vfprintf is deprecated, and it'll recommend that you use a
+version with an _s after the name.
+
+Feel free to do that. The security enhancements that are in that _s
+version are worthwhile. They include additional type checks for
+parameterized values. Most modern C runtime libraries including the
+Clang library that's used on this Mac already have those features
+added to the standard version of vfprintf.
+

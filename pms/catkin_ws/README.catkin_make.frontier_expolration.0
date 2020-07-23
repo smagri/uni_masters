@@ -1,0 +1,815 @@
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+-- Using CATKIN_DEVEL_PREFIX: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+-- Using CMAKE_PREFIX_PATH: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel;/opt/ros/indigo
+-- This workspace overlays: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel;/opt/ros/indigo
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build/test_results
+-- Found gtest sources under '/usr/src/gtest': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.6.18
+-- BUILD_SHARED_LIBS is on
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 13 packages in topological order:
+-- ~~  - beginner_tutorials
+-- ~~  - randomNum_node
+-- ~~  - rosocv_node
+-- ~~  - a3_help
+-- ~~  - frontier_exploration
+-- ~~  - opencv_example
+-- ~~  - random_walk
+-- ~~  - rosopencv_node
+-- ~~  - node_example
+-- ~~  - lama_msgs
+-- ~~  - map_ray_caster
+-- ~~  - local_map
+-- ~~  - voice_node
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'beginner_tutorials'
+-- ==> add_subdirectory(beginner_tutorials)
+-- +++ processing catkin package: 'randomNum_node'
+-- ==> add_subdirectory(randomNum_node)
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+-- +++ processing catkin package: 'rosocv_node'
+-- ==> add_subdirectory(rosocv_node)
+-- +++ processing catkin package: 'a3_help'
+-- ==> add_subdirectory(a3_help)
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   signals
+--  CMake C++ FLAGS -std=c++0x  -Wno-deprecated -Wdeprecated-declarations
+-- a3_help: 0 messages, 1 services
+-- +++ processing catkin package: 'frontier_exploration'
+-- ==> add_subdirectory(frontier_exploration)
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   signals
+--  CMake C++ FLAGS -std=c++0x  -Wno-deprecated -Wdeprecated-declarations
+-- frontier_exploration: 0 messages, 1 services
+CMake Error at frontier_exploration/CMakeLists.txt:131 (add_executable):
+  add_executable cannot create target "map_to_image_node" because another
+  target with the same name already exists.  The existing target is an
+  executable created in source directory
+  "/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help".  See documentation
+  for policy CMP0002 for more details.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:132 (add_executable):
+  add_executable called with incorrect number of arguments
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:133 (add_executable):
+  add_executable cannot create target "TBK" because another target with the
+  same name already exists.  The existing target is an executable created in
+  source directory "/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help".
+  See documentation for policy CMP0002 for more details.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libcv_bridge.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libimage_transport.so" to
+  target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libmessage_filters.so" to
+  target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libtinyxml.so" to
+  target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libclass_loader.so" to
+  target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/usr/lib/libPocoFoundation.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libdl.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libroslib.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libroscpp.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_signals.so"
+  to target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/librosconsole.so" to
+  target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/librosconsole_log4cxx.so"
+  to target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/opt/ros/indigo/lib/librosconsole_backend_interface.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/usr/lib/liblog4cxx.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_regex.so"
+  to target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libxmlrpcpp.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/opt/ros/indigo/lib/libroscpp_serialization.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/librostime.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libboost_date_time.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libcpp_common.so" to
+  target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_system.so"
+  to target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_thread.so"
+  to target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libpthread.so" to
+  target "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:142 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libconsole_bridge.so" to target
+  "map_to_image_node" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libcv_bridge.so" to target
+  "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8" to target "sample" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8" to target "sample" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8" to target "sample" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8" to target
+  "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libimage_transport.so" to
+  target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libmessage_filters.so" to
+  target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libtinyxml.so" to
+  target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libclass_loader.so" to
+  target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/usr/lib/libPocoFoundation.so" to target
+  "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libdl.so" to target
+  "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libroslib.so" to target
+  "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libroscpp.so" to target
+  "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_signals.so"
+  to target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so" to target "sample" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/librosconsole.so" to
+  target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/librosconsole_log4cxx.so"
+  to target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/opt/ros/indigo/lib/librosconsole_backend_interface.so" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/usr/lib/liblog4cxx.so" to target "sample"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_regex.so"
+  to target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libxmlrpcpp.so" to target
+  "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/opt/ros/indigo/lib/libroscpp_serialization.so" to target "sample" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/librostime.so" to target
+  "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libboost_date_time.so" to target "sample" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libcpp_common.so" to
+  target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_system.so"
+  to target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_thread.so"
+  to target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libpthread.so" to
+  target "sample" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:143 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libconsole_bridge.so" to target "sample" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libcv_bridge.so" to target
+  "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.8" to target "TBK"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.8" to target "TBK" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.8" to target "TBK"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.8" to target "TBK"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.8" to target "TBK" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.8" to target "TBK" which is
+  not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.8" to target "TBK"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.8" to target "TBK" which is
+  not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.8" to target "TBK" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8" to target "TBK"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8" to target "TBK"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.8" to target "TBK" which is
+  not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.8" to target "TBK" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.8" to target "TBK"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8" to target "TBK" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.8" to target "TBK"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.8" to target "TBK"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libimage_transport.so" to
+  target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libmessage_filters.so" to
+  target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libtinyxml.so" to
+  target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libclass_loader.so" to
+  target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/usr/lib/libPocoFoundation.so" to target "TBK"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libdl.so" to target
+  "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libroslib.so" to target
+  "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libroscpp.so" to target
+  "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_signals.so"
+  to target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libboost_filesystem.so" to target "TBK" which is
+  not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/librosconsole.so" to
+  target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/librosconsole_log4cxx.so"
+  to target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/opt/ros/indigo/lib/librosconsole_backend_interface.so" to target "TBK"
+  which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/usr/lib/liblog4cxx.so" to target "TBK" which
+  is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_regex.so"
+  to target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libxmlrpcpp.so" to target
+  "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/opt/ros/indigo/lib/libroscpp_serialization.so" to target "TBK" which is
+  not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/librostime.so" to target
+  "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libboost_date_time.so" to target "TBK" which is
+  not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/opt/ros/indigo/lib/libcpp_common.so" to
+  target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_system.so"
+  to target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libboost_thread.so"
+  to target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library "/usr/lib/x86_64-linux-gnu/libpthread.so" to
+  target "TBK" which is not built in this directory.
+
+
+CMake Error at frontier_exploration/CMakeLists.txt:144 (target_link_libraries):
+  Attempt to add link library
+  "/usr/lib/x86_64-linux-gnu/libconsole_bridge.so" to target "TBK" which is
+  not built in this directory.
+
+
+-- +++ processing catkin package: 'opencv_example'
+-- ==> add_subdirectory(opencv_example)
+-- +++ processing catkin package: 'random_walk'
+-- ==> add_subdirectory(random_walk)
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   signals
+--  CMake C++ FLAGS -std=c++0x  -Wno-deprecated -Wdeprecated-declarations
+-- +++ processing catkin package: 'rosopencv_node'
+-- ==> add_subdirectory(rosopencv_node)
+-- +++ processing catkin package: 'node_example'
+-- ==> add_subdirectory(node_example)
+-- Using these message generators: gencpp;genlisp;genpy
+-- node_example: 1 messages, 0 services
+-- +++ processing catkin package: 'lama_msgs'
+-- ==> add_subdirectory(lama_msgs)
+-- Using these message generators: gencpp;genlisp;genpy
+-- lama_msgs: 6 messages, 7 services
+-- +++ processing catkin package: 'map_ray_caster'
+-- ==> add_subdirectory(map_ray_caster)
+-- Using these message generators: gencpp;genlisp;genpy
+-- +++ processing catkin package: 'local_map'
+-- ==> add_subdirectory(local_map)
+-- Using these message generators: gencpp;genlisp;genpy
+-- local_map: 0 messages, 1 services
+-- +++ processing catkin package: 'voice_node'
+-- ==> add_subdirectory(voice_node)
+-- Using these message generators: gencpp;genlisp;genpy
+-- voice_node: 1 messages, 0 services
+-- Configuring incomplete, errors occurred!
+See also "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build/CMakeFiles/CMakeOutput.log".
+See also "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build/CMakeFiles/CMakeError.log".
+make: *** [cmake_check_build_system] Error 1
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+Invoking "make cmake_check_build_system" failed

@@ -1,0 +1,69 @@
+//
+// Shape base class implementation.
+//
+// 
+// Class functions or methods(aka member functions) are defined here.
+//
+
+
+//#include <iostream>
+#include <cstdio>
+
+//#include "rectangle.h"
+#include "shape.h"
+
+
+Shape::Shape(){
+
+  width_ = 0;
+  height_ = 0;
+  
+}
+
+
+// Shape::~Shape(){
+
+//   // destructor
+  
+// }
+
+
+void Shape::setWidthHeight(int width, int height){
+
+  // This method, or  member function, is required so  code not within
+  // this class can access member  variables safely, without having to
+  // understand all our code.
+  
+  // takes to integer variables and returns nothing
+  
+  // It is principally used to initialise the width and height of the rectangle
+  width_ = width;
+  height_ = height;
+  
+}
+
+
+void Shape::setWidthHeight(int side){
+
+  // This is a square, so set width_=side and height_=side.  A square
+  // is a special case of a rectangle, one with all sides equal.
+  setWidthHeight(side, side);
+  
+}
+
+
+
+int Shape::getArea(void){
+
+  // Shape is assumed to be a square in the base class.
+  
+  return (width_ * height_);
+}
+
+
+int Shape::getPerimeter(void){
+  
+  // Shape is assumed to be a square in the base class.
+  
+  return ((width_*2) + (height_*2));
+}

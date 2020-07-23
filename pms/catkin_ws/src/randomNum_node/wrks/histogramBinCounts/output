@@ -1,0 +1,160 @@
+dbg: randomNumTopicCbk: recived value=0.833954: histogramBinIndex=8
+dbg: randomNumTopicCbk: histogramBin.at(8)=1
+dbg: randomNumTopicCbk: recived value=0.665484: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=1
+dbg: randomNumTopicCbk: recived value=0.353127: histogramBinIndex=3
+dbg: randomNumTopicCbk: histogramBin.at(3)=1
+dbg: randomNumTopicCbk: recived value=0.279310: histogramBinIndex=2
+dbg: randomNumTopicCbk: histogramBin.at(2)=1
+dbg: randomNumTopicCbk: recived value=0.573046: histogramBinIndex=5
+dbg: randomNumTopicCbk: histogramBin.at(5)=1
+dbg: randomNumTopicCbk: recived value=0.753304: histogramBinIndex=7
+dbg: randomNumTopicCbk: histogramBin.at(7)=1
+dbg: randomNumTopicCbk: recived value=0.864498: histogramBinIndex=8
+dbg: randomNumTopicCbk: histogramBin.at(8)=2
+dbg: randomNumTopicCbk: recived value=0.219279: histogramBinIndex=2
+dbg: randomNumTopicCbk: histogramBin.at(2)=2
+dbg: randomNumTopicCbk: recived value=0.580933: histogramBinIndex=5
+dbg: randomNumTopicCbk: histogramBin.at(5)=2
+dbg: randomNumTopicCbk: recived value=0.535901: histogramBinIndex=5
+dbg: randomNumTopicCbk: histogramBin.at(5)=3
+dbg: randomNumTopicCbk: recived value=0.596704: histogramBinIndex=5
+dbg: randomNumTopicCbk: histogramBin.at(5)=4
+dbg: randomNumTopicCbk: recived value=0.764803: histogramBinIndex=7
+dbg: randomNumTopicCbk: histogramBin.at(7)=2
+dbg: randomNumTopicCbk: recived value=0.926287: histogramBinIndex=9
+dbg: randomNumTopicCbk: histogramBin.at(9)=1
+dbg: randomNumTopicCbk: recived value=0.804797: histogramBinIndex=8
+dbg: randomNumTopicCbk: histogramBin.at(8)=3
+dbg: randomNumTopicCbk: recived value=0.463387: histogramBinIndex=4
+dbg: randomNumTopicCbk: histogramBin.at(4)=1
+dbg: randomNumTopicCbk: recived value=0.091811: histogramBinIndex=0
+dbg: randomNumTopicCbk: histogramBin.at(0)=1
+dbg: randomNumTopicCbk: recived value=0.216171: histogramBinIndex=2
+dbg: randomNumTopicCbk: histogramBin.at(2)=3
+dbg: randomNumTopicCbk: recived value=0.496688: histogramBinIndex=4
+dbg: randomNumTopicCbk: histogramBin.at(4)=2
+dbg: randomNumTopicCbk: recived value=0.669066: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=2
+dbg: randomNumTopicCbk: recived value=0.750468: histogramBinIndex=7
+dbg: randomNumTopicCbk: histogramBin.at(7)=3
+dbg: randomNumTopicCbk: recived value=0.689569: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=3
+dbg: randomNumTopicCbk: recived value=0.194112: histogramBinIndex=1
+dbg: randomNumTopicCbk: histogramBin.at(1)=1
+dbg: randomNumTopicCbk: recived value=0.478004: histogramBinIndex=4
+dbg: randomNumTopicCbk: histogramBin.at(4)=3
+dbg: randomNumTopicCbk: recived value=0.780633: histogramBinIndex=7
+dbg: randomNumTopicCbk: histogramBin.at(7)=4
+dbg: randomNumTopicCbk: recived value=0.684914: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=4
+dbg: randomNumTopicCbk: recived value=0.058446: histogramBinIndex=0
+dbg: randomNumTopicCbk: histogramBin.at(0)=2
+dbg: randomNumTopicCbk: recived value=0.153299: histogramBinIndex=1
+dbg: randomNumTopicCbk: histogramBin.at(1)=2
+dbg: randomNumTopicCbk: recived value=0.650755: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=5
+dbg: randomNumTopicCbk: recived value=0.616778: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=6
+dbg: randomNumTopicCbk: recived value=0.642377: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=7
+dbg: randomNumTopicCbk: recived value=0.703992: histogramBinIndex=7
+dbg: randomNumTopicCbk: histogramBin.at(7)=5
+dbg: randomNumTopicCbk: recived value=0.616150: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=8
+dbg: randomNumTopicCbk: recived value=0.728892: histogramBinIndex=7
+dbg: randomNumTopicCbk: histogramBin.at(7)=6
+dbg: randomNumTopicCbk: recived value=0.573000: histogramBinIndex=5
+dbg: randomNumTopicCbk: histogramBin.at(5)=5
+dbg: randomNumTopicCbk: recived value=0.786706: histogramBinIndex=7
+dbg: randomNumTopicCbk: histogramBin.at(7)=7
+dbg: randomNumTopicCbk: recived value=0.800229: histogramBinIndex=8
+dbg: randomNumTopicCbk: histogramBin.at(8)=4
+dbg: randomNumTopicCbk: recived value=0.845307: histogramBinIndex=8
+dbg: randomNumTopicCbk: histogramBin.at(8)=5
+dbg: randomNumTopicCbk: recived value=0.520848: histogramBinIndex=5
+dbg: randomNumTopicCbk: histogramBin.at(5)=6
+dbg: randomNumTopicCbk: recived value=0.460753: histogramBinIndex=4
+dbg: randomNumTopicCbk: histogramBin.at(4)=4
+dbg: randomNumTopicCbk: recived value=0.502043: histogramBinIndex=5
+dbg: randomNumTopicCbk: histogramBin.at(5)=7
+dbg: randomNumTopicCbk: recived value=0.047227: histogramBinIndex=0
+dbg: randomNumTopicCbk: histogramBin.at(0)=3
+dbg: randomNumTopicCbk: recived value=0.219213: histogramBinIndex=2
+dbg: randomNumTopicCbk: histogramBin.at(2)=4
+dbg: randomNumTopicCbk: recived value=0.275037: histogramBinIndex=2
+dbg: randomNumTopicCbk: histogramBin.at(2)=5
+dbg: randomNumTopicCbk: recived value=0.026315: histogramBinIndex=0
+dbg: randomNumTopicCbk: histogramBin.at(0)=4
+dbg: randomNumTopicCbk: recived value=0.806188: histogramBinIndex=8
+dbg: randomNumTopicCbk: histogramBin.at(8)=6
+dbg: randomNumTopicCbk: recived value=0.540906: histogramBinIndex=5
+dbg: randomNumTopicCbk: histogramBin.at(5)=8
+dbg: randomNumTopicCbk: recived value=0.424593: histogramBinIndex=4
+dbg: randomNumTopicCbk: histogramBin.at(4)=5
+dbg: randomNumTopicCbk: recived value=0.121328: histogramBinIndex=1
+dbg: randomNumTopicCbk: histogramBin.at(1)=3
+dbg: randomNumTopicCbk: recived value=0.504730: histogramBinIndex=5
+dbg: randomNumTopicCbk: histogramBin.at(5)=9
+dbg: randomNumTopicCbk: recived value=0.185855: histogramBinIndex=1
+dbg: randomNumTopicCbk: histogramBin.at(1)=4
+dbg: randomNumTopicCbk: recived value=0.311364: histogramBinIndex=3
+dbg: randomNumTopicCbk: histogramBin.at(3)=2
+dbg: randomNumTopicCbk: recived value=0.367223: histogramBinIndex=3
+dbg: randomNumTopicCbk: histogramBin.at(3)=3
+dbg: randomNumTopicCbk: recived value=0.493584: histogramBinIndex=4
+dbg: randomNumTopicCbk: histogramBin.at(4)=6
+dbg: randomNumTopicCbk: recived value=0.492739: histogramBinIndex=4
+dbg: randomNumTopicCbk: histogramBin.at(4)=7
+dbg: randomNumTopicCbk: recived value=0.495471: histogramBinIndex=4
+dbg: randomNumTopicCbk: histogramBin.at(4)=8
+dbg: randomNumTopicCbk: recived value=0.626552: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=9
+dbg: randomNumTopicCbk: recived value=0.714517: histogramBinIndex=7
+dbg: randomNumTopicCbk: histogramBin.at(7)=8
+dbg: randomNumTopicCbk: recived value=0.688111: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=10
+dbg: randomNumTopicCbk: recived value=0.442658: histogramBinIndex=4
+dbg: randomNumTopicCbk: histogramBin.at(4)=9
+dbg: randomNumTopicCbk: recived value=0.361627: histogramBinIndex=3
+dbg: randomNumTopicCbk: histogramBin.at(3)=4
+dbg: randomNumTopicCbk: recived value=0.945006: histogramBinIndex=9
+dbg: randomNumTopicCbk: histogramBin.at(9)=2
+dbg: randomNumTopicCbk: recived value=0.644331: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=11
+dbg: randomNumTopicCbk: recived value=0.960400: histogramBinIndex=9
+dbg: randomNumTopicCbk: histogramBin.at(9)=3
+dbg: randomNumTopicCbk: recived value=0.009149: histogramBinIndex=0
+dbg: randomNumTopicCbk: histogramBin.at(0)=5
+dbg: randomNumTopicCbk: recived value=0.747176: histogramBinIndex=7
+dbg: randomNumTopicCbk: histogramBin.at(7)=9
+dbg: randomNumTopicCbk: recived value=0.255482: histogramBinIndex=2
+dbg: randomNumTopicCbk: histogramBin.at(2)=6
+dbg: randomNumTopicCbk: recived value=0.555293: histogramBinIndex=5
+dbg: randomNumTopicCbk: histogramBin.at(5)=10
+dbg: randomNumTopicCbk: recived value=0.317882: histogramBinIndex=3
+dbg: randomNumTopicCbk: histogramBin.at(3)=5
+dbg: randomNumTopicCbk: recived value=0.801884: histogramBinIndex=8
+dbg: randomNumTopicCbk: histogramBin.at(8)=7
+dbg: randomNumTopicCbk: recived value=0.993094: histogramBinIndex=9
+dbg: randomNumTopicCbk: histogramBin.at(9)=4
+dbg: randomNumTopicCbk: recived value=0.125670: histogramBinIndex=1
+dbg: randomNumTopicCbk: histogramBin.at(1)=5
+dbg: randomNumTopicCbk: recived value=0.362170: histogramBinIndex=3
+dbg: randomNumTopicCbk: histogramBin.at(3)=6
+dbg: randomNumTopicCbk: recived value=0.325282: histogramBinIndex=3
+dbg: randomNumTopicCbk: histogramBin.at(3)=7
+dbg: randomNumTopicCbk: recived value=0.962033: histogramBinIndex=9
+dbg: randomNumTopicCbk: histogramBin.at(9)=5
+dbg: randomNumTopicCbk: recived value=0.272835: histogramBinIndex=2
+dbg: randomNumTopicCbk: histogramBin.at(2)=7
+dbg: randomNumTopicCbk: recived value=0.037936: histogramBinIndex=0
+dbg: randomNumTopicCbk: histogramBin.at(0)=6
+dbg: randomNumTopicCbk: recived value=0.074515: histogramBinIndex=0
+dbg: randomNumTopicCbk: histogramBin.at(0)=7
+dbg: randomNumTopicCbk: recived value=0.699752: histogramBinIndex=6
+dbg: randomNumTopicCbk: histogramBin.at(6)=12
+dbg: randomNumTopicCbk: recived value=0.068262: histogramBinIndex=0
+dbg: randomNumTopicCbk: histogramBin.at(0)=8
+dbg: randomNumTopicCbk: recived value=0.987081: histogramBinIndex=9
+dbg: randomNumTopicCbk: histogramBin.at(9)=6

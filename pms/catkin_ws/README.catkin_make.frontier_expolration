@@ -1,0 +1,108 @@
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+-- Using CATKIN_DEVEL_PREFIX: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+-- Using CMAKE_PREFIX_PATH: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel;/opt/ros/indigo
+-- This workspace overlays: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel;/opt/ros/indigo
+-- Using PYTHON_EXECUTABLE: /usr/bin/python
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build/test_results
+-- Found gtest sources under '/usr/src/gtest': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.6.18
+-- BUILD_SHARED_LIBS is on
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 13 packages in topological order:
+-- ~~  - beginner_tutorials
+-- ~~  - randomNum_node
+-- ~~  - rosocv_node
+-- ~~  - a3_help
+-- ~~  - frontier_exploration
+-- ~~  - opencv_example
+-- ~~  - random_walk
+-- ~~  - rosopencv_node
+-- ~~  - node_example
+-- ~~  - lama_msgs
+-- ~~  - map_ray_caster
+-- ~~  - local_map
+-- ~~  - voice_node
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'beginner_tutorials'
+-- ==> add_subdirectory(beginner_tutorials)
+-- +++ processing catkin package: 'randomNum_node'
+-- ==> add_subdirectory(randomNum_node)
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+-- +++ processing catkin package: 'rosocv_node'
+-- ==> add_subdirectory(rosocv_node)
+-- +++ processing catkin package: 'a3_help'
+-- ==> add_subdirectory(a3_help)
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   signals
+--  CMake C++ FLAGS -std=c++0x  -Wno-deprecated -Wdeprecated-declarations
+-- a3_help: 0 messages, 1 services
+-- +++ processing catkin package: 'frontier_exploration'
+-- ==> add_subdirectory(frontier_exploration)
+-- Using these message generators: gencpp;genlisp;genpy
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   signals
+--  CMake C++ FLAGS -std=c++0x  -Wno-deprecated -Wdeprecated-declarations
+-- frontier_exploration: 0 messages, 1 services
+-- +++ processing catkin package: 'opencv_example'
+-- ==> add_subdirectory(opencv_example)
+-- +++ processing catkin package: 'random_walk'
+-- ==> add_subdirectory(random_walk)
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   system
+--   signals
+--  CMake C++ FLAGS -std=c++0x  -Wno-deprecated -Wdeprecated-declarations
+-- +++ processing catkin package: 'rosopencv_node'
+-- ==> add_subdirectory(rosopencv_node)
+-- +++ processing catkin package: 'node_example'
+-- ==> add_subdirectory(node_example)
+-- Using these message generators: gencpp;genlisp;genpy
+-- node_example: 1 messages, 0 services
+-- +++ processing catkin package: 'lama_msgs'
+-- ==> add_subdirectory(lama_msgs)
+-- Using these message generators: gencpp;genlisp;genpy
+-- lama_msgs: 6 messages, 7 services
+-- +++ processing catkin package: 'map_ray_caster'
+-- ==> add_subdirectory(map_ray_caster)
+-- Using these message generators: gencpp;genlisp;genpy
+-- +++ processing catkin package: 'local_map'
+-- ==> add_subdirectory(local_map)
+-- Using these message generators: gencpp;genlisp;genpy
+-- local_map: 0 messages, 1 services
+-- +++ processing catkin package: 'voice_node'
+-- ==> add_subdirectory(voice_node)
+-- Using these message generators: gencpp;genlisp;genpy
+-- voice_node: 1 messages, 0 services
+-- Configuring done
+CMake Error at frontier_exploration/CMakeLists.txt:132 (add_executable):
+  Cannot find source file:
+
+    src/RequestGoal.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+-- Build files have been written to: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+make: *** [cmake_check_build_system] Error 1
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+Invoking "make cmake_check_build_system" failed

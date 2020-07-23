@@ -1,0 +1,68 @@
+Important points:
+// itterating for loop is the std c for loop i use all the time, new
+bit is using the null value at end of c string to terminate the loop.
+
+Transcript:
+
+- C++ provides a very useful iterating loop called the for loop. Here
+  in Xcode, I've opened a working copy of working.cpp. The for loop is
+  like a while loop with extra controls designed to help with
+  iteration so I'm actually gonna start with a while loop here. We'll
+  just do this just like we did the last one. And so we have a simple
+  integer array and we have an integer that we can use for indexing
+  and then we're gonna put our while loop, while i is less than five,
+  and we'll print the array element, and then we'll increment i.
+
+So when I build and run this, it prints out the elements of the array
+just like in the last lesson. So this is actually a really common
+usage for a loop to iterate through a container like that. And so, C++
+provides a control called the for loop which does all of these a lot
+easier. So here, we'll type for instead of while and we'll just take
+this initializer up here, and we'll put it in here like that. And then
+after the condition, we'll increment i so we don't need this down here
+anymore.
+
+And it ends up looking like this. So inside the parentheses for the
+for loop, the parameters of the for loop, there's three
+expressions. The first expression happens before the loop begins and
+it only happens once. And so it's often used for defining and
+initializing a variable like in this case, the integer i that's going
+to be used to index the array. There's always a semicolon after the
+first expression. The second parameter is the condition.
+
+And this is just like the while loop. It's a condition that tests at
+the top of the loop. So this loop will continue as long as this
+expression is true. And then the third parameter is code, or in this
+case, an expression that is run at the very end of the loop before the
+loop is tested again to see if it's going to continue. This happens
+every time through the loop after all the code in the block. So it's
+really exactly the same code as what we had in our while loop.
+
+And when I build and run, you'll see that it does exactly the same
+thing. So there's a number of different cool things that you can do
+with this. Like for instance, if instead of an array of integers, we
+had a string. And instead of all this, we just use a pointer and then
+we don't have that index anymore. All we have now is the pointer and
+it's no longer a integer. Now, it's a character. And of course this
+string is a character string like this. So now what we have is a
+character array which is a C string and our initializer, that first
+element of the for loop which is an expression that is evaluated
+before the loop begins, just once, it declares a character pointer,
+and it initializes it to the first element of the array.
+
+The condition is simply checking what's pointed at by that character
+pointer to see if it's true. And in C++, a zero is always false, and
+everything else is true. So it's just testing to see if we've gotten
+to end of the string. Because, you remember, a string is terminated
+with a zero or a null. And then the post expression, this is the
+expression that's run at the end of the code block, it simply
+increments the pointer. And so now when we run this, we build and run,
+we get each of the elements of the array just like that.
+
+This is another very common usage for the for loop. The for loop is a
+fundamental control in C++. It's incredibly powerful and useful and
+you'll see a lot of examples of it throughout this course and in the
+various code that you look at. It may look cryptic at first, but once
+you get to know it, you'll find a lot of uses for it and it's actually
+very simple to understand. We'll look at another form of the for loop
+in the next lesson that's new in C++ 11.

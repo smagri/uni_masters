@@ -1,0 +1,9 @@
+2may2018
+
+To setup a gtest invironment for a binary, fist copy the lib library
+from:
+
+wee9.doxygen/lib
+
+to current working directory.
+

@@ -1,0 +1,99 @@
+// simple-inheritance.cpp by Bill Weinman <http://bw.org/>
+#include <cstdio>
+#include <string>
+using namespace std;
+
+// multiple inheritance in c++
+//
+// Done by listing more than one base class in the class definition.
+//
+// However, in this example it may have been more clear if the Cat
+// Class used a Fur object as a data member, rather than inheriting
+// it. The code would have been simpler and easier to follow, and the
+// "type" function would no longer be ambiguous.
+
+// Base class Fur
+class Fur{
+  string _type;
+  Fur(){};
+protected:
+  Fur(const string & f) : _type(f){};
+public:
+  const string & type() const {return _type;}
+};
+
+
+
+// Base class
+class Animal {
+    string _name;
+    string _type;
+    string _sound;
+    // private constructor prevents construction of base class
+    Animal(){};
+protected:
+    // protected constructor for use by derived classes
+    Animal ( const string & n, const string & t, const string & s )
+    : _name(n), _type(t), _sound(s) {}
+public:
+    void speak() const;
+    const string & name() const { return _name; }
+    const string & type() const { return _type; }
+    const string & sound() const { return _sound; }
+};
+
+void Animal::speak() const {
+    printf("%s the %s says %s\n", _name.c_str(), _type.c_str(), _sound.c_str());
+}
+
+// Dog class - derived from Animal
+class Dog : public Animal {
+    int walked;
+public:
+    Dog( string n ) : Animal(n, "dog", "woof"), walked(0) {};
+    int walk() { return ++walked; }
+};
+
+// Cat class - derived from Animal and Fur base classes.
+//
+class Cat : public Animal, public Fur {
+    int petted;
+public:
+  // add Fur to the constor for Cat.
+  Cat( string n ) : Animal(n, "cat", "meow"), Fur("silky"), petted(0) {};
+  int pet() { return ++petted; }
+  void grooming() const;
+};
+
+void Cat::grooming() const{
+  // Since Animal and Fur base classes both have type() member fn.  So
+  // need to specify which base class you are going to use.
+  printf("%s grooms her %s fur\n",
+	 Animal::name().c_str(), Fur::type().c_str());
+  
+}
+
+// Pig class - derived from Animal
+class Pig : public Animal {
+    int fed;
+public:
+    Pig( string n) : Animal(n, "pig", "oink"), fed(0) {};
+    int feed() { return ++fed; }
+};
+
+int main( int argc, char ** argv ) {
+    Dog d("Rover");
+    Cat c("Fluffy");
+    Pig p("Arnold");
+    
+    d.speak();
+    c.speak();
+    p.speak();
+    
+    printf("the dog has been walked %d times\n", d.walk());
+    printf("the cat has been petted %d times\n", c.pet());
+    printf("the pig has been fed %d times\n", p.feed());
+
+    // c is the Cat class object, it runs the grooming member fn
+    c.grooming();
+}

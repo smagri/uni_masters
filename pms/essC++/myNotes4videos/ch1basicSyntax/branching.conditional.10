@@ -1,0 +1,67 @@
+Important Points:
+
+
+
+Transcript:
+
+- C++ provides a special multi-way conditional using the switch
+  statement. Here in Xcode I've opened a working copy of "working.cpp"
+  and I'm going to set up a switch statement here. First I need to
+  define some constants. Switch requires constants for its
+  selection. You'll understand this in a moment. Start with integer,
+  I'll call it "iONE," and I'll just make a few of them. And I'll name
+  them "iONE, iTWO, iTHREE" and "iFOUR." And I'll also define an
+  integer variable.
+
+Let's call this "x." We'll give it a value of "3." And now, the switch
+statement, which looks like this. It requires an expression to switch
+on and so I'll use "x" for that. And then it requires constants for
+its case statements, so we'll have one for each of our constants. So
+"iONE" ... And the statement for that will just be "puts("one"). " And
+I'll just copy this and paste it. And so how this works is like this:
+it takes the expression, in the parenthesis next to the switch, and it
+compares it to the constants in the various case clauses.
+
+And so in this case, it will equal the constant for "iTHREE" because
+"iTHREE" is equal to the integer "three." And so it won't print this
+one, and it won't print that one, it will print this one, and it won't
+print that one. And for "default:" we'll just put something in here
+for "default:" So we can also demonstrate that. Now when I build and
+run, you'll see that it'll display the number "three." If I change "x"
+to, let's say "two," and build and run, it'll say "two." If I change
+"x" to something else, that does not equal any of our constants, it
+will display the default.
+
+And this is a very straightforward way to select between a number of
+different values for a given expression. The argument that's used with
+"case" must be a constant. It can be a constant variable in C++. C has
+exactly the same structure, but it doesn't allow a constant
+variable. It has to actually be a literal value. And the way that it
+works, is it'll actually simply jump to the case that is selected
+here. So for example, if I make this "2" ...
+
+It'll jump to the "two," and it will continue executing until it gets
+to the end of the block, you notice the braces here, or until it
+encounters a break. "break;" is a special statement in C++, it also
+exists in C, which will break out of a block. And so when execution
+reaches a "break;" it simply goes to the end of a block. And so in
+this case, we have a "2" here, it'll execute all the code, starting
+with the "iTWO" label, up until it sees a break.
+
+So if I take this break out, it will actually execute both the "two"
+and the "three." So we'll run this, and you get the "two" and the
+"three." It's usually very common to have a break after each clause,
+but sometimes you might want more than one selection to be valid. So I
+may have one here for "2," and I may have one, let's say, for "20" and
+so if I make one here for 20... And I'll have this just say "two or
+twenty," and I'll put in another case here for the "20." This is also
+a common way to do this, and so when I run this I get "two or twenty"
+and if I change my "x" to "20," I also get the "two or twenty." So
+switch is actually pretty simple.
+
+It uses the "case" clause to select, and it uses the expression in the
+parenthesis next to "switch" to do the comparison. So this multi-way
+switch control can be very handy in cases where you need to select a
+condition from a list of possibilities. The case statement needs a
+constant, so you need to take special care to use the proper type of
+constant for this purpose.

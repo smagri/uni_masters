@@ -1,0 +1,12 @@
+catkin_create_pkg  --rosdistro indigo randomNum_node std_msgs rospy
+roscpp 
+WARNING: Package name "randomNum_node" does not follow the naming
+conventions. It should start with a lower case letter and only contain
+lower case letters, digits and underscores.
+Created file randomNum_node/CMakeLists.txt
+Created file randomNum_node/package.xml
+Created folder randomNum_node/include/randomNum_node
+Created folder randomNum_node/src
+Successfully created files in
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/randomNum_node. Please
+adjust the values in package.xml.

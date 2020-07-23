@@ -1,0 +1,43 @@
+Important points:
+First 63 chars are significant in an identifer, eg variabl or fn name.
+But < 31 chars are preferred for some other reason...external
+identifier I think.
+
+
+
+Transcript:
+
+- C++ identifiers are tokens that provide readable names for
+  variables, functions, labels, and defined types. C++ identifiers are
+  made up of letters and numbers within a set of constraints, the 26
+  letters of the ISO basic Latin alphabet, in both lower case and
+  upper case, the 10 Western Arabic numerals, and the ASCII underscore
+  character. An identifier may not begin with a numeral. Identifiers
+  may not conflict with reserved words.
+
+The current C++ standard, C++ 14, reserves 73 keywords plus 11
+alternative tokens. You may not use any of these words as an
+identifier. Identifiers are case sensitive. Capital A, lower case z,
+is different from lower case a, capital Z. So, even though both of
+these say A, Z, they are different identifiers. Current standards
+allow letters that are not part of the ISO basic Latin alphabet, but
+support for this is implementation-dependent and not portable.
+
+I highly recommend that you stick with the 26 letters of the basic
+Latin alphabet, numbers, and the underscore. If you choose to use
+international character sets, you need to be aware that your code may
+not compile on other systems. Current standards allow identifiers to
+be of any length, although only the first 63 characters are guaranteed
+to be checked for uniqueness, and only the first 31 characters are
+guaranteed for external identifiers. So, in practice, you should keep
+your identifiers under 31 characters long.
+
+An initial underscore character, that is, an underscore in the first
+position of an identifier, is commonly used for private
+identifiers. More than one initial underscore is normally reserved for
+system level private use. So, don't name your variables with two
+initial underscores. Like so many aspects of programming, it's a
+really good idea to decide on a consistent style for choosing
+identifiers and stick to it. Understanding the rules, choosing
+conventions, and sticking to them will help make your code more
+readable and maintainable for the long term.

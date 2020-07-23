@@ -1,0 +1,32 @@
+This occurs due to renaming the parent directory(wrt build dir) after a,
+     cd build; cmake../; make,
+has ocurred on the old parent directory(wrt build dir) name.
+-----------------------------------------------------------------------------------------
+
+ing_condition_vars.manual.cmake.make/build%cmake ../
+CMake Error: The current CMakeCache.txt directory
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week8/proj/tutorial.inClass/using_condition_vars.manual.cmake.make/build/CMakeCache.txt
+is different than the directory
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week8/proj/tutorial.inClass/using_condition_vars/build
+where CMakeCache.txt was created. This may result in binaries being
+created in the wrong place. If you are not sure, reedit the
+CMakeCache.txt
+CMake Error: The source
+"/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week8/proj/tutorial.inClass/using_condition_vars.manual.cmake.make/CMakeLists.txt"
+does not match the source
+"/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week8/proj/tutorial.inClass/using_condition_vars/CMakeLists.txt"
+used to generate cache.  Re-run cmake with a different source
+directory.
+
+
+To Fix:
+-----------------------------------------------------------------------------------------
+
+Remove everything in the build directory:
+
+smagri@gyan1:/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week8/proj/tutorial.inClass/using_condition_vars.manual.cmake.make/build%rm -rf *
+
+
+As usual now do:
+cmake ../
+make

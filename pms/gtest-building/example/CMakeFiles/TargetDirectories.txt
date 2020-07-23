@@ -1,0 +1,9 @@
+/lu1/smagri/uni/subj/pms/gtest-building/example/CMakeFiles/test.dir
+/lu1/smagri/uni/subj/pms/gtest-building/example/CMakeFiles/edit_cache.dir
+/lu1/smagri/uni/subj/pms/gtest-building/example/CMakeFiles/rebuild_cache.dir
+/lu1/smagri/uni/subj/pms/gtest-building/example/CMakeFiles/runUnitTests.dir
+/lu1/smagri/uni/subj/pms/gtest-building/example/lib/gtest-1.6.0/CMakeFiles/test.dir
+/lu1/smagri/uni/subj/pms/gtest-building/example/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir
+/lu1/smagri/uni/subj/pms/gtest-building/example/lib/gtest-1.6.0/CMakeFiles/edit_cache.dir
+/lu1/smagri/uni/subj/pms/gtest-building/example/lib/gtest-1.6.0/CMakeFiles/gtest.dir
+/lu1/smagri/uni/subj/pms/gtest-building/example/lib/gtest-1.6.0/CMakeFiles/rebuild_cache.dir

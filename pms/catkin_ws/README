@@ -1,0 +1,4 @@
+To create a tag file:
+
+cd ~/catkin_ws
+rosdoc_lite -o doc -g doc/tags/a3_help.tag src/a3_help

@@ -1,0 +1,223 @@
+each entity:
+* brief description and detailed description, both optional
+  - short one liner for brief and longer for detailed
+* for methods and fns a body description is additional,
+ - consists of a concatenation of all comment blocks found within the
+    body of the method or function
+
+
+BRIEF description spans one line.
+
+DETAIED description:
+
+C like:
+
+/**
+
+.........
+
+
+*/
+
+OR
+
+/*!
+
+............
+
+*/
+
+Intermediate stars are optional.
+
+
+
+C++ like, use an additional slash, btw at least two c++ comment line.
+
+///
+///....text...
+///
+
+OR
+
+//!
+//!...text...
+//!
+
+
+
+doxygen also allows you to put the documentation of members (including
+global functions) in front of the definition.
+
+This way the documentation can be placed in the source file instead of
+the header  file. This keeps the  header file compact, and  allows the
+implementer of the members more direct access to the documentation.
+
+ As  a compromise  the brief  description could  be placed  before the
+ declaration   and  the   detailed  description   before  the   member
+ definition.
+
+
+
+
+
+If you want  to document the members of a  file, struct, union, class,
+or  enum, it  is sometimes  desired to  place the  documentation block
+after the member  instead of before. For this purpose  you have to put
+an additional < marker in the comment block. NOTE THAT THIS ALSO WORKS
+FOR THE PARAMETERS OF A FUNCTION.
+
+
+int var; /**< Detailed description after the member */
+
+int var; ///< Detailed description after the member
+         ///<
+
+OR:
+
+int var; ///< Brief description after the member
+
+
+For  functions  one  can  use  the  @param  command  to  document  the
+parameters  and  then  use  [in],  [out],  [in,out]  to  document  the
+direction. For inline documentation this  is also possible by starting
+with the direction attribute, e.g.
+
+void foo(int v /**< [in] docs for input parameter v. */);
+
+
+
+Here is an EXAMPLE of the use of these comment blocks:
+
+/*! A test class */
+class Afterdoc_Test
+{
+  public:
+    /** An enum type. 
+     *  The documentation block cannot be put after the enum! 
+     */
+    enum EnumType
+    {
+      int EVal1,     /**< enum value 1 */
+      int EVal2      /**< enum value 2 */
+    };
+    void member();   //!< a member function.
+    
+  protected:
+    int value;       /*!< an integer value */
+};
+
+
+WARNING  These  blocks  can  only  be used  to  document  members  and
+parameters. They  cannot be used  to document files,  classes, unions,
+structs,  groups, namespaces  and enums  themselves. Furthermore,  the
+structural commands  mentioned in the  next section (like  \class) are
+not allowed inside these comment blocks.
+
+
+
+//! A normal member taking two arguments and returning an integer value.
+    /*!
+      \param a an integer argument.
+      \param s a constant character pointer.
+      \return The test results
+      \sa QTstyle_Test(), ~QTstyle_Test(), testMeToo() and publicVar()
+    */
+    int testMe(int a,const char *s);
+
+//! A pure virtual member.
+    /*!
+      \sa testMe()
+      \param c1 the first argument.
+      \param c2 the second argument.
+    */
+    virtual void testMeToo(char c1,char c2) = 0;
+
+
+
+
+Similarly,  if   one  wishes  the   first  sentence  of  a   Qt  style
+documentation   block  to   automatically  be   treated  as   a  brief
+description,  one may  set QT_AUTOBRIEF  to YES  in the  configuration
+file.
+
+
+
+In the examples in the previous section the comment blocks were always
+located in front of the declaration  or definition of a file, class or
+namespace or in front or after one of its members.
+
+For documenting  a file this is  even required since there  is no such
+thing as "in front of a file".
+
+Doxygen  allows  you  to  put your  documentation  blocks  practically
+anywhere (the exception  is inside the body of a  function or inside a
+normal C style comment block).
+
+The price  you pay  for not putting  the documentation  block directly
+before (or  after) an  item is  the need to  put a  structural command
+inside the  documentation block,  which leads  to some  duplication of
+information. So  in practice  you should avoid  the use  of structural
+commands unless other requirements force you to do so.
+
+
+Structural commands (like  all other commands) start  with a backslash
+(\), or  an at-sign  (@) if  you prefer JavaDoc  style, followed  by a
+command name and one or more  parameters. For instance, if you want to
+document the class Test in the  example above, you could have also put
+the following documentation block somewhere  in the input that is read
+by doxygen:
+
+
+
+/*! \class Test
+    \brief A test class.
+
+    A more detailed class description.
+*/
+Here the special command \class is used to indicate that the comment block contains documentation for the class Test. Other structural commands are:
+
+\struct to document a C-struct.
+\union to document a union.
+\enum to document an enumeration type.
+\fn to document a function.
+\var to document a variable or typedef or enum value.
+\def to document a #define.
+\typedef to document a type definition.
+\file to document a file.
+\namespace to document a namespace.
+\package to document a Java package.
+\interface to document an IDL interface.
+
+
+
+
+
+To document a member of a C++  class, you must also document the class
+itself.  The  same  holds  for  namespaces. To  document  a  global  C
+function,  typedef, enum  or  preprocessor definition  you must  first
+document the  file that  contains it  (usually this  will be  a header
+file, because that  file contains the information that  is exported to
+other source files).
+
+Attention
+Let's repeat that, because it is often overlooked: to document global objects (functions, typedefs, enum, macros, etc), you must document the file in which they are defined. In other words, there must at least be a
+/*! \file */ 
+or a
+/** @file */ 
+line in this file.
+
+Here is an example of a  C header named structcmd.h that is documented
+using structural commands:
+
+
+When you  place a comment  block in a file  with one of  the following
+extensions .dox, .txt,  or .doc then doxygen will hide  this file from
+the file list.
+
+If you have a  file that doxygen cannot parse but  still would like to
+document it, you can show it as-is using \verbinclude, e.g.
+
+/*! \file myscript.sh
+ *  Look at this nice script:
+ *  \verbinclude myscript.sh
+ */

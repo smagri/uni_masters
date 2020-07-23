@@ -1,0 +1,342 @@
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+#include <thread>
+#include <mutex>
+#include <vector>
+
+// non-system include files
+//
+#include "dataFusion.h"
+#include "DataFusionInterface.h"
+#include "sonar.h"
+#include "radar.h"
+#include "ranger.h"
+
+
+using namespace std;
+
+
+//#define DEBUG
+
+/// Declare the structure that will contain the sensor data buffer & mutex lock.
+struct DataBuffer{
+
+  //string name; */
+  //vector<double> buffQue_; ///< data buffer is a queue/FIFO */
+  queue<double> buffQue_; ///< data buffer is a queue/FIFO */
+  mutex buffMutex_; ///< mutex lock for synconised access to data buffer */
+};
+
+
+//void processBuffer(void);
+//void fillBuffer(DataBuffer &dataBuff, int rangerNum);
+
+void processBuffer(vector<DataBuffer> &dataBuff, DataFusion df1){
+
+  /// Process/Fuse buffer data of all rangers.
+
+  while(true){
+
+    // Process data buffer one.
+    dataBuff[0].buffMutex_.lock();
+    
+    fprintf(stderr, "dbg: processBuffer: processBuffer() called, in lock0.\n");
+
+    fprintf(stderr, "dbg: processBuffer: before unlock of lock0.\n");
+    
+    dataBuff[0].buffMutex_.unlock();
+
+    fprintf(stderr,"dbg: processBuffer: out of lock0 before sleep() called.\n");
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+
+    
+    // Process data buffer two.
+    dataBuff[1].buffMutex_.lock();
+
+    fprintf(stderr, "dbg: processBuffer: processBuffer() called, in lock1.\n");
+
+    fprintf(stderr, "dbg: processBuffer: before unlock of lock1.\n");
+
+    
+    dataBuff[1].buffMutex_.unlock();
+    
+    fprintf(stderr,"dbg: processBuffer: out of lock1 before sleep() called.\n");
+    std::this_thread::sleep_for(std::chrono::seconds(3));
+
+  }
+  
+  
+};
+
+void fillBuffer(vector<DataBuffer> &dataBuff, int rangerNum, DataFusion df1){
+
+
+  while(true){
+    dataBuff.at(rangerNum).buffMutex_.lock();
+
+    vector<vector<double> > dataVec;
+    int numSamples;
+
+
+    fprintf(stderr, "dbg: fillBuffer: fillBuffer(%d) called, in lock%d.\n",
+	    rangerNum, rangerNum);
+    
+    fprintf(stderr, "dbg: fillBuffer: rangerNum=%d\n", rangerNum);
+
+    fprintf(stderr, "dbg: fillBuffer: readRangeData() called:\n");
+    df1.readRangeData();
+    
+    fprintf(stderr, "dbg: fillBuffer: getRawRangeData() called:\n");
+    dataVec = df1.getRawRangeData();
+
+    // put into queue somehow????
+    //
+    // dataVec[rangerNum][j];
+
+    //for [rangerNum][0 to dataVec[rangerNum].size()]
+    for (int j=0; j<dataVec[rangerNum].size(); j++){
+      dataBuff.at(rangerNum).buffQue_.push(dataVec[rangerNum][j]);
+    }
+    //dataBuff.at(rangerNum).buffQue_.push(dataVec[rangerNum][j]);
+    
+    // for (int j=0; j<dataVec[rangerNum].size(); j++){
+    //   fprintf(stderr,
+    // 	      "dbg: fillBuffer: ataBuff.at(rangerNum).buffQue_.front()=%f\n",
+    // 	      dataBuff.at(rangerNum).buffQue_.front());
+    // }
+    for (int j=0; j<dataVec[rangerNum].size(); j++){
+      fprintf(stderr,
+     	      "dbg: fillBuffer: ataBuff.at(rangerNum).buffQue_.front()=%f\n",
+     	      dataBuff.at(rangerNum).buffQue_.front());
+    }
+    // need to remove last elements of rawRangeDataVV_[m][n]  
+    rf1.at(rangerNum).setClearRawDataVector();
+
+    
+    //   // numSamples = df1.getRangers.at(rangerNum)->getHdwFixedNumSamples();
+    //   numSamples = 1; // need to make this generic
+    //   for (int n=0; n<numSamples; n++){
+    // 	fprintf(stderr, "dbg: fullBuffer: buffQue_[%d][%d]=%f\n", 
+    // 		rangerNum, n, dataVec[rangerNum][n]);
+    //   }
+    // }
+
+    fprintf(stderr, "dbg: fillBuffer: before unlock of lock%d.\n", rangerNum);
+	
+    dataBuff[rangerNum].buffMutex_.unlock();
+
+    // Does this have to be condition_variable instead of sleep.
+    //
+    fprintf(stderr, "dbg: fillBuffer: out of lock%d.\n", rangerNum);
+    //
+    //std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+    std::this_thread::sleep_for(std::chrono::seconds(2));
+    
+  } // end:while(true)
+  
+};
+
+
+int main(int argc, char *argv[]){
+
+  char tmpCstr[12]; // temporary c string for conversions of cppString= cString
+  string tmpCppStr = "";
+  string port; // Connection port of sensor
+  int baud; // Connetion baud rate of sensor
+  double angularRes; // Laser Angular Resolution
+  double fov; // sensor Field Of Vew
+  string fusionMethod; // raw data processing/fusion method
+  int numSamples;
+    
+  // 1. Initialise the sensors: laser, radar and sonar.
+  //
+  // Uses contructors to create objects of class.
+  //
+  Radar r1("RAD-001", 115200, "/dev/ttyACM1");
+  Sonar s1("SONX-001", 115200, "/dev/ttyACM2");
+
+  // Instantiate RangerFusion class, create object called df1, for use
+  // later.
+  //
+  DataFusion df1;
+    
+
+  // Testing PURE  virtual fn in  ranger.h.  This works, that  is, can
+  // _not_ instansiate this  object, only if at least  one function in
+  // ranger.h is virtual fnName() = 0;
+  //
+  //Ranger rangerObj;
+
+  
+  // 2. Get hardware specific fixed parameters or the sensors.
+  //
+  fprintf(stderr, "\nGet Specific Fixed Hardware Parameters:\n");
+  //
+  fprintf(stderr, "\nRadar:\n");
+  fprintf(stderr, "Field Of View=%f deg\n", r1.getHdwFixedFOV());
+  fprintf(stderr, "Minimum Range=%f m\n", r1.getHdwFixedRangeMin());  
+  fprintf(stderr, "Maximum Range=%f m\n", r1.getHdwFixedRangeMax());
+
+  fprintf(stderr, "\nSonar:\n");
+  fprintf(stderr, "Field Of View=%f deg\n", s1.getHdwFixedFOV());
+  fprintf(stderr, "Minimum Range=%f m\n", s1.getHdwFixedRangeMin());  
+  fprintf(stderr, "Maximum Range=%f m\n", s1.getHdwFixedRangeMax());
+  
+
+
+  // 3. Sets configurable sensor parameters, specified by the user.
+  //
+  //
+#ifdef DEBUG
+  fprintf(stderr, "\nEnter sensor paramters...: "
+	  "(if invalid values are entered defaults are used)\n\n");
+
+  // Perhaps use <cr> to choose defaults???
+  //
+  //
+  // fprintf(stderr, " Number of samples in raw data vector?...");
+  // fscanf(stdin, "%d", &numSamples);
+  // l1.setConnectnBaud(numSamples);
+  // s1numSamples = numSamples;
+
+  // Also, may need to let user set fov_, rangeMin_ & rangeMax_.
+  // Perhaps even the sampling rate???
+
+  fprintf(stdout, "Radar: *************************************************");
+  fprintf(stdout, "**********************************\n");
+
+  fprintf(stderr, "\n"); // for readability
+  fprintf(stdout, " Serial Port (/dev/ttyACMX where X=0,1,2)?...");
+  fscanf(stdin, "%s", tmpCstr);
+  port = tmpCstr;
+  r1.setConnectnPort(port);
+  
+  fprintf(stderr, " Baud Rate (115200 or 38400)?...");
+  fscanf(stdin, "%d", &baud);
+  r1.setConnectnBaud(baud);
+
+  fprintf(stderr, " Field Of View (20deg or 40deg)?...");
+  fscanf(stdin, "%lf", &fov);
+  r1.setConfigFOV(fov);
+  
+  fprintf(stderr, "\ndbg: Model set to %s\n", r1.getConnectnModel().c_str());
+  fprintf(stderr, "dbg: Baud set to %d\n", r1.getConnectnBaud());
+  fprintf(stderr, "dbg: Port set to %s\n", r1.getConnectnPort().c_str());
+  fprintf(stderr, "dbg: Field Of View is set to %f degrees\n",
+	  r1.getHdwFixedFOV());
+  fprintf(stderr, "\n");
+  
+  fprintf(stdout, "Sonar: *************************************************");
+  fprintf(stdout, "**********************************\n");
+
+  fprintf(stderr, "\n");
+  fprintf(stdout, " Serial Port (/dev/ttyACMX where X=0,1,2)?...");
+  fscanf(stdin, "%s", tmpCstr);
+  port = tmpCstr;
+  s1.setConnectnPort(port);
+  
+  fprintf(stderr, " Baud Rate (115200 or 38400)?...");
+  fscanf(stdin, "%d", &baud);
+  s1.setConnectnBaud(baud);
+
+  fprintf(stderr, "\ndbg: Model set to %s\n", s1.getConnectnModel().c_str());
+  fprintf(stderr, "dbg: Baud set to %d\n", s1.getConnectnBaud());
+  fprintf(stderr, "dbg: Port set to %s\n", s1.getConnectnPort().c_str());
+  fprintf(stderr, "\n");
+
+
+  fprintf(stdout, "Specify Fusion Method, common to all sensors: **********");
+  fprintf(stdout, "**********************************\n");
+  
+  fprintf(stderr, "\n");
+  fprintf(stderr, " Fusion Method (min/max/avg)?...");
+  fscanf(stdin, "%s", tmpCstr);
+  fusionMethod = tmpCstr;
+  df1.setFusionMethod(fusionMethod);
+
+#endif
+
+  // 4. Continuously calls the RangerFusion class, and obtains the
+  // fused data output.
+
+  //fprintf(stderr,"dbg: main: TERMINATE before while loop,for TESTING.\n");
+  //return 0;
+
+  vector<Ranger *> rangers;
+  rangers = {&r1, &s1};
+
+  cout << endl;
+  cout << "dbg: main: rangers :" << endl;
+  cout << "dbg: main: &r1=" << rangers.at(0) << endl;
+  cout << "dbg: main: &s1=" << rangers.at(1) << endl;
+
+  df1.setRangers(rangers);
+
+  //fprintf(stderr, "dbg: main: readRangeData() called:\n");
+  //
+  //df1.readRangeData();
+
+  
+  // fprintf(stderr, "dbg: main: getRawRangeData() called:\n");
+  // //
+  // vector<vector<double> > retVec;
+  // //
+  // retVec = df1.getRawRangeData();
+  // //
+  // for (int m=0; m<rangers.size(); m++){
+  //   numSamples = rangers.at(m)->getHdwFixedNumSamples();
+  //   for (int n=0; n<numSamples; n++){
+  //     cout << "dbg: main: rawRangeDataVV_[" << m << "]" << "[" << n << "]="
+  //  	   << retVec[m][n] <<endl;
+  //   }
+  // }
+
+
+  // Threaded sensor/ranger data processing.
+  //
+  
+  // Create the sensor/ranger data  buffers which contain their own mutex.
+  //DataBuffer dataBuff[rangers.size()]; // buffers are FIFO's or c++ queue's.
+  //DataBuffer dataBuff0;
+  
+  // buffers are FIFO's or c++ queue's.
+  vector<DataBuffer> dataBuff(rangers.size());
+
+  fprintf(stderr, "dbg: main: rangers.size()=%ld\n", rangers.size());
+
+  // Start all the threads
+  //
+  thread fillBuffer0Thread(fillBuffer, ref(dataBuff), 0, ref(df1));
+  //thread fillBuffer1Thread(fillBuffer, ref(dataBuff), 1, ref(df1));
+  thread processBufferThread(processBuffer, ref(dataBuff), ref(df1));
+
+
+  // Syncronise threads,  that is, wait  for _all_ threads  to finish,
+  // they wont in this case though  as the threads have infinate loops
+  // in them.
+  fillBuffer0Thread.join();
+  //fillBuffer1Thread.join();
+  processBufferThread.join();
+  
+
+  // Loop forever until control C recieved from command line.
+  //
+  //while(1){
+  //
+  // for loop for testing:
+  for (int i=0; i<1; i++){
+    
+    // Call RangerFusion class to return a fused ranger data vector.
+    // vector<double> fusedData = l1.getFusedRangeData();
+    //
+    //vector<double> fusedRangeData = df1.getFusedRangeData();
+    
+    // for(int i=0; i<fusedRangeData.size(); i++){
+    //   cout << "dbg: main: fusedRangeData(" << i << ")="
+    //  	   << fusedRangeData.at(i) << endl;
+    // }
+  }
+  
+  return 0;
+}

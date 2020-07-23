@@ -1,0 +1,14 @@
+7sep2017
+
+Type atomic can be applied to  any simple type, like int float bool...
+When used on a varible access  to that variable is atomic.  Also note,
+in atomic/main.cpp cout  is !locked, thus delta var is  atomic but the
+output to the screen is not.
+
+noAtomicOrMutex:
+* cout is !locked again so output to screen is not atomic
+* delta var is !atomic so you get eg:
+var val is 2299
+var val is 2299
+var val is 2299
+var val is 2300 - we have phantom var++ here

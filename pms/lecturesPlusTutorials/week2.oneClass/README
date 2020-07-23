@@ -1,0 +1,11 @@
+28mar2017
+
+./tutorial directory here is same as in week1/proj/withCMake/tutorial,
+so I have renamed it here as tutorial.week1clone
+
+Need to fix wrt CMakeLists.txt as we are now in a new directory, this
+is just called tutorial, in the current directory.
+
+
+
+

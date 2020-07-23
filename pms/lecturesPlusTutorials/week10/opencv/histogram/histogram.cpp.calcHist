@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <opencv2/opencv.hpp>
+
+#include "opencv2/highgui/highgui.hpp"
+//#include "opencv2/imgcodecs.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+
+
+
+// so no need the prefix cv class member fn's with cv::
+using namespace cv;
+
+
+
+int main(int argc, char** argv ){
+
+  
+    if ( argc != 2 ){
+        printf("usage: DisplayImage.out <Image_Path>\n");
+        return -1;
+    }
+
+    
+    Mat image; // image is a matrix
+    
+    // Load the image in greyscale.
+    image = imread(argv[1], 0);
+
+    // vector<Mat>
+
+    // calcHist() calculates a histogram of one or more arrays.  You
+    // call calcHist() foreach of your channels.
+    //
+    // Calculate the frequency of pixels in the range 0-255.
+    //
+    // image is the image of uint8 or float32
+    //
+    // number of channels = 0, as greyscale
+    //
+    // mask, allowes you to compute a histogram for a particular
+    // region of an image, None indicates the whole image is
+    // used. None==0?
+    //
+    // histSize = number of bins foreach channel
+    //
+    // ranges = range of possible pixel values foreach channel
+    // 
+    //calcHist(image, 1, 0, 0, 256, [0,256]);
+    //calcHist(image, nimages, channels, mask, hist, dims, histSize,
+    //ranges, uniform/accumilate)
+
+    // Show the plotting graph of an image.
+    //plot(histogram);
+      
+    
+    if ( !image.data ){
+      printf("No image data \n");
+      return -1;
+    }
+    
+    namedWindow("Display Image", WINDOW_AUTOSIZE );
+    imshow("Display Image", image);
+    
+    waitKey(0);
+    
+    return 0;
+}
+

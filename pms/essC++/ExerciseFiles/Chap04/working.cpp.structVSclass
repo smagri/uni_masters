@@ -1,0 +1,75 @@
+// working.cpp by Bill Weinman <http://bw.org/>
+#include <cstdio>
+using namespace std;
+
+
+// c++ objects are based on c structures.
+//
+
+
+// struct and class are identical, with one differece.  struct members
+// default to public and members of a class default to private.  So A
+// becomes:
+// struct A{
+// public:
+//   int i1;
+//   int i2;
+//   int i3;
+// };
+
+
+// using struct's
+//
+// this wrks:
+// struct A{
+//   int i1;
+//   int i2;
+//   int i3;
+// };
+// this does NOT wrks
+// struct A{
+// private:
+//   int i1;
+//   int i2;
+//   int i3;
+// };
+
+
+// using class's
+//
+// this does NOT wrks
+// class A{
+//   int i1;
+//   int i2;
+//   int i3;
+// };
+// this wrks:
+class A{
+ public:
+   int i1;
+   int i2;
+   int i3;
+ };
+
+
+// c++ classes are based on c structures, except class member default to
+// private and struct members default to public.
+
+// Good practice to use struct when the struct will only have data
+// members, use class when you need function members.
+
+
+int main(int argc, char ** argv){
+
+  // in c++ object a of type A, a c style structure.
+  // in c a is an instance of the structure named A.
+  A a = {1, 2, 3};
+  A *ptr2a = &a;
+  
+  fprintf(stderr, "access with object: i1=%d, i2=%d, i3=%d\n",
+	  a.i1, a.i2, a.i3);
+  fprintf(stderr, "access with ptrs: i1=%d, i2=%d, i3=%d\n",
+	  ptr2a->i1, ptr2a->i2, ptr2a->i3);
+  
+  return 0;
+}

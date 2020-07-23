@@ -1,0 +1,123 @@
+Important points:
+This is about c style array and strings, not the same as STL class arrays
+and STL class strings - we'll deal with STL classes later.
+int ia[3] = {1, 2, 3}, initialise ia using an initialiser list.
+char str[] = {'1', '2', '3', '\0'}; is equivalent to char str[] = "123"
+Range based for loop.
+Arrays are stored contiguously.
+
+
+Transcript:
+
+- This lesson is about C-style Arrays and Strings. There's also as STL
+  class called Array and an STL class called String so this can lead
+  to some confusion. This lesson is not about the STL classes, I'll
+  cover those later in the STL chapter. C-Arrays and C -Strings are
+  fundamental types in C++ and are very different than their
+  corresponding STL classes. This lesson is about the C-Array and
+  C-String fundamental types. An array is a fixed sized container for
+  elements with a common type.
+
+This is a definition for an array of integers with room for 5
+values. At this point the array is uninitialized so each of the 5
+integer values are undefined. Arrays are indexed with integer
+values. The first element is always number 0. So an array with the
+size of 5 will have elements numbered 0 through 4. The value in the
+square brackets is the index, this means that we're assigning a value
+to the element at index 0. This assigns the value 1 to the first
+element of the array.
+
+Array elements can also be accessed as if the array were a
+pointer. This statement has exactly the same effect as the previous
+statement. This is a very common practice so you'll need to recognize
+it when you see it. This defines an integer pointer and assigns the
+address of the array to the pointer. Notice that you don't need the
+address of operator to get an arrays address. This is because an array
+may be accessed as if it were a pointer. This assigns the value 2 to
+the first element of the array.
+
+Because the pointer was assigned to the array, it is pointing to the
+first element. You can increment the pointer and it will point to the
+second element. In C++ pointers are strongly typed so they know the
+size of what they point to. So when you increment a pointer, it always
+increments by the size of the object it's defined with. So this
+assigns the value 3 to the second element of the array. This is
+another common technique in C++, here we're incrementing a pointer and
+using it at the same time.
+
+It's just a shortcut for the separate increment and assignment of the
+previous two statements. You may also initialize an array using an
+initializer list. This assigns the value 1, 2, 3, 4 and 5 to the 5
+elements in the array. This is a new feature in C++11 so it may not
+work on older compilers. A C-String is a special case of an array,
+again, this is different than the STL string class. The C-String is a
+fundamental type. To illustrate, let's look at an example. Here in
+Xcode I've opened a Working copy of working.cpp.
+
+In fact, a string is just a special case of an array of
+characters. So, if we define a string like this, then we can print it
+with a printf statement, the %s in the format string for printf means
+that it's a string that we're printing, and we'll put the string there
+in our output so when I go ahead and Build and Run, it says, String
+is: string. So in C++ a C-String is simply an array of characters
+terminated with a 0.
+
+This is sometimes called an null-terminated string. So you can access
+the individual characters just as you would in an array. Now, I could
+also define this string like this and get exactly the same
+result. This is a C-String, so a string of characters inside of quotes
+is treated just like an array, it actually is an array of those
+characters terminated with a 0. And so when I Build and Run this, we
+get exactly the same result. Now you can access these individual
+characters in this array just as you would in any array.
+
+So, if I use a for( here and we'll learn more about for( a little bit
+later here, but I can say for(int i = 0; s[i]) so I'm subscripting the
+array, I'm looking at the individual element of the array that's
+indexed by the i integer variable, and we'll increment i again, you'll
+get the details of the for loop a little bit later. Some of these
+concepts are just so circular that we have to use some of them before
+we really get into the details of them but we'll get loops a little
+bit later in this chapter.
+
+But for now, understand that we're simply looping through the array
+and looking at each individual character. So when I print this, I'm
+going to have to change this to look at a character instead, I'll say
+*char is %c and I don't want s anymore, I want s[i]); and so that will
+show us the character that's at the index of the integer i, and I go
+and Run this and we see we get each of the individual characters out
+of that array of characters because the string is actually just in an
+array of characters.
+
+You can also use a pointer instead of an integer to look at the
+individual elements of the array. So I can say (char * c; ) because a
+string is an array of characters. I'll say cp for a C-Pointer and I'll
+initialize it with the first element of the array, remember the array
+by itself can be used as if it were a pointer to the first element of
+the array and then, well, what's pointed at by cp is not equal to 0
+and so this is a shortcut for that, and then increment the pointer
+like this.
+
+And now, I can simply look at what's pointed at by the pointer and we
+get exactly the same result again. You can also use a range based loop
+which is a new construct in C++11 to look at the array. And so we'll
+just inside the for(, we'll simply say, char c : and s ). And now we
+just want to look at c); like that. And I can Build and Run and we get
+exactly the same results but you'll notice that there's an extra
+element down here which is the null, because the range based for loop
+is actually looking at the entire array.
+
+It's not treating that null as if the end, it's simply looking at the
+size of the array. So I can break out of the loop like this and again
+we'll learn about break when we learn about loops a little bit
+later. But that simply breaks out a loop when it sees the null
+terminator at the end of the string. So I Run this and we have our
+result, s-t-r-i-n-g. So the combination of C-Arrays and Pointers is
+really powerful and really common in C++. An array is a structure of
+variables of the same type stored contiguously and indexed by an
+integer value.
+
+Because the array is guaranteed to be stored contiguously, it's also
+easy to iterate with pointers and C++ syntax lends itself well to this
+usage. So we'll go ahead and delete our working copy, and run Clean to
+reset the workspace for the next lesson.

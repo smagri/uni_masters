@@ -1,0 +1,150 @@
+Template:
+
+- A C++ program is basically a collection of statements and
+  expressions, usually organized into functions and classes. In this
+  lesson, I'm going to show you the general anatomy of a C++
+  program. Please understand that this is not intended to be
+  exhaustive. We'll be going over each of these concepts in more
+  detail throughout the course. For now, it's just important that you
+  have a general overview of how these things work. Here in Xcode,
+  I've opened a working copy of hello.cpp. The first line of this
+  program, you'll notice these two slash marks, followed by some text.
+
+This is called a comment. A comment is something in the source code
+that is not actually interpreted by the compiler, in this case. And so
+it's ignored. There are two styles of comments in C++. This is the
+line-oriented comment. Any time I put in two slashes, like for
+instance, if I put in two slashes down here, and I can type whatever I
+want, and it doesn't actually change how the code works. So I can save
+that and I can compile and run it.
+
+And you see that it runs the code. Now, if I take this comment out and
+save it and compile and run it, you see it works exactly the
+same. Now, as I mentioned, there's two styles of comments in C++. That
+first style is with the two slashes. Technically speaking, whenever
+you put in two slashes and some text, the comment extends to the end
+of the line and the beginning of the next line starts code again. If I
+wanted to have multiple lines of comments using the slashes, I would
+have to put two slashes at the beginning of each line, and those would
+work as comments.
+
+Another common way to have multi-line comments in C++ is to use one
+slash followed by an asterisk to introduce the comment. Now you notice
+that all of the code in my program has turned to green because it's
+all being ignored. It's all part of the comment. I can terminate the
+comment by putting in an asterisk and another slash, and now
+everything between the slash asterisk and the asterisk slash is
+considered a comment. I can put in paragraphs of text here.
+
+When I compile and run, you see the program still works exactly as
+intended. That's how comments work in C++. Generally speaking, a C++
+program is a series of tokens. These tokens are separated by white
+space. The white space can be simply a space, like it is here, or it
+can be new lines. You can put these things on separate lines, and
+they'll still work exactly the same.
+
+It's just harder to read. So we tend to think of things in terms of
+units. This whole unit here, this function definition, is like all one
+thing. So we tend to put it all on one line. But it doesn't actually
+have to be that way. The compiler doesn't care. Before we get to the
+main function, there's a couple other things here. You'll notice this
+line that starts with the pound sign. This is actually an exception to
+the rule that I just gave you about white space, because this is a
+directive for the preprocessor, this #include.
+
+We'll cover the preprocessor in a lot of detail later on in the
+course. But for now, know that, when this #include happens, it
+violates a lot of the rules of C++ because it's not actually C++, it's
+a preprocessor directive. There's no semicolon at the end of it, and
+the new line at the end, that line separator, is actually
+significant. So all of this must be on one line by itself. #include,
+with no space between the pound sign and the word "include," and then
+a space, and then the name of a file inside of either quote marks or
+angle brackets, in this case.
+
+Angle brackets and quote marks mean different things. Again, we'll get
+into the details later. But what this line does is, it includes a
+standard library file, a header file. This tells the preprocessor to
+take that file and include it in this source code file as if I had
+typed it. It's hundreds of lines of code, so I don't want to type
+it. Simply saying, "Include cstdio" like that, it tells the
+preprocessor, "Do this for me "so I don't have to do it," and that's
+actually pretty cool.
+
+The next line, "using namespace std," simply tells the compiler that
+we're using a namespace with this code. That's important because we're
+using a standard library file. It simply means that we don't have to,
+whenever we call a standard library function, put std like this in
+front of it. It tells the compiler to look in that namespace for
+functions if it doesn't find them in the current translation
+unit. Again, that's a shortcut, and we'll cover that in a lot more
+detail later on when we talk about namespaces. But this is all part of
+a normal standard minimal C++ program.
+
+So you'll see this a lot, and now you have a general idea of what it
+does. The next thing we see here is the main function. This is the
+main entry point for any C++ program. There always must be a main
+function, and there must be one and no more than one. The main
+function is declared like this, with these two arguments. Sometimes
+you'll see three arguments. Sometimes you'll see no arguments. In
+fact, this is perfectly legal like that. I tend to include these
+standard arguments just because that's the standard way of doing it.
+
+It's very common. We won't actually even be using them, but they're
+very commonly there and you need to know what they look
+like. Sometimes you'll see it done like this instead, with only one of
+these, and a couple of square brackets. That is also common and you'll
+see it that way sometimes. Again, these arguments are just normally
+there. We're not actually going to use them. I put them there for
+completeness. What they're for is to get arguments from the command
+line, when you're running this as an actual command line file, and
+we're going to be running it inside the IDE here.
+
+Or, if you're on a PC, you'll be running at the command line, but you
+won't be putting arguments on the command line. Again, we'll talk
+about all this in more detail later on in the course. This is just an
+overview. Then we have a line of code. This line of code, here on line
+seven, that tells us to print this string down here in our
+console. Then you see "return 0." Again, this is required. A main
+function must return a value, and it must return an integer value
+because, you see, it's declared as an integer function.
+
+And zero, in this case, means success. The standard thing for a main
+program to return is zero. Sometimes you'll see them return something
+else to indicate an error, but all of our main functions are going to
+return zero. Just another note: you'll see this done a couple of
+different ways, and I'll talk about this in more detail later on in
+this chapter. This puts function is a standard library function that
+puts a string in the console and a new line at the end of it. So that
+where you see this "Program ended with exit code: 0," that happens on
+the line after it so you can see your output without something else
+jammed up against the end of it.
+
+Sometimes you'll see this done with printf, which looks like this. It
+does exactly the same thing. I'll go ahead and run this. You see now
+we have program ended on the same line as the "Hello, World," because
+printf doesn't put in a new line. So if I want the new line, I have to
+do that. Save and run. And there we have that result. Another way
+you'll often see this is with Cout. I'm going to talk about this in a
+lot more detail later on in this chapter. You notice, first I need to
+change cstandardio to iostream.
+
+Then I can take out the printf function altogether and I can say, cout
+and with two left angle brackets, like that. Again, I need to include
+this new line. If I don't, it won't do it for me. I'll save and run,
+and you see we get exactly the same result. Cout is a C++ class that
+operates in a very complex way to send stuff to the output stream,
+which is what we're seeing here on our console.
+
+I tend to prefer to use the standard functions, like puts and
+printf. They're smaller, lighter weight, and faster, and work just as
+well for our purposes. I'll talk about the difference and the
+distinction, why I make that choice, later on in this chapter. This is
+the basic form of a C++ program. As I said, we'll go into much more
+detail about all of these topics as we continue this course. But for
+now, it's just good to know how this is all structured and what these
+minimal required elements are.
+
+Let's delete our working copy, and I'm going to run Clean, and I'll
+clear the console, as well, to prepare us for the next lesson.
+

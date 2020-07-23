@@ -1,0 +1,68 @@
+random/build%./random
+main.cpp, in main() of class Random:
+
+(seed=1490346405, numRands2gen=10)
+randNumRay() called:
+returns from genRandNum(), i=10
+random num 0=9
+random num 1=8
+random num 2=7
+random num 3=6
+random num 4=5
+random num 5=10
+random num 6=1
+random num 7=7
+random num 8=9
+random num 9=6
+
+randNumRay() called:
+(seed=10, numRands2gen=7)
+returns from genRandNum(), i=7
+random num 0=6
+random num 1=9
+random num 2=9
+random num 3=6
+random num 4=9
+random num 5=8
+random num 6=6
+
+randNumRay() called:
+(seed=100, numRands2gen=35)
+returns from genRandNum(), i=35
+random num 0=1
+random num 1=2
+random num 2=10
+random num 3=5
+random num 4=7
+random num 5=4
+random num 6=6
+random num 7=1
+random num 8=2
+random num 9=2
+random num 10=1
+random num 11=9
+random num 12=8
+random num 13=8
+random num 14=1
+random num 15=2
+random num 16=1
+random num 17=9
+random num 18=1
+random num 19=4
+random num 20=5
+random num 21=2
+random num 22=3
+random num 23=6
+random num 24=7
+random num 25=4
+random num 26=2
+random num 27=8
+random num 28=8
+random num 29=5
+random num 30=7
+random num 31=9
+random num 32=8
+random num 33=6
+random num 34=5
+*** stack smashing detected ***: ./random terminated
+Abort (core dumped)

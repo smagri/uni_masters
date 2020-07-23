@@ -1,0 +1,3 @@
+// gobal variable needed by publisher node and subscriber node.
+
+cv::Mat image;

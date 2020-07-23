@@ -1,0 +1,81 @@
+// working.cpp by Bill Weinman <http://bw.org/>
+#include <cstdio>
+using namespace std;
+
+// class definition is usually in .h file
+//
+// fn definitions in .cpp file.
+//
+// use this code in main.cpp
+
+class A{
+  
+  // classes by  default have member  data that are private:,  but can
+  // explicitly  display  this,  is  convention.   Thus  they  can  be
+  // accessed by their class member  functions but other classes can't
+  // access them.
+  int ia;
+
+  // Accessor and Gettor's are setxxx() and getxxx() fns.
+  //
+  // These are  public member fns that  are used to set/get  values of
+  // the private member data.
+public:
+  // void setvalue(const int a){
+  //   ia=a;
+  // }
+  // int getvalue(){
+  //   return ia;
+  // }
+  void setvalue(const int a);
+
+  // const AND non-const fn's can co-exist
+  int getvalue();
+  int getvalue() const;
+
+  
+};
+
+void A::setvalue(const int a){
+  ia=a;
+}
+
+int A::getvalue() const{
+  // const safe method
+  // const safe => can use it with a const variable, like b later.
+  // defined as const means can't change value of any variable in here.
+  // is immutable(can't change data) vs mutable fn(can change data).
+
+  fprintf(stderr, "imutable getter, or const getter\n");
+  
+  return ia;
+}
+
+int A::getvalue(){
+  // const safe method
+  // const safe => can use it with a const variable, like b later.
+  // defined as const means can't change value of any variable in here.
+  // is immutable(can't change data) vs mutable fn(can change data).
+
+  fprintf(stderr, "mutable getter\n");
+  
+  return ia;
+}
+
+
+int main(int argc, char ** argv){
+
+  A a;
+  const A b = a; // b can't be modified, that is it is a const variable
+  a.setvalue(42);
+  fprintf(stderr, "value is %d\n", a.getvalue());
+  // Can used getvalue() with a const or non-const variable.
+  //
+  // But to use a const variable you must have a const fn to use on it.
+  //
+  // don't know why b is 4196896 in value...no time left of this.
+  // However, correct getvalue fn is called.
+  fprintf(stderr, "value is %d\n", b.getvalue());
+    
+  return 0;
+}

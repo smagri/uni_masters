@@ -1,0 +1,19 @@
+// What is the pitfall of this class???,
+// needs definition of constructor and destructor
+
+// Class functions or methods(aka member functions) are defined here?
+
+
+// Access specifier 'public:', these variables and functions are
+// available to all other classes that inherit(?)from this class.
+//
+// Access specifier 'private:', these variables and functions are only
+//  available to member functions/class methods.
+//
+// Or for those that inherit from the class and even main.cpp, so
+// basically anything that includes rectangle.h
+
+// What problem does this modification solve:
+// initialises the private member data of class???
+
+// Any other problems???

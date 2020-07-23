@@ -1,0 +1,54 @@
+Important Points:
+Fn signature(uniqute fn id) inclueds the return type, argument types
+as well as fn name.
+// different fns with the same name, but different signature.
+// signature=return type, argument type, fn name
+//
+// In c this is not possible as name of fn
+
+
+
+Transcript:
+
+- In C++ it's possible to have different functions with the same
+  name. The compiler selects which function to call based on the
+  entire function's signature, not just the function name. Here I have
+  a working copy of func-overload.cpp from Chapter Two of the exercise
+  files. In C++, the function signature consists of the return type,
+  the function name, and the list of argument types. For example, here
+  are three functions all with the same name, "volume".
+
+The first one is called "volume", it returns a double and it has one
+double as an argument. The second one is called "volume", it returns
+double and it has two doubles as its arguments. And the third one is
+called "volume", it returns double and it has three doubles as its
+arguments. So, respectively, the first one calculates and returns the
+volume of a cube. The second one, the volume of a cylinder. The third
+one, the volume of a cuboid. And then I call each of these with
+printf, and you'll notice also that each of these has a printf in
+them.
+
+So, the first thing to print will be the "printf" from the function,
+because the function actually gets called first before "printf", so
+that its return value can be passed to "printf". So you'll notice when
+we run this, that first it'll say "cube of", and I believe this gets
+called with a 2.0. And then it'll say "volume of a 2x2x2 cube is", and
+it'll give the result. That'll happen for all three of these, and I'm
+gonna go ahead and build and run, and we see "cube of 2.0", "volume of
+a 2x2x2 cube is 8".
+
+And, "cylinder of 2x2", and the result is 25.133, and the cuboid, the
+result is 24.0. So, there's some rules to this. The return type of a
+function cannot be its only distinguishing factor. The const-ness of
+the return type can be though and often is. And there are rules about
+how types are promoted to distinguish parameters. So it's always a
+good idea to test your overloaded functions.
+
+This is one significant area where C++ differs from C. In C, a
+function is distinguished only by its name, in this example, "would
+not compile". And of course, you cannot overload a function where the
+only distinction in its signature is the return type. In C++,
+functions are distinguished by their entire signature. So it's
+possible to have multiple functions with the same name that operate
+with different parameters, and with different return types.
+

@@ -1,0 +1,66 @@
+ImportantPoints:
+
+Default is Call by Value, as in C funtions.
+Call by reference can be implemented though, using ponters.
+&a, & is the reference operator to a and aka the address operator to
+a.  In c++ the reference type can be used to implement call by
+reference.
+
+Function signatures  is fn name,  parameter types, return  value type:
+functions  have same  names but  the  variables or  return values  are
+different types, so  the fn signature is different, thus  the fn's are
+different.
+
+
+Transcript:
+- Functions are fundamental to C++. Even in C++'s Object-Oriented
+programming model, functions are the basis of class methods. All code
+in a C++ program happens in functions starting with the main
+function. A function is a block of code that maybe called by and may
+return a value to other code. This is analogous to procedures, or
+subroutines in other programming languages. Functions allow you to
+generalize and marginalize your code by creating containers for
+logical subsets of code and by allowing code to be reused.
+
+Function arguments are passed to functions by value, so when you call
+a function and pass it a variable, a copy of the variable is passed to
+the function. If the function then changes that value, the caller's
+copy remains unchanged. For example, here we have a variable 'a' with
+a value '1'. This variable is passed to a function 'f'. After the
+function returns, we print the value. Here's the function 'f', which
+takes that value and assigns is to a local variable also named 'a',
+but this is absolutely a different value.
+
+It's in a different scope, and is separate in every way. The value '1'
+is copied and passed to the function, so when 'a' is incremented in
+the function, only its local copy is effected. The caller's copy
+remains unchanged, and 'printf' will print the number '1'. The
+alternative to Call-by-value is Call-by-reference. To implement
+Call-by-reference, you must do so explicitly. The advantage here is
+that you will know by reading the code that a reference is being
+passed and there may be side effects.
+
+In this example, the ampersand in the function called parameter means
+to pass a pointer to 'a' instead of the value of 'a'. The ampersand is
+called the reference operator, or sometimes the address of operator,
+and in the function, the variable 'p' carries as its value, a pointer
+to 'a', so when we want to increment the value of 'a', we do so by
+dereferencing the pointer. The asterisk is called the pointer
+dereference operator, so this time passing a pointer, we are
+explicitly using Call-by-reference.
+
+The value in the caller's variable 'a' will be incremented and the
+'printf' will print the number '2'. In C++, you may also use the
+reference type to implement Call-by-reference. This makes
+Call-by-reference appear more implicit. In C++, functions are
+identified by their function signature. This function, which returns
+the volume of a cuboid is different than this function, which returns
+the volume of a sphere. Even though the two functions have the same
+name, the return type, the name of the function, and the types of the
+function arguments are all combined to form a function signature.
+
+The function signature is used to identify the function. Understanding
+functions is fundamental to C++. Even in C++'s Object-Oriented
+programming model, functions are the basis of class methods. All code
+in a C++ program happens in functions.
+

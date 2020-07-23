@@ -1,0 +1,83 @@
+Transcript:
+
+- C++ is a powerful and flexible general-purpose programming language
+that supports a number of different coding paradigms, including
+object-oriented, procedural, functional, and generic programming. What
+is now called C++ was originally C with classes, developed in the late
+'70s by the Danish computer scientist Bjarne Stroustrup. C++ began its
+life as a set of enhancements to allow object-oriented programming in
+C. Today, C++ is one of the most popular programming languages in the
+world.
+
+C++ is based on the C language, adding many powerful features while
+retaining as much of C's syntax, efficiency, and utility as
+possible. C++ is a very popular language and over 30 years later, it's
+still widely considered a best-practices choice for many types of
+projects including large-scale systems and applications coding. C++ is
+used to write code at all levels, including firmware, operating
+systems, and large-scale applications.
+
+Today vast numbers of medium to large-scale applications and projects
+are written in C++. The list is huge. It includes every version of
+Windows since 1.0, the parts of Unix that aren't written in plain C,
+major parts of OS X are written in C++, other parts are written in
+Objective-C, which is also based on C. Major business applications
+like Microsoft Office and QuickBooks are written in C++. Adobe
+Photoshop, Illustrator, and InDesign, Firefox, Google Chrome, major
+web sites like Amazon, Facebook, and Google are either written in or
+have significant back-end resources written in C++.
+
+In fact, most programming languages including Java, PHP, Python, and
+Perl are either written in C or C++. C++ is made up of a number of
+components, parts of which require understanding distinct sets of
+grammar. You can think of it as five connective languages. As part of
+the C language definition, the C Preprocessor is also incorporated in
+C++. The C language itself is the basis of C++, and is entirely
+incorporated in its definition and forms the basic syntax of C++.
+
+C++ classes and objects are used for object-oriented programming, and
+C++ templates are used for generic programming. The C++ Standard
+Template Library, the STL, provides a tremendous amount of common
+functionality. The STL, along with the C and C++ Standard Libraries is
+part of the C++ Standard. The first standard for C++ was ratified by
+the ISO in 1988. This is commonly referred to as C++98.
+
+C++03 was essentially a bug-fix release, so it's rarely referred to on
+its own. Most compilers that support C++03 simply refer to it as
+C++98. Technical Report 1, or TR1, was mostly a set of library
+extensions including regular expressions, smart pointers, hash tables,
+and random number generators. Most of this became part of C++11,
+ratified in August 2011. C++11 is the first real extension to the C++
+standard.
+
+It provides a number of new features including a range-based for loop,
+type inference, lambda functions, an unambiguous null pointer
+constant, and many other smaller new features. The next version of C++
+tentatively called C++14, is in the process of ratification as I
+record this course. This version is a smaller maintenance release and
+does not include any major changes to the language. This course uses
+C++11 and the latest versions of all the major compilers in use today
+support C++11.
+
+To thoroughly learn the C++ language, I suggest that you take this
+entire course in order. On the other hand, it's a big subject, and you
+may wanna skip around some, so here's an overview of what is covered
+and where. Chapters one through six cover the basic C++ language
+including basic syntax, the preprocessor, operators, data types, and
+classes. Chapters seven and eight cover class inheritance and
+templates, allowing you to create your own object-oriented interfaces
+for your class libraries.
+
+This is also important for understanding the Standard Template Library
+that provides powerful container classes for C++. Chapter nine covers
+the Standard Library, which is used for many basic tasks in C++,
+including the file system, console interaction, basic string
+operations, and time and date manipulation. Chapter 10 covers the
+Standard Template Library. The STL provides many powerful higher-level
+functions to C++, like strings, containers, iterators, and other
+utilities.
+
+The C++ programming language is one of the most important languages in
+computing today. It is the go-to language for many large and small
+projects, and it forms the basis of other popular languages like Java,
+C#, PHP, and many others.

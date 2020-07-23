@@ -1,0 +1,119 @@
+need to run ALL AT ONCE:
+_______________________
+
+On   gyan1    ubuntu16.04   dual   boots   with    ubuntu14.04,   read
+README.settingUpROS to setup a ros  environment that the following ROS
+tools require  to have occured  first.  Note that  gyan1ubuntu14.04 is
+what catkin_ws of ROS indigo uses, which  is used by the class at this
+time.  ie Autumn semester 2017.
+
+Use lsb_release  -a if there is  any confusion about which  version of
+ubuntu you are in.
+
+Also,  there is  a method  to  this madness  of having  to start  each
+componet in  the following order, see  diagram 1, that shows  the flow
+control of a3_help.
+
+
+* Unzip zip files into catkin_ws/src
+
+* sudo apt-get install ros-indigo-local-map
+
+* startup roscore
+
+
+* Running STAGE simulation:
+rosrun stage_ros stageros  $(rospack find a3_help)/worlds/uoa_robotics_lab.world
+
+
+* Robot Steering Control:
+rosrun a3_help TBK, is command line based
+
+OR
+
+rqt - much nicer python gui control
+
+
+* ogMap Creation:
+
+eg:
+rosrun local_map local_map /local_map/scan:=/base_scan_1 \
+_map_width:=1000 _map_height:=1000 _map_resolution=0.1
+
+
+But , according to the assignment  spec of 20x20m ogMap with each cell
+being  0.1m in  diameter,  this command  becomes[must  execute as  one
+command], when allowing  for c-space(increase robot cell by  r in each
+dimention):
+
+Run each line as is, that is we have two lines here:
+
+rosrun local_map local_map /local_map/scan:=/base_scan_1 \
+_map_width:=200 _map_height:=200 _map_resolution=0.2
+
+
+* Visualiser
+
+Default rviz configuration, may need to ignore my other _perhaps_ more
+convient configurations below, thus needs testing:
+
+rosrun rviz rviz -d $(rospack find a3_help)/rviz/pfms.rviz
+
+OR, _perhaps more convenient::
+
+rosrun rviz rviz -d ~smagri/smagriRvizConfig.rviz
+
+rosrun rviz rviz -d ~smagri/smagriRvizConfigCorrectGridSize.rviz
+
+
+* ogMap image creation:
+
+rosrun a3_help map_to_image_node /map:=/local_map/local_map /pose:=/odom
+
+rqt_image_view
+
+
+* run Sample Code
+rosrun a3_help sample
+
+
+* compile gtest
+smagri@gyan1:~/uni/subj/proj30cp/catkin_ws$ catkin_make tests
+
+cd devel/lib/a3_help
+./a3_help-test
+
+OR
+
+rosrun a3_help a3_help-test
+
+
+More help can be found at:
+http://ysonggit.github.io/coding/2014/12/19/use-gtest-in-ros-program.html
+
+* To install gtest
+sudo apt-get install libgtest-dev
+ cd /usr/src/gtest
+sudo cmake CMakeLists.txt
+sudo make
+#copy or symlink libgtest.a and ligtest_main.a to /usr/lib folder
+sudo cp *.a /usr/lib
+
+
+a3_help/test/utest.cpp is some example gtest code
+
+* Documentation
+(http://wiki.ros.org/rosdoc_lite)
+
+sudo apt-get install ros-indigo-rosdoc-lite
+
+rosdoc_lite <package_path>
+
+ie
+cd ~/catkin_ws
+rosdoc_lite src/a3_help
+
+will generate the doc in ~/catkin_ws/doc
+
+To open the documentation:
+firefox ~/catkin_ws/doc/html/index.html

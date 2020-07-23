@@ -1,0 +1,7 @@
+magri@gyan1:~/uni/subj/proj30cp/catkin_ws/devel/lib/opencv_example$
+rosrun opencv_example  image_publisher
+_image:=/lu1/smagri/Pictures/screensaver_pics/Parkes_lunar_small_Shostak.jpg 
+[ WARN] [1496110658.506851788]:  RUN AS: rosrun opencv_example
+image_publisher _image:=~/lena.jpg
+Segmentation fault (core dumped)
+smagri@gyan1:~/uni/subj/proj30cp/catkin_ws/devel/lib/opencv_example$ 

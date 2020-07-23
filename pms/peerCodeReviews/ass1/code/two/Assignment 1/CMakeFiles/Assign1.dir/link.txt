@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/Assign1.dir/Assign1.cpp.o CMakeFiles/Assign1.dir/sensor.cpp.o  -o Assign1 -rdynamic 

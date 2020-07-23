@@ -1,0 +1,101 @@
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+[  0%] Built target sensor_msgs_generate_messages_py
+[  2%] [  3%] [  4%] [  7%] Built target randomNumTalker
+Built target listener
+Built target talker
+Built target randomNumListner
+[  8%] Built target rosocvListner
+[ 10%] [ 10%] Built target rosocvTalker
+Built target TBK
+[ 10%] [ 10%] Built target sensor_msgs_generate_messages_lisp
+Built target sensor_msgs_generate_messages_cpp
+[ 11%] [ 14%] Built target image_publisher
+[ 14%] Scanning dependencies of target map_to_image_node
+Built target sample
+Built target std_msgs_generate_messages_cpp
+[ 15%] Built target image_subscriber
+[ 17%] Built target random_walk
+[ 18%] [ 20%] [ 20%] [ 20%] Built target node_example_gencfg
+Built target std_msgs_generate_messages_py
+Built target std_msgs_generate_messages_lisp
+[ 20%] Built target _a3_help_generate_messages_check_deps_RequestGoal
+Building CXX object a3_help/CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o
+[ 20%] Built target geometry_msgs_generate_messages_py
+[ 20%] Built target _node_example_generate_messages_check_deps_NodeExampleData
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_PlaceProfile
+[ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_GetPlaceProfile
+Built target _lama_msgs_generate_messages_check_deps_GetLamaObject
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_Crossing
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_InterfaceInfo
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_Frontier
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_LamaObject
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_DescriptorLink
+[ 20%] Built target geometry_msgs_generate_messages_cpp
+[ 20%] Built target geometry_msgs_generate_messages_lisp
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_SetPlaceProfile
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_SetLamaObject
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_SetCrossing
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_GetInterfaceInfo
+[ 22%] Built target a3_help_generate_messages_py
+[ 22%] [ 23%] Built target _lama_msgs_generate_messages_check_deps_GetCrossing
+Built target a3_help_generate_messages_cpp
+[ 24%] Built target a3_help_generate_messages_lisp
+[ 25%] Built target node_example_generate_messages_cpp
+[ 28%] Built target node_example_generate_messages_py
+[ 29%] Built target node_example_generate_messages_lisp
+[ 47%] Built target lama_msgs_generate_messages_py
+[ 62%] Built target lama_msgs_generate_messages_cpp
+[ 62%] Built target _local_map_generate_messages_check_deps_SaveMap
+[ 77%] Built target lama_msgs_generate_messages_lisp
+[ 77%] Built target a3_help_generate_messages
+[ 77%] [ 77%] [ 80%] Built target _voice_node_generate_messages_check_deps_voice_node
+Built target node_example_generate_messages
+Built target listener.node_example
+[ 81%] [ 82%] Built target local_map_generate_messages_cpp
+Built target map_ray_caster
+[ 84%] Built target talker.node_example
+[ 87%] [ 88%] [ 89%] Built target local_map_generate_messages_py
+Built target local_map_generate_messages_lisp
+Built target voice_node_generate_messages_cpp
+[ 91%] Built target voice_node_generate_messages_py
+[ 92%] Built target voice_node_generate_messages_lisp
+[ 92%] [ 92%] Built target lama_msgs_generate_messages
+Built target local_map_generate_messages
+[ 95%] Built target simplePub
+[ 97%] Built target simpleSub
+[ 97%] Built target voice_node_generate_messages
+[100%] Built target local_map
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp: In function ‘int main(int, char**)’:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:320:66: error: expected primary-expression before ‘const’
+ (map_image_provider.imageCallback(&GazeboRetrieve::imageCallback(const ImageConstPtr&));
+                                                                  ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:320:88: error: expected ‘)’ before ‘;’ token
+ (map_image_provider.imageCallback(&GazeboRetrieve::imageCallback(const ImageConstPtr&));
+                                                                                        ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:323:32: error: redeclaration of ‘image_transport::Subscriber image_sub_’
+    image_transport::Subscriber image_sub_
+                                ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:318:31: error: ‘image_transport::Subscriber image_sub_’ previously declared here
+   image_transport::Subscriber image_sub_
+                               ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:325:67: error: ‘msg’ was not declared in this scope
+  (map_image_provider.imageCallback(&GazeboRetrieve::imageCallback(msg));
+                                                                   ^
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:325:72: error: expected ‘)’ before ‘;’ token
+  (map_image_provider.imageCallback(&GazeboRetrieve::imageCallback(msg));
+                                                                        ^
+make[2]: *** [a3_help/CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o] Error 1
+make[1]: *** [a3_help/CMakeFiles/map_to_image_node.dir/all] Error 2
+make: *** [all] Error 2
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+Invoking "make -j8 -l8" failed

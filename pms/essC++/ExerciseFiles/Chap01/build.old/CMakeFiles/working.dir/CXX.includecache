@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/working.cpp
+cstdio
+-
+

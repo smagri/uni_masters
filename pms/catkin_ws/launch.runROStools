@@ -1,0 +1,33 @@
+Launch in independent window:
+----------------------------
+
+roscore
+
+rosrun stage_ros stageros  $(rospack find a3_help)/worlds/uoa_robotics_lab.world
+
+
+rosrun local_map local_map /local_map/scan:=/base_scan_1 _map_width:=1000 _map_height:=1000 _map_resolution=0.1
+
+
+rosrun a3_help map_to_image_node /map:=/local_map/local_map /pose:=/odom
+* to see map rqt_image_view, and select /map_image/full
+
+rosrun a3_help sample
+* killall sample, if stuck
+* produces "view" window
+
+Launch from same window:
+----------------------------
+rqt_image_view&
+rqt&
+rosrun rviz rviz -d $(rospack find a3_help)/rviz/pfms.rviz &
+
+!wrks: killall roscore sample stage_ros local_map map_to_image_node
+
+ps ax | fgrep -i ros
+kill -15 pid1 pid2...
+
+OR
+
+killall roscore python rviz rqt sample stageros local_map map_to_image_node
+

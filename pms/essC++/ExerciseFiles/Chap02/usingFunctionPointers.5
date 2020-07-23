@@ -1,0 +1,148 @@
+Important Points:
+Address of functions can be assigned to a pointer, can be really
+convenient, and is called a function pointer.
+Function pointer needs to be the same type as the return value of the
+function.
+
+
+
+
+Transcript:
+
+ In C++, it's possible to take the address of a function and assign it
+ to a pointer. This is called a function pointer. Function pointers
+ can be really convenient in some circumstances, so let's take a look
+ at how this works and then we'll look at an example. So here, I have
+ a working copy of func.cpp from Chapter 2 of the exercise
+ files. We'll start by defining a function pointer and then we'll use
+ that function pointer to actually call our function here by putting
+ fp there. So fp is our pointer to a function that returns void.
+
+And you notice this void type here is the return type of the function
+pointer. And that needs to match the return type of the function that
+you're assigning to it because this function points to this function
+which returns void. And so when I build and run, you see that it calls
+our function through the pointer right here. So a couple of things you
+need to notice about this. First of all, like I said, this return type
+needs to match. If I were to change this to int, for example, you'll
+notice that we get an error. And if I click on that little red error
+mark, you notice that I get an error about assigning a function with a
+different return type.
+
+And so, that needs to be void to match the return type of the function
+that's being assigned to it. Also notice this syntax of the function
+pointer. There's an asterisk in front of the token fp, which is the
+name of the pointer and then there's parentheses around that, around
+the asterisk and the fp. Those parentheses are necessary because of
+operator precedence. And we'll take a look at operator precedence
+later in this course. But for now, just know that those parentheses
+are necessary.
+
+On the other hand, you'll notice the assignment, I'm not using the
+address of operator. You can use it. And if I save and build and run,
+you'll notice it works exactly the same. It's really optional here and
+that has to do with how types are promoted in C++. And so just know
+that it works exactly the same with or without the ampersand. And the
+same is true here. You can put in an asterisk here for the dereference
+operator to dereference the pointer. But when you do that, you also
+need to put parentheses around the symbol and the asterisk.
+
+And again, you build and run, and that works exactly the same. And
+you'll see it done this way a lot. Actually, some people prefer this
+because they consider it more explicit so that it actually looks like
+a function pointer in the code. And that's fine. You can do this
+either way and it works exactly the same. So this is how you define
+and use a function pointer. Now, let's take a look at this in
+practice. So we're gonna go ahead and we're going to delete our
+working copy. And I'll run clean. And I'm gonna take a copy of this
+jump.cpp and we're going to look at that.
+
+So this is a simple example of what's called a jump table, where you
+have a number of functions, and you'll notice I have these functions
+named fa, fb, c, d, and e like this. And they're very simple
+functions. They're void functions that simply display a message. Each
+of these function is on one line and that's just for convenience for
+this example. In practice, they'll probably be very busy functions
+that do lots of things. But what we're gonna do here is we're going to
+create a little menu. And you'll notice my menu here in this puts
+statements. The menu will display a bunch of choices and you'll type
+in a number and it will run that function.
+
+So let's just go ahead and build and run this and you can see it in
+practice. And when I type one, you see it says, "this is fa" and when
+I type two, we get, "this is fb" and onward three; fc, four; fd,
+five;fe, and if I type a six, you'll notice it says, "invalid
+choice". And q quits the program. So, that's how it looks on the
+console when it's running. Let's take a look at what it does here.
+
+So first of all, you'll notice we have a couple of for declarations,
+for our prompt function and for our jump function. And then we have
+our five functions that are going to be used in the menu. And then
+each of these is put into an array of function pointers. So this is a
+declaration for an array of function pointers. And again, you'll
+notice the parentheses here because of operator precedence that's
+necessary. And then it's initialized with this initializer list with
+the five function pointers.
+
+the address of our five functions, that's these five functions up
+there, and a nullptr to terminate the list. That's just a convenience
+thing and you'll see how we use that a little bit later. Then we have
+our main function which calls jump and prompt inside of a empty while
+loop. And I'll show you how that works down below here. And then we
+put the string "Done" for when it's done. So our prompt function puts
+out the strings for the prompt and that displays this "Choose an
+option" menu.
+
+And then we call fflush and that has to do with flushing the stdout
+buffer. We'll talk about that later in our chapter on Standard IO. And
+then we have a buffer for our input and static storage for the
+response buffer. And fgets, which actually gets the string from the
+console. So when I type in a response to the prompt, that goes in a
+response buffer and it comes from the stdin, and then we return the
+response. And so up here in main, you'll notice that prompt returns a
+constant character pointer and jump gets called with the response from
+prompt.
+
+So jump down here, it takes that string and it gets the first
+character from the string, so you remember in our chapter on Arrays
+and Strings, first element of the character array is the first
+character of the string. And that's all we're really concerned with
+here is the first character. When I'm running it, I can type a bunch
+of characters that's just gonna look at the first one. And if it's a
+q, then it returns zero. And you'll notice up here, we call this with
+a while loop so when the while sees a zero, it sees that as false and
+it ends the loop. Very simple.
+
+For any other response, it comes down here, it gets the length of the
+array, so it looks for that null at the end of the list of function
+pointers. And when it finds that null, then it knows it has the last
+element of the array and it uses that to count the length of that
+array of function pointers. And then this is just a little trick to
+convert the ASCII digit into an integer and we decrement the integer
+because our list is zero-based.
+
+So when you type one, it's the zero element of the array. We check to
+make sure that we're inside the range, which would be zero to the
+length of the array minus one, so that'd be four. And it'll put up the
+string, "invalid choice" and return a one to continue the loop, if
+it's outside of that range. Otherwise, it calls the function from the
+function array. And so here's our array of function pointers, funcs,
+and that was defined and initialized up here, right? It subscripts it
+based on our code that we typed and it calls that function.
+
+Very, very simple. This is a very simple implementation of a really
+useful technique called a jump table or a jump array. So again, just
+in summary, we have all these functions, we take the address of those
+functions and put them in array, and we use that array to call
+whichever function is called based on the input from a menu. So, I'll
+use this technique a lot in simple console programs that have a little
+text menu like this.
+
+I'll also use it in CGI or web services where because the web is
+stateless when somebody puts in a response from a webpage, then that
+response, based on whatever that response is, we might need to call a
+different function, so I'll oftentimes use a jump table for something
+like that. So, function pointers can be really useful. You're not
+gonna need them often, but when you do, it's good to know how to do
+this.
+

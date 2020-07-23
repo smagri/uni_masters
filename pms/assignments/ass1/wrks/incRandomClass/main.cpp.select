@@ -1,0 +1,215 @@
+// system include files
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+
+// system include files, read serial port
+#include <unistd.h>
+#include <fcntl.h>
+#include <termios.h>
+
+
+
+// non-system  include files
+#include "laserRangeFinder.h"
+#include "sensor.h"
+
+
+// So you can refer to std class member function just by their name,
+// thus with no std:: prefix
+using namespace std;
+
+
+int main(int argc, char *argv[]){
+
+    
+  // 1. initialise the sensor
+  //
+  // Use 'new' here to dynamically allocate memory on the heap ??
+  char model[10];      // model name
+  int baud;            // baud rate
+  char port[12];      // usb port sensor is connected to /dev/ttyACMx
+
+  // Laser Range Finder Fixed Attributes
+  double fov;
+  double distanceMax;
+  double distanceMin;
+
+  double angularRes;
+  //double scanTime;
+
+  double nad = 0.0; // non-applicable double value, argument not used
+
+  int retval;
+
+  // read serial port
+  struct termios tio;
+  struct termios stdio;
+  struct termios old_stdio;
+  int tty_fd;
+
+  fd_set readfds; // The set of file descriptors probed for 'ready for
+                  // reading', that is read() system call will not
+                  // block/sleep.
+
+  unsigned char charRead = 'D';
+  int count = 0;
+
+  
+  LaserRangeFinder lrf; // default constructor(ie no params or retrun value)
+  
+  
+  strcpy(model, "UTM-XXL");
+  baud = 115200;
+  strcpy(port,"/dev/ttyACM0");
+
+  fprintf(stderr, "\nDefault connection attributes:\n");
+  lrf.Sensor::printConnectAttributes();
+  //lrf.printConnectAttributes();
+  
+  lrf.Sensor::setConnectAttributes(model, baud, port);
+  fprintf(stderr, "\nSet connection attributes:\n");
+  fprintf(stderr, "model=%s\n", model);
+  fprintf(stderr, "baud=%d\n", baud);
+  fprintf(stderr, "port=%s\n", port);
+  lrf.Sensor::printConnectAttributes();
+    
+  // 2. queries the fixed sensor parameters
+  //
+  lrf.getFixedHdwAttributes(fov, distanceMax, distanceMin);
+  fprintf(stderr, "\nGet Fixed Hardware Attributes:\n");
+  //cout << "fov=" << fov << endl;
+  fprintf(stderr, "Field Of View=%f deg\n", fov);
+  fprintf(stderr, "Maximum Range=%f m\n", distanceMax);
+  fprintf(stderr, "Minimum Range=%f m\n", distanceMin);  
+  
+  // 3. set sensor parameters as specified by the user
+  //
+  fprintf(stderr, "\nEnter sensor paramter...:\n");
+  //fscanf(stdin, "%d", &baud);
+  //fprintf(stderr, "Print this sensor paramter, %d\n", baud);
+  fprintf(stderr, " Angular Resolution is?...");
+  fscanf(stdin, "%lf", &angularRes);
+  lrf.setConfigAttributes(angularRes, nad, nad);
+  
+  // fprintf(stderr, " Scanning Time is?...");
+  // fscanf(stdin, "%lf", &scanTime);
+  // fprintf(stderr, " invalid scanning time, defaulting to 50ms\n");
+  
+  fprintf(stderr, " Baud Rate is?...");
+  fscanf(stdin, "%d", &baud);
+  lrf.Sensor::setConnectAttributes(model, baud, port);
+  
+  fprintf(stdout, " Serial Port is?...");
+  fscanf(stdin, "%s", port);
+  lrf.Sensor::setConnectAttributes(model, baud, port);
+  lrf.Sensor::printConnectAttributes();  
+
+  
+//  lrf.Sensor::setConnectAttributes(model, baud, port);
+//  lrf.Sensor::printConnectAttributes();  
+//  lrf.setConfigAttributes(angularRes, scanTime, nad);
+  
+  
+  // 4. continuously queries and displays data from the sensor with a
+  // sample sequence number until the program terminates.
+  //
+  // Use srand() and rand() here I think.
+  //
+  //
+  tcgetattr(STDOUT_FILENO, &old_stdio);
+ 
+  // Input serial port to communicate with as command line argument
+  printf("Please start with %s /dev/ttyACM0 (for example)\n", argv[0]);
+
+  // Configure stdin and stout, as part make them non-blocking streams.
+  memset(&stdio ,0, sizeof(stdio));
+  stdio.c_iflag=0;
+  stdio.c_oflag=0;
+  stdio.c_cflag=0;
+  stdio.c_lflag=0;
+  stdio.c_cc[VMIN]=1;
+  stdio.c_cc[VTIME]=0;
+  tcsetattr(STDOUT_FILENO, TCSANOW, &stdio);
+  tcsetattr(STDOUT_FILENO, TCSAFLUSH, &stdio);
+  fcntl(STDIN_FILENO, F_SETFL, O_NONBLOCK); // make the reads non-blocking
+ 
+  // Configure the terminal/serial port.
+  memset(&tio, 0, sizeof(tio));
+  tio.c_iflag=0;
+  tio.c_oflag=0;
+  tio.c_cflag=CS8|CREAD|CLOCAL; // 8n1, see termios.h for more information
+  tio.c_lflag=0;
+  tio.c_cc[VMIN]=1;
+  tio.c_cc[VTIME]=5;
+
+  // system calls ie open/read/write() need error handling
+
+  // Open the terminal/serial port stream: as read, write and non-blocking.
+  // wrks: tty_fd = open(argv[1], O_RDWR | O_NONBLOCK);
+  //tty_fd = open(argv[1], O_RDWR);
+//  tty_fd = open("/dev/ttyACM0", O_RDWR | O_NONBLOCK);
+  tty_fd = open("/dev/ttyS0", O_RDWR | O_NONBLOCK);
+  cfsetospeed(&tio, B9600); // as per arduino sketch
+  cfsetispeed(&tio, B9600); // as per arduino sketch
+  tcsetattr(tty_fd, TCSANOW, &tio);
+
+
+  // Loop till stdin/console input is character 'q'.
+  while (charRead != 'q'){
+//    while (1){
+      //fprintf(stderr, "in while loop count=%d\n", count++);
+      
+    // Clear and reset fds ready for next select() call.
+    //
+    // This is as per examples in select_tut(2)) and Stevens and also,
+    // ~proj/atnf/cabb/src/callbacks.c.
+    //
+    FD_ZERO(&readfds); // clear/reset read file descriptors
+    FD_SET(tty_fd, &readfds); // watch for chars on tty_fd/serial port.
+    FD_SET(STDIN_FILENO, &readfds); // watch for chars on stdin=fd=0
+    
+    // Timeout from the select() call after timeout.sec/usec of non-activity.
+    //
+    // select() should really return way before so this is just a safety catch.
+    // Set timeout = NULL for indefinate blocking/sleeping, and = 0 for polling.
+    //
+    // select() allows you to monitor more than one file descriptor at
+    // a time.  It blocks(ie sleeps) till one or more file descriptors
+    // become 'ready' for some io operation.  A file descriptor is
+    // 'ready' when a corresponding type of system call(eg read()) for
+    // readfds)will not block/sleep.
+    // if ( (retval = select((FD_SETSIZE+1), &readfds,
+    //                          (fd_set *) NULL,(fd_set *) NULL, NULL))  == -1 ){
+    //      perror("readSerialPort");
+    //      fprintf(stderr, "readSerialPort: select returned %d\n", charRead);
+    //      return 1;
+    // }
+
+    // NEED ERROR HANDLING HERE: ****************************************
+    //if (count++ == 10) return 1;
+    
+    // More than one fd can be ready at a time.  That is, character
+    // present on the serial port and at stdin simultaneously.
+    //if (FD_ISSET(tty_fd, &readfds)){
+      // Data is available on the serial port, read it from port and
+      // print it out to stdout.
+    if (count == 0){
+      read(tty_fd, &charRead, 1);
+      fprintf(stderr, "after read() ");
+    }
+      //write(STDOUT_FILENO, &charRead, 1);
+      //}
+    
+      // if (FD_ISSET(STDIN_FILENO, &readfds)){
+    //  // if data is available on the console/stdin, store input into charRead.
+      read(STDIN_FILENO, &charRead, 1);
+    // }
+
+  } // end: while (charRead != 'q')
+
+  close(tty_fd);
+  tcsetattr(STDOUT_FILENO, TCSANOW, &old_stdio);
+ 
+  return 0;
+}

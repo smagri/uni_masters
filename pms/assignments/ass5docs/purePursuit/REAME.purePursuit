@@ -1,0 +1,171 @@
+17jul2018
+
+Look at summary notes from 17/7/2018 and the papers from Prof.Songhwai
+and Martin Lundgren.
+
+This is a summary of the important points of 'Coulter' paper that Alen
+points us to.  This  is a scanned document so have  to make notes here
+as printing will just print a black page.
+
+Description:
+
+Pure pursuit  is a  tracking algorithm that  works by  calculating the
+curvatue that  will move a robot  from its current position  to some
+goal position.
+
+
+Theoretical Derivation:
+
+The pure pursuit approach is a method of geometrically determining the
+curvature that will  drive the robot to a chosen  path point, termed
+the goal point.
+
+Looking at the diagram our objective  is to calculate the curvature of
+the  arc that  joins the  origin  to (x,y)  a  point on  the path  one
+lookahead distance away.  The (x,y) point  is a point on the path, for
+us it will be a point on the path  to a waypoint.  Or path is a set of
+given waypoints from one FT node to the next FT node.
+
+ie eqution: phi = 2x / (lookahead-distance(l) sqared)
+
+The curvature has been related to the  x offset of the goal point from
+the origin
+
+Alen: as the robot moves towards it's goal the heading of the robot
+wobbles, thus the odometry yaw value wabbles.  Pure pursuit is the art
+of moving the robot along the x-axis at a heading angle of the next
+waypoint while correcting for this wobble as we move towards the goal
+location, being the waypoint in our case.  Actually I think the wobble
+is in the entire path consisting of x,y,yaw.  As global coods need to
+be converted to robot coords and this depends on x,y,yaw.  See
+Lundgren.
+
+Algorithim (Martin Lundgren):
+
+1.  Obtain the  current position  of the  robot.  For  us this  is the
+    odometry x,y,yaw values.
+
+2. Find the  goal point.  For us  this will be the  coordinates of the
+   next waypoint on the path to the FT node.  No!!! this is a point on
+   the path to the waypoint one  lookahead distance away from it.  You
+   must choose an appropriate lookahead distance.  See section 1.4 but
+   I  think i  should experiment  with this  to get  the closest  path
+   tracking.  However,  given we  have an  obstical free  path(???) so
+   deviations of the robot from the actual desired path is not great a
+   small  lookahead distance  is  required, just  how  small I  guess.
+   Also,  if we  use a  small lookahead  distance we  should keep  the
+   velocity of turning the robot small.
+
+3. Transform  the goal point  to robot coordinates.  See  formula on
+   page three.
+
+4. Compute the curvature of the robot phi, using the above formula.
+
+5. Move the  robot towards the goal point with  the desired curvature,
+   for the lenght of one time step.  Remember that moving the robot is
+   done one time step at a time so there are a number of time steps to
+   reach the goal.   This time step is  a small amount of  time so the
+   robot doesn't bang  into things.  This is also why  we need to send
+   the  robot movment  commands in  a  loop till  we get  to the  goal
+   position.
+
+6. Obtain  a new position, from  our odometry x,y,yaw and  repeat from
+   step3 till you get to the goal point.
+
+---------------------------------------------------------------------
+Songhwai:
+
+You are to consider that you  have reached your goal location when the
+robot current location  is within a threshold distance  and angle.  We
+must set the threshold.  Once the robot's heading, or current yaw, and
+the lookahead direction  is sufficently small.  Then  stop turning and
+start pure  pursuit again.   See figure three  for an  illustration of
+pure pursuit.
+
+He poses a question here, i must determine the linear and angular
+velocity from the equations??
+
+Or is this done by:
+
+robot_base_cmd.linear.x = pick a number???
+robot_base_cmd.angular.z = phi; ie required curvature.
+
+---------------------------------------------------------------------
+Coulter:
+
+Path Managment:
+
+The planner finds a path  segment through the newly perceived terrain,
+meanwhile the robot  is driving along the old path.   When the planner
+completes its part  it must send the  new path to the  robot.  This is
+the overall idea behind prue pursuit.
+
+
+Algorithm:
+
+1. Determine the current location of the robot.
+2. Find the path point closest to the robot.
+3. Find the goal point.
+4. Transform the goal point to robot coordinates.
+5. Calculate the curvature and request the robot to set the steering
+   to that curvature.
+6. Update the robots position.
+
+My interpretaion of this algorithim related to our assignment:
+
+1. use odom readings x,y,yaw(heading),  this is a position relative to
+   the global space orign, where the robot starts in global space.
+   
+2. The path point closest to the  robot will first be found.  As there
+   may  be multiple  points one  lookahead distance  from the  robot's
+   current location.  The robot should  steer toward the closest point
+   one lookahead  distance from  its current  location.  So  does this
+   mean we find the  closest FT node and find the  path to it???
+
+3. Find  the goal point.   A lookahead  distance should now  have been
+   chosen, see section 1.4 Lungdem.  Move along the path one lookahead
+   distance along path.   From this the x-axis  variable is determined
+   once r  reaches l.  l^2 can  be determined for the  ideal case now.
+
+   To determine l^2 for the actual case you must buffer the x,y values
+   till  the  robot  reaches  the goal  x-axis  value.   Curvature  is
+   determined from l^2 and x for both paths is the same???
+
+   Not sure if this is right, actual path determination is probably ok
+   but ideal path is probably not.   Do we somehow know the ideal path
+   x,y values and we check them till l^2 = x^2 + y^2.
+
+4. Transform the  goal point to robot  coordinates. Curvature commands
+   to the robot make sense in robot coordinates.
+
+5. Calculater the 'desired' curvature and compare it to the 'actual'
+   curvature.  The 'actual' curvature is determined from the current
+   x,y, odometry values.
+
+   Algorithim if:
+   ActuralCurvature > IdealCurvature, rotate  towards the  right.
+   ActualCurvature < IdealCurvature, rotate towareds the left.
+
+   So I think this will mean +ve and -ve values of:
+   robot_base_cmd.angular.z = 'set to a small incremental value in
+   radians, say 1 rad /sec' ???
+
+   Rotate robot  so that the  'actual' curvature is within  as certain
+   threshold of the 'desired' or 'ideal' curvature. Then stop rotating
+   and pursue  the goal again.  That  is now move along  the x-axis to
+   the next  goal along the path  that is one lookahead  distance from
+   the current robot pose.
+
+   You probably  need thresholds in  the algorithim for  curvature and
+   distance along the x-axis.
+
+   The required curvature is transformed  into steering wheel angle by
+   the robot's on board controller.  For us i think it just means:
+
+robot_base_cmd.linear.x = pick a number???
+robot_base_cmd.angular.z = phi; ie required curvature
+
+6. Move the robot for the next  time step and repeat from 1.  Remember
+   the robot  moves one time step  at a time  so as to not  crash into
+   things so  you have to  keep reissuing the  move command in  a loop
+   till you get to each goal on the path.

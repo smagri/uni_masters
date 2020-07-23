@@ -1,0 +1,66 @@
+/*!
+
+*/
+
+// without this gap between two doxygen definition, the last group does not get
+// populated properly for some reason.
+
+/*!
+@mainpage This is documentation for assignment 5 of subject 41012
+
+@section ac_doc_index_more_infoT Project Description:
+
+Uses Frontier Bases  Exporation and Robot Control,  within a ROS(Robot
+Operating System) and C++ structure.   Exporation is the act of moving
+through  an  environment, thus  allowing  building  of  a map  of  the
+environment which can be used for subsequent navigation.
+
+This class, a3_help,  uses the detection of frontiers,  regions on the
+border between known free space  ad unknown spafe.  From any frontier,
+the robot can see into explore space and add the new observatons to it
+its map.   By pursuing  each frontier  the robbot can  build a  map of
+every reachable  location in its  environment.  This is done  with ROS
+based  OgMaps  to represent  the  frontiers.   A closed  loop  control
+stratery is  used to move  ther robot,  using robot velocity  and turn
+rate only.
+
+
+@section ac_doc_index_more_infoTS Task:
+
+Write a series of components using  the ROS CBSE and object orientated
+paradims of  C++ that will process  data origiinating from a  range of
+sensors on a simulated robot.   Employ suitable nuumber of threads per
+component and  data structures  that enables time  synchronisation and
+subsequently  interrogation  of data  to  allow  simple actions  of  a
+robotic  platform.   Supply appropriate  auto-generated  documentation
+utilising  inline source  mark-up.  Exploit  unit test  framework with
+test cases evaluating code.
+
+
+@section ac_doc_install How to use:
+
+@subsection ac_doc_step1 Step One: install ROS and doxygen
+
+Install ROS indigo, doxygen and ROS documention files in:
+http://wiki.ros.org/indigo/Installation/Ubuntu and
+http://wiki.ros.org/rosdoc_lite.
+   
+   
+@subsection ac_doc_step2 Step Two : generate doxygen based ROS documentation
+  \verbatim
+   cd ~/catkin_ws
+   rosdoc_lite src/a3_help.
+  \endverbatim
+
+
+@subsection ac_doc_step3 Step Three: running application
+        
+  \verbatim
+rosrun a3_help sample
+  \endverbatim
+
+However ther other binary files this ROS package utilises, these are in:
+cd ~/catkin_ws; cd devel/lib/a3_help
+
+
+*/

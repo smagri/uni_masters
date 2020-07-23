@@ -1,0 +1,158 @@
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+[  2%] [  4%] Built target randomNumListner
+[  5%] Built target randomNumTalker
+Built target listener
+[  6%] [  9%] [ 10%] [ 12%] Built target talker
+Built target rosopencvListner
+Built target rosopencvTalker
+Built target TBK
+[ 12%] Built target sensor_msgs_generate_messages_py
+[ 12%] [ 12%] Built target sensor_msgs_generate_messages_lisp
+Built target sensor_msgs_generate_messages_cpp
+[ 13%] Built target image_publisher
+Scanning dependencies of target random_walk
+[ 15%] [ 16%] Built target map_to_image_node
+Built target sample
+[ 17%] [ 17%] Built target image_subscriber
+Built target _a3_help_generate_messages_check_deps_RequestGoal
+[ 18%] [ 18%] [ 19%] Built target std_msgs_generate_messages_cpp
+Built target node_example_gencfg
+[ 20%] Scanning dependencies of target geometry_msgs_generate_messages_py
+[ 20%] Scanning dependencies of target _lama_msgs_generate_messages_check_deps_GetLamaObject
+Building CXX object random_walk/CMakeFiles/random_walk.dir/src/main.cpp.o
+Scanning dependencies of target _lama_msgs_generate_messages_check_deps_GetCrossing
+Built target std_msgs_generate_messages_lisp
+Building CXX object random_walk/CMakeFiles/random_walk.dir/src/gazebo_retrieve.cpp.o
+[ 20%] Built target std_msgs_generate_messages_py
+[ 20%] Built target geometry_msgs_generate_messages_py
+Scanning dependencies of target _lama_msgs_generate_messages_check_deps_SetPlaceProfile
+Scanning dependencies of target _lama_msgs_generate_messages_check_deps_InterfaceInfo
+Scanning dependencies of target _lama_msgs_generate_messages_check_deps_SetCrossing
+[ 20%] Built target _node_example_generate_messages_check_deps_NodeExampleData
+Scanning dependencies of target _lama_msgs_generate_messages_check_deps_Frontier
+[ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_GetCrossing
+Built target _lama_msgs_generate_messages_check_deps_GetLamaObject
+[ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_SetCrossing
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_InterfaceInfo
+Built target _lama_msgs_generate_messages_check_deps_SetPlaceProfile
+Scanning dependencies of target _lama_msgs_generate_messages_check_deps_SetLamaObject
+Scanning dependencies of target _lama_msgs_generate_messages_check_deps_GetInterfaceInfo
+Scanning dependencies of target _lama_msgs_generate_messages_check_deps_PlaceProfile
+Scanning dependencies of target _lama_msgs_generate_messages_check_deps_LamaObject
+Scanning dependencies of target _lama_msgs_generate_messages_check_deps_GetPlaceProfile
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_Frontier
+Scanning dependencies of target _lama_msgs_generate_messages_check_deps_DescriptorLink
+[ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_PlaceProfile
+Built target _lama_msgs_generate_messages_check_deps_LamaObject
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_GetPlaceProfile
+[ 20%] [ 20%] Scanning dependencies of target _lama_msgs_generate_messages_check_deps_Crossing
+Built target _lama_msgs_generate_messages_check_deps_SetLamaObject
+Scanning dependencies of target geometry_msgs_generate_messages_lisp
+Scanning dependencies of target geometry_msgs_generate_messages_cpp
+Built target _lama_msgs_generate_messages_check_deps_GetInterfaceInfo
+[ 20%] [ 20%] Built target geometry_msgs_generate_messages_lisp
+Built target geometry_msgs_generate_messages_cpp
+Scanning dependencies of target _local_map_generate_messages_check_deps_SaveMap
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_DescriptorLink
+[ 23%] Built target a3_help_generate_messages_py
+[ 23%] Built target _lama_msgs_generate_messages_check_deps_Crossing
+[ 24%] [ 25%] Built target a3_help_generate_messages_lisp
+Built target a3_help_generate_messages_cpp
+[ 25%] [ 25%] Built target _voice_node_generate_messages_check_deps_voice_node
+Built target _local_map_generate_messages_check_deps_SaveMap
+[ 26%] Built target node_example_generate_messages_cpp
+Scanning dependencies of target lama_msgs_generate_messages_py
+[ 27%] [ 30%] Built target node_example_generate_messages_lisp
+Built target node_example_generate_messages_py
+[ 31%] [ 32%] Scanning dependencies of target lama_msgs_generate_messages_cpp
+Scanning dependencies of target local_map_generate_messages_py
+Scanning dependencies of target local_map_generate_messages_cpp
+Scanning dependencies of target lama_msgs_generate_messages_lisp
+Generating Python from MSG lama_msgs/DescriptorLink
+Generating Python from MSG lama_msgs/InterfaceInfo
+[ 33%] Generating Python code from SRV local_map/SaveMap
+[ 34%] [ 36%] [ 37%] Generating C++ code from lama_msgs/DescriptorLink.msg
+Generating C++ code from local_map/SaveMap.srv
+Generating Lisp code from lama_msgs/DescriptorLink.msg
+[ 38%] Generating Python from MSG lama_msgs/PlaceProfile
+[ 39%] [ 40%] Generating Python from MSG lama_msgs/Crossing
+[ 41%] Generating Python srv __init__.py for local_map
+Generating Lisp code from lama_msgs/InterfaceInfo.msg
+[ 43%] [ 44%] Generating Python from MSG lama_msgs/Frontier
+Generating Python from MSG lama_msgs/LamaObject
+[ 44%] Built target local_map_generate_messages_py
+[ 45%] Generating Python code from SRV lama_msgs/GetPlaceProfile
+[ 46%] [ 47%] Generating C++ code from lama_msgs/InterfaceInfo.msg
+Generating Lisp code from lama_msgs/PlaceProfile.msg
+[ 48%] Generating C++ code from lama_msgs/PlaceProfile.msg
+[ 50%] Generating Python code from SRV lama_msgs/GetCrossing
+[ 51%] Generating Python code from SRV lama_msgs/GetInterfaceInfo
+[ 52%] Generating Python code from SRV lama_msgs/SetLamaObject
+[ 53%] Generating Lisp code from lama_msgs/Crossing.msg
+[ 54%] [ 55%] Generating Python code from SRV lama_msgs/SetCrossing
+Generating Python code from SRV lama_msgs/GetLamaObject
+[ 55%] Built target local_map_generate_messages_cpp
+[ 56%] Generating Lisp code from lama_msgs/Frontier.msg
+[ 58%] [ 59%] Generating Lisp code from lama_msgs/LamaObject.msg
+[ 60%] Generating Python code from SRV lama_msgs/SetPlaceProfile
+Generating C++ code from lama_msgs/Crossing.msg
+Scanning dependencies of target local_map_generate_messages_lisp
+[ 61%] [ 62%] [ 63%] Generating C++ code from lama_msgs/Frontier.msg
+Generating Lisp code from lama_msgs/GetPlaceProfile.srv
+Generating Lisp code from local_map/SaveMap.srv
+[ 65%] Generating Lisp code from lama_msgs/GetCrossing.srv
+[ 66%] Generating Python msg __init__.py for lama_msgs
+[ 67%] Generating Lisp code from lama_msgs/GetInterfaceInfo.srv
+[ 67%] Built target local_map_generate_messages_lisp
+[ 68%] Generating Lisp code from lama_msgs/SetLamaObject.srv
+[ 69%] Built target voice_node_generate_messages_cpp
+[ 70%] Generating Python srv __init__.py for lama_msgs
+[ 72%] [ 73%] Generating Lisp code from lama_msgs/SetCrossing.srv
+Generating Lisp code from lama_msgs/GetLamaObject.srv
+[ 74%] [ 74%] Generating Lisp code from lama_msgs/SetPlaceProfile.srv
+Built target lama_msgs_generate_messages_py
+[ 75%] [ 76%] Generating C++ code from lama_msgs/LamaObject.msg
+[ 77%] Generating C++ code from lama_msgs/GetPlaceProfile.srv
+[ 80%] Generating C++ code from lama_msgs/GetCrossing.srv
+Built target voice_node_generate_messages_py
+[ 81%] Generating C++ code from lama_msgs/GetInterfaceInfo.srv
+[ 82%] Built target voice_node_generate_messages_lisp
+[ 82%] Built target lama_msgs_generate_messages_lisp
+[ 82%] Built target a3_help_generate_messages
+[ 83%] [ 86%] Built target listener.node_example
+Generating C++ code from lama_msgs/SetLamaObject.srv
+[ 87%] Generating C++ code from lama_msgs/SetCrossing.srv
+[ 88%] Generating C++ code from lama_msgs/GetLamaObject.srv
+[ 88%] Built target node_example_generate_messages
+[ 90%] Built target talker.node_example
+[ 91%] Scanning dependencies of target local_map_generate_messages
+[ 91%] Built target local_map_generate_messages
+[ 94%] Generating C++ code from lama_msgs/SetPlaceProfile.srv
+Built target simplePub
+[ 96%] Built target simpleSub
+[ 96%] Built target voice_node_generate_messages
+[ 96%] Built target lama_msgs_generate_messages_cpp
+Scanning dependencies of target lama_msgs_generate_messages
+Scanning dependencies of target map_ray_caster
+[ 96%] Built target lama_msgs_generate_messages
+[ 97%] Building CXX object map_ray_caster/CMakeFiles/map_ray_caster.dir/src/map_ray_caster.cpp.o
+Linking CXX shared library /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/lib/libmap_ray_caster.so
+[ 97%] Built target map_ray_caster
+Scanning dependencies of target local_map
+[ 98%] [100%] Building CXX object local_map/CMakeFiles/local_map.dir/src/local_map_node.cpp.o
+Building CXX object local_map/CMakeFiles/local_map.dir/src/map_builder.cpp.o
+Linking CXX executable /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/lib/random_walk/random_walk
+[100%] Built target random_walk
+Linking CXX executable /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/lib/local_map/local_map
+[100%] Built target local_map
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####

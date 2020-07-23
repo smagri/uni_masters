@@ -1,0 +1,77 @@
+11372063
+
+Assessment Criteria:
+
+1. encapsulation of sensor data with appropriate access methods
+2. proper code execution
+3. modularity of software
+
+Poot Attempt
+Satisfactory
+Poor Attempt
+
+Qualitative Feedback 
+- no delineation between a base class Sensor and derived class Acceleratometer, with the use of virtual functions and private member data and member functions
+- classes require more abstraction
+- coding style, use eg baud_ underscore for private data
+- use namespace std: to make your life easier.
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+11204777
+
+Assessment Criteria
+
+1. encapsulation of sensor data with appropriate access methods
+2. proper code execution
+3. modularity of software
+
+Poot Attempt
+Poot Attempt
+Poor Attempt
+
+
+Qualitative Feedback 
+- no delineation between a base class Sensor and derived class Laser, with the use of virtual functions and private member data and member functions
+- classes require more abstraction
+- distances do not appear to very random, random number generation odd, but maybe it's just me
+- location of executable and cmake build files should be in build directory
+- random numbers not associated with port name, see getPort()
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+11980974
+
+Assessment Criteria
+
+1. encapsulation of sensor data with appropriate access methods
+2. proper code execution
+3. modularity of software
+
+Poor Attempt
+None
+None
+
+Qualitative Feedback
+
+- no delineation between a base class Sensor and derived class Laser, with the use of virtual functions and private member data and member functions
+- classes require more abstraction
+- code does not perform any useful function, look at your algorithm
+- sensor class member functions read from user input but do not set private variables
+- keep page character width to 80, otherwise hard to read the code  
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+How could your submission be improved?
+
+
+- perhaps more fine grained use of getter and setter functions would avoid, 'how many parameters to use in my getter/setter function?'
+- using the c++ <random> class to generate random numbers
+- user interface could have been clearer
+- remove debugging messages
+- no display allowed in sensor class, put into main

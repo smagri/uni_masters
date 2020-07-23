@@ -1,0 +1,67 @@
+Important Points:
+Not sure this is in ansi c:
+int &y = x; y is a reference to x, so when you use y it is like using
+x;
+So:
+int x = 42;
+int &y = x; // y is a reference to x
+If you print out y it is equal to 42.
+
+
+Transcript:
+
+- The C++ reference type is a lot like a pointer but with some
+  significant differences. So if you haven't viewed the lesson on
+  pointers please take the time to do that now. This lesson will make
+  a lot more sense if you understand pointers first. Here in Xcode, I
+  have opened the copy of working.cpp from the lesson on pointers. I'm
+  gonna delete these last two blocks here and we don't need this Hello
+  World either. I'm gonna delete this version of y and I'm going to
+  create a y that's a reference int &y = x, so &y, just like the *
+  before the IP above makes that a pointer, the & before the y on line
+  9 makes y a reference.
+
+And so y is a reference and it's initialized with the address of x. So
+remember, reference is very much like a pointer but it has some
+significant differences. One of the differences is this right
+here. You cannot define a reference without also initializing it. When
+you define a reference you must say what the reference is in reference
+to and in this case it's a reference to x. So throughout its life, y
+will always be a reference to x. And anytime you use y it's exactly
+the same as if you're using x.
+
+So I'm gonna go ahead and change this order so that it's the same as,
+well, we'll save this and run it and you'll see that x is 7. What's
+pointed to by IP is also 7 and y is also 7. So you see how we're using
+y, we don't have to de-reference it like we do with a pointer. It
+doesn't need an * in front of it or an & or anything. We just use it
+as if it were a variable. Yet it's a reference and it's exactly the
+same as x.
+
+So if I take another block of these and I come down here and I say x =
+42 and I build and run this, you see now that x and y are all 42. I'm
+gonna take this and copy it again and instead of assigning x, this
+time I'm going to assign y and we'll make it, say 73 and when I run
+this, our third block everything is 73. So we can use y just as if it
+were x.
+
+It has exactly that same effect. I'm gonna come down here and I'm
+going to make one more block. And here we're going to define a new
+variable z, we'll give it a value of 149 and I'm gonna save it. IP =
+the address of z and now when I run this you'll see that z is
+149. What's pointed out by IP is 149 and x is 73 and y is always the
+same as x because it's a reference to x.
+
+Now, a reference is effectively immutable once it refers to a variable
+it will always refer to that same variable. If I come down here and
+make a whole other block of these. If I come down here and I say y = z
+it's not changing the reference. It's simply copying the value of z
+into the variable that's referred to by y which is x. And so when I
+run this you'll see our last block here x is now 149 also. References
+are used a lot in C++, especially in functions and classes which we'll
+get to later.
+
+You'll see many more examples of this in the rest of the course. So
+for now just file this away and understand that this is how references
+work and we'll go ahead and we'll delete this working copy. And we'll
+clean and clear out our console.

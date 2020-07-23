@@ -1,0 +1,48 @@
+# doxygen uses a config file to determine all of its settings.
+#
+# template configuration file
+#
+doxygen -g <config-file>
+
+# default config-file name is Doxyfile.in
+#
+# it is similar in format to a makefile, ie
+# TAGNAME = VALUE1 VALUE2
+
+
+
+# INPUT can be left empty if you only have a few c/c++ files in the
+# current directory.
+#
+#
+#---------------------------------------------------------------------------
+# configuration options related to the input files
+#---------------------------------------------------------------------------
+
+# The INPUT tag can be used to specify the files and/or directories that contain
+# documented source files. You may enter file names like "myfile.cpp" or
+# directories like "/usr/src/myproject". Separate the files or directories
+# with spaces.
+
+INPUT                  =  @CMAKE_CURRENT_SOURCE_DIR@/   
+
+
+# Has default file patterns it can search as well:
+#
+#
+FILE_PATTERNS          = *.cpp *.hpp *.h *.dox
+
+# The RECURSIVE tag can be used to turn specify whether or not subdirectories
+# should be searched for input files as well. Possible values are YES and NO.
+# If left blank NO is used.
+
+
+
+
+# to generate the documentation
+#
+doxygen <config-file>
+
+
+
+#index.dox

@@ -1,0 +1,71 @@
+// working.cpp by Bill Weinman <http://bw.org/>
+
+// enclude all contents of file cstdio.h into this file to pass to the compiler
+//
+// instructs preprocessor to search in implentation specific ares on
+// the file system for cstdio.h
+//
+// note:
+// #include <...> is used for system headers and
+// #include "..." is used for local project headers, or those written by me.
+//
+#include <cstdio>
+
+//#include "preproc.h"
+
+// #if defined(MACRO) == #ifdef
+// #if !defined(MACRO) == #ifndef
+
+
+using namespace std;
+
+// preprocessor(before the compiler) directive #define, can not have
+// the # indented, define may be.
+//
+// #define SYMBOL replacementText, SYMBOL is not a variable
+#define ONE 1
+#define HELLO_STRING "Hello World"
+
+// no space is allowed between ...MACRO(...
+#define MACRO(a, b) (a*b)
+#define MAX(a, b) (a > b ? a : b)
+
+int increment(){
+
+  static int i = 42; // static but intialised only on 1st invocation of fn
+  
+  i += 5; // increment i at each invocation
+  fprintf(stderr, "returning: %d\n", i);
+
+  return i;
+}
+
+
+int main (int argc, char ** argv){
+
+  // #define symbols are different to constants you can get it's
+  // address
+  //
+  // is seen by debugger, seen in symbol table, symbolic constant is not
+  // can get its address and with a symbolic constant you can not
+  //
+  // mostly use const... version in c++
+//  int ia = 5;
+//  int ib = 7;
+  // so MACRO(ia, ib) is replaced by (ia*ib), occurs in the
+  // pre-processor before the compiler is called
+  //
+  // c++ templates are preferred to c style paramterised macros
+  //
+//  fprintf(stderr, "MACRO value is %d\n", MACRO(ia, ib));
+//  fprintf(stderr, "MAX value is %d\n", MAX(ia, ib));
+  int x = 50;
+  // note here MAX(x, increment()) calls the MAX macro and this is
+  // evaluated twice??
+  fprintf( stderr,
+	  "max of %d and %d is: %d\n", x, increment(), MAX(x,increment()) );
+  fprintf( stderr,
+	  "max of %d and %d is: %d\n", x, increment(), MAX(x,increment()) );
+  
+  return 0;
+}

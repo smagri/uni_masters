@@ -1,0 +1,86 @@
+WARNING: Package name "randomNum_node" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits and underscores.
+[  1%] [  3%] [  3%] [  4%] [  5%] Built target listener
+Built target randomNumTalker
+Built target sensor_msgs_generate_messages_py
+Built target TBK
+Built target rosocvTalker
+[  7%] Built target rosocvListner
+[  9%] [ 10%] Built target randomNumListner
+Built target talker
+[ 10%] Built target sensor_msgs_generate_messages_cpp
+[ 10%] Built target sensor_msgs_generate_messages_lisp
+[ 12%] [ 14%] [ 15%] [ 17%] Scanning dependencies of target map_to_image_node
+Built target sample
+Built target image_publisher
+Built target random_walk
+Built target image_subscriber
+[ 17%] Built target std_msgs_generate_messages_cpp
+[ 18%] [ 18%] [ 18%] [ 20%] Built target std_msgs_generate_messages_lisp
+Built target std_msgs_generate_messages_py
+Built target node_example_gencfg
+Building CXX object a3_help/CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o
+[ 20%] Built target _a3_help_generate_messages_check_deps_RequestGoal
+[ 20%] Built target geometry_msgs_generate_messages_py
+[ 20%] Built target _node_example_generate_messages_check_deps_NodeExampleData
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_PlaceProfile
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_GetLamaObject
+[ 20%] [ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_Crossing
+Built target _lama_msgs_generate_messages_check_deps_GetPlaceProfile
+Built target _lama_msgs_generate_messages_check_deps_Frontier
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_InterfaceInfo
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_LamaObject
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_DescriptorLink
+[ 20%] Built target geometry_msgs_generate_messages_cpp
+[ 20%] [ 20%] Built target geometry_msgs_generate_messages_lisp
+Built target _lama_msgs_generate_messages_check_deps_SetLamaObject
+[ 20%] Built target _lama_msgs_generate_messages_check_deps_SetCrossing
+[ 20%] [ 20%] Built target _lama_msgs_generate_messages_check_deps_GetInterfaceInfo
+Built target _lama_msgs_generate_messages_check_deps_GetCrossing
+[ 20%] [ 22%] Built target _lama_msgs_generate_messages_check_deps_SetPlaceProfile
+Built target a3_help_generate_messages_py
+[ 23%] [ 24%] Built target a3_help_generate_messages_cpp
+Built target node_example_generate_messages_cpp
+[ 25%] [ 28%] Built target a3_help_generate_messages_lisp
+Built target node_example_generate_messages_py
+[ 29%] Built target node_example_generate_messages_lisp
+[ 29%] Built target _local_map_generate_messages_check_deps_SaveMap
+[ 44%] [ 47%] [ 75%] [ 77%] Built target lama_msgs_generate_messages_cpp
+Built target a3_help_generate_messages
+Built target lama_msgs_generate_messages_py
+Built target lama_msgs_generate_messages_lisp
+[ 77%] [ 80%] Built target _voice_node_generate_messages_check_deps_voice_node
+Built target listener.node_example
+[ 80%] Built target node_example_generate_messages
+[ 81%] Built target local_map_generate_messages_cpp
+[ 83%] [ 84%] Built target local_map_generate_messages_py
+[ 85%] Built target map_ray_caster
+[ 87%] [ 89%] Built target local_map_generate_messages_lisp
+Built target voice_node_generate_messages_cpp
+Built target talker.node_example
+[ 91%] Built target voice_node_generate_messages_py
+[ 92%] Built target voice_node_generate_messages_lisp
+[ 92%] Built target lama_msgs_generate_messages
+[ 92%] Built target local_map_generate_messages
+[ 95%] [ 97%] Built target local_map
+Built target simpleSub
+[ 97%] [100%] Built target voice_node_generate_messages
+Built target simplePub
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp: In function ‘int main(int, char**)’:
+/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/a3_help/src/map_to_image_node.cpp:320:74: error: expected primary-expression before ‘const’
+       (  map_image_provider.imageCallback(&GazeboRetrieve::imageCallback(const ImageConstPtr&)) );
+                                                                          ^
+make[2]: *** [a3_help/CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o] Error 1
+make[1]: *** [a3_help/CMakeFiles/map_to_image_node.dir/all] Error 2
+make: *** [all] Error 2
+Base path: /lu1/smagri/uni/subj/proj30cp/catkin_ws
+Source space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/src
+Build space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/build
+Devel space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+Install space: /lu1/smagri/uni/subj/proj30cp/catkin_ws/install
+####
+#### Running command: "make cmake_check_build_system" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in "/lu1/smagri/uni/subj/proj30cp/catkin_ws/build"
+####
+Invoking "make -j8 -l8" failed

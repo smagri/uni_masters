@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week8/proj/tutorial/task3/databuffer.h
+string
+-
+vector
+-
+mutex
+-
+
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week8/proj/tutorial/task3/main.cpp
+iostream
+-
+thread
+-
+atomic
+-
+mutex
+-
+chrono
+-
+random
+-
+databuffer.h
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week8/proj/tutorial/task3/databuffer.h
+

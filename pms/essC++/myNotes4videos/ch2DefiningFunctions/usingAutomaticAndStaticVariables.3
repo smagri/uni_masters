@@ -1,0 +1,60 @@
+Important Points:
+Automatic Storage is stored on the STACK, foreach invocation of the
+function.
+Us automatic storage/stack storage when passing a few variables,
+otherwise use persistant memory with static, which is not on the
+stack.
+
+
+
+
+Transcript:
+
+- Variables declared in a function default to automatic storage. Other
+  storage options are also available. Here I have a working copy of
+  func.cpp from Chap02 of the ExerciseFiles. I'm gonna go ahead and
+  declare a variable inside of this function. And we'll go ahead and
+  print it here using printf. And now when I build and run you see it
+  says i is 5. So this integer variable is in automatic
+  storage. Storage inside a function block defaults to automatic
+  storage.
+
+Automatic storage is stored on the stack, which is created fresh for
+each invocation of the function. So the value of the variable is not
+carried over from invocation to invocation. So if I change the value
+in printf again, and then run this function twice, you'll see that the
+second time through the variable is 5 again, even though we assigned
+it 42. So each time the function is invoked, a new copy of i is
+allocated on the stack, and it's initialized with the value 5.
+
+And that value is not carried from one invocation of the function to
+another. On the other hand, I can declare this variable as a static by
+using the static keyword in front of int so that's a modifier for that
+variable. And now when I just save this and run it, you'll notice that
+the second time through, the value is still 42, Because static storage
+is not stored on the stack, and so it's persistent for the life of the
+entire process. So now the value is carried from one invocation to
+another.
+
+In fact, if I use the increment operator here, you'll notice that
+those increments are carried over from one invocation of the function
+to another. Because automatic storage is stored on the stack, it is
+not suitable for large objects. It's always a good idea to avoid using
+automatic storage for anything larger than a few scalar variables. So
+for example, if instead of an integer here, I was using a large object
+or a string or something like that, I would wanna make sure that I'm
+using static storage for that, and not automatic storage.
+
+One other important note, it used to be possible to declare a variable
+as auto by using the auto keyword here. And you'll notice that this
+raises a warning inside my code here, 'auto' storage class specifier
+is not permitted in C++11, and will not be supported in future
+releases. The auto keyword has actually been repurposed in C++11. It
+mean something different and we'll cover that later. But because
+automatic storage is the default, there's no reason to declare it.
+
+And in fact, it was never really even used. So variables declared in
+function default to automatic storage. If you want your data to be
+persistent, you may declare your variables as static. And we'll cover
+other types of memory allocation later in the course.
+

@@ -1,0 +1,74 @@
+Task:
+* shares data between threads(ie via shared memory), one thread per
+  sensor?
+
+* ensure data integrity between threads, ie no races.
+
+* share data between threads via a data structure, that enables time
+  syncronisation & interpolation of data for task.
+
+* supply auto-generated documentation using doxygen.
+
+
+Rational:
+* sensors produce data at  varying rates, threading and syncronisation
+  are used to deal with processing that data.
+
+Task:
+a) create threads that can handle BUFFERING INCOMMING DATA in an
+agnositic manner(works for any type of sensor, or, in any order???).
+
+b) create a separate thread to PROCESS THE DATA from the sensors that
+ensures syncronisation of the data between PRODUCERS/CONSUMENRS and
+output is EXTRAPOLATION??? of data.
+
+Extrapolation in a straigt line, with value vs time on the linear
+graph.
+
+
+
+Specifics:
+
+Range values/sensor readings:
+
+OK. sigma is std::normal_distribution
+
+OK. r is clipped to the maximum sensor range 
+
+How to calculate r:
+for t=0 to t=2pi radians, and keep repeating
+new r dependent on sigma really
+
+I don't  understand how to  interpret the  range equation, done  math a
+long time ago.
+
+Let's say I have a function to calculate one range value r, which does:
+a) gerenrate a random number(sigma via std::normal_distribution...)
+b) use _one_ value for t (0 to 2pi radians)
+c) calculate sin(2*pi*0.01*t), where t is one value from step b)
+d) clip r
+
+Get  the  next  r  value  by  calling  the  above  function  again  at
+1/samplingRateOfSensor  seconds  later, but  this  time  the value  of
+t+=0.1 or some other random increment to  t.  t goes from 0 to 2pi and
+then repeats.
+
+
+DataFusion Class:
+
+It  doesn't make  sence to  fuse(take min/max/avg)  of the  two sensor
+values(radar, sonar)  unless they occur at  the same time.  So  say we
+use the time  that sensor1 samples occur as the  fusion time, we would
+need to extrapolate the sensor2 sample  values to the fusion time.  As
+sensor1 and sensor2 samples occur at different times.
+
+So  if x=time,  y=value/range, and  (x1,y1)  and (x2,y2)  are the  two
+previous, wrt  time, sensor2  values, I  use the  linear extrapolation
+formula:
+
+y(x) = y1 + [(x − x1) / (x2 − x1)] * (y2 − y1)
+
+to determine the sensor2 value/range  at the time(the time of fusion)
+the sensor1 sample occurs.
+
+I assumed one sensor lags the other in the timestamp of their samples.

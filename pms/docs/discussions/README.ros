@@ -1,0 +1,11 @@
+Post:RE: ROS and Open CV Installation Issues
+Author:￼ Denise Tang
+Posted Date: 21 March 2017 7:17 PMStatus:Published
+
+I am also running Ubuntu 14.04 LTS on a dual booted laptop. Everything
+run fine, OpenCV is included in ROS, so maybe just (re)install ROS?
+
+ROS-desktop does not include perception and simulator, but
+ROS-desktop-full does.
+
+Install with (sudo) apt-get install ros-indigo-desktop-full

@@ -1,0 +1,38 @@
+laser.h
+-apart from set/getAngularResolution() other methods don't need to be there
+-same with private variables
+-they belong in ranger class
+
+radar.h
+-same as for laser.h wrt private vars
+
+sonar.h
+-same as for laser.h wrt private vars
+
+laser.cpp, radar.cpp, sonar.cpp:
+-should inherit default variables from
+ranger class constructor.
+-random number generation/range calculations should be in ranger class
+
+ranger.h
+-protected: needed not private: member data
+Ranger(model, rangeMax, rangeMin) not there
+
+-probably overuse of virtual and getDist() not pure virtual with =0
+-virtual method incorrect fn and need to be made pure virtual for an
+abstract class.
+
+
+ranger.cpp:
+sanity/valid check for baud, port ...etc not there, report sane values not
+there
+
+DOCUMENTATION: none
+
+
+rangerfusion.cpp
+-hard coded value for fusion algorithim, algorithim suspect and incomplete
+
+
+main.cpp
+-no print functions in laser.cpp, radar.cpp and sonar.cpp

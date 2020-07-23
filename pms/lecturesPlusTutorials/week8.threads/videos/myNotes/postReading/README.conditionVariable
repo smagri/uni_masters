@@ -1,0 +1,38 @@
+thread 1 is producer of the data
+thread 2 is the consumer of the data
+
+how do we decide on the time duration of the fn's nap, that is the:
+std::this_thread::sleep_for(chrono::milliseconds(10)).  If it's too
+short the function will still spend a lot of time looping.  It its too
+long it may not be able to get the data in time.
+
+To solve this problem, ie use NO sleeping, use:
+
+std::condition_variable cond;
+
+thread1:
+cond.notify_one(); // notifys all the threads waiting on condition
+called cond.
+
+thread2:
+cond.wait(locker);
+
+this puts thread 2 asleep till thread1 notifies it that it has data
+ready for it.
+
+cond.wait() unlocks the mutex then goes to sleep, when it gets up it
+locks the mutex again before performing fns.
+
+
+If using lock/ulock/lock/unlock many times you need to used a:
+std::unique_lock<mutex> locker(mutexName), not use lockgaurd.
+
+Spurious wake, avoid this by using a predicate:
+cond.wait(locker, predicate) ie is the cond really true.
+
+
+cond.notify_one(); // notifies one thread
+cond.notify_all(); // notifies all threads
+
+
+

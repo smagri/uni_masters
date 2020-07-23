@@ -1,0 +1,728 @@
+#include <time.h>
+#include <vector>
+
+#define DEBUG_CALL_SERVICE
+
+#include "ros/ros.h"
+
+#include <geometry_msgs/Twist.h>
+
+#include "std_msgs/String.h"
+#include "gazebo_msgs/ModelStates.h"
+#include "tf/transform_datatypes.h"
+
+#include "sensor_msgs/LaserScan.h"
+#include "nav_msgs/Odometry.h"
+#include "geometry_msgs/PoseArray.h"
+
+#include <image_transport/image_transport.h>
+#include <opencv2/highgui/highgui.hpp>
+#include <cv_bridge/cv_bridge.h>
+
+#include "a3_help/RequestGoal.h"
+
+
+#include <sstream>
+#include <iostream>
+#include <string>
+
+#include <map>
+#include <thread>
+#include <chrono>
+#include <deque>
+#include <mutex>
+#include <random>
+
+namespace enc = sensor_msgs::image_encodings;
+
+
+
+
+
+
+class GazeboRetrieve : public a3_help::RequestGoal {
+
+  
+  image_transport::ImageTransport it_;
+
+  ros::Publisher cmd_vel_pub_;
+
+  ros::Subscriber sub1_;
+  
+  ros::Subscriber sub2_;
+
+  std::string imageEncoding;
+
+  ros::ServiceServer service_;
+
+  ros::ServiceClient client_;
+
+
+  
+
+
+
+  struct DataBuffer
+  {
+  };
+
+  
+  struct ImageDataBuffer
+  {
+  };
+
+  struct LaserDataBuffer
+  {
+    
+    std::deque<double> laserRminDeq;
+    std::deque<double> laserRmaxDeq;
+    
+  };
+
+
+  struct PathDataBuffer
+  {
+  };
+
+  
+
+
+
+  
+  
+public:
+  GazeboRetrieve(ros::NodeHandle nh)
+    : nh_(nh), it_(nh)
+  {
+
+    sub1_ = nh_.subscribe("odom", 1000, &GazeboRetrieve::odomCallback,this);
+
+    sub2_ = nh_.subscribe("base_scan_1",
+			  10, &GazeboRetrieve::laserCallback,this);
+    image_transport::ImageTransport it(nh);
+
+    
+    sub3_ = it.subscribe("map_image/full", 1,
+			 &GazeboRetrieve::imageCallback,this);
+
+    image_pub_ = it_.advertise("map_image/full", 1);
+
+    
+    service_ = nh_.advertiseService("request_goal",
+    				    &GazeboRetrieve::requestGoal, this);
+    
+    
+    client_ = nh_.serviceClient<a3_help::RequestGoal>("request_goal");
+    
+    
+    cmd_vel_pub_ = nh_.advertise<geometry_msgs::Twist>("/cmd_vel", 1);
+    
+    ros::NodeHandle pn("~");
+    double mapSize;
+    double resolution;
+    pn.param<double>("map_size", mapSize, 20.0);
+    pn.param<double>("resolution", resolution_, 0.1);
+
+    count_ =0;
+    cv::namedWindow("ogMap",CV_WINDOW_NORMAL);
+    cv::namedWindow("global",CV_WINDOW_NORMAL);
+    cv::startWindowThread();
+    cv::waitKey(5);
+
+    void detectFrontiers(int py, int px,
+			 double  &angleDeg, std::map<int, int> &unvisitedFT);
+    void detectCellTypes(double closest_point, double angle,
+			 double range_min, double range_max);
+
+
+  }
+  
+
+  ~GazeboRetrieve()
+  {
+    cv::destroyWindow("ogMap");
+    cv::destroyWindow("global");
+  }
+
+
+  void detectFrontiers(int py, int px, int &angleDeg,
+		       std::map<int, int> &unvisitedFT){
+  
+    if (cvPtr_->image.at<uchar>(py, px) == FS){
+	  
+	  
+      int x=px;  int y=py-1;
+      if ( (x>=0 && x<cvPtr_->image.cols) && (y>=0 && y<=cvPtr_->image.rows) ){
+	if (cvPtr_->image.at<uchar>(y, x) == UK){
+	  cvPtr_->image.at<uchar>(py, px) = FT;
+	  angleDeg=90;
+	  
+	  unvisitedFT[py]=px;
+	}
+      }
+	  
+      x=py;  y=py+1;
+      if ( (x>=0 && x<cvPtr_->image.cols) && (y>=0 && y<cvPtr_->image.rows) ){
+	if (cvPtr_->image.at<uchar>(y, x) == UK){
+	  cvPtr_->image.at<uchar>(py, px) = FT;
+	  angleDeg=270;
+	  unvisitedFT[py]=px;
+	}
+      }
+	  
+      x=px-1;  y=py;
+      if ( (x>=0 && x<cvPtr_->image.cols) && (y>=0 && y<cvPtr_->image.rows) ){
+	if (cvPtr_->image.at<uchar>(y, x) == UK){
+	  cvPtr_->image.at<uchar>(py, px) = FT;
+	  angleDeg=180;
+	  unvisitedFT[py]=px;
+	}
+      }
+	  
+      x=px+1;  y=py;
+      if ( (x>=0 && x<cvPtr_->image.cols) && (y>=0 && y<cvPtr_->image.rows) ){
+	if (cvPtr_->image.at<uchar>(y, x) == UK){
+	  cvPtr_->image.at<uchar>(py, px) = FT;
+	  angleDeg=0;
+	  unvisitedFT[py]=px;
+	}
+      }
+	  
+
+
+
+
+  void  rangeVectorNextPxPy(int angleDeg, int &px, int &py){
+    
+    
+    if (angleDeg == 0){
+      px = px+1;
+      py = py;
+    }
+    else if (angleDeg == 180){
+      px = px-1;
+      py = py;
+    }
+    else if (angleDeg == 90){
+      px = px;
+      py = py-1;
+    }
+    else if (angleDeg == 270){
+      px = px;
+      py = py+1;
+    }
+  
+  }
+
+  void  detectCellTypes(double closest_point, double angle,
+			double range_min, double range_max){
+
+
+
+    
+    double x = closest_point * cos(angle);
+    double y = closest_point * sin(angle);
+    double angleDeg = angle * (180/pi);
+    int pr = sqrt(pow(x,2) + pow(y,2));
+    
+            
+    int pxyRangeMin = (range_min / resolution_);
+    int pxyRangeMax = (range_max / resolution_);
+
+
+    int px = cvPtr_->image.cols/2;
+    int py = cvPtr_->image.rows/2;
+
+    cvPtr_->image.at<uchar>(py, px) == FS;
+
+    
+
+    if (closest_point < range_min){
+      for (int i=0; i<cvPtr_->image.cols; i++){
+	rangeVectorNextPxPy(angleDeg, px, py);
+	cvPtr_->image.at<uchar>(py, px) == UK;
+      }
+    }
+    else if (closest_point == range_min){
+      for(int i= 0; i<pxyRangeMin; i++){
+	rangeVectorNextPxPy(angleDeg, px, py);
+	cvPtr_->image.at<uchar>(py, px) == FS;
+      }
+
+      rangeVectorNextPxPy(angleDeg, px, py);
+      cvPtr_->image.at<uchar>(py, px) = O;
+
+      for (int i=px; i<cvPtr_->image.cols; i++){
+	rangeVectorNextPxPy(angleDeg, px, py);
+	cvPtr_->image.at<uchar>(py, px) == UK;
+      }
+    }
+    else if ( (closest_point > range_min)
+	      && (closest_point < range_max) ){
+      for (int i=0; i<pr; i++){
+	rangeVectorNextPxPy(angleDeg, px, py);
+	cvPtr_->image.at<uchar>(py, px) == FS;
+      }
+
+      rangeVectorNextPxPy(angleDeg, px, py);
+      cvPtr_->image.at<uchar>(py, px) = O;
+
+      for (int i=px; i<cvPtr_->image.cols; i++){
+	rangeVectorNextPxPy(angleDeg, px, py);
+	cvPtr_->image.at<uchar>(py, px) == UK;
+      }
+    }
+    else if (closest_point == range_max){
+      for (int i=0; i<pxyRangeMax; i++){
+	rangeVectorNextPxPy(angleDeg, px, py);
+	cvPtr_->image.at<uchar>(py, px) == FS;
+      }
+      
+      rangeVectorNextPxPy(angleDeg, px, py);
+      cvPtr_->image.at<uchar>(py, px) = O;
+      
+      for (int i=px; px<cvPtr_->image.cols; i++){
+	rangeVectorNextPxPy(angleDeg, px, py);
+	cvPtr_->image.at<uchar>(py, px) == UK;
+      }
+    }
+    else if (closest_point > range_max){
+      for (int i=0; i<pxyRangeMax; i++){
+	rangeVectorNextPxPy(angleDeg, px, py);
+	cvPtr_->image.at<uchar>(py, px) == FS;
+      }
+
+      rangeVectorNextPxPy(angleDeg, px, py);
+      cvPtr_->image.at<uchar>(py, px) == FS;
+
+      for (int i=px; px<cvPtr_->image.cols; i++){
+	rangeVectorNextPxPy(angleDeg, px, py);
+	cvPtr_->image.at<uchar>(py, px) == UK;
+      }
+    }
+
+
+  
+  bool requestGoal(a3_help::RequestGoal::Request  &req,
+		   a3_help::RequestGoal::Response &res)
+  {
+
+
+    
+    
+
+
+
+    fprintf(stderr, "dbg: in requestGoal() service callback fn\n");
+    
+
+    
+    geometry_msgs::Twist robot_base_cmd;
+    
+    robot_base_cmd.linear.x = req.x;
+    robot_base_cmd.linear.y = req.y;
+    robot_base_cmd.angular.z = req.angle;
+    
+    cmd_vel_pub_.publish(robot_base_cmd);
+    
+
+    
+    res.ack = true;
+    ROS_INFO("sending back response: [%d]", res.ack);
+
+    return res.ack;
+  }
+
+
+  void odomCallback(const nav_msgs::OdometryConstPtr& msg)
+  {
+
+    
+
+    
+
+
+
+    fprintf(stderr, "dbg: in odomCallback() fn\n");
+
+    geometry_msgs::Pose pose=msg->pose.pose;
+    buffer.buffer_mutex_.lock();
+    buffer.poseDeq.push_back(pose);
+    buffer.timeStampDeq.push_back(msg->header.stamp);
+
+    
+    buffer.buffer_mutex_.unlock();
+
+
+  }
+
+
+  void laserCallback(const sensor_msgs::LaserScanConstPtr& msg)
+  {
+
+
+    
+
+    fprintf(stderr, "dbg: in laserCallback() fn\n");
+
+
+
+
+
+    for (unsigned int idx=0 ; idx < msg->ranges.size() ; idx++){
+      if(msg->ranges.at(idx)<closest_point){
+	closest_point = msg->ranges.at(idx);
+	angle = msg->angle_min+(idx*msg->angle_increment);
+      }
+    }
+    int angleDeg = (angle * (180/pi));
+
+
+
+
+    
+    ros::Time timeLaser = msg->header.stamp;
+    std::cerr << timeLaser
+	      << " Laser: [d, theta, x, y]=["
+	      << closest_point <<","<< angle << "," << x << "," << y << "]"
+	      << std::endl;
+
+
+    std::cerr << "dbg: "
+	      << timeLaser
+	      << " Laser: [d, theta, x, y]=["
+	      << closest_point <<","<< angleDeg << "," << x << "," << y << "]"
+	      << std::endl;
+
+
+    
+
+
+    
+
+
+    
+  void imageCallback(const sensor_msgs::ImageConstPtr& msg)
+  {
+
+
+    fprintf(stderr, "dbg: in imageCallback() fn\n");
+    
+
+    try
+    {
+      if (enc::isColor(msg->encoding)){
+	cvPtr_ = cv_bridge::toCvCopy(msg, enc::BGR8);
+      }
+      else{
+	cvPtr_ = cv_bridge::toCvCopy(msg, enc::MONO8);
+      }
+    }
+    catch (cv_bridge::Exception& e)
+    {
+      ROS_ERROR("cv_bridge exception: %s", e.what());
+      return;
+    }
+    
+
+    imageBuffer.buffer_mutex_.lock();
+    imageBuffer.timeStampDeq.push_back(msg->header.stamp);
+    if(imageBuffer.imageDeq.size()>2){
+      imageBuffer.imageDeq.pop_front();
+      imageBuffer.timeStampDeq.pop_front();
+    }
+    imageBuffer.buffer_mutex_.unlock();
+
+  }
+
+
+
+  void pathCallback(const geometry_msgs::PoseArrayConstPtr& msg){
+
+    geometry_msgs::Pose pose;
+
+    std::vector<double> yWaypoint;
+    
+    for (int i=0; i<msg->poses.size(); i++){
+      pose = msg->poses.at(i);
+      xWaypoint.push_back(pose.position.x);
+      yWaypoint.push_back(pose.position.y);
+    }
+
+    pathBuffer.buffer_mutex_.lock();
+    pathBuffer.xWaypointDeq.push_back(xWaypoint);
+    pathBuffer.yWaypointDeq.push_back(yWaypoint);
+    pathBuffer.timeStampDeq.push_back(msg->header.stamp);
+    pathBuffer.buffer_mutex_.unlock();
+    
+  }
+
+
+
+  
+  void seperateThread() {
+            
+
+    
+
+    
+    fprintf(stderr, "dbg: in seperateThread() fn\n");
+
+    ros::Time timeOdom = ros::Time::now();
+    double yaw,x,y;
+
+    ros::Time timeImage = ros::Time::now();;
+
+    ros::Time timeLaser = ros::Time::now();;
+    double laser;
+    double angle;
+    int angleDeg;
+    double range_min;
+    double range_max;    
+    
+    ros::Time timePath = ros::Time::now();;
+
+
+    
+
+
+    
+    
+
+    while (ros::ok()) {
+      int deqSz =-1;
+
+      fprintf(stderr, "dbg: seperateThread: while(ros::ok)\n");
+      
+
+
+      buffer.buffer_mutex_.lock();
+      deqSz = buffer.poseDeq.size();
+      if (deqSz > 0) {
+	geometry_msgs::Pose pose=buffer.poseDeq.front();
+	yaw = tf::getYaw(pose.orientation);
+	x = pose.position.x;
+	y = pose.position.y;
+	timeOdom = buffer.timeStampDeq.front();
+	buffer.poseDeq.pop_front();
+	buffer.timeStampDeq.pop_front();
+      }
+      buffer.buffer_mutex_.unlock();
+
+
+     
+      imageBuffer.buffer_mutex_.lock();
+      if(imageBuffer.imageDeq.size()>0){
+	image = imageBuffer.imageDeq.front();
+	timeImage = imageBuffer.timeStampDeq.front();
+	imageBuffer.imageDeq.pop_front();
+	imageBuffer.timeStampDeq.pop_front();
+      }
+      imageBuffer.buffer_mutex_.unlock();
+
+
+      
+
+
+      
+      
+      std::vector<double> xWaypoint = {0.0, 50.0, 100.0, 170.0, 170.0,
+				       130.0, 120.0, 0.0};
+      std::vector<double> yWaypoint = {0.0, 50.0, 100.0, 100.0, 150.0,
+				       130.0, 120.0, 0.0};
+
+
+       
+      if (count_>100){
+	count_=0;
+	
+	if(!image.empty()){
+
+	  fprintf(stderr, "dbg: seperateThread: (!image.empty()\n");
+		
+		  
+	  
+
+
+
+	  cv::Mat rgbImage;
+	  cv::cvtColor(image, rgbImage, CV_GRAY2RGB);
+
+	  
+
+	  
+
+
+/*	  
+	  vector<double> yWaypoint;
+
+	  pathBuffer.buffer.buffer_mutex_.lock();
+	  xWaypoint = pathBuffer.xWaypointdDeq.front(xWaypoint);
+	  yWaypoint = pathBuffer.yWaypointdDeq.front(yWaypoint);
+	  timePath = pathBuffer.timeStampDeq.front(msg->header.stamp);
+	  pathBuffer.xWaypointDeq.pop_front(xWaypoint);
+	  pathBuffer.yWaypointDeq.pop_front(yWaypoint);
+	  buffer.timeStampDeq.pop_front(msg->header.stamp);
+	  pathBuffer.buffer_mutex_.unlock();
+*/
+
+	  cv::Mat globalImage(500, 500, CV_8UC3, cv::Scalar(255,255,255));
+
+
+
+
+
+	  for (int i=0; i<(xWaypoint.size()-1); i++){
+	    cv::circle(globalImage,
+		       cv::Point(xWaypoint.at(i), yWaypoint.at(i)),
+		       3, CV_RGB(255,0,0), -1);
+	    cv::circle(globalImage,
+		       cv::Point(xWaypoint.at(i+1), yWaypoint.at(i+1)),
+		       3, CV_RGB(255,0,0), -1);
+	    cv::line(globalImage, 
+		     cv::Point(xWaypoint.at(i), yWaypoint.at(i)),
+		     cv::Point(xWaypoint.at(i+1), yWaypoint.at(i+1)),
+		     CV_RGB(255,0,0), 1);
+	  }
+
+	  
+	  	  
+	  
+
+	  std::cerr << "Odom in the global frame ie environment to map, rad:"
+		    << std::endl
+		    << timeOdom
+		    << " Odom: [x,y,yaw]=["
+		    << x << "," << y << "," << yaw << "]"
+		    << std::endl;
+	  int yawDeg = (yaw * (180/pi));
+	  std::cerr << "Odom in the global frame ie environment to map, degree:"
+		    << std::endl
+		    << timeOdom
+		    << " Odom: [x,y,yawDeg]=["
+		    << x << "," << y << "," << yawDeg << "]"
+		    << std::endl;
+	  
+	  std::cerr << " Odom: in pixels from centre of ogMap, pos[px,py]=["
+		    << (x/resolution_) << "," 
+		    << (y/resolution_) << "] "
+		    << std::endl
+		    << " Odom: in pixels _on_ ogMap, pos[px,py]=[" 
+		    << ((x/resolution_)+(image.cols/2)) << ","
+		    << ((y/resolution_)+(image.rows/2)) << "]"
+		    << std::endl;
+
+
+
+
+/*          rosMsgPtr_ = cv_bridge::CvImage(std_msgs::Header(),
+					  enc::BGR8, rgbImage).toImageMsg();
+	  image_pub_.publish(rosMsgPtr_);
+*/
+
+	  
+
+
+	  
+/*
+	  a3_help::RequestGoal::Request goalReq; 
+	  a3_help::RequestGoal::Response goalRes;
+	  goalReq.x = goalReq.x + (it->second * resolution_);
+	  goalReq.y = goalReq.y + (it->first * resolution_);
+	  
+	  client_.call(goalReq, goalRes);
+	    
+	  if (goalRes.ack){
+	    ROS_INFO_STREAM("client call to service SUCCEDED");
+	  }
+	  else{
+	    ROS_INFO_STREAM("client call to service FAILED");
+	  }
+
+	  if (it != unvisitedFT.end()){
+	    unvisitedFT.erase(it);
+	    it++;
+	  }
+*/
+
+	  
+	  fprintf(stderr, "dbg: seperateThread: before imshow view\n");
+	  cv::imshow("ogMap", rgbImage);
+	  cv::waitKey(5);
+
+	  cv::imshow("global", globalImage);
+	  cv::waitKey(5);
+
+
+
+      else{
+	count_++;
+
+	std::this_thread::sleep_for (std::chrono::milliseconds(10));
+
+	
+	
+      }
+
+    
+
+      
+    
+    
+  
+  
+  
+
+
+
+
+int main(int argc, char **argv)
+{
+
+
+  /**
+   
+   * The ros::init()  function needs to see  argc and argv so  that it
+   * can  perform  any ROS  arguments  and  name remapping  that  were
+   * provided at  the command  line.  For programmatic  remappings you
+   * can  use a  different version  of init()  which takes  remappings
+   * directly, but  for most  command-line programs, passing  argc and
+   * argv is the  easiest way to do it.  The  third argument to init()
+   * is the name of the node.
+   *
+   * You must call one of the versions of ros::init() before using any
+   * other part of the ROS system.
+   */
+  ros::init(argc, argv, "gazebo_retrieve");
+
+  /**
+   * NodeHandle is the main access point to communications with the
+   * ROS system.  The first NodeHandle constructed will fully
+   * initialize this node, and the last NodeHandle destructed will
+   * close down the node.
+   */
+  ros::NodeHandle nh;
+
+  /**
+   * Let's start seperate thread first, to do that we need to create
+   * object and thereafter start the thread on the function desired
+   */
+  std::shared_ptr<GazeboRetrieve> gc(new GazeboRetrieve(nh));
+  std::thread t(&GazeboRetrieve::seperateThread,gc);
+
+  /**
+   * ros::spin() will enter a loop, pumping callbacks.  With this
+   * version, all callbacks will be called from within this thread
+   * (the main one).  ros::spin() will exit when Ctrl-C is pressed, or
+   * the node is shutdown by the master.
+   */
+  ros::spin();
+
+  /**
+   * Let's cleanup everything, shutdown ros and join the thread
+   */
+  ros::shutdown();
+  t.join();
+
+  return 0;
+}

@@ -1,0 +1,4 @@
+dbg: in laserCallback() fn
+dbg: dbg: in sThread() fn
+19466dbg: sThread: while(ros::ok)
+.000000000

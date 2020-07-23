@@ -1,0 +1,33 @@
+// func.cpp by Bill Weinman <http://bw.org/>
+#include <cstdio>
+
+#include "func.h" // most common way to declare a fn
+
+using namespace std;
+
+// functions need to be declared before they are used
+
+//void func(); // fn declaration or use this in func.h
+
+
+int main( int argc, char ** argv ){
+
+  int x = 42;
+  puts("this is main()");
+  func(x);
+
+
+  return 0;
+}
+
+
+void func(int &i){
+
+  // pass by reference in c++
+  
+  puts("this is func()");
+  fprintf(stderr, "value is i=%d\n", i);
+
+  
+}
+

@@ -1,0 +1,411 @@
+                   A Frontier-Based Approach for Autonomous Exploration
+
+                                               Brian Yamauchi
+                           Navy Center for Applied Research in Artificial Intell
+                                          Naval Research Laboratory
+                                         Washington, DC 20375-5337
+                                          yamauchi@ aic.nrl.navy.-iil
+
+
+                         Abstract                                     reality is
+                                                                      have to na
+We introduce a new approach f o r exploration based on the            where wall
+concept of frontiers, regions on the boundaly between                      A few
+open space and unexplored space. By moving to new fron-               tems using
+tiers, a mobile robot can extend its map into new territory           but only w
+until the entire environment has been explored. We                    assumption
+describe a method f o r detecting frontiers in evidence grids         environmen
+and navigating to these frontiers. We also introduce a                [6], while
+technique f o r minimizing specular rejections in evidence            angles and
+grids using laser-limited sonar: We have tested this                  the robot 
+approach with a real mobile robot, exploring real-world               requiremen
+oSJice environments cluttered with a variety of obstacles.                 Our g
+An advantage of our approach is its ability to explore both           complex en
+large open spaces and narrow cluttered spaces, with walls             ings. Our 
+and obstacles in arbitrary orientations.                              regions on
+                                                                      unexplored
+                                                                      frontiers 
+1.0 Introduction                                                      guide expl
+                                                                      mobile rob
+     While many robots can navigate using maps, few can               ronments c
+build their own maps. Usually a human must map the ter-               lined with
+ritory in advance, providing either the exact locations of            spaces.
+obstacles (for metric maps) or a graph representing the
+connectivity between open regions (for topological maps).             2.0 Fronti
+As a result, most mobile robots become unable to navigate
+efficiently when placed in unknown environments.                           The c
+     Exploration has the potential to free robots from this           know about
+limitation. We define exploration to be the act of moving             much new i
+through an unknown environment while building a map                   nothing ex
+that can be used for subsequent navigation. A good explo-             ing. You w
+ration strategy is one that generates a complete or nearly            world as p
+complete map in a reasonable amount of time.                          quickly as
+     Considerable work has been done in simulated explo-                   The c
+ration, but these simulations often view the world as a set           To gain th
+of floorplans. The blueprint view of a typical office build-          the bounda
+ing presents a structure that seems simple and straightfor-                Front
+ward-rectangular      offices, square conference rooms,               space and 
+straight hallways, and right angles everywhere-but the
+
+
+
+                                                                146
+0-8186-8138-1/97 $10.00 0 1997 IEEE
+frontier, it can see into unexplored space and add the new              open ar
+information to its map. As a result, the mapped territory               the robo
+expands, pushing back the boundary between the known                    non-exis
+and the unknown. By moving to successive frontiers, the                      For
+robot can constantly increase its knowledge of the world.               reduce t
+We call this strategy frontier-based exploration.                       The stan
+     If a robot with a perfect map could navigate to a par-             sensor r
+ticular point in space, that point is considered accessible.            ing. In 
+All accessible space is contiguous, since a path must exist             of this 
+from the robot’s initial position to every accessible point.            use a 
+Every such path will be at least partially in mapped terri-             sors, an
+tory, since the space around the robot’s initial location is            sonar 
+mapped at the start. Every path that is partially in                    had retu
+unknown territory will cross a frontier. When ihe robot                 marking 
+navigates to that frontier, it will incorporate more of the             pied.
+space covered by the path into mapped territory. If thc                      Why
+robot does not incorporate the entire path at one time, then            in a two
+a new frontier will always exist further along the path, sep-           three-di
+arating the known and unknown segments and providing a                  below th
+new destination for exploration.                                        detectab
+     In this way, a robot using frontier-based exploration              use a th
+will eventually explore all of the accessible space in the              such dev
+world-assuming perfect sensors and perfect motor con-                   hungry t
+trol. A Zcno-like Paradox where the new information con-                     Las
+tributed by each new frontier decreases geometrically is                get spec
+theoretically possible (though highly unlikely), but even in            laser-bu
+such a case, the map will become arbitrary accurate in a                reduces 
+finite amount of time.                                                  from wal
+     The real question is how well frontier-based explora-              major so
+tion will work using the noisy sensors and imperfect motor
+control of a real robot in the real world. This is the ques-            2.2 Fron
+tion that this research is intended to address.
+                                                                              Af
+2.1 Laser-Limited Sonar                                                 in the g
+                                                                        bility t
+     We use evidence grids 171 as our spatial representa-               This alg
+tion. Evidence grids are Cartesian grids containing cells,              value of
+and each cell stores the probability that the corresponding             all of t
+region in space is occupied. Initially all of the cells are set               Ea
+to the prior probability of occupancy, which is a rough
+estimate of the overall probability that any given location             * open: 
+will be occupied. Each time a sensor reading is obtained                * unknow
+from the robot’s sonar, infrared, or laser rangefinders, the            0   oc
+corresponding sensor model is uscd to update the grid.
+     The main problem with sonar sensors is that instead
+                                                                             A p
+of bouncing back toward the sensor, the sound pulse can
+                                                                        extracti
+hit a flat surface and bounce away from the sensor. Then
+                                                                        aries be
+either the sonar senses nothing, or it senses objects that,
+                                                                        cell adj
+like reflections in a mirror, appear to be much farther away
+                                                                        cell. Ad
+than the nearest surface.
+                                                                        Any fron
+     These reflections could cause difficulties for frontier-
+                                                                        (roughly
+based exploration, not only due to inaccuracies in the map,
+but also because specular reflections oftcn appear as large
+
+
+
+                                                                  147
+                        .....
+                        ..~..
+     .. .. .. .. .. .. . . . . . . . .       .. .. .. .. .... . . . . ......    
+      . . . . . . ....
+      .. .. .. .. .. .. . . . ..
+                        ....
+                                              . . . . . . .. .. .. .. .. .. .. .
+                                              .  .
+                                           ........ .  .  . .         . .   .  .
+                                             . . . . . . .. .. .. .. .. .. .. ..
+                                                                                
+                                                                                
+                                                                                
+                        ....                .......
+                                             . . . . . . ... ... ... .. .. .. ..
+                                                                      .  .  .  .
+                                                                                
+                        ....
+                        ....               ........
+                                                                                
+                 ....
+                 ....                            . . . . . ... .. .. .. .. .. ..
+                                              .......
+     ... ... ... ... ......
+                 ....
+                 ....                          . . . . . . .... .. ..........   
+                 ....                             .....
+                                                  ..... ....            . . ....
+                                                                                
+     . . . . . . ....
+                 ....                          ......                          .
+                 ....                          ......             . . . . .. .. 
+     .. .. .. .. .. .. .. .. .... .
+      .. .. .. .. .. .. .. .. .. ..
+                                               ..........
+                                               .....................
+                                               .....................
+                                              .....................
+                                                                                
+       ............
+          .........                                        .................
+                                                           .................
+        ..............
+          ...........                                      .................
+                                                           .................
+         .............                                 ..................
+                                                           .............
+                    .........                              .............        
+                                                                                
+                                                                                
+                    .........
+                    .........                              .............
+                                                           .........
+                    .........
+                    .........                              .........
+                                                           .........            
+     *. .. ..       ........                                   ............     
+                                                                                
+                                                                                
+      .. .. ..      .......
+                    ......                                        ...........
+                                                                     ..........
+       ...          ......
+                    ......                                           ,. . . . . 
+                                                                     .......    
+                                                                                
+     I   .   .
+
+                    ......
+                    ......                                           .......
+                                                                  ........      
+                                                                                
+     ...
+     ...            ......                                        ........
+                                                                  .........
+                                                                     .......
+       . . ......
+     ....  ......                                                               
+                                                                                
+     . . . ......
+       ... .......   .....
+                                                                   . .......
+                                                                     .......    
+     ...                                                             ........
+     ...                                                             ........   
+                                                                                
+                                                                                
+
+
+
+     ...          ........
+                     .. .. .. ..                                        .......
+     ...            ..........
+     ,. .. .. ..........
+      .. .. .. .. ..........
+                                            .   .   .
+                                      ..................
+                                      ..................
+                                      ...................
+                                                         .   .   .   .   .   .  
+                                                                                
+                                                                                
+                                                                                
+
+
+
+     .. .. .. ..    ..........        ........
+                                      ...................     ,..........       
+                                                                                
+      .. .. .. ..                     ...................
+                                      .. .. .. .. .. .. .. .. .. .. .. .. ......
+       ....               ...............      .....
+       . . . . ..................................
+       ......................................
+
+
+                                                 (a>                            
+
+                              Figure 1: Frontier detection: (a) evidence grid, (
+
+     Figure l a shows an evidence grid built by a real robot                    
+in a hallway adjacent to two open doors. Figure l b shows                       
+the frontier edge segments detected in the grid. Figure IC                      
+shows the regions that are larger than the minimum fron-                        
+tier size. The centroid of each region is marked by                             
+crosshairs. Frontier 0 and frontier 1 correspond to open                        
+doorways, while frontier 2 is the unexplored hallway.                           
+                                                                                
+2.3 Navigating to Frontiers                                                     
+                                                                                
+     Once frontiers have been detected within a particular                      
+evidence grid, the robot attempts to navigate to the nearest                    
+accessible, unvisited frontier. The path planner uses a                         
+depth-first search on the grid, starting at the robot's current                 
+cell and attempting to take the shortest obstacle-free path
+to the cell containing the goal location.                                       
+     While the robot moves toward its destination, reactive
+obstacle avoidance behaviors prevent collisions with any                        
+obstacles not present while the evidence grid was con-                          
+structed. In a dynamic environment, this is necessary to                        
+avoid collisions with, for example, people who are walk-                        
+ing about. These behaviors allow the robot to steer around                      
+these obstacles and, as long as the world has not changed                       
+too drastically, return to follow its path to the destination.                  
+
+
+
+
+                                                                                
+inches), range data from the infrared sensor is used                 ments. The
+instead. All sixteen sonar and infrared sensors are used for         adjacent of
+obstacle avoidance. All computation for frontier-based               tables, boo
+exploration is performed by an offboard Sparcstation 20.             and boxes o
+The process running on the workstation communicates                       Figure
+with the robot’s onboard 486 processor via a radio ether-            robot sta
+net.                                                                 tion to det
+     We have conducted experiments using frontier-based              explored th
+exploration in two different real-world office environ-
+
+
+
+
+                                                                                
+
+
+
+
+                                     Figure 2: Frontier-based exploration of an 
+
+
+
+
+                                                               149
+     Cells with low occupancy probability are represented
+by white space; cells with unknown occupancy probability
+are represented by small dots; and cells with high occu-
+pancy probability are represented by large dots. The
+robot’s position is represented by the black circle with a
+line marking the robot’s orientation. The robot’s path is
+indicated by the black line.
+     In Figure 2a, the robot starts in the center of the hall-
+way, builds an evidence grid using laser-limited sonar, and
+detects three frontiers. The robot navigates to the closest
+frontier, Frontier 1. In Figure 2b, the robot has arrived at
+its destination and added the observations from its new
+location to the evidence grid. The robot detects two fron-
+tiers and navigates to the closest, Frontier 0. This frontier
+corresponds to an open doorway leading to an unexplored
+office. (Frontiers are numbered based on the current grid,
+so Frontier 2 in Figure 2a is the same as Frontier 1 in
+Figure 2b.) In Figure 2c, the robot has moved through the
+doorway, detecting a new frontier in the center of the room
+at the boundary of its usable sonar range (ten feet).
+     Figure 2d shows the robot after it has explored more
+of the office. The robot detects five frontiers in this grid,
+and it navigates to the closest, Frontier 2. In Figure 2e, the
+robot detect six frontiers, but the two closest frontiers are               Figu
+inaccessible. Frontier 1 is between a chair and a desk, and                     
+Frontier 2 is a narrow gap between two desks. In both
+cases, there is insufficient clearance to allow the robot to           4.0 Relat
+navigate to the frontier, so the robot navigates to the near-
+                                                                            Cons
+est accessible frontier, Frontier 0.
+     In Figure 2f, the robot has completed its exploration             building,
+of the office. The total time required was about half an               simulatio
+hour. An improved version of this system can map the                   world as 
+same office in about fifteen minutes.                                  However, 
+      The two remaining frontiers are the result of specular           been impl
+reflections from sonar hitting obstacles that are difficult to              Mata
+detect using the laser (from certain angles). Frontier 0 cor-          reactive 
+                                                                       avoidance
+responds to a black filing cabinet, and Frontier 1 corre-
+sponds to a gray bookshelf. The robot’s path planner                   reactiv
+determines that both of these frontiers are inaccessible, so           map envir
+                                                                       explore t
+it plans a path to Frontier 2 in the hallway. The robot then
+follows this path out of the office to further explore the                  We p
+building.                                                              ration sy
+      Frontier-based exploration has also been tested in a             advantage
+                                                                       changes e
+large lab/office area. Figure 3 shows the evidence grid
+constructed during this exploration. The lab area, at the              suffered 
+top of the image, contains large open spaces as well as
+                                                                       strategy,
+large crates, small boxes, chairs, tables, and bookshelves.            ronments 
+The office area, at the bottom of the image, is narrow and                  Conn
+cluttered with chairs, desks, and workstations that require            tem to de
+precise navigation to avoid collisions with obstacles.                 limited t
+Although the total area is larger (45 feet x 25 feet), the             intersect
+robot was able to map the open spaces quickly, mapping                      Lee 
+the entire environment in about half an hour.                          Hierarchy
+
+
+
+
+                                                                 150
+assumes that all walls are parallel or perpendicular to each          6.0 Ackno
+other, and this system has only been tested in a simple
+environment consisting of a three corridors constructed                   This w
+from cardboard barriers.                                              Research. 
+     Thrun and Bucken [9] have developed an exploration               useful com
+system that builds a spatial representation that combines
+evidence grids with a topological map. This system has                     Refer
+been able to explore the network of hallways within a
+large building. While this approach works well within the                  Jonat
+hallway domain, it assumes that all walls are either paral-                task 
+lel or perpendicular to each other, and that they do not                   Jon C
+deviate more than 15 degrees from these orientations. An                   MA: K
+implicit assumption is that walls are observable and not                   Sean 
+obstructed by obstacles. These assumptions make this                       Place
+approach unsuitable for rooms cluttered with obstacles                     Compu
+that may be in arbitrary orientations.                                     David
+     A robot using frontier-based exploration has three                    Robot
+advantages over the systems described above. First, it can                 Navig
+explore environments containing both open and cluttered                    and C
+spaces. Second, it can explore environments where walls                    Michi
+and obstacles are in arbitrary orientations. Third, it can                 Benja
+explore efficiently by moving to the locations that are most               explo
+likely to add new information to the map.                                  seman
+                                                                           Journ
+5.0 Conclusions and Future Work                                            63, 1
+                                                                           Wan Y
+     In this paper, we have introduced a new approach to                   Physi
+exploration based on the concept of frontiers, regions on                  Compu
+the boundary between open space and unexplored space.                      Austi
+By constantly moving to new frontiers, a mobile robot can                  Maja 
+extend its map into new territory until the entire environ-                goal-
+ment has been explored. We have described and imple-                       Trans
+mented a method for detecting frontiers in evidence grids                  8(3):
+and navigating autonomously to these frontiers. We have                    Hans 
+also introduced a technique for minimizing specular                        maps 
+reflections in evidence grids using laser-limited sonar. We                IEEE 
+have tested this approach with a real mobile robot, by                     Autom
+exploring two different real-world office environments                     Alan 
+cluttered with a variety of obstacles.                                     Grefe
+     We have recently integrated frontier-based explora-                   evide
+tion with the continuous localization techniques developed                 96-00
+by Schultz, Adams, and Grefenstette [8]. The integrated                    DC, 1
+system is designed to explore large environments while                     Sebas
+maintaining an accurate position estimate. Initial results                 grid-
+have been very promising, and we are currently conduct-                    navig
+ing experiments to test the performance of the integrated                  Confe
+system.                                                                    Portl
+                                                                           Brian
+                                                                           for n
+                                                                           Trans
+                                                                           Part 
+                                                                           Auton
+
+
+
+
+                                                               15 1
+

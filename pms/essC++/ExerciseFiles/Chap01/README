@@ -1,0 +1,4 @@
+For C++11 features you need to let the compiler know via CMake, add
+below to your CMakeLists.txt
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")

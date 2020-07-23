@@ -1,0 +1,2 @@
+cut: invalid field value ‘yamauchi.txt’
+Try 'cut --help' for more information.

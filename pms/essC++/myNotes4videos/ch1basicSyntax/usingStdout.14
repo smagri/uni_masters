@@ -1,0 +1,123 @@
+Important Points:
+
+
+Transcript:
+
+- The exercise files for this course are mostly console
+  applications. That means that they display output as text on a
+  console and take input from the keyboard. The console may look
+  different on different systems. In the terminology of the C++
+  standard library, the standard output stream is how text is
+  displayed on the console. There's several ways to send output to the
+  standard output stream. So far in this chapter we've used the puts
+  and printf functions. C++ also has an object oriented class for
+  displaying output on the console.
+
+The C outclass is part of the standard C++ library and it works quite
+a bit differently than puts or printf. In fact, it works quite a bit
+differently from other object and classes in C++. So here in Xcode
+I've opened a Working copy of hello-cout.cpp and the first thing
+you'll notice is that my #include statement on line two includes a
+library called < iostream > rather than the < cstdio > that I've been
+using in the rest of the chapter. The < iostream > library includes
+cout.
+
+Cout is a class that overloads the bitwise left shift operator to send
+a stream of characters to the standard output stream. It's very common
+in C++ and you'll see it used a lot. So here we have this statement
+with cout and that's the name of the class, and the bitwise left shift
+operator, <<, is used to send a stream of characters to cout. And so
+it kind of looks like a left arrow, although it really is the bitwise
+left shift operator. So when I Build and Run this, you'll notice that
+it displays Hello, World!.
+
+I'm sending two different things to cout here, I'm sending this
+"Hello, World! " and I'm also sending this other class called endl;
+which is simply a class that sends an end line and it's commonly used
+with cout like this. You can stream different arguments together like
+this so let me put a space after "Hello, World! " here and I can say 2
+x 7 like that, and when I Save and Build and Run you'll see it says
+Hello, World! and the number 14. And I can even put in another string
+here, I'll put a space at the beginning of it and I'll say " another
+string", and Save and Build and Run and now it says Hello, World! 14
+and another string.
+
+So, this looks pretty convenient and in fact it is pretty
+convenient. It's also a little bit clever the way that it overloads
+that operator. If you have some experience in C++ you probably noticed
+that I often use puts or printf instead of cout and there's a reason
+for this. So cout is another approach to the same problem so how do I
+choose which one? Some people maintain that cout should be preferred
+because it's more object oriented than puts and I tend to disagree
+with this opinion. From a purely language standpoint, while cout is
+certainly a class, it's not used in the traditional object oriented
+way.
+
+In fact, it's rarely even used to create an instance of an
+object. Instead it's used as it's class by overloading this bitwise
+left shift operator to do something that actually has nothing to do
+with shifting bits. This is very clever, but personally I don't like
+to overload operators in a way that redefines their meaning. When I
+see an operator, I want to know what that operator does. The bitwise
+left shift operator is supposed to shift bits. By redefining it's
+meaning to send a stream of characters to the console, it makes the
+code more confusing, not more clear.
+
+And now, I need to look at this operator more closely everywhere,
+because a lot of classes overload it to support cout instead of
+shifting bits. I find this messy. Of course, this is just a semantic
+argument and many people don't agree with me and that's fine, but I'd
+like to give you a more technical explanation as well. So we're going
+to compile some code on a UNIX server. And, I'm doing this because
+this is a compiler that supports static libraries so we can see more
+clearly the impact of this code. So here I am logged in to a UNIX
+server, it's a virtual server that I rent from a Cloud company, and
+you notice that I have these three C++ files.
+
+So hello.cout is the one that we just saw, and it looks like
+that. It's exactly the same code that we had here in Xcode. And I also
+have one called hello.puts and it's the one that we've using the rest
+of the course and it uses puts to display {"Hello, World!"}, and I
+also have one with printf, which is another common way to do this and
+you'll see a lot of people do it this way with printf instead of
+puts. Now I'm going to compile them, and I'm going to compile them
+with static libraries and the reason I'm doing that is so we can see
+how big the code actually is.
+
+Most compilers, by default, they use shared libraries so they're using
+code that's shared in the rest of the system so you don't actually get
+to see how much code is being built into the program because a lot of
+it's hidden in this shared library but this will allow us to see
+this. So I'm going to say, - o hello-puts and hello-puts.cpp so that
+will compile it. When we look at it we see this hello-puts down here
+and the size of the object file that it has created by compiling it
+and this is actually everything that it needs to run a code and in
+fact I can run this, like this, and it says Hello, World!.
+
+Now I'm going to do the same thing with the printf version, and when
+we look at our output we see that the printf version is pretty much
+the same size as the puts version, it's just a few bites different,
+it's almost indistinguishable. Now we'll do the same thing with cout
+version. Now you'll notice that the cout version here, is about twice
+as big as the printf version or the puts version. And that's because
+in order for it to do this cout thing that it does, it has to bring a
+whole lot of the STL library just to support how it works.
+
+So displaying something on the console is actually a pretty simple
+operation for the library to do. And it doesn't really necessarily
+require all of this other support. In fact, all of this other support
+is just to create this syntactic anomaly by using the left shift
+operator instead of a pair of quotes and a string. C++ is often used
+for system programming and other large projects where every bit of
+performance and sometimes every bit of memory space is vitally
+important.
+
+So as a programmer, I tend to be conscious of how much a bit of code
+costs in terms of performance and memory space and this is really part
+of what being a system programmers job is. So it's important to
+understand how cout works and I'll cover it in much more detail later
+in the course. It's also important to understand the impact of your
+library choices. Using existing libraries always means tradeoffs,
+usually tradeoffs between convenience and performance. A general
+purpose library like the C++ standard library is often very convenient
+but it's not always efficient.

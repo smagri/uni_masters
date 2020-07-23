@@ -1,0 +1,479 @@
+dbg: in seperateThread() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1006.000000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in laserCallback() fn
+1006.100000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1006.200000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1006.300000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1006.400000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1006.500000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1006.600000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1006.700000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1006.800000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1006.900000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1007.000000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1007.100000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1007.200000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1007.300000000 Laser: [d, theta, x, y]=[1.58097,1.53569,0.0554837,1.58]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1520934122.743918659, 1007.300000000]: sending back response: [1][0m
+[0m[ INFO] [1520934122.744220399, 1007.300000000]: client call to service SUCCEDED[0m
+1007.300000000 Odom: [x,y,yaw]=[0,0,0]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1007.400000000 Laser: [d, theta, x, y]=[1.57841,1.44794,0.19343,1.56651]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1007.500000000 Laser: [d, theta, x, y]=[1.57476,1.37774,0.302137,1.54551]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1007.600000000 Laser: [d, theta, x, y]=[1.57476,1.37774,0.302137,1.54551]
+dbg: in laserCallback() fn
+1007.700000000 Laser: [d, theta, x, y]=[1.57476,1.37774,0.302137,1.54551]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1007.800000000 Laser: [d, theta, x, y]=[1.57476,1.37774,0.302137,1.54551]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1007.900000000 Laser: [d, theta, x, y]=[1.57476,1.37774,0.302137,1.54551]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1008.000000000 Laser: [d, theta, x, y]=[1.57476,1.37774,0.302137,1.54551]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1008.100000000 Laser: [d, theta, x, y]=[1.57476,1.37774,0.302137,1.54551]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1008.200000000 Laser: [d, theta, x, y]=[1.57476,1.37774,0.302137,1.54551]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1008.300000000 Laser: [d, theta, x, y]=[1.57476,1.37774,0.302137,1.54551]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1520934123.770516992, 1008.300000000]: sending back response: [1][0m
+[0m[ INFO] [1520934123.770626355, 1008.300000000]: client call to service SUCCEDED[0m
+1008.300000000 Odom: [x,y,yaw]=[0,0,0.15708]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in laserCallback() fn
+1008.400000000 Laser: [d, theta, x, y]=[1.57227,1.28998,0.435733,1.51068]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1008.500000000 Laser: [d, theta, x, y]=[1.5687,1.21978,0.539402,1.47305]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1008.600000000 Laser: [d, theta, x, y]=[1.5687,1.21978,0.539402,1.47305]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1008.700000000 Laser: [d, theta, x, y]=[1.5687,1.21978,0.539402,1.47305]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1008.800000000 Laser: [d, theta, x, y]=[1.5687,1.21978,0.539402,1.47305]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1008.900000000 Laser: [d, theta, x, y]=[1.5687,1.21978,0.539402,1.47305]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1009.000000000 Laser: [d, theta, x, y]=[1.5687,1.21978,0.539402,1.47305]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1009.100000000 Laser: [d, theta, x, y]=[1.5687,1.21978,0.539402,1.47305]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1009.200000000 Laser: [d, theta, x, y]=[1.5687,1.21978,0.539402,1.47305]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1009.300000000 Laser: [d, theta, x, y]=[1.5687,1.21978,0.539402,1.47305]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1009.400000000 Laser: [d, theta, x, y]=[1.5687,1.21978,0.539402,1.47305]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1520934124.797960270, 1009.400000000]: sending back response: [1][0m
+[0m[ INFO] [1520934124.798184835, 1009.400000000]: client call to service SUCCEDED[0m
+1009.400000000 Odom: [x,y,yaw]=[0,0,0.314159]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1009.500000000 Laser: [d, theta, x, y]=[1.56635,1.13203,0.665429,1.41798]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1009.600000000 Laser: [d, theta, x, y]=[1.56295,1.06182,0.761597,1.36484]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1009.700000000 Laser: [d, theta, x, y]=[1.56295,1.06182,0.761597,1.36484]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1009.800000000 Laser: [d, theta, x, y]=[1.56295,1.06182,0.761597,1.36484]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1009.900000000 Laser: [d, theta, x, y]=[1.56295,1.06182,0.761597,1.36484]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1010.000000000 Laser: [d, theta, x, y]=[1.56295,1.06182,0.761597,1.36484]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1010.100000000 Laser: [d, theta, x, y]=[1.56295,1.06182,0.761597,1.36484]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1010.200000000 Laser: [d, theta, x, y]=[1.56295,1.06182,0.761597,1.36484]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1010.300000000 Laser: [d, theta, x, y]=[1.56295,1.06182,0.761597,1.36484]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1010.400000000 Laser: [d, theta, x, y]=[1.56295,1.06182,0.761597,1.36484]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1520934125.825653221, 1010.400000000]: sending back response: [1][0m
+[0m[ INFO] [1520934125.825855809, 1010.400000000]: client call to service SUCCEDED[0m
+1010.400000000 Odom: [x,y,yaw]=[0,0,0.471239]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1010.500000000 Laser: [d, theta, x, y]=[1.56082,0.974069,0.877085,1.29108]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1010.600000000 Laser: [d, theta, x, y]=[1.55765,0.903866,0.963526,1.22388]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1010.700000000 Laser: [d, theta, x, y]=[1.55765,0.903866,0.963526,1.22388]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1010.800000000 Laser: [d, theta, x, y]=[1.55765,0.903866,0.963526,1.22388]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1010.900000000 Laser: [d, theta, x, y]=[1.55765,0.903866,0.963526,1.22388]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1011.000000000 Laser: [d, theta, x, y]=[1.55765,0.903866,0.963526,1.22388]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1011.100000000 Laser: [d, theta, x, y]=[1.55765,0.903866,0.963526,1.22388]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1011.200000000 Laser: [d, theta, x, y]=[1.55765,0.903866,0.963526,1.22388]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1011.300000000 Laser: [d, theta, x, y]=[1.55765,0.903866,0.963526,1.22388]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1011.400000000 Laser: [d, theta, x, y]=[1.55765,0.903866,0.963526,1.22388]
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1520934126.853529692, 1011.400000000]: sending back response: [1][0m
+[0m[ INFO] [1520934126.853727436, 1011.400000000]: client call to service SUCCEDED[0m
+1011.400000000 Odom: [x,y,yaw]=[0,0,0.628319]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in laserCallback() fn
+1011.500000000 Laser: [d, theta, x, y]=[1.5558,0.816112,1.06582,1.13338]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1011.600000000 Laser: [d, theta, x, y]=[1.55293,0.745909,1.14058,1.05388]
+dbg: in laserCallback() fn
+1011.700000000 Laser: [d, theta, x, y]=[1.55293,0.745909,1.14058,1.05388]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1011.800000000 Laser: [d, theta, x, y]=[1.55293,0.745909,1.14058,1.05388]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1011.900000000 Laser: [d, theta, x, y]=[1.55293,0.745909,1.14058,1.05388]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1012.000000000 Laser: [d, theta, x, y]=[1.55293,0.745909,1.14058,1.05388]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1012.100000000 Laser: [d, theta, x, y]=[1.55293,0.745909,1.14058,1.05388]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1012.200000000 Laser: [d, theta, x, y]=[1.55293,0.745909,1.14058,1.05388]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1012.300000000 Laser: [d, theta, x, y]=[1.55293,0.745909,1.14058,1.05388]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1012.400000000 Laser: [d, theta, x, y]=[1.55293,0.745909,1.14058,1.05388]
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1520934127.880341910, 1012.400000000]: sending back response: [1][0m
+[0m[ INFO] [1520934127.880522783, 1012.400000000]: client call to service SUCCEDED[0m
+1012.400000000 Odom: [x,y,yaw]=[0,0,0.785398]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in laserCallback() fn
+1012.500000000 Laser: [d, theta, x, y]=[1.55142,0.658155,1.22737,0.948941]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1012.600000000 Laser: [d, theta, x, y]=[1.5489,0.587952,1.28881,0.85911]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1012.700000000 Laser: [d, theta, x, y]=[1.5489,0.587952,1.28881,0.85911]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1012.800000000 Laser: [d, theta, x, y]=[1.5489,0.587952,1.28881,0.85911]
+dbg: in laserCallback() fn
+1012.900000000 Laser: [d, theta, x, y]=[1.5489,0.587952,1.28881,0.85911]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1013.000000000 Laser: [d, theta, x, y]=[1.5489,0.587952,1.28881,0.85911]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1013.100000000 Laser: [d, theta, x, y]=[1.5489,0.587952,1.28881,0.85911]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1013.200000000 Laser: [d, theta, x, y]=[1.5489,0.587952,1.28881,0.85911]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1013.300000000 Laser: [d, theta, x, y]=[1.5489,0.587952,1.28881,0.85911]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1013.400000000 Laser: [d, theta, x, y]=[1.5489,0.587952,1.28881,0.85911]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1013.500000000 Laser: [d, theta, x, y]=[1.5489,0.587952,1.28881,0.85911]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1520934128.907316132, 1013.500000000]: sending back response: [1][0m
+[0m[ INFO] [1520934128.907434904, 1013.500000000]: client call to service SUCCEDED[0m
+1013.500000000 Odom: [x,y,yaw]=[0,0,0.942478]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1013.600000000 Laser: [d, theta, x, y]=[1.5478,0.500198,1.35817,0.742321]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1013.700000000 Laser: [d, theta, x, y]=[1.54567,0.429994,1.40497,0.644339]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1013.800000000 Laser: [d, theta, x, y]=[1.54567,0.429994,1.40497,0.644339]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1013.900000000 Laser: [d, theta, x, y]=[1.54567,0.429994,1.40497,0.644339]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1014.000000000 Laser: [d, theta, x, y]=[1.54567,0.429994,1.40497,0.644339]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1014.100000000 Laser: [d, theta, x, y]=[1.54567,0.429994,1.40497,0.644339]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1014.200000000 Laser: [d, theta, x, y]=[1.54567,0.429994,1.40497,0.644339]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1014.300000000 Laser: [d, theta, x, y]=[1.54567,0.429994,1.40497,0.644339]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1014.400000000 Laser: [d, theta, x, y]=[1.54567,0.429994,1.40497,0.644339]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1014.500000000 Laser: [d, theta, x, y]=[1.54567,0.429994,1.40497,0.644339]
+dbg: in odomCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1520934129.934545852, 1014.500000000]: sending back response: [1][0m
+[0m[ INFO] [1520934129.934789628, 1014.500000000]: client call to service SUCCEDED[0m
+1014.500000000 Odom: [x,y,yaw]=[0,0,1.09956]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in laserCallback() fn
+1014.600000000 Laser: [d, theta, x, y]=[1.54501,0.34224,1.45541,0.518503]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1014.700000000 Laser: [d, theta, x, y]=[1.54471,0.254486,1.49496,0.388878]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1014.800000000 Laser: [d, theta, x, y]=[1.54471,0.254486,1.49496,0.388878]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1014.900000000 Laser: [d, theta, x, y]=[1.54471,0.254486,1.49496,0.388878]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1015.000000000 Laser: [d, theta, x, y]=[1.54471,0.254486,1.49496,0.388878]
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1015.100000000 Laser: [d, theta, x, y]=[1.54471,0.254486,1.49496,0.388878]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1015.200000000 Laser: [d, theta, x, y]=[1.54471,0.254486,1.49496,0.388878]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1015.300000000 Laser: [d, theta, x, y]=[1.54471,0.254486,1.49496,0.388878]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1015.400000000 Laser: [d, theta, x, y]=[1.54471,0.254486,1.49496,0.388878]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1015.500000000 Laser: [d, theta, x, y]=[1.54471,0.254486,1.49496,0.388878]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in requestGoal() service callback fn
+[0m[ INFO] [1520934130.962292384, 1015.500000000]: sending back response: [1][0m
+[0m[ INFO] [1520934130.962503368, 1015.500000000]: client call to service SUCCEDED[0m
+1015.500000000 Odom: [x,y,yaw]=[0,0,1.25664]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1015.600000000 Laser: [d, theta, x, y]=[1.54314,0.184283,1.51701,0.282768]
+dbg: in laserCallback() fn
+1015.700000000 Laser: [d, theta, x, y]=[1.54332,0.0965292,1.53614,0.148744]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1015.800000000 Laser: [d, theta, x, y]=[1.54332,0.0965292,1.53614,0.148744]
+dbg: in odomCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1015.900000000 Laser: [d, theta, x, y]=[1.54332,0.0965292,1.53614,0.148744]
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1016.000000000 Laser: [d, theta, x, y]=[1.54332,0.0965292,1.53614,0.148744]
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1016.100000000 Laser: [d, theta, x, y]=[1.54332,0.0965292,1.53614,0.148744]
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1016.200000000 Laser: [d, theta, x, y]=[1.54332,0.0965292,1.53614,0.148744]
+dbg: in imageCallback() fn
+dbg: in laserCallback() fn
+1016.300000000 Laser: [d, theta, x, y]=[1.54332,0.0965292,1.53614,0.148744]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in odomCallback() fn
+dbg: in laserCallback() fn
+1016.400000000 Laser: [d, theta, x, y]=[1.54332,0.0965292,1.53614,0.148744]
+dbg: in laserCallback() fn
+1016.500000000 Laser: [d, theta, x, y]=[1.54332,0.0965292,1.53614,0.148744]
+dbg: in odomCallback() fn
+dbg: in imageCallback() fn
+dbg: in imageCallback() fn
+1016.500000000 Odom: [x,y,yaw]=[0,0,1.41372]
+ x/y m/resoln_ from ogMap centre: pos [x,y]=[0,0] 
+ Pixel coordinates on the ogMap for this pos [x,y]=[100,100]

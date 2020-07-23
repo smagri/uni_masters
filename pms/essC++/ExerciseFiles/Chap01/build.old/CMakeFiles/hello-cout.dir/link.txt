@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/hello-cout.dir/hello-cout.cpp.o  -o hello-cout -rdynamic 

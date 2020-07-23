@@ -1,0 +1,45 @@
+#include "Ranger.h"
+
+using namespace std;
+
+
+Ranger::Ranger()
+{
+
+}
+
+void Ranger::start(){
+
+}
+
+double Ranger::getDist(){
+
+}
+
+int Ranger::getFieldofView(){
+
+}
+
+void Ranger::setFieldOfView(){
+
+}
+
+float Ranger::getMaxDist(){
+
+}
+
+float Ranger::getMinDist(){
+
+}
+
+void Ranger::setAngularRes(){
+
+}
+
+int Ranger::getAngularRes(){
+
+}
+
+
+
+

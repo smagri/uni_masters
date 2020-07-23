@@ -1,0 +1,17 @@
+// working.cpp by Bill Weinman <http://bw.org/>
+#include <cstdio>
+using namespace std;
+
+int main( int argc, char ** argv ){
+
+  char s[] = "string";
+  
+  // Range based for loop, new construct in c++11
+  // compiler warning: range-based for loops requires -std=c++11 or -std=gnu++11
+  for (char c : s){
+    fprintf(stderr, "char is %c\n", c);
+  }
+  
+
+  return 0;
+}

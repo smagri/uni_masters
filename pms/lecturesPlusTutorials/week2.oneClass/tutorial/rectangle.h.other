@@ -1,0 +1,17 @@
+#
+#
+
+class Rectangle{
+
+ public:
+  Rectangle();
+  ~Rectangle();
+
+  void setWidthHeight(double width, double height);
+  int area (void);
+  int perimeter(void);
+
+ private:
+  int width_, height_;
+  
+};

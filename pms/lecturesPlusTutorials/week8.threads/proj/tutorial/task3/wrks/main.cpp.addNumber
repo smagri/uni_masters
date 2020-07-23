@@ -1,0 +1,76 @@
+#include <iostream>
+#include <thread>
+#include <atomic>
+#include <mutex>
+//#include <unistd.h>
+#include <chrono>
+#include <random>
+
+
+#include "databuffer.h"
+
+
+using namespace std;
+
+
+void addNumber(DataBuffer &dataBuff){
+  
+  // Initialise random number generation.
+  std::default_random_engine generator;
+  // produces random numbers between 0 and 100
+  std::uniform_real_distribution<double> distributionUniform(0, 100);
+  
+  while(true){
+    dataBuff.buffer_mutex_.lock();
+    // Grab the mutex lock to access the buffer's critical data, so
+    // access stays atomic.
+    
+    // Fill vector values with a random number.
+    dataBuff.values.push_back(distributionUniform(generator));
+    
+    // Returns a reference to the last element in the vector and prints it.
+    cout << "Added value: " << dataBuff.values.back() << endl;
+
+    dataBuff.buffer_mutex_.unlock();
+    
+    // This delay slows the loop down for the sake of readability,
+    // notice it's not within the mutex lock.
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+  }
+ 
+}
+
+void removeNumber(DataBuffer &dataBuff, int lowerBound, int upperBound){
+}
+
+void trimLength(DataBuffer &dataBuff){
+}
+
+
+
+
+int main(){
+
+// mutex to syncronise access to num
+  mutex utex; 
+  int var = 0;
+  
+  // Create the shared buffer which contains its own mutex.
+  DataBuffer dataBuff;
+
+  
+  // Start all the threads
+  thread addNumberThread(addNumber, ref(dataBuff));
+  thread removeNumberThread(removeNumber, ref(dataBuff), 20, 80);
+  thread trimLengthThread(trimLength, ref(dataBuff));
+
+
+  // Syncronise threads,  that is, wait  for _all_ threads  to finish,
+  // they wont in this case though  as the threads have infinate loops
+  // in them.
+  addNumberThread.join();
+  removeNumberThread.join();
+  trimLengthThread.join();
+  
+  return 0;
+}

@@ -1,0 +1,45 @@
+7sep2017
+
+After going through all examples that  I have created, ie all of task1
+and task3, this is the most important tennet discovered.  This is most
+eveident when all the sleeps are  removed from the code.  It is harder
+to  see when  the sleeps  are still  in the  code.  Test  a particular
+example with and without the sleeps to understand it properly.
+
+Thus, consider task3:
+
+* All three threads use a single mutex lock for atomic behaviour.
+
+* Thus each of the threads execute in any order and any one thread can
+  execute cosecutively/successively any number of undetermined times.
+
+In this example there is:
+
+addRandomNumber thread, ie add numbers to the end of a vector.
+
+removeNumbers, ie erase  numbers < 20 and > 80  buy itterating through
+the whole vector from begining to end.
+
+trimNumbers, ie keep the size of the random number vector <= 20
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Mutexes  and  condition_variables(cv)  provide  locks  around  program
+execution.  Hence provide atomic access to variables.
+
+Here, t=thread:
+
+* mutexes's are !blocking => given t1 and t2, they have equal chances
+  of running randomly.  Say, t1 t1 t1 t1 t2 t2 t2 t1 t2 t1 t2
+
+* cv's:
+
+If only one cv, given two threads t1 and t2 again, cv.notify_one()=t1
+thread does !block while cv.wait()=t2 thread blocks.  Hence the output is
+typically t1 t1 t1 t1 t2 t1 t1 t1
+
+If two  cv's, that  is cv.producer=t1  and cv.consumer=t2,  where each
+thread blocks  after completing it's  atomic business, then  wakes the
+other thread, the  execution is in lock  step, that is t1 t2  t1 t2 t1
+t2....
+

@@ -1,0 +1,74 @@
+Importatnt Points:
+// functions need to be declared before they are used
+// most common way is to used fnName.h
+
+
+Transcript:
+
+- Defining your own functions is a fundamental part of C++
+  programming. It's also the basis of methods in classes, so let's
+  take a look at how to define a function in C++. Here I have a
+  working copy of func.cpp from chapter two of the exercise files. And
+  you'll notice here, starting on line 5, we have a simple function
+  called "func." A function is declared with the return type first,
+  and in this case we have the return type as void, which means that
+  the function does not return a value.
+
+That's followed by the function name, func, which is followed by
+parenthesis, and the parenthesis may have parameters declared within
+it, as in the main function below. The body of the function is a block
+of code in curly braces. In this case, the body just has one line,
+which is a put statement that says this is func, and that's really all
+there is to it, how you define a simple function. And so this is a
+very, very simple function. It's just one line of code.
+
+And if I run this here, you see that the main function is the main
+entry point and it says this is main, and then it calls func, and you
+notice func is called by using the name of the function and a pair of
+parenthesis. So, the parenthesis is called the function call operator
+and the parenthesis may sometimes have parameters inside of it. We'll
+show that a little later in the chapter. This is just meant to be a
+very, very simple explanation of how a function works.
+
+So, you notice that main is also a function. Main is never called
+directly. It's the main entry point for the code. It's called by the
+system. Our function, called func, is called on line 13 with the
+function call operator, those parenthesis. Now, a function must be
+declared before it's called. So, if I were to move this function
+definition and put it after main and then try to build and run, you
+notice that build fails and says "use of undeclared identifier 'func'"
+because really in C++ everything must be declared before it's used
+and, in this case, we haven't declared the function.
+
+So, there's a couple of ways that this can happen because this is
+actually a really, really common situation, where you're going to want
+to have your function definitions separate from the code that calls
+them. And so one way to do this is to simply declare it above main. So
+here on line 5, I just say void func and the function call operator,
+which says that this is a function definition, and a semicolon. And
+that's called a forward declaration. And that declares that here we
+have a function. This is not the code for it.
+
+The code is someplace else, but know that there is a function called
+this, and that gives the system, especially the code linker, the
+information that it needs in order to build the target program. And so
+now when I press build and run, you notice that everything works just
+fine. This is not the common way to do this, however. The common way
+to do this is with a header file. So you notice here in the chapter 2
+exercise files there is a file called func.h, which simply has that
+function forward declaration in it.
+
+And so if I drag this into my project, and make sure I have copy set
+there, and now I come back in here and instead of this I say #include
+func.h, and we'll cover these includes in the next chapter on the
+preprocessor. And now when I build and run, you see that it still
+works because that includes the forward declaration that's in func.h
+and now that's part of this code here because the include preprocessor
+directive includes the entire file of this .h file.
+
+And so now everything works as we expect. So this is the more common
+way to include the function definitions for code that is in a C++
+file. So that's how you define and declare a function. We'll get into
+many more details throughout the rest of this chapter.
+
+

@@ -1,0 +1,47 @@
+Important Points:
+
+
+
+Transcript:
+
+- You'll typically have a list of include directives at the top of
+  each source file. This is one of the more visible uses of the
+  preprocessor. Here I have a working copy of working.cpp and
+  preproc.h from the Chapter 3 folder of the exercise files. There's
+  preproc.h. The include directive is used to include a header file on
+  your source code. You'll notice that I have an include directive
+  here on line 2 of this working.cpp. The preprocessor replaces the
+  include directive with the entire contents of the included header
+  file then passes that combined file to the compiler.
+
+Multiple include directives are allowed and are in fact common. All
+include directives are processed including those nested within
+included files and are combined into one piece often called a
+translation unit. There are two basic forms of the include
+directive. One form using angle brackets like what you see here to
+enclose the header file name. And this is of course used at the top of
+each of our working files includes this header called cstdio which is
+a standard header in C++.
+
+This from instructs the preprocessor to search the file system using a
+set of implementation defined locations used for system header
+files. This form is used for system level headers that are common to
+different projects and source files. The other form uses quote marks
+and it looks like this. This form is commonly used for header files
+specific to a given project or source file. So if we look in our
+preproc.h file, we see we have a few symbols defined. We have a macro
+or a preprocessor constant called ONE in all capital letters.
+
+And we have a constant integer and a constant string. So if I come
+down here, I can put in some printfs. I can say printf preprocessor
+macro and I can say printf integer constant. And you see that even my
+IDE is finding these symbols because it knows that I've included this
+preproc.h. And I can also get the string. Now when I build and run
+this, you see that we get all of these values. Those are all defined
+there in the header file.
+
+This is a really, really common technique. The include directive is an
+essential part of C++ programming. While it's certainly not required,
+virtually, every source file would use at least one include directive
+even if it's just for standard library headers.
+

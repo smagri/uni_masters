@@ -1,0 +1,8 @@
+30jul2018
+
+this source is the first implementation of the psudo code for the pure
+pursuit algorithim
+
+the last know version of sample.cpp that compiles and runs is in:
+
+detectFrontiers.request_goal.fork/ 

@@ -1,0 +1,82 @@
+Important Points:
+& is formally known as the reference operator, but is also known as the address of
+operator.
+Dreference is *.
+
+
+Transcript:
+
+- Pointers are very powerful, useful, dangerous, and common data type
+  in C++. To really understand pointers, you need to first understand
+  how a variable works. A variable is a typed and named location in
+  memory. In this variable definition, memory is allocated for a value
+  the size of an integer and associated with the name x. Here, the
+  integer value one is copied into the memory location associated with
+  the integer variable x.
+
+This is both a definition and an assignment. Memory is allocated in
+the size of int and the value for the variable named x is copied into
+the variable named y. Variable y now contains a separate integer in a
+separate memory location with the same value as the variable x. So we
+can see that the name of a variable is used as an index to map to a
+memory address and a particular associated data type. C++ also
+provides the ability to create a variable that is a pointer to a value
+as opposed to carrying the value itself.
+
+This is a pointer definition. The variable named ip is of the type
+pointer to int. Here, memory is allocated in the size of a
+pointer. The pointer is also strongly typed. That is, the compiler
+retains an association with this pointer that it points to a value of
+type int. This is typically referred to as an integer pointer. Here,
+the address of the variable integer named x is placed in the pointer
+variable named ip. The ampersand is formerly called the reference
+operator, but in this context, it's more commonly called the address
+of operator.
+
+It returns the address of an object suitable for assigning to a
+pointer. So this statement assigns the address of x to the integer
+pointer ip. The integer pointer ip now points to the integer variable
+x. The ampersand is also used in C++ for a special reference type that
+will be covered later. This copies the value pointed to by ip, which
+currently points to the integer variable x, to the integer variable y.
+
+In this context, the asterisk is called the pointer de-reference
+operator. It's used to get at the value pointed to by the pointer. You
+can, of course, also change ip to point at a different variable. Let's
+take a look at a simple example. Here in Xcode I've opened a working
+copy of working.cpp. Let's start by defining some variables. So there
+we have an integer called x and we've initialized it with a value of
+seven.
+
+And we have an integer variable named y and we've given it a value of
+42. And this is an integer pointer, and we're giving it the address of
+the variable x. So we'll put in some printfs so we can see what's
+going on. This first one will give us the value of x, and I'm just
+gonna copy and paste this and change the copies. This first one has an
+x there and then this one has a y here. And then this will be the
+value that's pointed at by ip.
+
+Like that. So now when I save this and run it, you see the value of x
+is seven, as we expected, the value of y is 42, and the value that is
+pointed to by ip is seven, because ip up here on line nine is giving
+the address of the variable x and the variable x has a seven on it. So
+I'm gonna make another copy of all three of these printfs and before
+that I'm going to change the value of x to 73.
+
+And now, when I run this, you see in the second batch x is 73 and the
+value of what's pointed at by ip is 73. So you can see, by changing
+the value of x we're also able to de-reference that with ip and we get
+that new value of x. Now let's do one more of these. And now I'm
+changing the integer pointer to the address of y. And so when I run
+this, in our third set now, x is still 73 and y is 42, but the value
+that's pointed at by ip is now 42, which is the value of y.
+
+So I'm gonna leave this working file open for the next lesson because
+we're gonna build on this knowledge to understand references. In this
+lesson, I've shown you the fundamentals of pointers. Understanding the
+pointers is critical to using C++ effectively, so take some time to
+experiment with this on your own. Understanding this will serve you
+well for the long-term. It's also essential for understanding
+references, which we'll be discussing in the next lesson. And you'll
+see many more examples of pointers and references in the rest of this
+course.

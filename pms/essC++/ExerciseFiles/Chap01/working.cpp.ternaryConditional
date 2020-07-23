@@ -1,0 +1,23 @@
+// working.cpp by Bill Weinman <http://bw.org/>
+#include <cstdio>
+using namespace std;
+
+int main( int argc, char ** argv ){
+
+  // Ternary expressions are conditiona statements/expressions.
+  //int x = 42;
+  //int y = 73;
+  int x = 444;
+  int y = 73;
+  
+
+  // condition: x>y, or the question
+  // if condition is true return x
+  // if condition is false return y
+  fprintf(stderr, "the greater is : %d\n", x>y ? x : y);
+  
+ 
+  
+
+  return 0;
+}

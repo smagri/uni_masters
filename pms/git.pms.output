@@ -1,0 +1,41 @@
+smagri@luqa:/lu1/smagri/uni/subj/pms%git push -u origin master
+Username for 'https://github.com': smagri
+Password for 'https://smagri@github.com':
+Counting objects: 4273, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4067/4067), done.
+Writing objects: 100% (4273/4273), 981.10 MiB | 1.03 MiB/s, done.
+Total 4273 (delta 1541), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1541/1541), done.
+remote: warning: File
+assignments/ass5wrks/dbgFTdetectn/pairTypeForCoordsNotUsed/output.sample
+is 56.07 MB; this is larger than GitHub's recommended maximum file
+size of 50.00 MB
+remote: warning: File lecturesPlusTutorials/week10/videos/ROS tutorial
+#1- Introduction, Installing ROS, and running the Turtlebot
+simulator..mp4 is 62.04 MB; this is larger than GitHub's recommended
+maximum file size of 50.00 MB
+remote: warning: File
+lecturesPlusTutorials/week8.threads/proj/tutorial/task1/condVar/build-condVar/output.fstPass.cv
+is 72.78 MB; this is larger than GitHub's recommended maximum file
+size of 50.00 MB
+remote: warning: File
+lecturesPlusTutorials/week8.threads/videos/preReading/C++ Threading
+#3-  Data Race and Mutex.mp4 is 57.91 MB; this is larger than GitHub's
+recommended maximum file size of 50.00 MB
+remote: error: GH001: Large files detected. You may want to try Git
+Large File Storage - https://git-lfs.github.com.
+remote: error: Trace: c0eb687bc356541aa0e0560532c6436e
+remote: error: See http://git.io/iEPt8g for more information.
+remote: error: File
+assignments/ass5wrks/dbgFTdetectn/pairCoordsWaypointTesting/output.sample
+is 107.58 MB; this exceeds GitHub's file size limit of 100.00 MB
+remote: error: File lecturesPlusTutorials/week10/videos/ROS tutorial
+#2.1- C++ walkthrough of publisher - subscriber lab.mp4.crdownload is
+181.91 MB; this exceeds GitHub's file size limit of 100.00 MB
+To https://github.com/smagri/pms.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+ error: failed to push some refs
+ to 'https://github.com/smagri/pms.git'
+ smagri@luqa:/lu1/smagri/uni/subj/pms%
+ 

@@ -1,0 +1,4 @@
+
+./image_publisher  _image:=/lu1/smagri/Pictures/screensaver_pics/r_and_s.jpg
+rosrun opencv_example image_publisher
+rosrun opencv_example image_publisher _image:=/lu1/smagri/Pictures/arduinoUNO.png

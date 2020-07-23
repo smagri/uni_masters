@@ -1,0 +1,3 @@
+/lu1/smagri/uni/subj/pms/assignments/qt/ass1-build/CMakeFiles/edit_cache.dir
+/lu1/smagri/uni/subj/pms/assignments/qt/ass1-build/CMakeFiles/rebuild_cache.dir
+/lu1/smagri/uni/subj/pms/assignments/qt/ass1-build/CMakeFiles/laserRangeFinder.dir

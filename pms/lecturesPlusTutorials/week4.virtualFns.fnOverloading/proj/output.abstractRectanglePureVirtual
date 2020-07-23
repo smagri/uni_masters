@@ -1,0 +1,17 @@
+Scanning dependencies of target shapeFns
+[ 16%] Building CXX object CMakeFiles/shapeFns.dir/circle.cpp.o
+[ 33%] Building CXX object CMakeFiles/shapeFns.dir/rectangle.cpp.o
+[ 50%] Building CXX object CMakeFiles/shapeFns.dir/shapefunctions.cpp.o
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week4/proj/shapefunctions.cpp: In function ‘double shape_functions::getAreaOfBoundingShapes(Shape**, int, double, double)’:
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week4/proj/shapefunctions.cpp:11:27: error: ‘class Shape’ has no member named ‘pointIsInShape’
+       if (shape_array[i]->pointIsInShape(x,y)) {
+                           ^
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week4/proj/shapefunctions.cpp:12:32: error: ‘class Shape’ has no member named ‘area’
+  total_area += shape_array[i]->area();
+                                ^
+CMakeFiles/shapeFns.dir/build.make:110: recipe for target 'CMakeFiles/shapeFns.dir/shapefunctions.cpp.o' failed
+make[2]: *** [CMakeFiles/shapeFns.dir/shapefunctions.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/shapeFns.dir/all' failed
+make[1]: *** [CMakeFiles/shapeFns.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2

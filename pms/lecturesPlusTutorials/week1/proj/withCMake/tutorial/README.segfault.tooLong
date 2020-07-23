@@ -1,0 +1,133 @@
+StackOverflow:
+
+Covers both c and c++, and any other language really that allos you to
+mess with memory managment.
+
+Summary:
+
+Segmentation fault  is a  specific kind of  error caused  by accessing
+memory that “does not belong to you.”
+
+A segmentation fault occurs when a program attempts to access a memory
+location that  it is not  allowed to access,  or attempts to  access a
+memory location in a way that  is not allowed (for example, attempting
+to  write  to a  read-only  location,  or  to  overwrite part  of  the
+operating system).
+
+These  kinds of errors  are USUALLY CAUSED BY  pointers that are:
+
+* Used before being properly initialised
+* Used after the memory they point to has been realloced or deleted.
+* USED IN  AN INDEXED ARRAY  WHERE THE INDEX  IS OUTSIDE OF  THE ARRAY
+BOUNDS.   THIS IS  GENERALLY ONLY  WHEN YOU'RE  DOING POINTER  MATH ON
+TRADITIONAL ARRAYS OR C-STRINGS, NOT STL / BOOST BASED COLLECTIONS (IN
+C++.)
+
+// So in the case of class Random created for week1's tutorial, it is
+// the last point here and described more fully below.
+
+Out-of-bounds array references
+
+Make sure that you  have not violated the bounds of  any array you are
+using; i.e., you have not subscripted the array with a value less than
+the  index of  its lowest  element or  greater than  the index  of its
+highest element. Valgrind can come  in handy to detect such references
+- you can use valgrind with the --tool=exp-sgcheck flag.
+
+
+Summary ends.
+
+
+Whenever you  get a segfault  you know  you are doing  something wrong
+with memory– accessing  variable that has already  been freed, writing
+to a read-only portion of the memory, etc.
+
+
+Segfault examples:
+-----------------
+
+A common  way to get  a segfault is to  dereference a null  pointer, a
+null pointer is not a valid address in c and c++:
+
+int *p = NULL;
+*p = 1;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Other segfault happens when you try to write to a portion of memory
+that was marked as read-only:
+
+char *str = "Foo"; // Compiler marks the constant string as read-only
+*str = 'b'; // Which means this is illegal and results in a segfault
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Dangling pointer points to a thing that does not exist any more, like
+here:
+
+char *p = NULL;
+{
+    char c;
+    p = &c;
+}
+// Now p is dangling
+
+The pointer p  dangles because it points to character  variable c that
+ceased to exist after the block ended. And when you try to dereference
+dangling pointer (like *p='A'), you would probably get a segfault.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*****************************************************************************************
+
+Generally speaking you  can't access the memory of  another program or
+process.
+
+However,  a  segmentation fault  can  occur  while accessing  our  own
+(process) memory in  an improper way (for instance trying  to write to
+non-writable space). But  the most common reason for it  is the access
+to  the part  of  the virtual  address  space that  is  not mapped  to
+physical one at all.
+
+And all of this with respect to virtual memory systems.
+*****************************************************************************************
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+A  segmentation fault  is caused  by  a request  for a  page that  the
+process does  not have listed in  its descriptor table, or  an invalid
+request for a page that it does have listed (e.g. a write request on a
+read-only page).
+
+A dangling pointer is  a pointer that may or may not  point to a valid
+page, but does point to an "unexpected" segment of memory.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*****************************************************************************************
+
+To be  honest, as other posters  have mentioned, Wikipedia has  a very
+good article on this so have a  look there. This type of error is very
+common  and often  called other  things  such as  Access Violation  or
+General Protection Fault.
+
+They are  no different  in C,  C++ or any  other language  that allows
+pointers. These  kinds of errors  are USUALLY CAUSED BY  pointers that
+are
+
+Used before being properly initialised
+Used after the memory they point to has been realloced or deleted.
+
+USED  IN AN  INDEXED ARRAY  WHERE THE  INDEX IS  OUTSIDE OF  THE ARRAY
+BOUNDS.   THIS IS  GENERALLY ONLY  WHEN YOU'RE  DOING POINTER  MATH ON
+TRADITIONAL ARRAYS OR C-STRINGS, NOT STL / BOOST BASED COLLECTIONS (IN
+C++.)
+
+*****************************************************************************************
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Wikipedia:
+A segmentation fault occurs when a program attempts to access a memory
+location that  it is not  allowed to access,  or attempts to  access a
+memory location in a way that  is not allowed (for example, attempting
+to  write  to a  read-only  location,  or  to  overwrite part  of  the
+operating system).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

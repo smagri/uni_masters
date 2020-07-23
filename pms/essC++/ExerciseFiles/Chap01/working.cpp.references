@@ -1,0 +1,56 @@
+// working.cpp by Bill Weinman <http://bw.org/>
+#include <cstdio>
+using namespace std;
+
+int main( int argc, char ** argv ){
+  
+  // References are used a lot in c++, especially in functions and classes.
+
+  
+  int x = 7;
+  int *ip = &x;
+
+  // y is a reference, and initialised to the address of x.
+  // It must be initialised when it is declared.
+  // When you use y it is the same as using x, as if it was variable x itself.
+  // y is always tied to x, or is immutable
+  // So addr y is initialised to addr x.
+  int &y = x;
+
+  fprintf(stderr, "set x=7 and y is a reference to x, ie int &y=x\n");
+  fprintf(stderr, "ip is a pointer to x\n");
+  fprintf(stderr, "x=%d\n", x);
+  fprintf(stderr, "y=%d\n", y);
+  fprintf(stderr, "*ip=%d\n", *ip);
+  
+
+  x = 42;
+  fprintf(stderr, "\nset x=42\n");
+  fprintf(stderr, "x=%d\n", x);
+  fprintf(stderr, "y=%d\n", y);
+  fprintf(stderr, "*ip=%d\n", *ip);
+
+  // you can use y as if it was really x
+  y = 73; 
+  fprintf(stderr, "\nset y=73\n");
+  fprintf(stderr, "x=%d\n", x);
+  fprintf(stderr, "y=%d\n", y);
+  fprintf(stderr, "*ip=%d\n", *ip);
+
+  int z =149;
+  ip = &z;
+  fprintf(stderr, "\nset z=149 and ip=&z\n");
+  fprintf(stderr, "x=%d\n", x);
+  fprintf(stderr, "y=%d\n", y);
+  fprintf(stderr, "*ip=%d\n", *ip);
+  fprintf(stderr, "z=%d\n", z);
+
+  y = z; // doesn't change the reference
+  fprintf(stderr, "\nset y=z\n");
+  fprintf(stderr, "x=%d\n", x);
+  fprintf(stderr, "y=%d\n", y);
+  fprintf(stderr, "*ip=%d\n", *ip);
+  fprintf(stderr, "z=%d\n", z);
+
+  return 0;
+}

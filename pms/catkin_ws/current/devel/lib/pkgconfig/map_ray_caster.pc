@@ -1,0 +1,8 @@
+prefix=/lu1/smagri/uni/subj/proj30cp/catkin_ws/devel
+
+Name: map_ray_caster
+Description: Description of map_ray_caster
+Version: 0.1.8
+Cflags: -I/lu1/smagri/uni/subj/proj30cp/catkin_ws/src/map_ray_caster/include
+Libs: -L/lu1/smagri/uni/subj/proj30cp/catkin_ws/devel/lib -lmap_ray_caster
+Requires: lama_msgs nav_msgs roscpp

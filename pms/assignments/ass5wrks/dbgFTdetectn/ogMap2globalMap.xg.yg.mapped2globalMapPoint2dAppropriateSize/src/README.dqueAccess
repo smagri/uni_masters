@@ -1,0 +1,22 @@
+14mar2018
+
+
+Within imageCallback() the  deques contain the ogMap as  an image, and
+the timestamp of that image.
+
+Within  odomCallback() the  deques contain  the robot  pose, and  it's
+timestamp are accessed.
+
+Access to these ques needs to be mutex locked due to use of these ques
+in other  threads, like seperateThread().   One can not be  writing to
+the  ques  in  the  callaback  fns   and  reading  from  the  ques  in
+seperateThread() at the same time.
+
+A condition vairable needs to be used  for the mutex locks so that the
+callback functions  let other threads  read from the  ques.  Otherwise
+the callback function will starve  other threads from reading the ques,
+as the callback function fills the ques and never sleeps.
+
+The condition variable  essentially puts the que access  to sleep thus
+letting other program  threads access them.  And so  that other system
+processes get some timeslices, thus the que access don't hog the cpu.

@@ -1,0 +1,23 @@
+Creates all the other intermediate files that enable us to create an executable.
+Makefile does the bulk of the work.
+
+
+smagri@gyan1:/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build%cmake ..
+-- The C compiler identification is GNU 5.4.0
+-- The CXX compiler identification is GNU 5.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build
+smagri@gyan1:/lu1/smagri/uni/subj/pms/essentialC++/Ex_Files_Cpp_EssT/ExerciseFiles/Chap01/build%

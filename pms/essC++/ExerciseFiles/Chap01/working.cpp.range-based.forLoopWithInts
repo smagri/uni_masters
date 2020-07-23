@@ -1,0 +1,33 @@
+// working.cpp by Bill Weinman <http://bw.org/>
+#include <cstdio>
+#include <string>
+using namespace std;
+
+int main( int argc, char ** argv ){
+
+  // using the range-based for loop
+  //
+  //
+  //  A  more  efficient  way  to itterate  over  the  elements  of  a
+  //  container.
+  
+
+  int a[] = {1, 2, 3, 4, 5}; // container is a, an array of integers
+  
+
+  // applied to an array of integers
+  fprintf(stderr, "\nfor range-based loop applied to an array or integers:");
+
+  // i is the variable that contains the elements of container a
+  // during the loop.
+  //
+  for (int i : a){
+    // c == 0 no need to be checked for
+    fprintf(stderr, "element a[%d]=%d\n", i, a);
+  }
+  
+  
+
+  return 0;
+}
+

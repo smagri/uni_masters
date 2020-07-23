@@ -1,0 +1,42 @@
+laser.h
+getAngularResolution() missing.
+setAngularResolution() missing.
+
+radar.h
+
+sonar.h
+
+laser.cpp, radar.cpp, sonar.cpp should inherit default variables from
+ranger class constructor.
+
+laser.cpp:
+-setAngularResoln() missing
+-also multiple readings is 7 or 13 not 1
+
+ranger.h
+protected:
+Ranger(model, rangeMax, rangeMin) not there
+
+no virtual method or  pure virtual for an abstract class.
+
+
+ranger.cpp:
+???sanity/valid check for baud, port ...etc not there, report sane values not
+there
+
+DOCUMENTATION: not too bad
+
+LOOK: set to 80 character width as makes code hard to read
+
+
+rangerfusion.h
+ranger.h not need to be in here.
+
+rangerfusion.cpp
+-hard coded values of fusion algorithim
+
+
+main.cpp
+-fusion output is 13 values all the time, laser had 7 or 13
+
+

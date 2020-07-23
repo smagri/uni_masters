@@ -1,0 +1,23 @@
+Howto avoid a deadlock:
+
+* perfer locking only a single mutex, not multiple mutexes.
+
+* do not lock the mutex and then call some user function(it may lock
+  another mutex.)
+
+* use std::lock() to lock more than one mutex as it provides some
+  protection, for deadlock avoidance.
+
+* lock the mutex in the same order for all threads, if std::lock() use
+  is not possible.
+
+
+
+Locking Granularity:
+
+* fine-grained lock: protects small amount of data, programming
+  becomes tricky and you are more exposed to deadlocks.
+* course-grained lock: protects big amount of data, losing gain of
+  parallel computing as threads wait a long time for data.
+  
+

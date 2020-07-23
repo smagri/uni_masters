@@ -1,0 +1,62 @@
+// Rectangle class implementation.
+// 
+
+#include <iostream>
+
+#include <stdio.h>
+
+// non-system  include files
+#include "rectangle.h"
+
+
+Rectangle::Rectangle():width(0.0), height_(0.0){
+
+  // constructor
+  
+  // not necessary but a good convention
+  width_ = width;
+  height_ = height;
+  
+};
+
+
+~Rectangle(){
+
+  // destructor
+  
+}
+
+
+void Rectangle::setWidthHeight(double width, double height){
+
+  // This method, or  member function, is required so  code not within
+  // this class can access member  variables safely, without having to
+  // understand all our code.
+
+  fprintf(stderr,  "in setWidthHeight\n");
+
+  //width_ = width;
+  //height_ = height;
+  
+};
+
+
+// int main(){
+
+//   std::cout << "Hello World" << std::endl;
+  
+//   Rectangle::setWidthHeight(1, 10);
+  
+//   return 0;
+// }
+
+
+// int rectangle::area(void){
+  
+// };
+
+// int rectangle::perimeter(void){
+  
+// };
+
+

@@ -1,0 +1,21 @@
+// working.cpp by Bill Weinman <http://bw.org/>
+#include <cstdio>
+using namespace std;
+
+int main( int argc, char ** argv ){
+
+  // Itterating for loop.
+  // Using pointer to '\0' to terminate the loop.
+
+  char s[] = "string";
+  for (char *cp = s; *cp; ++cp){
+    // When you dereference the cp pointer in the condition( ie at
+    // *cp), this expression is true for a valid pointer(ptr is never
+    // null).  When you dereference cp and the contents are 0 =>
+    // condition is false so we break out of the loop.
+    fprintf(stderr, "Element %c\n", *cp);
+  }
+  
+
+  return 0;
+}

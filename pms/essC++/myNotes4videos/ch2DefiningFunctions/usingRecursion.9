@@ -1,0 +1,44 @@
+Importatant Points:
+
+
+
+
+Transcript:
+
+- A recursive function is a function that calls itself. Here I have a
+  working copy of recursive-factorial.cpp from Chap02 of the
+  ExerciseFiles, and this is a function that computes a factorial, and
+  a factorial function computes the value of n factorial as n *(n - 1)
+  * (n - 2) all the way down to one. Or, if you notice from that
+  function, n factorial is equal to n * (n - 1) factorial, and so
+  we're using that definition here by returning, first who checks if n
+  < 2 then it returns 1, and otherwise, it returns the value of itself
+  with the parameter of (n - 1) times itself.
+
+So in other words, n factorial equals n * (n - 1) factorial. So we
+build and run, we notice we're running it with a value of seven, and
+we get the result of 5,040. If we run it with the value of 10, you
+notice we get a much larger number, and if we run it with five, we
+should get 120. So this is a recursive function. In other words, it's
+a function that calls itself. So a recursive function can use a lot of
+resources.
+
+For every recursive function call, memory is allocated for the
+parameters, for any local variables, for the return value and for
+other overhead that you might have in your function, and all of this
+is allocated on the stack which means that it's very possible to
+overrun your stack and create a security vulnerability. A loop is
+often a more efficient way to do something like this, and in fact,
+even with a factorial, the recursive factorial function is a standard
+way of demonstrating recursion in programming, and yet, a loop is a
+more efficient way to do this, and so I'm gonna leave it as an
+assignment for you to create a factorial function that uses a loop
+instead of recursion and feel free to contact me on Twitter,
+@BillWeinman, with your result.
+
+So C++ supports recursive functions, but you should be careful, for
+problems that may require a lot of iterations, recursion can quickly
+use up a lot of resources which can easily create buffer overflow
+related security vulnerabilities. It's often better to find a
+different looping solution.
+

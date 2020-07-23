@@ -1,0 +1,95 @@
+Important Points:
+
+
+
+
+Transcript:
+
+- When you're dealing with simple built-in scaler values, it's usually
+  pretty obvious what most operators will do. Two plus two will
+  generally get you four. But when you're dealing with classes in C++,
+  it's not obvious at all, in fact, C++ operators do not work with
+  class types unless you create specific functions for those
+  operators. These functions are called operator overloads or operator
+  functions. There's basically two ways of overloading operators. One
+  is with class methods and the other is with functions.
+
+In this movie we'll discuss overloading operators with
+functions. We'll discuss class methods in the chapter on classes and
+objects. Here I have a working copy of func-operator.cpp from Chap02
+of the exercise files. Just running through it real quick, we have a
+simple class up here. We'll cover classes in a lot of detail later in
+the course but for now, just know that this is a simple class that
+overloads an integer and it provides one method for returning a value.
+
+Then we have our operator overload function, we'll get to that in a
+moment. Down here in main, we declare two variables of type A, and A
+is our class. One of them has a value of seven, one of them has a
+value of 42. Then we add them up using the + operator here in the
+printf call. Now, this is our operator overload function. The function
+signature, you notice, it returns an integer and then the name of it
+is operator and a symbol.
+
+The operator is a keyword that says that this is an operator overload
+function. Then the symbol is the operator that's going to be
+overloaded. There are rules for which operators can be overloaded in
+what way and how many parameters they have. Most of them are pretty
+obvious. Like, for example, this + operator, it takes two parameters,
+one is the left-hand side and one is the right-hand side
+operator. I've named them lhs and rhs. That's a very standard way to
+name them. They're of type A with constant and reference because you
+really want to use references for classes to pass into functions.
+
+You pretty much always want to use constant references because they
+tend to be rather large and you don't want to pass the entire class on
+the stack and create problems of stack overflow. This operator +
+function, it calls puts, so that we know when it's being called. In
+practice, you won't ever do that, have an operator actually just play
+a message on the console. We're doing that here for educational
+purposes so that you can see when the class is called or rather when
+the function is called.
+
+Then it returns the value of the left-hand side plus the value of the
+right-hand side as integer. Then we call printf and print this
+out. Let me build and run. You can see that we call printf here and
+the first thing it does is it calls the operator + for class A because
+this is two class A types with a + operator, so the system, it looks
+for the + operator that has that function signature with the two class
+A parameters.
+
+It calls that and it takes that value and passes it to printf. Now, if
+I were to just comment this out, then the system wouldn't know what to
+do with an additional operator, a + operator, with these two variables
+of type class A. When I build and run this, we just get an error that
+says "Invalid operands to binary expression". Our binary expression is
+this addition expression. It's binary because it has two operands and
+the system doesn't know what to do with it because it doesn't have an
+operator function for that purpose.
+
+When I uncomment this and save and build and run, now it knows what to
+do with that because we have a function with that signature. It's
+looking for a function with an operator of + and two operands of type
+class A. Then it knows what to do with them and so it calls this
+function and adds them up, it takes the integer and it prints it which
+is 49. A few things to understand, one, this feature is not available
+for built-in types. I can see where that might be a lot of fun but it
+would never really be a good idea.
+
+You cannot overload an operator for two integers and make it do
+division. Also, keep in mind that while this is interesting and
+clever, it doesn't really add any functionality that's not otherwise
+available. It's always possible to just have an add method in your
+class and get exactly the same result. They just wouldn't look the
+same. This allows you to use a normal looking expression in your
+swears code, but it's not, again, really adding any functionality
+that's not otherwise there.
+
+It's a powerful tool and like any powerful tool it can be abused and
+you should use operator overloading with a lot of caution. Make sure
+that it always makes sense for your application rather than just using
+it to, you know, overload an operator do something that is not obvious
+by just looking at the code. Like I said, this is only half the story,
+for the rest of it, be sure to watch the movie on operator overloading
+in the chapter on classes and objects. There'll be more examples of
+this as we go through the course.
+

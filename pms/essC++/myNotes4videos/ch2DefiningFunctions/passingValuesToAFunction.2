@@ -1,0 +1,145 @@
+Important points:
+Use 'const int' to stop contents if i being changed in
+ fnName(const int &i), you know your library wont change i if is
+ specified as this.
+
+Call  by  referance, ie  call  by  pointer,  is  used for  large  size
+variables, so you don't make large  copied of values when calling fns.
+Fn  pointer is  used mostly  in C  as a  pass by  reference, in  c++ a
+reference is used like int &y =  x.  Personally, I don't see the point
+in having the two methods, c pointer is good enough for me, not really
+much more complicated than c++ reference.
+
+s.c_str() is the c string version of the string s.
+
+STACK small data structure that is used to pass variables bewtween
+functions, that is two and from a fn.  Can crash your system if it's
+not big enough(stack overflow), creating a security vulnerbility.  So
+you use a pointer in c or reference in c++ to pass large size values.
+
+
+
+
+
+Transcript:
+
+- Parameters are passed to a function by declaring them inside the
+  parentheses of the function definition and passing them in the
+  parentheses of the function call. Here I have a working copy of
+  func.cpp from chapter two of the exercise files, and let's pass an
+  integer to this function. If I just say int i, and inside here I can
+  say printf("value is %d\n", i); And down here in the function call
+  you notice I have this red error which says that there's no matching
+  function for call to 'func'.
+
+That's because the function signature doesn't match. We'll cover
+function signatures a bit later, but the point is that there's no
+function that doesn't have anything as a parameter. And now if I need
+to put in the 42 here, or some integer, in order for this function
+call to match the function declaration. So now when I build and run
+you'll see that it says the value is 42. So this 42 is an integer and
+that's copied and passed into this integer for the function and now
+the function has its own copy of the integer, which it uses to display
+the value.
+
+Now by default, functions in C++ pass variables by value, which means
+that a copy of the value is made and that copy is used inside the
+function. That's called pass by value. You can also do what's called
+pass by reference. In this case I would have an integer here,
+say. I'll pass that integer instead of a literal 42. And now up here I
+can say int & i. And so instead of making a copy of the variable it
+simply passes a reference to the variable and that reference is used
+inside the function.
+
+Now if I build and run this you'll notice it does exactly the same
+thing. But here's the interesting thing here. If I change this value
+to, say, 73 and down here, after the function call, I printf x. You'll
+notice that x actually gets changed to 73. And the reason for that is
+that we're passing it as a reference. So this ampersand, that declares
+this function parameter variable as a reference.
+
+And now that reference is simply a reference to the variable that is
+passed to it. So just as if you were doing an assignment of one
+variable to another, if the target variable is a reference and that
+assignment is in the declaration, as we learned about references in
+the last chapter, then there is no copy made. It's simply the new
+variable becomes a reference to the variable that's assigned. That's
+exactly what's happening here. Instead of assigning a value to this
+function variable it's simply a reference to the variable that's
+passed.
+
+And so when I change it inside the function it actually changes the
+variable in the caller. Now as you can see this is pretty dangerous,
+and you can have unintended consequences by doing it this way. There
+are reasons that you're going to want to do that, and we'll cover that
+in a moment, but you can prevent the side effect by simply declaring
+this as a const. And now you notice I get an error for the assignment
+here because it's a read-only variable and it's not assignable. So I
+just can't do that anymore.
+
+And now when I build and run you notice that everything is still
+42. So the compiler will not allow me to change the value of this
+constant reference. And yet down here if I want to I can still change
+it because this x is not a constant. And there we have it changed. So
+this is a common technique when interfacing with libraries in
+C++. Very often the functions and methods in a library will have
+constant references instead of variables.
+
+This does a couple of things. One, it makes it safe. You know that
+your library's not going to change the values of your variables. And
+two, it's actually faster and more efficient in cases where the thing
+that you're passing is rather large. For example here, instead of an
+integer if I had a string, and I'm going to need my string library up
+here. We're going to use a C++ Standard Template Library string
+class. Down here we'll say string s = "Hello I'm a string".
+
+And now we're going to declare our function. Instead of taking an
+integer it will take a string reference. We'll call it fs for function
+string. And instead of printing the integer we'll print a string,
+we'll say fs.c_str(). And now we call function with s, we don't have
+an x anymore, and of course string is %s, and we can do this. So now
+we have a function that takes a string reference.
+
+Now, the string could be any kind of a large object and rather than
+copying however many bytes this large object is, we're simply passing
+a reference. And by using the const modifier we're making that a
+read-only string, or in language terms an immutable string, inside the
+function, but outside the function it's still just a regular class
+string. And now when I run this the value is "Hello I'm a string," the
+string is "Hello I'm a string." This is really why references were
+created for C++, to allow call by reference for functions so that you
+can pass large objects.
+
+Before references, this all had to be done with pointers. So instead
+of func(s) like this, or constant string like this, it would have an
+asterisk and it would declare it as a pointer. And then instead of
+this dot we'd need to use a pointer dereference here. And when we pass
+it we would pass the address of the string. And so this is actually
+exactly the same effect but you can see it's a little bit more
+complicated and this is why references were invented for C++.
+
+The pointer technique is common in C. In C++ you'll almost always see
+this done with references. So it's important to realize that values
+are passed to and from a function on a small data structure called a
+stack. The stack is a small space and it requires processing power to
+manage it, because it's a data structure. So passing large values to a
+function requires copying large amounts of data onto this stack, which
+often times doesn't have enough room and is computationally expensive.
+
+It's going to be time consuming but it can also cause the stack to
+overflow, which can crash your program and create a security
+vulnerability. Many of the security vulnerabilities we see these days
+in the wild are vulnerabilities because the stack can overflow, and
+these vulnerabilities take advantage of that, then overflow the stack,
+and inject code, and do all kinds of horrible things. So when you're
+passing something larger than a simple scalar value like an integer or
+a long or a double or something like that you're going to want to use
+a reference.
+
+You're almost always going to want to make it a constant reference. So
+you'll be using a reference like this, and we'll use the dereference
+operator like that, and we'll be passing it like this. So this example
+right here is how you're going to want to pass larger values to a
+function. So by default, function parameters are passed by value in
+C++. You can pass pointers or references if you need to pass larger
+values, but you need to do it explicitly.

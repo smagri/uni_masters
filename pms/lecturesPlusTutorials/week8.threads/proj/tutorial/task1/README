@@ -1,0 +1,11 @@
+wrks/mutexInIncrementAndPrintFns:
+both functions using a mutex lock with the mutex and variable to
+increment passed as references.
+
+
+
+wrks/usingAtomicInIncrementAndPrintFns/:
+replaces explicit mutex locking code with atomic integer variable.
+
+
+

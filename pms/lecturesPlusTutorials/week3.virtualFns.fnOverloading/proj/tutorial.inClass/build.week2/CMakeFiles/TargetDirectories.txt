@@ -1,0 +1,4 @@
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week1/proj/withCMake/tutorial/build/CMakeFiles/edit_cache.dir
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week1/proj/withCMake/tutorial/build/CMakeFiles/rebuild_cache.dir
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week1/proj/withCMake/tutorial/build/CMakeFiles/rectangle.dir
+/lu1/smagri/uni/subj/pms/lecturesPlusTutorials/week1/proj/withCMake/tutorial/build/CMakeFiles/test.dir
